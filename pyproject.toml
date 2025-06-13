@@ -7,3 +7,15 @@ requires-python = ">=3.12"
 dependencies = [
     "mcp[cli]>=1.9.4",
 ]
+
+[tool.poetry]
+packages = [
+    { include = "bracket_city_mcp", from = "src" },
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0" # Using a recent version, can be adjusted
+pytest-asyncio = "^0.23.0" # Or a compatible version
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
