@@ -1,21 +1,41 @@
 [project]
 name = "bracket-city-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "Add your description here" # Retaining existing description
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12" # Retaining existing requirement
 dependencies = [
     "mcp[cli]>=1.9.4",
 ]
 
-[tool.poetry]
-packages = [
-    { include = "bracket_city_mcp", from = "src" },
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0", # Ensuring version specifier is compatible
+    "pytest-asyncio>=0.23.0", # Ensuring version specifier is compatible
 ]
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.0.0" # Using a recent version, can be adjusted
-pytest-asyncio = "^0.23.0" # Or a compatible version
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+
+# Removed [tool.poetry] section
+# Removed [tool.poetry.group.dev.dependencies]
+# No Poetry-specific [build-system] was present to remove.
+# If a build backend is needed (e.g. for sdist/wheel),
+# a [build-system] table like the following might be added:
+# [build-system]
+# requires = ["hatchling"]
+# build-backend = "hatchling.build"
+# backend-path = ["."]
+# For now, this is omitted as per instructions.
+# The src layout previously defined in tool.poetry.packages
+# (include = "bracket_city_mcp", from = "src")
+# will need to be handled by the chosen build backend's configuration
+# if and when one is explicitly added (e.g. in tool.hatch.build or tool.setuptools).
+# For editable installs with `uv`, `uv pip install -e .` often requires
+# a build backend that understands the src layout, or appropriate
+# configuration for setuptools if that's the default.
+# For example, a basic setuptools setup might need:
+# [tool.setuptools.packages.find]
+# where = ["src"]
+# Or for hatchling, it's typically configured under [tool.hatch.build.targets.wheel].
+# This will be addressed if build/install issues arise in later steps.
