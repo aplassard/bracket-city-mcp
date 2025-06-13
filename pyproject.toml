@@ -3,7 +3,7 @@ name = "bracket-city-mcp"
 version = "0.1.0"
 description = "Add your description here" # Retaining existing description
 readme = "README.md"
-requires-python = ">=3.12" # Retaining existing requirement
+requires-python = ">=3.10" # Retaining existing requirement
 dependencies = [
     "mcp[cli]>=1.9.4",
 ]
@@ -13,6 +13,9 @@ dev = [
     "pytest>=8.0.0", # Ensuring version specifier is compatible
     "pytest-asyncio>=0.23.0", # Ensuring version specifier is compatible
 ]
+
+[project.scripts]
+pytest = "pytest"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
