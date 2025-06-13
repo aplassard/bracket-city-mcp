@@ -1,174 +1,153 @@
 import unittest
 import os
 from src.bracket_city_mcp.game.game import Game
-from src.bracket_city_mcp.game.clue import Clue
+# Clue might not be directly used here but good to have if tests evolve
+# from src.bracket_city_mcp.game.clue import Clue
 
-# Determine the correct path to the JSON file relative to this test file.
-# Assumes tests are run from the root of the project or that the path is resolvable.
-# If tests/ is a subdir of the project root, and games/ is another subdir of project root:
+# --- Path Setup ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-GAME_JSON_PATH = os.path.join(BASE_DIR, "games", "json", "20250110.json")
-# Fallback if the above doesn't work in the execution environment, try a simpler relative path
-if not os.path.exists(GAME_JSON_PATH):
-    GAME_JSON_PATH = os.path.join("games", "json", "20250110.json")
+
+# Path to the original game JSON (now considered invalid due to multiple end clues)
+ORIGINAL_GAME_JSON_PATH = os.path.join(BASE_DIR, "games", "json", "20250110.json")
+if not os.path.exists(ORIGINAL_GAME_JSON_PATH):
+    ORIGINAL_GAME_JSON_PATH = os.path.join("games", "json", "20250110.json") # Fallback
+
+# Path to the new valid game JSON (single end clue)
+VALID_GAME_JSON_PATH = os.path.join(BASE_DIR, "tests", "data", "valid_single_end_clue_game.json")
+if not os.path.exists(VALID_GAME_JSON_PATH):
+    VALID_GAME_JSON_PATH = os.path.join("tests", "data", "valid_single_end_clue_game.json") # Fallback
 
 
 class TestGame(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        """Load the game once for all tests in this class."""
-        if not os.path.exists(GAME_JSON_PATH):
-            raise FileNotFoundError(
-                f"Test game JSON file not found at calculated path: {GAME_JSON_PATH}. "
-                f"BASE_DIR: {BASE_DIR}, CWD: {os.getcwd()}"
-            )
-        cls.game_instance = Game.from_json_file(GAME_JSON_PATH)
+        """Load the valid game once for all tests in this class."""
+        if not os.path.exists(VALID_GAME_JSON_PATH):
+            raise FileNotFoundError(f"Valid test game JSON file not found at: {VALID_GAME_JSON_PATH}")
+        cls.valid_game_instance = Game.from_json_file(VALID_GAME_JSON_PATH)
+
+        # Check if the original (now invalid) game file exists for specific tests
+        cls.original_game_file_exists = os.path.exists(ORIGINAL_GAME_JSON_PATH)
+        if not cls.original_game_file_exists:
+            print(f"Warning: Original game file {ORIGINAL_GAME_JSON_PATH} not found. Some tests will be skipped.")
+
 
     def setUp(self):
-        """Create a fresh game instance for each test to ensure independence."""
-        # Re-load the game from the JSON file for each test to reset state
-        self.game = Game.from_json_file(GAME_JSON_PATH)
+        """Create a fresh valid game instance for each test to ensure independence."""
+        self.game = Game.from_json_file(VALID_GAME_JSON_PATH) # Default to valid game
 
-    def test_game_loading_from_json(self):
+    def test_game_loading_valid_json(self):
         self.assertIsInstance(self.game, Game)
-        self.assertTrue(len(self.game.clues) > 0, "Game should have clues loaded.")
-        # Check a specific clue to see if it's loaded correctly
-        self.assertIn("#C1#", self.game.clues)
-        self.assertEqual(self.game.clues["#C1#"].answer, "pig")
+        self.assertTrue(len(self.game.clues) == 4, "Valid game should have 4 clues loaded.")
+        self.assertIn("#S1#", self.game.clues)
+        self.assertEqual(self.game.clues["#S1#"].answer, "A1")
 
-    def test_initial_start_clues(self):
-        # Expected start clues from 20250110.json (those with empty "depends_on")
-        # #C1#, #C2#, #C7#, #C9#, #C15#, #C17#
-        expected_start_clues = {"#C1#", "#C2#", "#C7#", "#C9#", "#C15#", "#C17#"}
-        self.assertEqual(set(self.game.start_clues), expected_start_clues,
-                         f"Start clues do not match. Got: {self.game.start_clues}")
-        self.assertEqual(self.game.active_clues, expected_start_clues,
-                         "Initial active clues should be the start clues.")
+    def test_loading_invalid_game_multiple_end_clues(self):
+        if not self.original_game_file_exists:
+            self.skipTest(f"Original game file not found at {ORIGINAL_GAME_JSON_PATH}")
 
-    def test_initial_end_clues(self):
-        # Expected end clues from 20250110.json (clues not depended upon by any other clue)
-        # #C6#, #C14#, #C18#
-        # Note: #C11# has an empty answer, but is depended upon by #C12#.
-        #       #C4# -> #C5# -> #C6#
-        #       #C13# & #C8# -> #C14#
-        #       #C16# & #C17# -> #C18#
-        expected_end_clues = {"#C6#", "#C14#", "#C18#"}
-        self.assertEqual(set(self.game.end_clues), expected_end_clues,
+        with self.assertRaisesRegex(ValueError, "Game must have exactly one end clue. Found 3 end clues"):
+            Game.from_json_file(ORIGINAL_GAME_JSON_PATH)
+
+    def test_loading_game_no_end_clues_raises_error(self):
+        # Test with a game structure that would result in zero end clues
+        # For example, a circular dependency or a single clue that points to itself (though _build_graph might prevent some of this)
+        # More simply, a game where all clues are depended upon by others.
+        invalid_data_no_end = {
+            "clues": {
+                "#C1#": {"clue": "c1", "answer": "a1", "depends_on": []},
+                "#C2#": {"clue": "c2", "answer": "a2", "depends_on": ["#C1#"]}
+            }
+        }
+        # In this setup, #C1# is depended on by #C2#, and #C2# is not depended on by anything.
+        # So this test case definition is wrong. Let's fix it.
+        # #C1# depends on #C2#, #C2# depends on #C1# -> 0 end clues
+        invalid_data_no_end_circular = {
+             "clues": {
+                "#C1#": {"clue": "c1", "answer": "a1", "depends_on": ["#C2#"]},
+                "#C2#": {"clue": "c2", "answer": "a2", "depends_on": ["#C1#"]}
+            }
+        }
+        with self.assertRaisesRegex(ValueError, "Game must have exactly one end clue. Found 0 end clues"):
+            Game(invalid_data_no_end_circular)
+
+
+    def test_initial_start_clues_valid_game(self):
+        expected_start_clues = {"#S1#", "#S2#"}
+        self.assertEqual(set(self.game.start_clues), expected_start_clues)
+        self.assertEqual(self.game.active_clues, expected_start_clues)
+
+    def test_initial_end_clue_valid_game(self):
+        # From valid_single_end_clue_game.json
+        expected_end_clues = ["#E1#"] # Stored as a list
+        self.assertEqual(self.game.end_clues, expected_end_clues,
                          f"End clues do not match. Got: {self.game.end_clues}")
 
-    def test_answer_clue_correct_start_clue(self):
-        clue_id_to_answer = "#C1#" # Depends on: [], Answer: "pig"
-        self.assertIn(clue_id_to_answer, self.game.active_clues, "Start clue should be active.")
+    def test_answer_clue_correct_start_clue_valid_game(self):
+        clue_id_to_answer = "#S1#" # Answer: A1
+        self.assertIn(clue_id_to_answer, self.game.active_clues)
 
-        result = self.game.answer_clue(clue_id_to_answer, "pig")
-        self.assertTrue(result, "Answer should be correct.")
-        self.assertTrue(self.game.clues[clue_id_to_answer].completed, "Clue should be marked completed.")
-        self.assertNotIn(clue_id_to_answer, self.game.active_clues, "Completed clue should be removed from active.")
+        result = self.game.answer_clue(clue_id_to_answer, "A1")
+        self.assertTrue(result)
+        self.assertTrue(self.game.clues[clue_id_to_answer].completed)
+        self.assertNotIn(clue_id_to_answer, self.game.active_clues)
 
-        # Check if #C6# (depends on #C1#, #C5#) becomes active.
-        # For #C6# to be active, #C5# also needs to be completed.
-        # #C5# depends on #C4# -> #C3# -> #C2#. So #C6# won't be active yet.
-        self.assertNotIn("#C6#", self.game.active_clues, "#C6# should not be active yet.")
+        # #M1# depends on #S1#. It should now be active.
+        self.assertIn("#M1#", self.game.active_clues)
 
-    def test_answer_clue_incorrect(self):
-        clue_id_to_answer = "#C1#"
+    def test_answer_clue_incorrect_valid_game(self):
+        clue_id_to_answer = "#S1#"
         self.assertIn(clue_id_to_answer, self.game.active_clues)
 
         result = self.game.answer_clue(clue_id_to_answer, "wrong answer")
-        self.assertFalse(result, "Answer should be incorrect.")
-        self.assertFalse(self.game.clues[clue_id_to_answer].completed, "Clue should not be marked completed.")
-        self.assertIn(clue_id_to_answer, self.game.active_clues, "Incorrectly answered clue should remain active.")
+        self.assertFalse(result)
+        self.assertFalse(self.game.clues[clue_id_to_answer].completed)
+        self.assertIn(clue_id_to_answer, self.game.active_clues)
 
-    def test_answer_clue_not_active(self):
-        # #C3# depends on #C2# and should not be active initially.
-        clue_id_to_answer = "#C3#"
-        self.assertNotIn(clue_id_to_answer, self.game.active_clues, "#C3# should not be active initially.")
+    def test_answer_clue_not_active_valid_game(self):
+        clue_id_to_answer = "#M1#" # Depends on #S1#
+        self.assertNotIn(clue_id_to_answer, self.game.active_clues)
 
-        result = self.game.answer_clue(clue_id_to_answer, "body") # Correct answer for #C3#
-        self.assertFalse(result, "Should not be able to answer an inactive clue.")
-        self.assertFalse(self.game.clues[clue_id_to_answer].completed, "Inactive clue should not be marked completed.")
+        result = self.game.answer_clue(clue_id_to_answer, "A3") # Correct answer for #M1#
+        self.assertFalse(result)
+        self.assertFalse(self.game.clues[clue_id_to_answer].completed)
 
-    def test_answer_clue_non_existent(self):
+    def test_answer_clue_non_existent_valid_game(self):
         result = self.game.answer_clue("#NONEXISTENT#", "any answer")
-        self.assertFalse(result, "Answering a non-existent clue should fail.")
+        self.assertFalse(result)
 
-    def test_clue_reveal_logic(self):
-        # Scenario: Answer #C2# (den), then #C3# (body) should become active.
-        # #C2# (den) - start clue
-        # #C3# (body) - depends on #C2#
+    def test_clue_reveal_logic_to_reach_end_clue_valid_game(self):
+        # #S1# (A1), #S2# (A2) -> start
+        # #M1# (A3) depends on #S1#
+        # #E1# (A4) depends on #S2#, #M1# -> end
 
-        self.assertIn("#C2#", self.game.active_clues)
-        self.assertNotIn("#C3#", self.game.active_clues)
+        self.assertIn("#S1#", self.game.active_clues)
+        self.assertIn("#S2#", self.game.active_clues)
+        self.assertNotIn("#M1#", self.game.active_clues)
+        self.assertNotIn("#E1#", self.game.active_clues)
 
-        # Answer #C2# correctly
-        res_c2 = self.game.answer_clue("#C2#", "den")
-        self.assertTrue(res_c2)
-        self.assertTrue(self.game.clues["#C2#"].completed)
-        self.assertNotIn("#C2#", self.game.active_clues)
+        # Answer #S1# -> "A1"
+        self.assertTrue(self.game.answer_clue("#S1#", "A1"))
+        self.assertIn("#M1#", self.game.active_clues, "#M1# should be active after #S1#.")
+        self.assertNotIn("#E1#", self.game.active_clues) # #E1# also needs #S2#
 
-        # Now #C3# should be active
-        self.assertIn("#C3#", self.game.active_clues, "#C3# should be revealed and active.")
+        # Answer #S2# -> "A2"
+        self.assertTrue(self.game.answer_clue("#S2#", "A2"))
+        self.assertIn("#M1#", self.game.active_clues) # #M1# still active (if not answered) or was already active
+        # #E1# needs #M1# to be completed first.
+        self.assertNotIn("#E1#", self.game.active_clues, "#E1# should not be active yet, needs #M1#.")
 
-        # Answer #C3# correctly
-        res_c3 = self.game.answer_clue("#C3#", "body")
-        self.assertTrue(res_c3)
-        self.assertTrue(self.game.clues["#C3#"].completed)
-        self.assertNotIn("#C3#", self.game.active_clues)
+        # Answer #M1# -> "A3"
+        self.assertTrue(self.game.answer_clue("#M1#", "A3"))
+        # Now #E1# should be active as #S2# and #M1# are complete.
+        self.assertIn("#E1#", self.game.active_clues, "#E1# should be active now.")
 
-        # #C4# (bound) depends on #C3#. It should now be active.
-        self.assertIn("#C4#", self.game.active_clues, "#C4# should be revealed and active.")
-
-    def test_complex_reveal_multiple_dependencies(self):
-        # #C6# depends on #C1# (pig) and #C5# (pig)
-        # #C1# is a start clue.
-        # #C5# depends on #C4# (bound) -> #C3# (body) -> #C2# (den)
-        # We need to answer #C1#, #C2#, #C3#, #C4#, #C5# to activate #C6#
-
-        # Initial state for relevant clues
-        self.assertIn("#C1#", self.game.active_clues)
-        self.assertIn("#C2#", self.game.active_clues)
-        self.assertNotIn("#C3#", self.game.active_clues)
-        self.assertNotIn("#C4#", self.game.active_clues)
-        self.assertNotIn("#C5#", self.game.active_clues)
-        self.assertNotIn("#C6#", self.game.active_clues)
-
-        # Answer #C1# -> "pig"
-        self.assertTrue(self.game.answer_clue("#C1#", "pig"))
-        self.assertNotIn("#C6#", self.game.active_clues, "#C6# needs #C5# too.")
-
-        # Answer #C2# -> "den"
-        self.assertTrue(self.game.answer_clue("#C2#", "den"))
-        self.assertIn("#C3#", self.game.active_clues)
-        self.assertNotIn("#C6#", self.game.active_clues)
-
-        # Answer #C3# -> "body"
-        self.assertTrue(self.game.answer_clue("#C3#", "body"))
-        self.assertIn("#C4#", self.game.active_clues)
-        self.assertNotIn("#C6#", self.game.active_clues)
-
-        # Answer #C4# -> "bound"
-        self.assertTrue(self.game.answer_clue("#C4#", "bound"))
-        self.assertIn("#C5#", self.game.active_clues)
-        self.assertNotIn("#C6#", self.game.active_clues)
-
-        # Answer #C5# -> "pig"
-        self.assertTrue(self.game.answer_clue("#C5#", "pig"))
-        # NOW #C6# should be active because both #C1# and #C5# are complete
-        self.assertIn("#C6#", self.game.active_clues, "#C6# should be active now.")
-
-        # Answer #C6# -> "nomer"
-        self.assertTrue(self.game.answer_clue("#C6#", "nomer"))
-        self.assertTrue(self.game.clues["#C6#"].completed)
-        self.assertNotIn("#C6#", self.game.active_clues)
-
+        # Answer #E1# -> "A4"
+        self.assertTrue(self.game.answer_clue("#E1#", "A4"))
+        self.assertTrue(self.game.clues["#E1#"].completed)
+        self.assertNotIn("#E1#", self.game.active_clues)
+        self.assertEqual(self.game.active_clues, set(), "No clues should be active after end clue is solved.")
 
 if __name__ == '__main__':
-    # This allows running the tests directly from this file
-    # For more complex setups, a test runner like 'python -m unittest discover' is preferred.
-    if not os.path.exists(GAME_JSON_PATH):
-        print(f"ERROR: Test game JSON file not found at {GAME_JSON_PATH}")
-        print(f"BASE_DIR: {BASE_DIR}, CWD: {os.getcwd()}")
-        print("Please ensure the 'games/json/20250110.json' file is accessible.")
-    else:
-        unittest.main()
+    unittest.main()

@@ -1,0 +1,24 @@
+{
+  "clues": {
+    "#S1#": {
+      "clue": "Start Clue 1",
+      "answer": "A1",
+      "depends_on": []
+    },
+    "#S2#": {
+      "clue": "Start Clue 2",
+      "answer": "A2",
+      "depends_on": []
+    },
+    "#M1#": {
+      "clue": "Middle Clue 1, depends on S1",
+      "answer": "A3",
+      "depends_on": ["#S1#"]
+    },
+    "#E1#": {
+      "clue": "The Only End Clue, depends on S2 and M1",
+      "answer": "A4",
+      "depends_on": ["#S2#", "#M1#"]
+    }
+  }
+}

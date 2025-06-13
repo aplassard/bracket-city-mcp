@@ -12,6 +12,8 @@ class Game:
                        typically loaded from a JSON file. It should
                        have a "clues" key containing a dictionary of
                        clue information.
+        Raises:
+            ValueError: If the game does not have exactly one end clue.
         """
         self.clues: dict[str, Clue] = {}
         # adj: dependency_id -> [list of clue_ids that depend on it]
@@ -31,6 +33,13 @@ class Game:
         # These will be properly implemented in the next steps
         self._build_graph()
         self._perform_initial_sort()
+
+        # Check for the single end clue requirement
+        if len(self.end_clues) != 1:
+            raise ValueError(
+                f"Game must have exactly one end clue. "
+                f"Found {len(self.end_clues)} end clues: {self.end_clues}"
+            )
 
         self.active_clues: set[str] = set(self.start_clues)
 

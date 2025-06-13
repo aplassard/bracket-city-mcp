@@ -12,9 +12,17 @@ if SRC_DIR not in sys.path:
 # Now we can import from our package
 from bracket_city_mcp.game.game import Game
 
-# Path to the game JSON file
-# Adjust this path if your 'games' directory is located elsewhere relative to 'examples'
-DEFAULT_GAME_FILE = os.path.join(PROJECT_ROOT, "games", "json", "20250110.json")
+# Path to the game JSON files
+VALID_TEST_GAME_FILE = os.path.join(PROJECT_ROOT, "tests", "data", "valid_single_end_clue_game.json")
+ORIGINAL_GAME_FILE = os.path.join(PROJECT_ROOT, "games", "json", "20250110.json")
+
+# Use the valid game as the default for the example
+DEFAULT_GAME_FILE = VALID_TEST_GAME_FILE
+if not os.path.exists(DEFAULT_GAME_FILE):
+    # Fallback to original if valid test one somehow isn't there, though it should be
+    print(f"Warning: Default valid game '{VALID_TEST_GAME_FILE}' not found. Trying original game file.")
+    DEFAULT_GAME_FILE = ORIGINAL_GAME_FILE
+
 
 def run_console_game(game_file_path: str):
     """
@@ -22,18 +30,19 @@ def run_console_game(game_file_path: str):
     """
     if not os.path.exists(game_file_path):
         print(f"Error: Game file not found at {game_file_path}")
-        print(f"Please ensure the path is correct or provide a valid path.")
-        # Attempt to find it relative to where the script is, if in project root.
-        alt_path = os.path.join(os.path.dirname(__file__), "..", "games", "json", "20250110.json")
+        # Try to find it relative to where the script is, if in project root.
+        # This logic might be a bit redundant if PROJECT_ROOT is solid, but can be a fallback.
+        alt_path = os.path.join(os.path.dirname(__file__), "..", game_file_path) # Assuming game_file_path was relative
         alt_path = os.path.normpath(alt_path)
         if os.path.exists(alt_path):
             print(f"Found alternative at: {alt_path}. Trying this path.")
             game_file_path = alt_path
         else:
+            print(f"Please ensure the path is correct or provide a valid path.")
             return
 
-
     try:
+        print(f"Attempting to load game from: {game_file_path}...")
         game = Game.from_json_file(game_file_path)
         print(f"Game loaded successfully from {game_file_path}!")
         print(f"Welcome to Bracket City MCP Puzzle.")
@@ -44,8 +53,14 @@ def run_console_game(game_file_path: str):
     except FileNotFoundError:
         print(f"Error: Could not find the game file at {game_file_path}")
         return
+    except ValueError as ve:
+        print(f"Error loading game: {ve}")
+        print("This game version requires the puzzle to have exactly one end clue.")
+        if game_file_path == ORIGINAL_GAME_FILE and os.path.exists(VALID_TEST_GAME_FILE):
+            print(f"You could try running the example with the test game: python examples/play_game.py {VALID_TEST_GAME_FILE}")
+        return
     except Exception as e:
-        print(f"Error loading game: {e}")
+        print(f"An unexpected error occurred while loading game: {e}")
         return
 
     while True:
@@ -56,16 +71,13 @@ def run_console_game(game_file_path: str):
                     all_completed = False
                     break
             if all_completed:
-                print("
-Congratulations! You've completed all clues!")
+                print("\nCongratulations! You've completed all clues!")
             else:
-                print("
-No more active clues, but some are still pending. The game might be stuck or completed.")
+                print("\nNo more active clues, but some are still pending. The game might be stuck or completed.")
             break
 
-        print("
-Active Clues:")
-        active_clue_ids = sorted(list(game.active_clues)) # Sort for consistent display
+        print("\nActive Clues:")
+        active_clue_ids = sorted(list(game.active_clues))
         for i, clue_id in enumerate(active_clue_ids):
             print(f"  {i+1}. {clue_id}: {game.clues[clue_id].clue_text}")
 
@@ -85,41 +97,34 @@ Active Clues:")
 
             if game.answer_clue(selected_clue_id, answer):
                 print("Correct! Well done.")
-                if game.clues[selected_clue_id].completed: # Double check, should be true
+                if game.clues[selected_clue_id].completed:
                     print(f"Clue {selected_clue_id} is now completed.")
-                else: # Should not happen if logic is correct
-                    print(f"Clue {selected_clue_id} was answered correctly but not marked completed. (DEBUG)")
 
-
-                # Check if it was an end clue
-                if selected_clue_id in game.end_clues:
-                    print(f"Clue {selected_clue_id} is an end clue!")
-
+                if selected_clue_id in game.end_clues: # Game.end_clues is a list
+                    print(f"Clue {selected_clue_id} is the end clue!")
             else:
-                # The Game.answer_clue method returns False if clue not active OR answer wrong.
-                # We already know it's active from our selection logic. So it must be a wrong answer.
                 if selected_clue_id in game.clues and not game.clues[selected_clue_id].completed:
                      print("Incorrect answer. Try again or pick another clue.")
-                else: # Should not happen if game.answer_clue has good conditions
-                    print(f"Answer for {selected_clue_id} not accepted. It might be already completed or an issue occurred.")
+                # If it was not active, the game.answer_clue would return False,
+                # but our selection logic should prevent this.
+                # If clue_id doesn't exist, game.answer_clue also returns False.
+                # No specific message needed here as answer_clue doesn't distinguish failure reasons to caller.
 
-
-        except ValueError:
+        except ValueError: # For int(choice_str)
             print("Invalid input. Please enter a number for the clue choice.")
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
-            # Potentially break or log for debugging
             break
         print("---")
 
     print("Thanks for playing!")
 
 if __name__ == "__main__":
-    game_file = DEFAULT_GAME_FILE
+    game_file_to_load = DEFAULT_GAME_FILE
     if len(sys.argv) > 1:
-        game_file = sys.argv[1]
-        print(f"Using game file from command line argument: {game_file}")
+        game_file_to_load = sys.argv[1]
+        print(f"Using game file from command line argument: {game_file_to_load}")
     else:
-        print(f"Using default game file: {game_file}")
+        print(f"Using default game file: {game_file_to_load}")
 
-    run_console_game(game_file)
+    run_console_game(game_file_to_load)
