@@ -18,7 +18,7 @@
             ]
         },
         "CLUE-C4": {
-            "clue": "\"muscle-_\" adjective for a CLUE-C3builder",
+            "clue": "muscle-_ adjective for a CLUE-C3builder",
             "answer": "bound",
             "depends_on": [
                 "CLUE-C3"
@@ -32,7 +32,7 @@
             ]
         },
         "CLUE-C6": {
-            "clue": "\"Guinea CLUE-C5\" is a mis_ (not from Guinea, not a CLUE-C1)",
+            "clue": "Guinea CLUE-C5 is a mis_ (not from Guinea, not a CLUE-C1)",
             "answer": "nomer",
             "depends_on": [
                 "CLUE-C1",
@@ -40,7 +40,7 @@
             ]
         },
         "CLUE-C7": {
-            "clue": "\"null and _\"",
+            "clue": "null and _",
             "answer": "void",
             "depends_on": []
         },
@@ -52,20 +52,20 @@
             ]
         },
         "CLUE-C9": {
-            "clue": "the original one involved an 🍎",
+            "clue": "the original one involved an \ud83c\udf4e",
             "answer": "sin",
             "depends_on": []
         },
         "CLUE-C10": {
-            "clue": "sheep color for your brother whose \"job\" is trying to get hit by a limouCLUE-C9e",
+            "clue": "sheep color for your brother whose job is trying to get hit by a limouCLUE-C9e",
             "answer": "black",
             "depends_on": [
                 "CLUE-C9"
             ]
         },
         "CLUE-C11": {
-            "clue": "Three Wise ⬅️___➡️ in CLUE-C10",
-            "answer": "",
+            "clue": "Three Wise \u2b05\ufe0f___\u27a1\ufe0f in CLUE-C10",
+            "answer": "men",
             "depends_on": [
                 "CLUE-C10"
             ]
@@ -98,7 +98,7 @@
             "depends_on": []
         },
         "CLUE-C16": {
-            "clue": "\"_ in there!\" says the poster with the CLUE-C15ling cat",
+            "clue": "_ in there! says the poster with the CLUE-C15ling cat",
             "answer": "hang",
             "depends_on": [
                 "CLUE-C15"

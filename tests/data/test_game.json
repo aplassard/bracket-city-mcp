@@ -1,0 +1,19 @@
+{
+    "clues": {
+        "#DUMMY_CLUE1#": {
+            "clue": "This is a dummy clue text for testing.",
+            "answer": "dummy_answer1",
+            "depends_on": []
+        },
+        "#DUMMY_CLUE2#": {
+            "clue": "This is another dummy clue, dependent on C1.",
+            "answer": "dummy_answer2",
+            "depends_on": ["#DUMMY_CLUE1#"]
+        },
+        "#END_CLUE#": {
+            "clue": "This is the end clue. It depends on DUMMY_CLUE2. Well done, [DUMMY_CLUE2].",
+            "answer": "",
+            "depends_on": ["#DUMMY_CLUE2#"]
+        }
+    }
+}
