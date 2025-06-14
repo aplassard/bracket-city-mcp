@@ -40,9 +40,9 @@ class Clue:
         Returns:
             True if the answer is correct, False otherwise.
         """
-        if self.is_end_clue:
-            return False
         # Case-insensitive comparison
+        # For end clues, self.answer is "" (set by Game class).
+        # If provided_answer is also "", it's a match.
         if provided_answer.strip().lower() == self.answer.strip().lower():
             self.completed = True
             return True

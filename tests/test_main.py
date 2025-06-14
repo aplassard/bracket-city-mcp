@@ -2,176 +2,197 @@ import unittest
 from unittest.mock import MagicMock, patch
 import sys
 import os
+import copy # For deepcopying game state
 
 # Adjust path to import main module
-# This assumes 'tests' is a sibling directory to 'src'
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.bracket_city_mcp import main as bracket_city_main
-from src.bracket_city_mcp.game.clue import Clue # Needed for creating mock Clue objects
+from src.bracket_city_mcp.game.game import Game
+# Clue import is not strictly needed here anymore as we use a real Game object
+# from src.bracket_city_mcp.game.clue import Clue
 
 class TestAnswerClueTool(unittest.TestCase):
+    game_template: Game
+
+    @classmethod
+    def setUpClass(cls):
+        # Load the game from the dedicated test JSON file once for the class
+        # The main 'game' object in bracket_city_main will be patched per test.
+        # This ensures that the Game.from_json_file logic is also somewhat tested.
+        try:
+            cls.game_template = Game.from_json_file('tests/data/test_game.json')
+        except Exception as e:
+            print(f"Failed to load test game file: tests/data/test_game.json. Error: {e}")
+            # If the game file can't be loaded, tests can't run.
+            # It's better to raise an error here to make it obvious.
+            raise RuntimeError("Could not load tests/data/test_game.json for tests.") from e
+
 
     def setUp(self):
-        # Create a mock game object that will be patched into main
-        self.mock_game = MagicMock()
-        self.mock_game.clues = {}
-        self.mock_game.active_clues = set()
-        self.mock_game.incorrect_guesses = 0
-        self.mock_game.is_complete = False
+        # Create a deep copy of the loaded game template for each test
+        # This ensures test isolation, as each test gets a fresh game instance.
+        self.game_instance = copy.deepcopy(self.game_template)
 
-        # Patch the 'game' instance in the main module
-        self.patcher = patch('src.bracket_city_mcp.main.game', self.mock_game)
-        self.mock_game_patched = self.patcher.start()
+        # Reset completion status for all clues
+        for clue_obj in self.game_instance.clues.values():
+            clue_obj.completed = False
+            # Also reset any internal state within Clue if necessary, though current Clue is simple
+
+        # Reset active_clues to only start_clues (initial state)
+        # self.game_template.start_clues should have been populated by its __init__
+        # and deepcopy should have copied it.
+        self.game_instance.active_clues = set(self.game_instance.start_clues)
+
+        self.game_instance.incorrect_guesses = 0
+
+        # Patch the 'game' instance in the main module with our test-specific instance
+        self.patcher = patch('src.bracket_city_mcp.main.game', self.game_instance)
+        self.mock_main_game_instance = self.patcher.start()
+
+        # Spy on specific methods of the real game_instance if needed for assertions
+        # For example, to check if game_instance.answer_clue was called.
+        # We are testing the answer_clue *tool* in main.py, which *uses* the game_instance.
+        # So, we want the real game_instance.answer_clue to run.
+        # We can spy on it to ensure it was called.
+        self.game_instance.answer_clue = MagicMock(wraps=self.game_instance.answer_clue)
+        # is_complete is a property, if we need to check its access, it's more complex.
+        # For now, we'll check the 'game_completed' field in the response directly.
+
 
     def tearDown(self):
         self.patcher.stop()
 
-    def test_answer_clue_correct(self):
-        clue_id = "#C1#"
-        answer = "Paris"
+    def test_answer_clue_correct_and_reveals_next(self):
+        clue_id = "#DUMMY_CLUE1#"
+        answer = "dummy_answer1"
 
-        mock_clue = MagicMock(spec=Clue)
-        mock_clue.completed = False
-
-        self.mock_game_patched.clues = {clue_id: mock_clue}
-        self.mock_game_patched.active_clues = {clue_id}
-        # self.mock_game_patched.answer_clue.return_value = True # Replaced by side_effect
-        self.mock_game_patched.is_complete = False
-
-        def side_effect_answer_clue(cid, ans):
-            if cid == clue_id and ans == answer:
-                # Simulate that the game logic marks the clue as completed
-                # and updates active_clues. For this test, we just remove it.
-                self.mock_game_patched.active_clues.discard(clue_id)
-                return True
-            return False
-        self.mock_game_patched.answer_clue.side_effect = side_effect_answer_clue
+        response = bracket_city_main.answer_clue(clue_id, answer)
 
         expected_response = {
             "correct": True,
             "message": "Correct!",
-            "available_clues": [],
+            "available_clues": sorted(["#DUMMY_CLUE2#"]), # DUMMY_CLUE2 becomes available
             "game_completed": False
         }
-        response = bracket_city_main.answer_clue(clue_id, answer)
+        response["available_clues"].sort()
         self.assertEqual(response, expected_response)
-        self.mock_game_patched.answer_clue.assert_called_once_with(clue_id, answer)
+        self.game_instance.answer_clue.assert_called_once_with(clue_id, answer)
+        self.assertTrue(self.game_instance.clues[clue_id].completed)
+        self.assertIn("#DUMMY_CLUE2#", self.game_instance.active_clues)
+
 
     def test_answer_clue_incorrect(self):
-        clue_id = "#C1#"
-        wrong_answer = "London"
+        clue_id = "#DUMMY_CLUE1#"
+        wrong_answer = "wrong_dummy_answer"
+        initial_active_clues = sorted(list(self.game_instance.active_clues))
 
-        mock_clue = MagicMock(spec=Clue)
-        mock_clue.completed = False
-
-        self.mock_game_patched.clues = {clue_id: mock_clue}
-        self.mock_game_patched.active_clues = {clue_id}
-        self.mock_game_patched.answer_clue.return_value = False
-        self.mock_game_patched.is_complete = False
+        response = bracket_city_main.answer_clue(clue_id, wrong_answer)
 
         expected_response = {
             "correct": False,
             "message": "Incorrect answer.",
-            "available_clues": [clue_id],
+            "available_clues": initial_active_clues, # No change in active clues
             "game_completed": False
         }
-        response = bracket_city_main.answer_clue(clue_id, wrong_answer)
+        response["available_clues"].sort()
         self.assertEqual(response, expected_response)
-        self.mock_game_patched.answer_clue.assert_called_once_with(clue_id, wrong_answer)
+        self.game_instance.answer_clue.assert_called_once_with(clue_id, wrong_answer)
+        self.assertFalse(self.game_instance.clues[clue_id].completed)
+        self.assertEqual(self.game_instance.incorrect_guesses, 1)
 
     def test_answer_clue_not_found(self):
-        clue_id = "#C_NON_EXISTENT#"
-        answer = "Any"
-        self.mock_game_patched.clues = {}
-        self.mock_game_patched.active_clues = set()
+        clue_id = "#NON_EXISTENT_CLUE#"
+        answer = "any_answer"
+        initial_active_clues = sorted(list(self.game_instance.active_clues))
+
+        response = bracket_city_main.answer_clue(clue_id, answer)
 
         expected_response = {
             "correct": False,
             "message": f"Clue ID '{clue_id}' not found.",
-            "available_clues": [],
+            "available_clues": initial_active_clues,
             "game_completed": False
         }
-        response = bracket_city_main.answer_clue(clue_id, answer)
+        response["available_clues"].sort()
         self.assertEqual(response, expected_response)
-        self.mock_game_patched.answer_clue.assert_not_called()
+        self.game_instance.answer_clue.assert_not_called()
 
     def test_answer_clue_already_completed(self):
-        clue_id = "#C1#"
-        answer = "Paris"
+        clue_id = "#DUMMY_CLUE1#"
+        answer = "dummy_answer1"
 
-        mock_clue = MagicMock(spec=Clue)
-        mock_clue.completed = True
+        # First, answer correctly
+        bracket_city_main.answer_clue(clue_id, answer)
+        self.game_instance.answer_clue.reset_mock() # Reset mock for the next call
 
-        self.mock_game_patched.clues = {clue_id: mock_clue}
-        self.mock_game_patched.active_clues = set()
+        # Try to answer again
+        response = bracket_city_main.answer_clue(clue_id, answer)
 
         expected_response = {
             "correct": False,
             "message": f"Clue '{clue_id}' has already been answered.",
-            "available_clues": [],
+            # DUMMY_CLUE2 should be active after the first correct answer
+            "available_clues": sorted(["#DUMMY_CLUE2#"]),
             "game_completed": False
         }
-        response = bracket_city_main.answer_clue(clue_id, answer)
+        response["available_clues"].sort()
         self.assertEqual(response, expected_response)
-        self.mock_game_patched.answer_clue.assert_not_called()
+        self.game_instance.answer_clue.assert_not_called() # Not called on the second attempt
 
-    def test_answer_clue_not_active(self):
-        clue_id = "#C2#"
-        answer = "Berlin"
+    def test_answer_clue_not_active_dependency_not_met(self):
+        clue_id = "#DUMMY_CLUE2#" # Depends on #DUMMY_CLUE1#
+        answer = "dummy_answer2"
+        initial_active_clues = sorted(list(self.game_instance.active_clues)) # Should be just #DUMMY_CLUE1#
 
-        mock_clue_c2 = MagicMock(spec=Clue)
-        mock_clue_c2.completed = False
-
-        self.mock_game_patched.clues = {clue_id: mock_clue_c2}
-        # C2 is not in active_clues, C1 is.
-        self.mock_game_patched.active_clues = {"#C1#"}
+        response = bracket_city_main.answer_clue(clue_id, answer)
 
         expected_response = {
             "correct": False,
             "message": f"Clue '{clue_id}' is not currently available. Solve its dependencies first.",
-            "available_clues": ["#C1#"], # Should return the currently active clues
+            "available_clues": initial_active_clues,
             "game_completed": False
         }
-        response = bracket_city_main.answer_clue(clue_id, answer)
-        # Ensure available_clues lists are sorted for comparison if order isn't guaranteed
         response["available_clues"].sort()
-        expected_response["available_clues"].sort()
         self.assertEqual(response, expected_response)
-        self.mock_game_patched.answer_clue.assert_not_called()
+        self.game_instance.answer_clue.assert_not_called()
 
     def test_answer_clue_completes_game(self):
-        clue_id = "#C_FINAL#"
-        answer = "Victory"
+        # Solve DUMMY_CLUE1
+        bracket_city_main.answer_clue("#DUMMY_CLUE1#", "dummy_answer1")
+        self.game_instance.answer_clue.reset_mock()
 
-        mock_clue = MagicMock(spec=Clue)
-        mock_clue.completed = False
+        # Solve DUMMY_CLUE2, which should make END_CLUE available (and it's the last one)
+        bracket_city_main.answer_clue("#DUMMY_CLUE2#", "dummy_answer2")
+        self.game_instance.answer_clue.reset_mock()
 
-        # Game has two clues in total for score calculation
-        self.mock_game_patched.clues = {clue_id: mock_clue, "#C_OTHER#": MagicMock(spec=Clue)}
-        self.mock_game_patched.active_clues = {clue_id}
-        self.mock_game_patched.incorrect_guesses = 1
+        # END_CLUE has an empty answer string in test_game.json
+        end_clue_id = "#END_CLUE#"
+        end_clue_answer = ""
 
-        def side_effect_final_answer(cid, ans):
-            if cid == clue_id and ans == answer:
-                self.mock_game_patched.active_clues.discard(clue_id)
-                self.mock_game_patched.is_complete = True
-                return True
-            return False
-        self.mock_game_patched.answer_clue.side_effect = side_effect_final_answer
+        response = bracket_city_main.answer_clue(end_clue_id, end_clue_answer)
 
-        expected_score = len(self.mock_game_patched.clues) - self.mock_game_patched.incorrect_guesses
+        expected_total_clues = len(self.game_instance.clues)
+        expected_score = expected_total_clues - self.game_instance.incorrect_guesses
+
         expected_response = {
-            "correct": True,
+            "correct": True, # Assuming empty answer is "correct" for auto-completed end clues
             "message": "Correct! Congratulations! You've completed the game.",
-            "available_clues": [],
+            "available_clues": [], # No more clues available
             "game_completed": True,
             "score": expected_score
         }
-        response = bracket_city_main.answer_clue(clue_id, answer)
-
+        response["available_clues"].sort()
         self.assertEqual(response, expected_response)
-        self.mock_game_patched.answer_clue.assert_called_once_with(clue_id, answer)
+        self.game_instance.answer_clue.assert_called_once_with(end_clue_id, end_clue_answer)
+        self.assertTrue(self.game_instance.clues[end_clue_id].completed)
+        self.assertTrue(self.game_instance.is_complete)
 
 if __name__ == '__main__':
+    # This allows running the tests directly from this file: python tests/test_main.py
+    # Note: The dummy game file 'games/json/20250110.json' is still loaded when
+    # 'from src.bracket_city_mcp import main as bracket_city_main' is executed.
+    # This is separate from 'tests/data/test_game.json' used by these tests.
+    # Ensure 'games/json/20250110.json' exists or the import will fail.
+    # A dummy version was created in a previous step.
     unittest.main()
