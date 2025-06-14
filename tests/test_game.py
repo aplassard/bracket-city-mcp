@@ -40,9 +40,17 @@ def test_game_loading_valid_json(valid_game: Game):
     assert "#S1#" in valid_game.clues
     assert valid_game.clues["#S1#"].answer == "A1"
 
-def test_loading_invalid_game_multiple_end_clues(original_game_json_path: str):
-    with pytest.raises(ValueError, match="Game must have exactly one end clue. Found 3 end clues"):
-        Game.from_json_file(original_game_json_path)
+def test_loading_invalid_game_multiple_end_clues(): # Remove original_game_json_path fixture
+    # Construct the path to the new test file relative to this test file's directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    invalid_game_path = os.path.join(current_dir, "data", "invalid_multiple_end_clues_game.json")
+
+    # Ensure the new test file exists before running the test
+    if not os.path.exists(invalid_game_path):
+        pytest.fail(f"Test data file not found: {invalid_game_path}")
+
+    with pytest.raises(ValueError, match=r"Game must have exactly one end clue\. Found 3 end clues: \['#END1#', '#END2#', '#END3#'\]"):
+        Game.from_json_file(invalid_game_path)
 
 def test_loading_game_no_end_clues_raises_error():
     invalid_data_no_end_circular = {
