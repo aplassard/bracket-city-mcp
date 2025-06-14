@@ -33,3 +33,9 @@ def get_available_clues() -> List[str]:
 if __name__ == "__main__":
     # TODO: Make host and port configurable
     mcp.run(host="0.0.0.0", port=8080)
+
+# TODO: Implement tests for the BracketCity MCP server.
+# The FastMCP library does not seem to provide a test_client() method.
+# A different testing strategy is needed, possibly involving running the
+# server in a separate thread/process and using an MCP client to make requests.
+# Consult FastMCP documentation or examples for the recommended approach.
