@@ -71,6 +71,119 @@ def test_initial_end_clue_valid_game(valid_game: Game):
     expected_end_clues = ["#E1#"]
     assert valid_game.end_clues == expected_end_clues
 
+# --- Tests for End Clue Functionality in Game ---
+
+def test_game_loads_end_clue_correctly(valid_game: Game):
+    """Tests that the game correctly identifies and sets up the end clue."""
+    assert len(valid_game.end_clues) == 1, "Should be exactly one end clue."
+    end_clue_id = valid_game.end_clues[0]
+    assert end_clue_id == "#E1#", "The end clue ID should be #E1# for the valid_game fixture."
+
+    end_clue = valid_game.clues[end_clue_id]
+    assert end_clue.is_end_clue, "The identified end clue should have is_end_clue=True."
+    assert end_clue.answer == "", "The answer for the end clue should be cleared on game load."
+    assert not end_clue.completed, "End clue should not be initially completed."
+
+# --- Tests for Incorrect Guesses ---
+
+def test_game_incorrect_guesses_initialization(valid_game: Game):
+    """Test that incorrect_guesses is initialized to 0."""
+    assert valid_game.incorrect_guesses == 0
+
+def test_game_incorrect_guesses_increment(valid_game: Game):
+    """Test that incorrect_guesses increments correctly."""
+    # Ensure #S1# is active
+    assert "#S1#" in valid_game.active_clues
+
+    # First incorrect guess
+    result = valid_game.answer_clue("#S1#", "WrongAnswer")
+    assert not result
+    assert valid_game.incorrect_guesses == 1
+    assert "#S1#" in valid_game.active_clues # Clue should still be active
+    assert not valid_game.clues["#S1#"].completed
+
+    # Second incorrect guess on the same clue
+    result = valid_game.answer_clue("#S1#", "AnotherWrongAnswer")
+    assert not result
+    assert valid_game.incorrect_guesses == 2
+    assert "#S1#" in valid_game.active_clues
+    assert not valid_game.clues["#S1#"].completed
+
+    # Correct answer
+    result = valid_game.answer_clue("#S1#", "A1") # A1 is the correct answer for #S1#
+    assert result
+    assert valid_game.incorrect_guesses == 2 # Should not increment on correct answer
+    assert "#S1#" not in valid_game.active_clues # Clue should now be completed and inactive
+    assert valid_game.clues["#S1#"].completed
+
+    # Attempt to answer already completed clue (incorrectly)
+    result = valid_game.answer_clue("#S1#", "WrongAnswerAgain")
+    assert not result # Should fail as clue is not active
+    assert valid_game.incorrect_guesses == 2 # Should not increment if clue is not active/already completed
+
+    # Attempt to answer a different active clue incorrectly
+    assert "#S2#" in valid_game.active_clues
+    result = valid_game.answer_clue("#S2#", "WrongAnswerForS2")
+    assert not result
+    assert valid_game.incorrect_guesses == 3
+
+
+def test_game_incorrect_guesses_not_incremented_for_end_clue(valid_game: Game):
+    """Test that incorrect_guesses is not incremented when attempting to answer an end clue."""
+    # Complete prerequisite clues to make #E1# active
+    assert valid_game.answer_clue("#S1#", "A1") # Correct answer for #S1#
+    assert valid_game.answer_clue("#S2#", "A2") # Correct answer for #S2#
+    assert valid_game.answer_clue("#M1#", "A3") # Correct answer for #M1#
+
+    assert "#E1#" in valid_game.active_clues, "End clue #E1# should be active."
+
+    initial_incorrect_guesses = valid_game.incorrect_guesses
+
+    # Attempt to "answer" the end clue
+    result = valid_game.answer_clue("#E1#", "AnyAttemptForEndClue")
+    assert not result, "Answering an end clue should return False."
+    assert valid_game.incorrect_guesses == initial_incorrect_guesses, \
+        "Incorrect guesses should not change when answering an end clue."
+    assert not valid_game.clues["#E1#"].completed, "End clue should not be marked completed."
+    assert "#E1#" in valid_game.active_clues, "End clue should remain active."
+
+# --- Tests for is_complete property ---
+
+def test_game_is_complete_initial(valid_game: Game):
+    """Test that a new game is not complete."""
+    assert not valid_game.is_complete
+
+def test_game_is_complete_becomes_true(valid_game: Game):
+    """Test that the game becomes complete after all non-end clues are solved."""
+    assert not valid_game.is_complete
+
+    # Answer all non-end clues
+    valid_game.answer_clue("#S1#", "A1")
+    valid_game.answer_clue("#S2#", "A2")
+    valid_game.answer_clue("#M1#", "A3")
+
+    assert valid_game.clues["#S1#"].completed
+    assert valid_game.clues["#S2#"].completed
+    assert valid_game.clues["#M1#"].completed
+    assert not valid_game.clues["#E1#"].completed # End clue should not be completed
+
+    assert valid_game.is_complete, "Game should be complete now."
+
+def test_game_is_complete_true_even_if_end_clue_answered(valid_game: Game):
+    """Test that is_complete remains true after all non-end clues are solved, even if an attempt is made on the end clue."""
+    valid_game.answer_clue("#S1#", "A1")
+    valid_game.answer_clue("#S2#", "A2")
+    valid_game.answer_clue("#M1#", "A3")
+
+    assert valid_game.is_complete, "Game should be complete before attempting end clue."
+
+    # Attempt to answer the end clue
+    valid_game.answer_clue("#E1#", "AttemptOnEndClue")
+
+    assert not valid_game.clues["#E1#"].completed, "End clue should not be completed."
+    assert valid_game.is_complete, "Game should still be complete."
+
+
 def test_answer_clue_correct_start_clue_valid_game(valid_game: Game):
     clue_id_to_answer = "#S1#"
     assert clue_id_to_answer in valid_game.active_clues
@@ -120,10 +233,27 @@ def test_clue_reveal_logic_to_reach_end_clue_valid_game(valid_game: Game):
     assert game.answer_clue("#M1#", "A3")
     assert "#E1#" in game.active_clues, "#E1# should be active now."
 
-    assert game.answer_clue("#E1#", "A4")
-    assert game.clues["#E1#"].completed
-    assert "#E1#" not in game.active_clues
-    assert game.active_clues == set(), "No clues should be active after end clue is solved."
+    # Attempt to answer the end clue. This should fail as end clues cannot be "answered".
+    result_on_end_clue = game.answer_clue("#E1#", "A4") # A4 is its "answer" in JSON, but should be ignored
+    assert not result_on_end_clue, "Attempting to answer an end clue should return False."
+    assert not game.clues["#E1#"].completed, "End clue #E1# should not be marked as completed."
+
+    # The end clue, once active, might remain active as it cannot be "completed" by answering.
+    # This depends on the desired game flow: does an "end clue" mean the game ends when it's *revealed*,
+    # or when an action is taken on it? Given current Clue logic, it cannot be completed.
+    # If game.is_complete is the true measure of game completion, then active_clues can have the end clue.
+    assert "#E1#" in game.active_clues, "End clue #E1# should remain in active_clues."
+
+    # Check that all other clues are completed and inactive
+    assert game.clues["#S1#"].completed and "#S1#" not in game.active_clues
+    assert game.clues["#S2#"].completed and "#S2#" not in game.active_clues
+    assert game.clues["#M1#"].completed and "#M1#" not in game.active_clues
+
+    # Therefore, active_clues should only contain the end clue if it's revealed.
+    assert game.active_clues == {"#E1#"}, "Only the end clue should be active if all others are solved."
+
+    # And the game should be considered complete because all non-end clues are done.
+    assert game.is_complete, "Game should be marked as complete."
 
 
 def test_get_rendered_clue_text_valid_clue():
@@ -161,6 +291,7 @@ def test_get_rendered_game_text_simple_case_uncompleted():
         }
     }
     game = Game(game_data)
+    # Now, end clues resolve dependencies.
     assert game.get_rendered_game_text() == "End clue depends on [Text C1]"
 
 def test_get_rendered_game_text_simple_case_dependency_completed():
@@ -172,37 +303,71 @@ def test_get_rendered_game_text_simple_case_dependency_completed():
     }
     game = Game(game_data)
     game.answer_clue("#C1#", "Ans C1")
+    # End clue resolves its dependency #C1# to "Ans C1".
     assert game.get_rendered_game_text() == "End clue depends on Ans C1"
 
-def test_get_rendered_game_text_end_clue_completed():
+def test_get_rendered_game_text_after_end_clue_dependencies_met_and_attempted_answer():
+    """
+    Tests rendered game text when end clue's dependencies are met.
+    Attempting to "answer" the end clue itself doesn't change its completed status
+    or its answer (which is "" for end clues). So it still renders its text.
+    """
     game_data = {
         "clues": {
             "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
-            "#END#": {"clue": "End clue depends on #C1#", "answer": "Game Over", "depends_on": ["#C1#"]}
+            "#END#": {"clue": "End clue depends on #C1#", "answer": "ThisIsIgnored", "depends_on": ["#C1#"]}
         }
     }
     game = Game(game_data)
-    game.answer_clue("#C1#", "Ans C1")
-    game.answer_clue("#END#", "Game Over")
-    assert game.get_rendered_game_text() == "Game Over"
+    game.answer_clue("#C1#", "Ans C1") # Dependency met
+
+    # Attempt to answer the end clue. This does not complete it.
+    game.answer_clue("#END#", "AnyAnswer")
+
+    end_clue = game.clues["#END#"]
+    assert not end_clue.completed
+    assert end_clue.is_end_clue
+    assert end_clue.answer == ""
+
+    # Game text should be the end clue's text with dependencies resolved.
+    assert game.get_rendered_game_text() == "End clue depends on Ans C1"
+
+    # Hypothetically, if the end clue *was* completed (e.g. by manual override for a test)
+    # it should render its answer (which is "").
+    end_clue.completed = True
+    assert game.get_rendered_game_text() == ""
+    end_clue.completed = False # reset
 
 def test_get_rendered_game_text_complex_dependencies():
     game_data = {
         "clues": {
             "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
             "#C2#": {"clue": "Text C2 uses #C1#", "answer": "Ans C2", "depends_on": ["#C1#"]},
-            "#END#": {"clue": "End clue uses #C2#", "answer": "Game Over All", "depends_on": ["#C2#"]}
+            "#END#": {"clue": "End clue uses #C2#", "answer": "ThisWillBeIgnored", "depends_on": ["#C2#"]}
         }
     }
     game = Game(game_data)
 
+    # Initial render: #END# resolves #C2#, which resolves #C1#. All uncompleted.
     assert game.get_rendered_game_text() == "End clue uses [Text C2 uses [Text C1]]"
 
-    game.answer_clue("#C1#", "Ans C1")
+    game.answer_clue("#C1#", "Ans C1") # #C1 is completed
+    # #END# resolves #C2#, which resolves #C1# to "Ans C1". #C2# still uncompleted.
     assert game.get_rendered_game_text() == "End clue uses [Text C2 uses Ans C1]"
 
-    game.answer_clue("#C2#", "Ans C2")
+    game.answer_clue("#C2#", "Ans C2") # #C2 is completed
+    # #END# resolves #C2# to "Ans C2".
     assert game.get_rendered_game_text() == "End clue uses Ans C2"
 
-    game.answer_clue("#END#", "Game Over All")
-    assert game.get_rendered_game_text() == "Game Over All"
+    # Attempting to answer #END# does not change its completed status.
+    game.answer_clue("#END#", "AttemptToEndIt")
+    end_clue = game.clues["#END#"]
+    assert not end_clue.completed
+    assert end_clue.is_end_clue
+    assert end_clue.answer == ""
+    # So, it still renders its text with resolved dependencies.
+    assert game.get_rendered_game_text() == "End clue uses Ans C2"
+
+    # Hypothetically, if the end clue *was* completed
+    end_clue.completed = True
+    assert game.get_rendered_game_text() == "" # It would render its answer (empty string)

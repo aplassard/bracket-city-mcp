@@ -33,6 +33,13 @@ class Game:
         self._build_graph()
         self._perform_initial_sort()
 
+        # Set is_end_clue flag for the identified end clue(s)
+        # This is done after _perform_initial_sort populates self.end_clues
+        for clue_id, clue_obj in self.clues.items():
+            if clue_id in self.end_clues:
+                clue_obj.is_end_clue = True
+                clue_obj.answer = "" # Ensure end clues have no answer
+
         if len(self.end_clues) != 1:
             raise ValueError(
                 f"Game must have exactly one end clue. "
@@ -40,6 +47,7 @@ class Game:
             )
 
         self.active_clues: set[str] = set(self.start_clues)
+        self.incorrect_guesses: int = 0
 
     @classmethod
     def from_json_file(cls, filepath: str) -> 'Game':
@@ -59,6 +67,32 @@ class Game:
         with open(filepath, 'r', encoding='utf-8') as f:
             game_data = json.load(f)
         return cls(game_data)
+
+    @property
+    def is_complete(self) -> bool:
+        """
+        Checks if all non-end clues in the game are completed.
+        The game is considered complete if every clue, except for the
+        designated end clue, has its 'completed' attribute set to True.
+        """
+        # Ensure there is an end clue identified.
+        # The constructor should ensure self.end_clues has exactly one item.
+        if not self.end_clues:
+            # This case should ideally not be reached if constructor logic is sound.
+            return False
+
+        end_clue_id = self.end_clues[0]
+
+        for clue_id, clue_obj in self.clues.items():
+            if clue_id == end_clue_id:
+                continue  # Skip the end clue itself
+
+            # If any non-end clue is not completed, the game is not complete.
+            if not clue_obj.completed:
+                return False
+
+        # All non-end clues are completed.
+        return True
 
     def _build_graph(self):
         """
@@ -134,6 +168,10 @@ class Game:
         if is_correct:
             self.active_clues.discard(clue_id)
             self._reveal_new_clues(clue_id)
+        else:
+            # Only increment incorrect guesses for actual clues, not end clues
+            if not clue_to_answer.is_end_clue:
+                self.incorrect_guesses += 1
 
         return is_correct
 

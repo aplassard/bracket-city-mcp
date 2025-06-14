@@ -5,7 +5,7 @@ if TYPE_CHECKING:
 
 
 class Clue:
-    def __init__(self, clue_id: str, clue_text: str, answer: str, depends_on: list[str]):
+    def __init__(self, clue_id: str, clue_text: str, answer: str, depends_on: list[str], is_end_clue: bool = False):
         """
         Initializes a Clue object.
 
@@ -14,12 +14,17 @@ class Clue:
             clue_text: The text of the clue.
             answer: The correct answer to the clue.
             depends_on: A list of clue IDs that this clue depends on.
+            is_end_clue: Whether this clue is an end clue.
         """
         self.clue_id = clue_id
         self.clue_text = clue_text
         self.answer = answer
         self.depends_on = depends_on
         self.completed = False
+        self.is_end_clue = is_end_clue
+
+        if self.is_end_clue:
+            self.answer = ""
 
     def __repr__(self):
         return f"Clue(id='{self.clue_id}', completed={self.completed}, depends_on={self.depends_on})"
@@ -35,6 +40,8 @@ class Clue:
         Returns:
             True if the answer is correct, False otherwise.
         """
+        if self.is_end_clue:
+            return False
         # Case-insensitive comparison
         if provided_answer.strip().lower() == self.answer.strip().lower():
             self.completed = True
