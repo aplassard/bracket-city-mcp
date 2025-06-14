@@ -11,28 +11,28 @@
             "depends_on": []
         },
         "CLUE-C3": {
-            "clue": "kind of shop for a #C2#ted car",
+            "clue": "kind of shop for a CLUE-C2ted car",
             "answer": "body",
             "depends_on": [
                 "CLUE-C2"
             ]
         },
         "CLUE-C4": {
-            "clue": "\"muscle-_\" adjective for a #C3#builder",
+            "clue": "\"muscle-_\" adjective for a CLUE-C3builder",
             "answer": "bound",
             "depends_on": [
                 "CLUE-C3"
             ]
         },
         "CLUE-C5": {
-            "clue": "_ tails (two gathered and #C4# hanks of hair emanating from the side of the head)",
+            "clue": "_ tails (two gathered and CLUE-C4 hanks of hair emanating from the side of the head)",
             "answer": "pig",
             "depends_on": [
                 "CLUE-C4"
             ]
         },
         "CLUE-C6": {
-            "clue": "\"Guinea #C5#\" is a mis_ (not from Guinea, not a #C1#)",
+            "clue": "\"Guinea CLUE-C5\" is a mis_ (not from Guinea, not a CLUE-C1)",
             "answer": "nomer",
             "depends_on": [
                 "CLUE-C1",
@@ -45,7 +45,7 @@
             "depends_on": []
         },
         "CLUE-C8": {
-            "clue": "you must a#C7# biting off more than you can _",
+            "clue": "you must aCLUE-C7 biting off more than you can _",
             "answer": "chew",
             "depends_on": [
                 "CLUE-C7"
@@ -57,35 +57,35 @@
             "depends_on": []
         },
         "CLUE-C10": {
-            "clue": "sheep color for your brother whose \"job\" is trying to get hit by a limou#C9#e",
+            "clue": "sheep color for your brother whose \"job\" is trying to get hit by a limouCLUE-C9e",
             "answer": "black",
             "depends_on": [
                 "CLUE-C9"
             ]
         },
         "CLUE-C11": {
-            "clue": "Three Wise ⬅️___➡️ in #C10#",
+            "clue": "Three Wise ⬅️___➡️ in CLUE-C10",
             "answer": "",
             "depends_on": [
                 "CLUE-C10"
             ]
         },
         "CLUE-C12": {
-            "clue": "one might be in the oint#C11#t or on the wall",
+            "clue": "one might be in the ointCLUE-C11t or on the wall",
             "answer": "fly",
             "depends_on": [
                 "CLUE-C11"
             ]
         },
         "CLUE-C13": {
-            "clue": "to #C12# this way is to go it alone",
+            "clue": "to CLUE-C12 this way is to go it alone",
             "answer": "solo",
             "depends_on": [
                 "CLUE-C12"
             ]
         },
         "CLUE-C14": {
-            "clue": "#C13# who knows #C8#bacca",
+            "clue": "CLUE-C13 who knows CLUE-C8bacca",
             "answer": "han",
             "depends_on": [
                 "CLUE-C13",
@@ -98,7 +98,7 @@
             "depends_on": []
         },
         "CLUE-C16": {
-            "clue": "\"_ in there!\" says the poster with the #C15#ling cat",
+            "clue": "\"_ in there!\" says the poster with the CLUE-C15ling cat",
             "answer": "hang",
             "depends_on": [
                 "CLUE-C15"
@@ -110,7 +110,7 @@
             "depends_on": []
         },
         "CLUE-C18": {
-            "clue": "you (ought to) check your #C17# one when c#C16#ing lanes",
+            "clue": "you (ought to) check your CLUE-C17 one when cCLUE-C16ing lanes",
             "answer": "spot",
             "depends_on": [
                 "CLUE-C16",
@@ -118,7 +118,7 @@
             ]
         },
         "C19": {
-            "clue": "a sun#C18# is observed by #C14# dynasty astro#C6#s",
+            "clue": "a sunCLUE-C18 is observed by CLUE-C14 dynasty astroCLUE-C6s",
             "depends_on": [
                 "CLUE-C14",
                 "CLUE-C18",
