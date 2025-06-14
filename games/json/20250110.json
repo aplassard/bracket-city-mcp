@@ -65,7 +65,7 @@
         },
         "CLUE-C11": {
             "clue": "Three Wise \u2b05\ufe0f___\u27a1\ufe0f in CLUE-C10",
-            "answer": "",
+            "answer": "men",
             "depends_on": [
                 "CLUE-C10"
             ]
