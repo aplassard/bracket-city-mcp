@@ -49,8 +49,6 @@ class Clue:
         return False
 
     def get_rendered_text(self, game: 'Game') -> str:
-        if self.is_end_clue:
-            return self.clue_text
         if self.completed:
             return self.answer
 

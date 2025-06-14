@@ -291,6 +291,7 @@ def test_get_rendered_game_text_simple_case_uncompleted():
         }
     }
     game = Game(game_data)
+    # Now, end clues resolve dependencies.
     assert game.get_rendered_game_text() == "End clue depends on [Text C1]"
 
 def test_get_rendered_game_text_simple_case_dependency_completed():
@@ -302,154 +303,71 @@ def test_get_rendered_game_text_simple_case_dependency_completed():
     }
     game = Game(game_data)
     game.answer_clue("#C1#", "Ans C1")
+    # End clue resolves its dependency #C1# to "Ans C1".
     assert game.get_rendered_game_text() == "End clue depends on Ans C1"
 
-def test_get_rendered_game_text_end_clue_completed():
+def test_get_rendered_game_text_after_end_clue_dependencies_met_and_attempted_answer():
+    """
+    Tests rendered game text when end clue's dependencies are met.
+    Attempting to "answer" the end clue itself doesn't change its completed status
+    or its answer (which is "" for end clues). So it still renders its text.
+    """
     game_data = {
         "clues": {
             "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
-            "#END#": {"clue": "End clue depends on #C1#", "answer": "Game Over", "depends_on": ["#C1#"]}
+            "#END#": {"clue": "End clue depends on #C1#", "answer": "ThisIsIgnored", "depends_on": ["#C1#"]}
         }
     }
     game = Game(game_data)
-    game.answer_clue("#C1#", "Ans C1")
-    # game.answer_clue("#END#", "Game Over") # End clue can't be answered to be "completed"
-    # The text of an end clue is always its clue_text after the game marks it as an end clue.
-    # If we want to test the rendering of an end clue that itself has is_end_clue=True
-    # then we need to ensure the mock Clue object in the game also has this flag.
+    game.answer_clue("#C1#", "Ans C1") # Dependency met
 
-    # Let's re-evaluate this test based on new end_clue definition for Clue and Game
-    # For an end clue, its rendered text is always its clue_text.
-    # The game's end_clues[0] will be such a clue.
-    # If the end clue's text itself has dependencies, they would be resolved
-    # up to the point of the end clue *displaying* its clue_text.
-    # However, the previous Clue.get_rendered_text would return self.answer if self.completed.
-    # For an end clue, self.completed is always False, and self.is_end_clue is True,
-    # so it directly returns self.clue_text.
+    # Attempt to answer the end clue. This does not complete it.
+    game.answer_clue("#END#", "AnyAnswer")
 
-    # If #END# is an end clue, its text is "End clue depends on #C1#".
-    # If #C1# is completed, it becomes "End clue depends on Ans C1".
-    # This part of Clue.get_rendered_text (dependency resolution) happens *before*
-    # the check for is_end_clue. This is correct. The final text of the end clue
-    # IS its clue_text after its own dependencies are resolved.
+    end_clue = game.clues["#END#"]
+    assert not end_clue.completed
+    assert end_clue.is_end_clue
+    assert end_clue.answer == ""
 
-    # The previous Clue.get_rendered_text logic:
-    # 1. if self.is_end_clue: return self.clue_text (THIS IS WRONG, this was the new code in Clue)
-    #    Corrected logic in Clue.get_rendered_text:
-    #    1. if self.is_end_clue: return self.clue_text  <-- this is the first check.
-    #    2. if self.completed: return self.answer
-    #    3. ... resolve dependencies in self.clue_text ...
-    # So, if a clue IS an end clue, its dependencies are NOT resolved by its own get_rendered_text.
-    # It just returns its literal clue_text.
+    # Game text should be the end clue's text with dependencies resolved.
+    assert game.get_rendered_game_text() == "End clue depends on Ans C1"
 
-    # Let's re-verify the Clue.get_rendered_text:
-    # def get_rendered_text(self, game: 'Game') -> str:
-    #     if self.is_end_clue:  <--------------------------------- THIS IS THE FIRST THING
-    #         return self.clue_text
-    #     if self.completed:
-    #         return self.answer
-    #     ... (dependency resolution for current_text = self.clue_text) ...
-    #     return current_text
-
-    # So, if a clue is an end clue, its get_rendered_text will *always* be its raw clue_text.
-    # The dependencies in its text will NOT be resolved by its own call.
-    # This means the final display of the game, which calls get_rendered_clue_text on the end_clue,
-    # will show the end_clue's raw text, possibly with unresolved #HASHTAGS# if they were meant
-    # to be resolved by the end clue itself.
-
-    # This makes sense for an "end game message" that doesn't change.
-    # However, if the end clue's text is like "Congratulations, you solved #C1# and #C2#!",
-    # we would expect #C1# and #C2# to be their answers.
-    # The current Clue.get_rendered_text, with is_end_clue check first, prevents this.
-
-    # Let's assume the prompt means the *final* game text should be the *resolved* text of the end clue.
-    # This implies that the Game.get_rendered_game_text() will call end_clue.get_rendered_text(),
-    # and this end_clue, despite being an end_clue, should resolve its *own* dependencies.
-    # This means the is_end_clue check in Clue.get_rendered_text should probably NOT be the very first thing.
-    # Or, Game.get_rendered_game_text needs a special way to render the end clue.
-
-    # Re-reading Clue.get_rendered_text from previous subtask:
-    # def get_rendered_text(self, game: 'Game') -> str:
-    #   if self.is_end_clue: return self.clue_text  <-- This was the change.
-    #   if self.completed: return self.answer
-    #   current_text = self.clue_text
-    #   ... resolve dependencies into current_text ...
-    #   return current_text
-
-    # This means that indeed, an end clue's text is always its raw text.
-    # So, the test case "End clue depends on Ans C1" would be wrong if #END# is an end_clue.
-    # It would be "End clue depends on #C1#".
-
-    # Let's assume the `Clue` class behavior is fixed as implemented.
-    # The `Game.get_rendered_game_text` just calls `get_rendered_clue_text` on the end clue.
-    # So, if the end clue is `#END#`, its text will be its raw clue_text.
-    end_clue_obj = game.clues["#END#"]
-    # Manually mark it as an end clue for this test's game instance, as Game() init does.
-    end_clue_obj.is_end_clue = True
-    end_clue_obj.answer = ""
-
-    # Raw text because #END# is an end_clue due to our manual setting.
-    assert game.get_rendered_game_text() == "End clue depends on #C1#"
-
-    # Attempting to "complete" the end clue has no effect on its text.
-    # game.answer_clue("#END#", "Game Over") # This will do nothing to its completed status or text.
-    # assert game.get_rendered_game_text() == "End clue depends on #C1#"
+    # Hypothetically, if the end clue *was* completed (e.g. by manual override for a test)
+    # it should render its answer (which is "").
+    end_clue.completed = True
+    assert game.get_rendered_game_text() == ""
+    end_clue.completed = False # reset
 
 def test_get_rendered_game_text_complex_dependencies():
     game_data = {
         "clues": {
             "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
             "#C2#": {"clue": "Text C2 uses #C1#", "answer": "Ans C2", "depends_on": ["#C1#"]},
-            "#END#": {"clue": "End clue uses #C2#", "answer": "Game Over All", "depends_on": ["#C2#"]}
+            "#END#": {"clue": "End clue uses #C2#", "answer": "ThisWillBeIgnored", "depends_on": ["#C2#"]}
         }
     }
     game = Game(game_data)
-    # Manually mark #END# as end_clue for this test's game instance
-    game.clues["#END#"].is_end_clue = True
-    game.clues["#END#"].answer = ""
 
-
-    # Since #END# is an end_clue, its text is returned raw, dependencies are not resolved by its own call.
-    assert game.get_rendered_game_text() == "End clue uses #C2#"
-
-    game.answer_clue("#C1#", "Ans C1")
-    # Still "End clue uses #C2#" because #END#'s text is raw and #C2# is not resolved by #END#'s get_rendered_text.
-    assert game.get_rendered_game_text() == "End clue uses #C2#"
-
-    game.answer_clue("#C2#", "Ans C2")
-    # Still "End clue uses #C2#" for the same reason.
-    assert game.get_rendered_game_text() == "End clue uses #C2#"
-
-    # game.answer_clue("#END#", "Game Over All") # This does nothing.
-    # assert game.get_rendered_game_text() == "End clue uses #C2#"
-
-    # The previous assertions like "End clue uses Ans C2" relied on the end clue *not* being flagged
-    # with `is_end_clue=True` or that flag not taking precedence in `get_rendered_text`.
-    # With the current `Clue.get_rendered_text` where `is_end_clue` check is first,
-    # an end clue's text will be literal.
-    # This makes these specific get_rendered_game_text tests less about complex dependency resolution
-    # *within the end clue's text itself* and more about whether the correct end clue's text is fetched.
-
-    # To properly test the full rendering as it might have been intended before `is_end_clue`'s specific
-    # rendering behavior, one would need a non-end clue that has complex dependencies.
-    # The current tests for `get_rendered_clue_text` cover that for individual, non-end clues.
-    # The `get_rendered_game_text` is now simpler: it just shows the `clue_text` of the designated `end_clue`.
-
-    # Let's simplify the assertions for these last two tests to reflect this.
-    # The `test_get_rendered_game_text_simple_case_dependency_completed` already shows this.
-    # This "complex" test will behave identically if #END# is a true end_clue.
-
-    # Reset game for clarity on this specific test's assertions
-    game = Game(game_data)
-    game.clues["#END#"].is_end_clue = True # Mark as end clue
-    game.clues["#END#"].answer = ""
-
-    assert game.get_rendered_game_text() == "End clue uses #C2#", "End clue text should be literal."
+    # Initial render: #END# resolves #C2#, which resolves #C1#. All uncompleted.
+    assert game.get_rendered_game_text() == "End clue uses [Text C2 uses [Text C1]]"
 
     game.answer_clue("#C1#", "Ans C1") # #C1 is completed
-    # #END text is still literal, doesn't re-render based on #C1's completion
-    assert game.get_rendered_game_text() == "End clue uses #C2#"
+    # #END# resolves #C2#, which resolves #C1# to "Ans C1". #C2# still uncompleted.
+    assert game.get_rendered_game_text() == "End clue uses [Text C2 uses Ans C1]"
 
     game.answer_clue("#C2#", "Ans C2") # #C2 is completed
-    # #END text is still literal
-    assert game.get_rendered_game_text() == "End clue uses #C2#"
+    # #END# resolves #C2# to "Ans C2".
+    assert game.get_rendered_game_text() == "End clue uses Ans C2"
+
+    # Attempting to answer #END# does not change its completed status.
+    game.answer_clue("#END#", "AttemptToEndIt")
+    end_clue = game.clues["#END#"]
+    assert not end_clue.completed
+    assert end_clue.is_end_clue
+    assert end_clue.answer == ""
+    # So, it still renders its text with resolved dependencies.
+    assert game.get_rendered_game_text() == "End clue uses Ans C2"
+
+    # Hypothetically, if the end clue *was* completed
+    end_clue.completed = True
+    assert game.get_rendered_game_text() == "" # It would render its answer (empty string)
