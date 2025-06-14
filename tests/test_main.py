@@ -1,5 +1,5 @@
 import pytest
-from bracket_city_mcp.main import mcp
+from src.bracket_city_mcp.main import mcp
 
 async def test_add():
     """Test the add tool"""
