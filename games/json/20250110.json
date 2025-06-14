@@ -117,7 +117,7 @@
                 "CLUE-C17"
             ]
         },
-        "C19": {
+        "CLUE-C19": {
             "clue": "a sunCLUE-C18 is observed by CLUE-C14 dynasty astroCLUE-C6s",
             "depends_on": [
                 "CLUE-C14",

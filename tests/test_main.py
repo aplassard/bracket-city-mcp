@@ -386,3 +386,45 @@ if __name__ == '__main__':
         self.assertIn("error", context)
         self.assertEqual(context["error"], "Clue ID '#NONEXISTENT#' not found.")
         self.assertEqual(context["status_code"], 404)
+
+    def test_get_clue_context_for_production_end_clue(self):
+        """
+        Tests get_clue_context for the end clue of the production game file.
+        This is more of an integration test for this specific case.
+        """
+        prod_game_file = "games/json/20250110.json"
+        # Ensure the production game file path is correct relative to the project root
+        # Assuming tests are run from the project root or PYTHONPATH is set up.
+        if not os.path.exists(prod_game_file):
+             self.skipTest(f"Production game file {prod_game_file} not found.")
+
+        prod_game = Game.from_json_file(prod_game_file)
+        end_clue_id = "CLUE-C19" # As per recent rename
+
+        # Ensure CLUE-C19 is indeed an end clue in this game instance
+        # (i.e., nothing depends on it according to prod_game.adj)
+        self.assertEqual(prod_game.adj.get(end_clue_id, []), [],
+                         f"{end_clue_id} is expected to have no children in {prod_game_file}")
+
+        with patch('src.bracket_city_mcp.main.game', prod_game):
+            context = get_clue_context(end_clue_id)
+
+        self.assertNotIn("error", context, f"get_clue_context returned an error for {end_clue_id}")
+        self.assertEqual(context.get("clue_id"), end_clue_id)
+        self.assertFalse(context.get("is_correctly_answered"),
+                         f"End clue {end_clue_id} should not be answered by default.")
+
+        # Verify parent_clue_id using the actual game logic (which calls get_first_dependent_clue_id)
+        # For an end clue like CLUE-C19, it should have no children.
+        self.assertIsNone(context.get("parent_clue_id"),
+                          f"parent_clue_id for end clue {end_clue_id} should be None.")
+
+        # Additionally, verify that the get_first_dependent_clue_id method on the prod_game
+        # was indeed called by the get_clue_context tool.
+        # To do this, we need to spy on prod_game.get_first_dependent_clue_id
+        prod_game.get_first_dependent_clue_id = MagicMock(wraps=prod_game.get_first_dependent_clue_id)
+
+        with patch('src.bracket_city_mcp.main.game', prod_game):
+            get_clue_context(end_clue_id) # Call it again with the spy in place
+
+        prod_game.get_first_dependent_clue_id.assert_called_once_with(end_clue_id)
