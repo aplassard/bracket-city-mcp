@@ -184,3 +184,34 @@ class Game:
 
     def __repr__(self):
         return f"Game(clues={len(self.clues)}, active_clues={len(self.active_clues)}, start_clues={len(self.start_clues)}, end_clues={len(self.end_clues)})"
+
+    def get_rendered_clue_text(self, clue_id: str) -> str:
+        """
+        Gets the rendered text of a specific clue, resolving dependencies.
+
+        Args:
+            clue_id: The ID of the clue to render.
+
+        Returns:
+            The rendered text of the clue.
+
+        Raises:
+            ValueError: If the clue_id does not exist.
+        """
+        if clue_id not in self.clues:
+            raise ValueError(f"Clue ID '{clue_id}' not found in game.")
+
+        clue_obj = self.clues[clue_id]
+        return clue_obj.get_rendered_text(self)
+
+    def get_rendered_game_text(self) -> str:
+        """
+        Gets the rendered text of the entire game, starting from the end clue.
+        Assumes there is exactly one end clue.
+
+        Returns:
+            The rendered text of the game.
+        """
+        # The __init__ method already validates that len(self.end_clues) == 1
+        end_clue_id = self.end_clues[0]
+        return self.get_rendered_clue_text(end_clue_id)
