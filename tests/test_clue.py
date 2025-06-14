@@ -163,3 +163,66 @@ def test_get_rendered_text_diamond_dependency_c2_completed():
     c4 = Clue(clue_id="#C4#", clue_text="End #C2# #C3#", answer="Ans C4", depends_on=["#C2#", "#C3#"])
     mock_game = MockGame(clues_dict={"#C1#": c1, "#C2#": c2, "#C3#": c3, "#C4#": c4})
     assert c4.get_rendered_text(mock_game) == "End Ans C2 [Hates Ans C1]"
+
+
+# --- Tests for End Clue Functionality ---
+
+def test_end_clue_initialization():
+    """Test that an end clue is initialized correctly."""
+    clue = Clue(clue_id="#E1#",
+                clue_text="This is the end.",
+                answer="ShouldBeIgnored",
+                depends_on=[],
+                is_end_clue=True)
+    assert clue.is_end_clue
+    assert clue.answer == "", "Answer for an end clue should be an empty string."
+    assert not clue.completed
+
+def test_end_clue_answer_clue():
+    """Test that attempting to answer an end clue always fails and doesn't complete it."""
+    clue = Clue(clue_id="#E1#",
+                clue_text="Final text.",
+                answer="OriginalAnswer", # This should be ignored by __init__
+                depends_on=[],
+                is_end_clue=True)
+
+    assert clue.answer == "", "End clue answer should be blank after init."
+
+    result = clue.answer_clue("AnyAttempt")
+    assert not result, "answer_clue on an end clue should return False."
+    assert not clue.completed, "End clue should not be marked as completed."
+
+    result_empty_answer = clue.answer_clue("") # Even with empty string
+    assert not result_empty_answer, "answer_clue on an end clue should return False even for empty string."
+    assert not clue.completed, "End clue should still not be marked as completed."
+
+
+def test_end_clue_get_rendered_text():
+    """Test that get_rendered_text for an end clue always returns its clue_text."""
+    mock_game = MockGame() # Dependencies are not relevant for end clue rendering
+
+    clue = Clue(clue_id="#E1#",
+                clue_text="EndText",
+                answer="OriginalAnswer",
+                depends_on=["#C1#"], # Has dependency, but should be ignored
+                is_end_clue=True)
+
+    assert clue.get_rendered_text(mock_game) == "EndText"
+
+    # Directly manipulate completed status (which shouldn't happen via answer_clue)
+    # to ensure get_rendered_text still prioritizes is_end_clue logic.
+    clue.completed = True
+    assert clue.get_rendered_text(mock_game) == "EndText", \
+        "End clue should return clue_text even if manually marked completed."
+
+    clue.completed = False # Reset
+
+    # Test with a mock game that has the dependency (though it shouldn't be used)
+    c1_dep = Clue(clue_id="#C1#", clue_text="DepText", answer="DepAns", depends_on=[])
+    mock_game_with_dep = MockGame(clues_dict={"#C1#": c1_dep})
+    assert clue.get_rendered_text(mock_game_with_dep) == "EndText", \
+        "End clue rendering should not be affected by dependencies."
+
+    c1_dep.completed = True
+    assert clue.get_rendered_text(mock_game_with_dep) == "EndText", \
+        "End clue rendering should not be affected by completed dependencies."
