@@ -118,3 +118,94 @@ def test_clue_reveal_logic_to_reach_end_clue_valid_game(valid_game: Game):
     assert game.active_clues == set(), "No clues should be active after end clue is solved."
 
 # Remove if __name__ == '__main__': block
+
+
+# --- Tests for Game.get_rendered_clue_text() and Game.get_rendered_game_text() ---
+
+def test_get_rendered_clue_text_valid_clue():
+    game_data = {
+        "clues": {
+            "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
+            "#C2#": {"clue": "Text C2 uses #C1#", "answer": "Ans C2", "depends_on": ["#C1#"]}
+        }
+    }
+    game = Game(game_data) # #C2# is the end clue, #C1# is a start clue
+
+    # C1 is not completed
+    assert game.get_rendered_clue_text("#C1#") == "Text C1"
+    # C2 renders with C1's text, bracketed
+    assert game.get_rendered_clue_text("#C2#") == "Text C2 uses [Text C1]"
+
+    # Answer C1
+    assert game.answer_clue("#C1#", "Ans C1") # C1 is a start clue, so it's active
+
+    # C1 is completed, returns answer
+    assert game.get_rendered_clue_text("#C1#") == "Ans C1"
+    # C2 renders with C1's answer
+    assert game.get_rendered_clue_text("#C2#") == "Text C2 uses Ans C1"
+
+def test_get_rendered_clue_text_invalid_clue():
+    game_data = {
+        "clues": {
+            "#C1#": {"clue": "Text C1", "answer": "Ans C1"}
+        }
+    }
+    game = Game(game_data)
+    with pytest.raises(ValueError, match="Clue ID '#NONEXISTENT#' not found in game."):
+        game.get_rendered_clue_text("#NONEXISTENT#")
+
+def test_get_rendered_game_text_simple_case_uncompleted():
+    game_data = {
+        "clues": {
+            "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
+            "#END#": {"clue": "End clue depends on #C1#", "answer": "Game Over", "depends_on": ["#C1#"]}
+        }
+    }
+    game = Game(game_data) # #END# is the end clue
+    assert game.get_rendered_game_text() == "End clue depends on [Text C1]"
+
+def test_get_rendered_game_text_simple_case_dependency_completed():
+    game_data = {
+        "clues": {
+            "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
+            "#END#": {"clue": "End clue depends on #C1#", "answer": "Game Over", "depends_on": ["#C1#"]}
+        }
+    }
+    game = Game(game_data)
+    # #C1# is a start clue, so it's active
+    game.answer_clue("#C1#", "Ans C1")
+    assert game.get_rendered_game_text() == "End clue depends on Ans C1"
+
+def test_get_rendered_game_text_end_clue_completed():
+    game_data = {
+        "clues": {
+            "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
+            "#END#": {"clue": "End clue depends on #C1#", "answer": "Game Over", "depends_on": ["#C1#"]}
+        }
+    }
+    game = Game(game_data)
+    game.answer_clue("#C1#", "Ans C1")
+    # #END# becomes active after #C1# is answered
+    game.answer_clue("#END#", "Game Over")
+    assert game.get_rendered_game_text() == "Game Over"
+
+def test_get_rendered_game_text_complex_dependencies():
+    game_data = {
+        "clues": {
+            "#C1#": {"clue": "Text C1", "answer": "Ans C1"},
+            "#C2#": {"clue": "Text C2 uses #C1#", "answer": "Ans C2", "depends_on": ["#C1#"]},
+            "#END#": {"clue": "End clue uses #C2#", "answer": "Game Over All", "depends_on": ["#C2#"]}
+        }
+    } # #C1# is start, #END# is end
+    game = Game(game_data)
+
+    assert game.get_rendered_game_text() == "End clue uses [Text C2 uses [Text C1]]"
+
+    game.answer_clue("#C1#", "Ans C1") # #C1# is a start clue
+    assert game.get_rendered_game_text() == "End clue uses [Text C2 uses Ans C1]"
+
+    game.answer_clue("#C2#", "Ans C2") # #C2# becomes active after #C1#
+    assert game.get_rendered_game_text() == "End clue uses Ans C2"
+
+    game.answer_clue("#END#", "Game Over All") # #END# becomes active after #C2#
+    assert game.get_rendered_game_text() == "Game Over All"
