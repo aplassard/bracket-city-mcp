@@ -1,0 +1,19 @@
+{
+  "clues": {
+    "#END1#": {
+      "clue": "This is the first end clue.",
+      "answer": "Answer1",
+      "depends_on": []
+    },
+    "#END2#": {
+      "clue": "This is the second end clue.",
+      "answer": "Answer2",
+      "depends_on": []
+    },
+    "#END3#": {
+      "clue": "This is the third end clue.",
+      "answer": "Answer3",
+      "depends_on": []
+    }
+  }
+}
