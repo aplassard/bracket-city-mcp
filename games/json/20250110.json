@@ -116,6 +116,14 @@
         "#C16#",
         "#C17#"
       ]
+    },
+    "C19": {
+      "clue": "a sun#C18# is observed by #C14# dynasty astro#C6#s",
+      "depends_on": [
+        "#C14#",
+        "#C18#",
+        "#C6#"
+      ]
     }
   }
 }
