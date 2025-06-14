@@ -1,14 +1,10 @@
 import os
 import sys
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC_DIR = os.path.join(PROJECT_ROOT, "src")
-if SRC_DIR not in sys.path:
-    sys.path.insert(0, SRC_DIR)
-
-from bracket_city_mcp.game.game import Game
+from bracket_city_mcp.game import Game
 
 # Path to the game JSON files
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VALID_TEST_GAME_FILE = os.path.join(PROJECT_ROOT, "tests", "data", "valid_single_end_clue_game.json")
 ORIGINAL_GAME_FILE = os.path.join(PROJECT_ROOT, "games", "json", "20250110.json")
 

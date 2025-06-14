@@ -1,6 +1,6 @@
 import pytest
 import os
-from src.bracket_city_mcp.game.game import Game
+from bracket_city_mcp.game import Game
 
 # --- Path Setup ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
