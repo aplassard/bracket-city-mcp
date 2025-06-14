@@ -1,0 +1,1 @@
+clue_id_map = {'#C1#': 'CLUE-C1', '#C2#': 'CLUE-C2', '#C3#': 'CLUE-C3', '#C4#': 'CLUE-C4', '#C5#': 'CLUE-C5', '#C6#': 'CLUE-C6', '#C7#': 'CLUE-C7', '#C8#': 'CLUE-C8', '#C9#': 'CLUE-C9', '#C10#': 'CLUE-C10', '#C11#': 'CLUE-C11', '#C12#': 'CLUE-C12', '#C13#': 'CLUE-C13', '#C14#': 'CLUE-C14', '#C15#': 'CLUE-C15', '#C16#': 'CLUE-C16', '#C17#': 'CLUE-C17', '#C18#': 'CLUE-C18'}
