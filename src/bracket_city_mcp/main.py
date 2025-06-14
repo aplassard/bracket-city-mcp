@@ -1,5 +1,5 @@
 from mcp.server.fastmcp import FastMCP
-from src.bracket_city_mcp.game.game import Game
+from bracket_city_mcp.game.game import Game
 from typing import List
 
 # Initialize the game
