@@ -46,7 +46,8 @@ def get_clue_context(clue_id: str) -> Dict[str, Any]:
         "is_correctly_answered": clue_obj.completed,
         "previous_answers": list(clue_obj.previous_answers),
         "depends_on_clues": list(clue_obj.depends_on), # Ensure it's a list copy
-        "parent_clue_id": clue_obj.depends_on[0] if clue_obj.depends_on else None,
+        # Use the new Game method to get the first dependent (child) clue ID
+        "parent_clue_id": game.get_first_dependent_clue_id(clue_obj.clue_id),
     }
 
 @mcp.tool(name="answer_clue")
