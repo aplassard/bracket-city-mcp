@@ -4,7 +4,7 @@ from typing import List
 
 # Initialize the game
 # TODO: Make the game file path configurable
-game = Game.from_json_file("games/json/game.json")
+game = Game.from_json_file("games/json/20250110.json")
 
 # Create the MCP server
 mcp = FastMCP("BracketCity")
