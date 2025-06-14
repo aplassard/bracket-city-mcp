@@ -30,6 +30,25 @@ def get_clue_text(clue_id: str) -> str:
 def get_available_clues() -> List[str]:
     return list(game.active_clues)
 
+@mcp.tool(name="get_clue_context")
+def get_clue_context(clue_id: str) -> Dict[str, Any]:
+    """
+    Retrieves detailed context for a given clue_id.
+    """
+    clue_obj = game.clues.get(clue_id)
+
+    if clue_obj is None:
+        return {"error": f"Clue ID '{clue_id}' not found.", "status_code": 404}
+
+    return {
+        "clue_id": clue_obj.clue_id,
+        "rendered_text": clue_obj.get_rendered_text(game),
+        "is_correctly_answered": clue_obj.completed,
+        "previous_answers": list(clue_obj.previous_answers),
+        "depends_on_clues": list(clue_obj.depends_on), # Ensure it's a list copy
+        "parent_clue_id": clue_obj.depends_on[0] if clue_obj.depends_on else None,
+    }
+
 @mcp.tool(name="answer_clue")
 def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
     response = {

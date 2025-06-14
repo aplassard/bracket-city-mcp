@@ -22,6 +22,7 @@ class Clue:
         self.depends_on = depends_on
         self.completed = False
         self.is_end_clue = is_end_clue
+        self.previous_answers: list[str] = []
 
         if self.is_end_clue:
             self.answer = ""
@@ -40,6 +41,7 @@ class Clue:
         Returns:
             True if the answer is correct, False otherwise.
         """
+        self.previous_answers.append(provided_answer)
         if self.is_end_clue:
             return False
         # Case-insensitive comparison
