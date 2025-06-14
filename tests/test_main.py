@@ -158,35 +158,62 @@ class TestAnswerClueTool(unittest.TestCase):
         self.game_instance.answer_clue.assert_not_called()
 
     def test_answer_clue_completes_game(self):
-        # Solve DUMMY_CLUE1
+        # Scenario:
+        # 1. Answer #DUMMY_CLUE1# correctly.
+        # 2. This makes #DUMMY_CLUE2# available.
+        # 3. Answer #DUMMY_CLUE2# correctly. This is the last non-end clue.
+        #    - game.is_complete should now be True.
+        #    - #END_CLUE# should become active.
+        # 4. Call answer_clue with #END_CLUE# ID.
+        #    - This should trigger the special end-game logic in the main.py tool.
+
+        # Sanity check initial state
+        initial_active_clues = {"#DUMMY_CLUE1#"}
+        self.assertEqual(self.game_instance.active_clues, initial_active_clues)
+        self.assertFalse(self.game_instance.is_complete)
+
+        # 1. Answer #DUMMY_CLUE1#
         bracket_city_main.answer_clue("#DUMMY_CLUE1#", "dummy_answer1")
-        self.game_instance.answer_clue.reset_mock()
+        self.assertTrue(self.game_instance.clues["#DUMMY_CLUE1#"].completed)
+        self.assertIn("#DUMMY_CLUE2#", self.game_instance.active_clues)
+        self.assertNotIn("#END_CLUE#", self.game_instance.active_clues) # End clue not yet active
+        self.assertFalse(self.game_instance.is_complete)
 
-        # Solve DUMMY_CLUE2, which should make END_CLUE available (and it's the last one)
-        bracket_city_main.answer_clue("#DUMMY_CLUE2#", "dummy_answer2")
-        self.game_instance.answer_clue.reset_mock()
+        # 2. Answer #DUMMY_CLUE2# (the second-to-last, and last solvable clue)
+        response_c2 = bracket_city_main.answer_clue("#DUMMY_CLUE2#", "dummy_answer2")
 
-        # END_CLUE has an empty answer string in test_game.json
-        end_clue_id = "#END_CLUE#"
-        end_clue_answer = ""
+        # Check response from answering C2. Since C2 is the last non-end clue,
+        # game.is_complete will become true, and the tool will report game completion.
+        self.assertTrue(response_c2["correct"])
+        self.assertEqual(response_c2["message"], "Correct! Congratulations! You've completed the game.")
+        self.assertTrue(response_c2["game_completed"])
 
-        response = bracket_city_main.answer_clue(end_clue_id, end_clue_answer)
+        self.assertTrue(self.game_instance.clues["#DUMMY_CLUE2#"].completed)
+        self.assertIn("#END_CLUE#", self.game_instance.active_clues) # End clue is now active
 
-        expected_total_clues = len(self.game_instance.clues)
-        expected_score = expected_total_clues - self.game_instance.incorrect_guesses
+        # Verify game.is_complete is True internally now
+        self.assertTrue(self.game_instance.is_complete, "Game.is_complete should be True after solving all non-end clues")
 
-        expected_response = {
-            "correct": True, # Assuming empty answer is "correct" for auto-completed end clues
-            "message": "Correct! Congratulations! You've completed the game.",
-            "available_clues": [], # No more clues available
-            "game_completed": True,
-            "score": expected_score
-        }
-        response["available_clues"].sort()
-        self.assertEqual(response, expected_response)
-        self.game_instance.answer_clue.assert_called_once_with(end_clue_id, end_clue_answer)
-        self.assertTrue(self.game_instance.clues[end_clue_id].completed)
-        self.assertTrue(self.game_instance.is_complete)
+        # 3. "Answer" #END_CLUE# - this should trigger the special completion logic in the tool
+        # Any answer string for end clue, it's ignored by the new logic in main.py
+        final_response = bracket_city_main.answer_clue("#END_CLUE#", "any_answer")
+
+        expected_score = len(self.game_instance.clues) - self.game_instance.incorrect_guesses
+
+        self.assertTrue(final_response["correct"]) # Correct in the sense of reaching the end
+        self.assertEqual(final_response["message"], "You've reached the final clue! Congratulations, the game is complete!")
+        self.assertTrue(final_response["game_completed"])
+        self.assertEqual(final_response["score"], expected_score)
+        # End clue itself is not marked "completed" by Clue.answer_clue() due to "if is_end_clue: return False"
+        self.assertFalse(self.game_instance.clues["#END_CLUE#"].completed, "End clue object itself should not be marked completed by its own answer_clue method")
+
+        # Check available clues in final response (should be empty if #END_CLUE# was the only one left)
+        # Or could still contain #END_CLUE# if active_clues isn't cleared of it by the tool's special path
+        # The current logic in main.py for end clues *does* set available_clues = list(game.active_clues)
+        # and game.answer_clue isn't called for end_clues, so #END_CLUE# would remain in active_clues.
+        # This is acceptable.
+        self.assertIn("#END_CLUE#", final_response["available_clues"])
+        self.assertEqual(len(final_response["available_clues"]), 1) # Only end clue should be "active"
 
 if __name__ == '__main__':
     # This allows running the tests directly from this file: python tests/test_main.py

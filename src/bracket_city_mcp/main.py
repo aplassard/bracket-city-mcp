@@ -46,6 +46,23 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
 
     clue_obj = game.clues[clue_id]
 
+    if clue_obj.is_end_clue:
+        game_is_truly_complete = game.is_complete # Checks if all NON-END clues are done
+        if game_is_truly_complete:
+            response["correct"] = True # User successfully reached the end state
+            response["message"] = "You've reached the final clue! Congratulations, the game is complete!"
+            response["game_completed"] = True
+            response["score"] = len(game.clues) - game.incorrect_guesses
+        else:
+            # This case implies the end clue became active before all other prerequisites were met,
+            # or the user is trying to 'answer' it prematurely.
+            response["correct"] = False
+            response["message"] = "This is the final clue, but there are other mysteries to solve before the story concludes."
+            response["game_completed"] = False # Game isn't fully complete yet
+
+        response["available_clues"] = list(game.active_clues) # Show currently active clues
+        return response
+
     if clue_obj.completed:
         response["message"] = f"Clue '{clue_id}' has already been answered."
         response["available_clues"] = list(game.active_clues)
