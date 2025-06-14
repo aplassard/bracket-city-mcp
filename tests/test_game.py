@@ -7,11 +7,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 
 ORIGINAL_GAME_JSON_PATH_CONFIG = os.path.join(BASE_DIR, "games", "json", "20250110.json")
 if not os.path.exists(ORIGINAL_GAME_JSON_PATH_CONFIG):
-    ORIGINAL_GAME_JSON_PATH_CONFIG = os.path.join("games", "json", "20250110.json") # Fallback
+    ORIGINAL_GAME_JSON_PATH_CONFIG = os.path.join("games", "json", "20250110.json")
 
 VALID_GAME_JSON_PATH_CONFIG = os.path.join(BASE_DIR, "tests", "data", "valid_single_end_clue_game.json")
 if not os.path.exists(VALID_GAME_JSON_PATH_CONFIG):
-    VALID_GAME_JSON_PATH_CONFIG = os.path.join("tests", "data", "valid_single_end_clue_game.json") # Fallback
+    VALID_GAME_JSON_PATH_CONFIG = os.path.join("tests", "data", "valid_single_end_clue_game.json")
 
 # --- Pytest Fixtures ---
 
@@ -117,10 +117,6 @@ def test_clue_reveal_logic_to_reach_end_clue_valid_game(valid_game: Game):
     assert "#E1#" not in game.active_clues
     assert game.active_clues == set(), "No clues should be active after end clue is solved."
 
-# Remove if __name__ == '__main__': block
-
-
-# --- Tests for Game.get_rendered_clue_text() and Game.get_rendered_game_text() ---
 
 def test_get_rendered_clue_text_valid_clue():
     game_data = {
@@ -129,19 +125,14 @@ def test_get_rendered_clue_text_valid_clue():
             "#C2#": {"clue": "Text C2 uses #C1#", "answer": "Ans C2", "depends_on": ["#C1#"]}
         }
     }
-    game = Game(game_data) # #C2# is the end clue, #C1# is a start clue
+    game = Game(game_data)
 
-    # C1 is not completed
     assert game.get_rendered_clue_text("#C1#") == "Text C1"
-    # C2 renders with C1's text, bracketed
     assert game.get_rendered_clue_text("#C2#") == "Text C2 uses [Text C1]"
 
-    # Answer C1
-    assert game.answer_clue("#C1#", "Ans C1") # C1 is a start clue, so it's active
+    assert game.answer_clue("#C1#", "Ans C1")
 
-    # C1 is completed, returns answer
     assert game.get_rendered_clue_text("#C1#") == "Ans C1"
-    # C2 renders with C1's answer
     assert game.get_rendered_clue_text("#C2#") == "Text C2 uses Ans C1"
 
 def test_get_rendered_clue_text_invalid_clue():
@@ -161,7 +152,7 @@ def test_get_rendered_game_text_simple_case_uncompleted():
             "#END#": {"clue": "End clue depends on #C1#", "answer": "Game Over", "depends_on": ["#C1#"]}
         }
     }
-    game = Game(game_data) # #END# is the end clue
+    game = Game(game_data)
     assert game.get_rendered_game_text() == "End clue depends on [Text C1]"
 
 def test_get_rendered_game_text_simple_case_dependency_completed():
@@ -172,7 +163,6 @@ def test_get_rendered_game_text_simple_case_dependency_completed():
         }
     }
     game = Game(game_data)
-    # #C1# is a start clue, so it's active
     game.answer_clue("#C1#", "Ans C1")
     assert game.get_rendered_game_text() == "End clue depends on Ans C1"
 
@@ -185,7 +175,6 @@ def test_get_rendered_game_text_end_clue_completed():
     }
     game = Game(game_data)
     game.answer_clue("#C1#", "Ans C1")
-    # #END# becomes active after #C1# is answered
     game.answer_clue("#END#", "Game Over")
     assert game.get_rendered_game_text() == "Game Over"
 
@@ -196,16 +185,16 @@ def test_get_rendered_game_text_complex_dependencies():
             "#C2#": {"clue": "Text C2 uses #C1#", "answer": "Ans C2", "depends_on": ["#C1#"]},
             "#END#": {"clue": "End clue uses #C2#", "answer": "Game Over All", "depends_on": ["#C2#"]}
         }
-    } # #C1# is start, #END# is end
+    }
     game = Game(game_data)
 
     assert game.get_rendered_game_text() == "End clue uses [Text C2 uses [Text C1]]"
 
-    game.answer_clue("#C1#", "Ans C1") # #C1# is a start clue
+    game.answer_clue("#C1#", "Ans C1")
     assert game.get_rendered_game_text() == "End clue uses [Text C2 uses Ans C1]"
 
-    game.answer_clue("#C2#", "Ans C2") # #C2# becomes active after #C1#
+    game.answer_clue("#C2#", "Ans C2")
     assert game.get_rendered_game_text() == "End clue uses Ans C2"
 
-    game.answer_clue("#END#", "Game Over All") # #END# becomes active after #C2#
+    game.answer_clue("#END#", "Game Over All")
     assert game.get_rendered_game_text() == "Game Over All"

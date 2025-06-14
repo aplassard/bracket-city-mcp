@@ -1,15 +1,11 @@
 import os
 import sys
 
-# Adjust the Python path to include the 'src' directory
-# This allows finding the bracket_city_mcp package
-# Assumes 'examples' is a sibling of 'src' or this script is run from the project root
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_DIR = os.path.join(PROJECT_ROOT, "src")
 if SRC_DIR not in sys.path:
     sys.path.insert(0, SRC_DIR)
 
-# Now we can import from our package
 from bracket_city_mcp.game.game import Game
 
 # Path to the game JSON files
@@ -19,7 +15,6 @@ ORIGINAL_GAME_FILE = os.path.join(PROJECT_ROOT, "games", "json", "20250110.json"
 # Use the valid game as the default for the example
 DEFAULT_GAME_FILE = VALID_TEST_GAME_FILE
 if not os.path.exists(DEFAULT_GAME_FILE):
-    # Fallback to original if valid test one somehow isn't there, though it should be
     print(f"Warning: Default valid game '{VALID_TEST_GAME_FILE}' not found. Trying original game file.")
     DEFAULT_GAME_FILE = ORIGINAL_GAME_FILE
 
@@ -30,8 +25,6 @@ def run_console_game(game_file_path: str):
     """
     if not os.path.exists(game_file_path):
         print(f"Error: Game file not found at {game_file_path}")
-        # Try to find it relative to where the script is, if in project root.
-        # This logic might be a bit redundant if PROJECT_ROOT is solid, but can be a fallback.
         alt_path = os.path.join(os.path.dirname(__file__), "..", game_file_path) # Assuming game_file_path was relative
         alt_path = os.path.normpath(alt_path)
         if os.path.exists(alt_path):
@@ -105,12 +98,8 @@ def run_console_game(game_file_path: str):
             else:
                 if selected_clue_id in game.clues and not game.clues[selected_clue_id].completed:
                      print("Incorrect answer. Try again or pick another clue.")
-                # If it was not active, the game.answer_clue would return False,
-                # but our selection logic should prevent this.
-                # If clue_id doesn't exist, game.answer_clue also returns False.
-                # No specific message needed here as answer_clue doesn't distinguish failure reasons to caller.
 
-        except ValueError: # For int(choice_str)
+        except ValueError:
             print("Invalid input. Please enter a number for the clue choice.")
         except Exception as e:
             print(f"An unexpected error occurred: {e}")

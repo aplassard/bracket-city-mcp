@@ -1,6 +1,6 @@
-import pytest # Import pytest if needed for specific features like raises, skip, fixtures
+import pytest
 from src.bracket_city_mcp.game.clue import Clue
-from src.bracket_city_mcp.game.game import Game # Though using MockGame, good to have for context
+from src.bracket_city_mcp.game.game import Game
 
 
 # Helper MockGame class for testing Clue.get_rendered_text
@@ -61,18 +61,12 @@ def test_answer_clue_empty_actual_answer():
     assert result_correct
     assert clue.completed
 
-    # Resetting for next test part within the same function
     clue.completed = False
 
     result_incorrect = clue.answer_clue("not empty")
     assert not result_incorrect
     assert not clue.completed
 
-# It's good practice to remove the if __name__ == '__main__': block
-# as pytest handles test discovery and execution.
-
-
-# Tests for Clue.get_rendered_text()
 
 def test_get_rendered_text_completed_clue():
     c1 = Clue(clue_id="#C1#", clue_text="Text C1", answer="Ans C1", depends_on=[])
@@ -161,14 +155,11 @@ def test_get_rendered_text_diamond_dependency_c1_completed():
     assert c4.get_rendered_text(mock_game) == "End [Loves Ans C1] [Hates Ans C1]"
 
 def test_get_rendered_text_diamond_dependency_c2_completed():
-    # C2 completed means its text will be its answer.
-    # C1 must be completed for C2 to be completed.
     c1 = Clue(clue_id="#C1#", clue_text="Text C1", answer="Ans C1", depends_on=[])
     c1.completed = True
     c2 = Clue(clue_id="#C2#", clue_text="Loves #C1#", answer="Ans C2", depends_on=["#C1#"])
-    c2.completed = True # This makes C2 output "Ans C2"
+    c2.completed = True
     c3 = Clue(clue_id="#C3#", clue_text="Hates #C1#", answer="Ans C3", depends_on=["#C1#"])
-    # C3 is not completed, so it will render [Hates Ans C1]
     c4 = Clue(clue_id="#C4#", clue_text="End #C2# #C3#", answer="Ans C4", depends_on=["#C2#", "#C3#"])
     mock_game = MockGame(clues_dict={"#C1#": c1, "#C2#": c2, "#C3#": c3, "#C4#": c4})
     assert c4.get_rendered_text(mock_game) == "End Ans C2 [Hates Ans C1]"

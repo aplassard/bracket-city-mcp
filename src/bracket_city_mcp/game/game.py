@@ -30,11 +30,9 @@ class Game:
                     depends_on=clue_info.get("depends_on", [])
                 )
 
-        # These will be properly implemented in the next steps
         self._build_graph()
         self._perform_initial_sort()
 
-        # Check for the single end clue requirement
         if len(self.end_clues) != 1:
             raise ValueError(
                 f"Game must have exactly one end clue. "
@@ -83,8 +81,6 @@ class Game:
                     if dependency_id in self.clues: # Ensure dependency exists
                         self.adj[dependency_id].append(clue_id)
 
-            # Ensure all clues are keys in adj and rev_adj, even if they have no connections
-            # This helps in _perform_initial_sort for identifying start/end clues correctly.
             if clue_id not in self.adj:
                 self.adj[clue_id] = []
             if clue_id not in self.rev_adj:
@@ -110,7 +106,6 @@ class Game:
             if not self.adj[clue_id]:
                 self.end_clues.append(clue_id)
 
-        # Sort for deterministic behavior, though not strictly necessary for functionality
         self.start_clues.sort()
         self.end_clues.sort()
 
@@ -127,26 +122,17 @@ class Game:
             Returns False if the clue is not active or does not exist.
         """
         if clue_id not in self.clues:
-            # Or raise an error, e.g., ValueError(f"Clue ID {clue_id} not found.")
             return False
 
         if clue_id not in self.active_clues:
-            # Clue is not currently available to be answered.
-            # You might want to provide more specific feedback to the user here.
             return False
 
         clue_to_answer = self.clues[clue_id]
 
-        # The Clue object's answer_clue method handles case-insensitivity
-        # and updates its own 'completed' status.
         is_correct = clue_to_answer.answer_clue(provided_answer)
 
         if is_correct:
-            # Remove from active_clues as it's now completed.
-            # It won't be added back by _reveal_new_clues because it's completed.
             self.active_clues.discard(clue_id)
-
-            # Now, check if this completion reveals new clues.
             self._reveal_new_clues(clue_id)
 
         return is_correct
@@ -165,13 +151,12 @@ class Game:
 
         for potential_new_clue_id in self.adj[completed_clue_id]:
             if potential_new_clue_id not in self.clues:
-                continue # Should not happen if graph is built correctly
+                continue
 
             potential_clue_obj = self.clues[potential_new_clue_id]
             if potential_clue_obj.completed:
-                continue # Already completed, nothing to do
+                continue
 
-            # Check if all dependencies for this potential new clue are met
             all_dependencies_met = True
             if potential_new_clue_id in self.rev_adj:
                 for dependency_id in self.rev_adj[potential_new_clue_id]:
@@ -212,6 +197,5 @@ class Game:
         Returns:
             The rendered text of the game.
         """
-        # The __init__ method already validates that len(self.end_clues) == 1
         end_clue_id = self.end_clues[0]
         return self.get_rendered_clue_text(end_clue_id)
