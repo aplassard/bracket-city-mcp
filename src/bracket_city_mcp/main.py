@@ -1,3 +1,4 @@
+import uvicorn
 from mcp.server.fastmcp import FastMCP
 from bracket_city_mcp.game.game import Game
 from typing import List, Dict, Any
@@ -19,7 +20,8 @@ not provide a direct test_client() method. This is a known limitation.
 game = Game.from_json_file("games/json/20250110.json")
 
 # Create the MCP server
-mcp = FastMCP("BracketCity")
+# TODO: Make host and port configurable (future enhancement for server execution)
+mcp = FastMCP("BracketCity", host="0.0.0.0", port=8080)
 
 # Health check endpoint
 @mcp.tool()
@@ -187,12 +189,9 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
 
     return response
 
-if __name__ == "__main__":
-    # TODO: Make host and port configurable (future enhancement for server execution)
-    mcp.run(host="0.0.0.0", port=8080)
+def main():
+    
+    mcp.run()
 
-# TODO: Implement tests for the BracketCity MCP server. (See module docstring for more details)
-# The FastMCP library does not seem to provide a test_client() method.
-# A different testing strategy is needed, possibly involving running the
-# server in a separate thread/process and using an MCP client to make requests.
-# Consult FastMCP documentation or examples for the recommended approach.
+if __name__ == "__main__":
+    main()
