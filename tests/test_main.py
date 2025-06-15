@@ -9,10 +9,13 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from src.bracket_city_mcp import main as bracket_city_main
 from src.bracket_city_mcp.game.game import Game
-# Clue import is not strictly needed here anymore as we use a real Game object
-# from src.bracket_city_mcp.game.clue import Clue
+# Clue import for type hinting or direct use if needed for setup:
+# Imports from src/bracket_city_mcp/tests/test_main_tools.py
+from bracket_city_mcp.main import get_clue_context # answer_clue is already imported via bracket_city_main
+from bracket_city_mcp.game.clue import Clue # For type hinting or direct use if needed for setup
 
-class TestAnswerClueTool(unittest.TestCase):
+
+class TestMainApi(unittest.TestCase): # Renamed class for broader scope
     game_template: Game
 
     @classmethod
@@ -223,3 +226,205 @@ if __name__ == '__main__':
     # Ensure 'games/json/20250110.json' exists or the import will fail.
     # A dummy version was created in a previous step.
     unittest.main()
+
+    # --- Tests for get_clue_context (merged from src/bracket_city_mcp/tests/test_main_tools.py) ---
+
+    def test_get_clue_context_clue_with_one_child(self): # Renamed
+        """Test get_clue_context for a clue that is a dependency for one other clue."""
+        # In test_game.json, #DUMMY_CLUE1# is a dependency for #DUMMY_CLUE2#.
+        # So, #DUMMY_CLUE2# is a child of #DUMMY_CLUE1#.
+        clue_id_to_test = "#DUMMY_CLUE1#"
+        expected_child_id = "#DUMMY_CLUE2#"
+        clue_obj = self.game_instance.clues[clue_id_to_test]
+
+        original_get_rendered_text = clue_obj.get_rendered_text
+        clue_obj.get_rendered_text = MagicMock(return_value=f"Rendered {clue_id_to_test}")
+
+        # Mock the new game method call
+        self.game_instance.get_first_dependent_clue_id = MagicMock(return_value=expected_child_id)
+
+        context = get_clue_context(clue_id_to_test)
+
+        self.assertNotIn("error", context)
+        self.assertEqual(context["clue_id"], clue_id_to_test)
+        clue_obj.get_rendered_text.assert_called_once_with(self.mock_main_game_instance)
+        self.assertEqual(context["rendered_text"], f"Rendered {clue_id_to_test}")
+        self.assertFalse(context["is_correctly_answered"])
+        self.assertEqual(context["previous_answers"], [])
+        self.assertEqual(context["depends_on_clues"], [])
+
+        self.game_instance.get_first_dependent_clue_id.assert_called_once_with(clue_id_to_test)
+        self.assertEqual(context["parent_clue_id"], expected_child_id)
+
+        clue_obj.get_rendered_text = original_get_rendered_text
+
+    def test_get_clue_context_clue_with_parent_and_one_child(self): # Renamed
+        """Test get_clue_context for a clue that has parent dependencies and is a dependency for one other clue."""
+        clue_id_to_test = "#DUMMY_CLUE2#"
+        expected_parent_id = "#DUMMY_CLUE1#"
+        expected_child_id = "#END_CLUE#"
+
+        clue_obj = self.game_instance.clues[clue_id_to_test]
+        original_get_rendered_text = clue_obj.get_rendered_text
+        clue_obj.get_rendered_text = MagicMock(return_value=f"Rendered {clue_id_to_test}")
+
+        # Mock the new game method call
+        self.game_instance.get_first_dependent_clue_id = MagicMock(return_value=expected_child_id)
+
+        context = get_clue_context(clue_id_to_test)
+
+        self.assertNotIn("error", context)
+        self.assertEqual(context["clue_id"], clue_id_to_test)
+        clue_obj.get_rendered_text.assert_called_once_with(self.mock_main_game_instance)
+        self.assertEqual(context["rendered_text"], f"Rendered {clue_id_to_test}")
+        self.assertFalse(context["is_correctly_answered"])
+        self.assertEqual(context["previous_answers"], [])
+        self.assertEqual(context["depends_on_clues"], [expected_parent_id])
+
+        self.game_instance.get_first_dependent_clue_id.assert_called_once_with(clue_id_to_test)
+        self.assertEqual(context["parent_clue_id"], expected_child_id)
+
+        clue_obj.get_rendered_text = original_get_rendered_text
+
+    def test_get_clue_context_clue_with_no_children(self):
+        """Test get_clue_context for a clue that is not a dependency for any other clue."""
+        clue_id_to_test = "#END_CLUE#"
+        expected_parent_id = "#DUMMY_CLUE2#"
+        clue_obj = self.game_instance.clues[clue_id_to_test]
+
+        original_get_rendered_text = clue_obj.get_rendered_text
+        clue_obj.get_rendered_text = MagicMock(return_value=f"Rendered {clue_id_to_test}")
+
+        # Mock the new game method call
+        self.game_instance.get_first_dependent_clue_id = MagicMock(return_value=None)
+
+        context = get_clue_context(clue_id_to_test)
+
+        self.assertNotIn("error", context)
+        self.assertEqual(context["clue_id"], clue_id_to_test)
+        clue_obj.get_rendered_text.assert_called_once_with(self.mock_main_game_instance)
+        self.assertEqual(context["rendered_text"], f"Rendered {clue_id_to_test}")
+        self.assertFalse(context["is_correctly_answered"])
+        self.assertEqual(context["previous_answers"], [])
+        self.assertEqual(context["depends_on_clues"], [expected_parent_id])
+
+        self.game_instance.get_first_dependent_clue_id.assert_called_once_with(clue_id_to_test)
+        self.assertIsNone(context["parent_clue_id"])
+
+        clue_obj.get_rendered_text = original_get_rendered_text
+
+    def test_get_clue_context_clue_with_multiple_children(self):
+        """Test get_clue_context for a clue with multiple children."""
+        clue_id_to_test = "#MULTI_CHILD_PARENT#"
+        expected_first_child_id = "#CHILD1#" # This is what the mocked method should return
+
+        # We still need parent_clue in self.game_instance.clues for get_clue_context to find it
+        parent_clue = Clue(clue_id=clue_id_to_test, clue_text="Parent", answer="ansP", depends_on=[])
+        self.game_instance.clues[clue_id_to_test] = parent_clue
+
+        original_get_rendered_text = parent_clue.get_rendered_text # Should be on the actual Clue obj
+        parent_clue.get_rendered_text = MagicMock(return_value=f"Rendered {clue_id_to_test}")
+
+        # Mock the new game method call to return the first child
+        self.game_instance.get_first_dependent_clue_id = MagicMock(return_value=expected_first_child_id)
+
+        context = get_clue_context(clue_id_to_test)
+
+        self.assertNotIn("error", context)
+        self.assertEqual(context["clue_id"], clue_id_to_test)
+        parent_clue.get_rendered_text.assert_called_once_with(self.mock_main_game_instance)
+
+        self.game_instance.get_first_dependent_clue_id.assert_called_once_with(clue_id_to_test)
+        self.assertEqual(context["parent_clue_id"], expected_first_child_id)
+
+        parent_clue.get_rendered_text = original_get_rendered_text
+
+
+    def test_get_clue_context_after_answering_clue(self):
+        """Test get_clue_context after answering a clue, using loaded game."""
+        clue_id_to_test = "#DUMMY_CLUE1#"
+        correct_answer = "dummy_answer1"
+        incorrect_answer = "wrong_dummy_answer"
+        expected_child_id = "#DUMMY_CLUE2#" # Child of #DUMMY_CLUE1#
+        clue_obj = self.game_instance.clues[clue_id_to_test]
+
+        original_get_rendered_text = clue_obj.get_rendered_text
+        clue_obj.get_rendered_text = MagicMock(return_value=f"Rendered {clue_id_to_test}")
+
+        # Mock the get_first_dependent_clue_id method for this test too
+        self.game_instance.get_first_dependent_clue_id = MagicMock(return_value=expected_child_id)
+
+        # 1. Answer incorrectly using the main.answer_clue tool
+        bracket_city_main.answer_clue(clue_id_to_test, incorrect_answer)
+
+        context_after_incorrect = get_clue_context(clue_id_to_test)
+        self.assertFalse(context_after_incorrect["is_correctly_answered"])
+        self.assertEqual(context_after_incorrect["previous_answers"], [incorrect_answer])
+        self.assertEqual(context_after_incorrect["parent_clue_id"], expected_child_id)
+        # Check call count for the mock after first call to get_clue_context
+        self.game_instance.get_first_dependent_clue_id.assert_called_with(clue_id_to_test)
+        call_count_after_first_answer = self.game_instance.get_first_dependent_clue_id.call_count
+
+
+        # 2. Answer correctly using the main.answer_clue tool
+        bracket_city_main.answer_clue(clue_id_to_test, correct_answer)
+
+        context_after_correct = get_clue_context(clue_id_to_test)
+        self.assertTrue(context_after_correct["is_correctly_answered"])
+        self.assertEqual(context_after_correct["previous_answers"], [incorrect_answer, correct_answer])
+        self.assertEqual(context_after_correct["parent_clue_id"], expected_child_id)
+        # Check call count incremented
+        self.assertEqual(self.game_instance.get_first_dependent_clue_id.call_count, call_count_after_first_answer + 1)
+
+
+        clue_obj.get_rendered_text = original_get_rendered_text # Restore
+
+    def test_get_clue_context_non_existent_clue(self):
+        """Test get_clue_context for a non-existent clue_id."""
+        context = get_clue_context("#NONEXISTENT#")
+
+        self.assertIn("error", context)
+        self.assertEqual(context["error"], "Clue ID '#NONEXISTENT#' not found.")
+        self.assertEqual(context["status_code"], 404)
+
+    def test_get_clue_context_for_production_end_clue(self):
+        """
+        Tests get_clue_context for the end clue of the production game file.
+        This is more of an integration test for this specific case.
+        """
+        prod_game_file = "games/json/20250110.json"
+        # Ensure the production game file path is correct relative to the project root
+        # Assuming tests are run from the project root or PYTHONPATH is set up.
+        if not os.path.exists(prod_game_file):
+             self.skipTest(f"Production game file {prod_game_file} not found.")
+
+        prod_game = Game.from_json_file(prod_game_file)
+        end_clue_id = "CLUE-C19" # As per recent rename
+
+        # Ensure CLUE-C19 is indeed an end clue in this game instance
+        # (i.e., nothing depends on it according to prod_game.adj)
+        self.assertEqual(prod_game.adj.get(end_clue_id, []), [],
+                         f"{end_clue_id} is expected to have no children in {prod_game_file}")
+
+        with patch('src.bracket_city_mcp.main.game', prod_game):
+            context = get_clue_context(end_clue_id)
+
+        self.assertNotIn("error", context, f"get_clue_context returned an error for {end_clue_id}")
+        self.assertEqual(context.get("clue_id"), end_clue_id)
+        self.assertFalse(context.get("is_correctly_answered"),
+                         f"End clue {end_clue_id} should not be answered by default.")
+
+        # Verify parent_clue_id using the actual game logic (which calls get_first_dependent_clue_id)
+        # For an end clue like CLUE-C19, it should have no children.
+        self.assertIsNone(context.get("parent_clue_id"),
+                          f"parent_clue_id for end clue {end_clue_id} should be None.")
+
+        # Additionally, verify that the get_first_dependent_clue_id method on the prod_game
+        # was indeed called by the get_clue_context tool.
+        # To do this, we need to spy on prod_game.get_first_dependent_clue_id
+        prod_game.get_first_dependent_clue_id = MagicMock(wraps=prod_game.get_first_dependent_clue_id)
+
+        with patch('src.bracket_city_mcp.main.game', prod_game):
+            get_clue_context(end_clue_id) # Call it again with the spy in place
+
+        prod_game.get_first_dependent_clue_id.assert_called_once_with(end_clue_id)

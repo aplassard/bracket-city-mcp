@@ -229,3 +229,63 @@ def test_end_clue_get_rendered_text_resolves_dependencies():
 
     # Reset for safety if other tests use these instances, though pytest usually isolates.
     end_clue.completed = False
+
+
+# --- Tests for previous_answers functionality (merged from src/bracket_city_mcp/tests/test_clue.py) ---
+
+def test_clue_initialization_includes_previous_answers():
+    """Test that a Clue object is initialized with an empty previous_answers list."""
+    clue = Clue(clue_id="#C1#", clue_text="What is 2+2?", answer="4", depends_on=[])
+    assert clue.previous_answers == []
+
+def test_answer_clue_correct_updates_previous_answers():
+    """Test answering a clue correctly updates previous_answers."""
+    clue = Clue(clue_id="#C1#", clue_text="What is 2+2?", answer="4", depends_on=[])
+
+    is_correct = clue.answer_clue("4")
+    assert is_correct
+    assert clue.completed
+    assert clue.previous_answers == ["4"]
+
+    # Second attempt (still correct, but already completed)
+    is_correct_again = clue.answer_clue(" 4 ") # Test with spaces, original casing stored
+    assert is_correct_again
+    assert clue.completed
+    assert clue.previous_answers == ["4", " 4 "]
+
+def test_answer_clue_incorrect_updates_previous_answers():
+    """Test answering a clue incorrectly updates previous_answers."""
+    clue = Clue(clue_id="#C2#", clue_text="What is the capital of France?", answer="Paris", depends_on=[])
+
+    is_correct = clue.answer_clue("London")
+    assert not is_correct
+    assert not clue.completed
+    assert clue.previous_answers == ["London"]
+
+    is_correct_again = clue.answer_clue("Berlin")
+    assert not is_correct_again
+    assert not clue.completed
+    assert clue.previous_answers == ["London", "Berlin"]
+
+def test_answer_clue_case_insensitivity_and_storage_for_previous_answers():
+    """Test that answer checking is case-insensitive but stores original case in previous_answers."""
+    clue = Clue(clue_id="#C3#", clue_text="Type 'Test'", answer="Test", depends_on=[])
+
+    clue.answer_clue("test") # Lowercase
+    assert clue.previous_answers == ["test"]
+
+    clue.completed = False
+    clue.answer_clue("TEST") # Uppercase
+    assert clue.previous_answers == ["test", "TEST"]
+
+    clue.completed = False
+    clue.answer_clue("TeSt") # Mixed case
+    assert clue.previous_answers == ["test", "TEST", "TeSt"]
+
+def test_answer_clue_end_clue_updates_previous_answers():
+    """Test that an end clue attempt updates previous_answers."""
+    end_clue = Clue(clue_id="#END#", clue_text="Final puzzle.", answer="", depends_on=[], is_end_clue=True)
+
+    end_clue.answer_clue("anything")
+    assert end_clue.previous_answers == ["anything"] # Still records the attempt
+    assert not end_clue.completed # Should not be completed

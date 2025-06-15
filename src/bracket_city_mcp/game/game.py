@@ -237,3 +237,26 @@ class Game:
         """
         end_clue_id = self.end_clues[0]
         return self.get_rendered_clue_text(end_clue_id)
+
+    def get_first_dependent_clue_id(self, clue_id: str) -> str | None:
+        """
+        Gets the ID of the first clue that depends on the given clue_id.
+
+        This is determined by looking at the game's adjacency list (self.adj),
+        which maps a clue ID to a list of other clue IDs that have it as a dependency.
+
+        Args:
+            clue_id: The ID of the clue for which to find the first dependent.
+
+        Returns:
+            The ID of the first dependent clue if one exists, otherwise None.
+            Returns None if the provided clue_id itself does not exist in the game.
+        """
+        if clue_id not in self.clues:
+            # Or raise ValueError(f"Clue ID '{clue_id}' not found in game.")
+            # For consistency with get_rendered_clue_text, raising an error might be better,
+            # but the subtask specified None is fine for this context.
+            return None
+
+        children_clues = self.adj.get(clue_id, [])
+        return children_clues[0] if children_clues else None

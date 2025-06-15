@@ -371,3 +371,56 @@ def test_get_rendered_game_text_complex_dependencies():
     # Hypothetically, if the end clue *was* completed
     end_clue.completed = True
     assert game.get_rendered_game_text() == "" # It would render its answer (empty string)
+
+
+# --- Tests for Game.get_first_dependent_clue_id ---
+
+def test_get_first_dependent_clue_id_one_child(valid_game: Game):
+    """Test getting the first dependent for clues that have exactly one child."""
+    # From valid_single_end_clue_game.json:
+    # #S1# is parent to #M1#
+    # #S2# is parent to #E1# (via #M1# also, but #S2# directly makes #E1# dependent)
+    # #M1# is parent to #E1#
+    assert valid_game.get_first_dependent_clue_id("#S1#") == "#M1#"
+    # Note: The way adj is built, if #E1# depends on #S2# and #M1#,
+    # then #S2# will have #E1# in its adj list, and #M1# will also have #E1# in its adj list.
+    # So, for #S2#, #E1# is a child. For #M1#, #E1# is also a child.
+    assert valid_game.get_first_dependent_clue_id("#S2#") == "#E1#"
+    assert valid_game.get_first_dependent_clue_id("#M1#") == "#E1#"
+
+def test_get_first_dependent_clue_id_no_children(valid_game: Game):
+    """Test getting the first dependent for a clue that has no children."""
+    # #E1# is the end clue and nothing depends on it.
+    assert valid_game.get_first_dependent_clue_id("#E1#") is None
+
+def test_get_first_dependent_clue_id_non_existent_clue(valid_game: Game):
+    """Test getting the first dependent for a non-existent clue ID."""
+    assert valid_game.get_first_dependent_clue_id("NON_EXISTENT_CLUE") is None
+
+def test_get_first_dependent_clue_id_multiple_children():
+    """Test getting the first dependent for a clue with multiple children."""
+    # Create a custom game setup for this specific scenario
+    game_data_multi_child = {
+        "clues": {
+            "#PARENT#": {"clue": "Parent", "answer": "AP", "depends_on": []},
+            "#CHILD1#": {"clue": "Child 1", "answer": "AC1", "depends_on": ["#PARENT#"]},
+            "#CHILD2#": {"clue": "Child 2", "answer": "AC2", "depends_on": ["#PARENT#"]},
+            "#CHILD3#": {"clue": "Child 3", "answer": "AC3", "depends_on": ["#PARENT#"]},
+            # #END# now depends on all children to ensure it's the only end clue
+            "#END#": {"clue": "End", "answer": "AE", "depends_on": ["#CHILD1#", "#CHILD2#", "#CHILD3#"]}
+        }
+    }
+    game = Game(game_data_multi_child)
+
+    # Verify that #END# is indeed the only end clue
+    assert game.end_clues == ["#END#"], f"Expected only #END# as end clue, got {game.end_clues}"
+
+    # The order in game.adj[#PARENT#] depends on the iteration order of clues during _build_graph.
+    # Based on dict definition order (Python 3.7+), #CHILD1# should be first.
+    assert game.adj.get("#PARENT#") == ["#CHILD1#", "#CHILD2#", "#CHILD3#"], "Children order in adj list is not as expected"
+    assert game.get_first_dependent_clue_id("#PARENT#") == "#CHILD1#"
+
+    # Test children; they should now all point to #END# as their first dependent.
+    assert game.get_first_dependent_clue_id("#CHILD1#") == "#END#"
+    assert game.get_first_dependent_clue_id("#CHILD2#") == "#END#"
+    assert game.get_first_dependent_clue_id("#CHILD3#") == "#END#"
