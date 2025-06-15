@@ -139,7 +139,7 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
             response["correct"] = True # User successfully reached the end state
             response["message"] = "You've reached the final clue! Congratulations, the game is complete!"
             response["game_completed"] = True
-            response["score"] = len(game.clues) - game.incorrect_guesses
+            response["score"] = game.incorrect_guesses
         else:
             # This case implies the end clue became active before all other prerequisites were met,
             # or the user is trying to 'answer' it prematurely.
@@ -182,7 +182,7 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
         # Calculate score: total clues - incorrect guesses.
         # The end clue itself doesn't count towards "solvable" clues for scoring if it has no answer.
         # However, len(game.clues) includes it. This definition is fine for now.
-        score = len(game.clues) - game.incorrect_guesses
+        score = game.incorrect_guesses
         response["score"] = score
 
     return response
