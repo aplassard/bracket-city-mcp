@@ -20,7 +20,7 @@ not provide a direct test_client() method. This is a known limitation.
 game = Game.from_json_file("games/json/20250110.json")
 
 # Create the MCP server
-mcp = FastMCP("BracketCity")
+mcp = FastMCP("BracketCity", host="0.0.0.0", port=8080)
 
 # Health check endpoint
 @mcp.tool()
@@ -190,8 +190,8 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
 
 def main():
     # TODO: Make host and port configurable (future enhancement for server execution)
-    # mcp.run(host="0.0.0.0", port=8080) # This was causing TypeError
-    uvicorn.run(mcp, host="0.0.0.0", port=8080)
+    mcp.run() # This was causing TypeError
+    #uvicorn.run(mcp, host="0.0.0.0", port=8080)
 
 if __name__ == "__main__":
     main()
