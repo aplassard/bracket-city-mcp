@@ -33,8 +33,9 @@ To start the Bracket City MCP server:
 1.  **Ensure your virtual environment is active** and dependencies are installed (see Installation).
 2.  **Run the main server script**:
     ```bash
-    python src/bracket_city_mcp/main.py
+    uv run bracket-city-mcp
     ```
+    This command becomes available after you've installed the package using `uv pip install -e .[dev]` as described in the Installation section.
     Currently, the server will run on `0.0.0.0` at port `8080`. These are hardcoded for now, but making them configurable is a planned enhancement.
 
 ## MCP Tools and Resources

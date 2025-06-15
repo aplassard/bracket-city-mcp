@@ -9,6 +9,7 @@ dependencies = [
     "pip>=25.1.1",
     "pytest>=8.4.0",
     "pytest-asyncio>=1.0.0",
+    "uvicorn>=0.34.3", # Added for direct use in main.py
 ]
 
 [project.optional-dependencies]
@@ -17,7 +18,8 @@ dev = [
     "pytest-asyncio>=0.23.0",
 ]
 
-# The [project.scripts] section is now gone
+[project.scripts]
+bracket-city-mcp = "bracket_city_mcp.main:main"
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"

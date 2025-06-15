@@ -1,3 +1,4 @@
+import uvicorn
 from mcp.server.fastmcp import FastMCP
 from bracket_city_mcp.game.game import Game
 from typing import List, Dict, Any
@@ -187,9 +188,13 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
 
     return response
 
-if __name__ == "__main__":
+def main():
     # TODO: Make host and port configurable (future enhancement for server execution)
-    mcp.run(host="0.0.0.0", port=8080)
+    # mcp.run(host="0.0.0.0", port=8080) # This was causing TypeError
+    uvicorn.run(mcp, host="0.0.0.0", port=8080)
+
+if __name__ == "__main__":
+    main()
 
 # TODO: Implement tests for the BracketCity MCP server. (See module docstring for more details)
 # The FastMCP library does not seem to provide a test_client() method.
