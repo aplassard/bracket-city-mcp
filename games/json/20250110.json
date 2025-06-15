@@ -57,7 +57,7 @@
             "depends_on": []
         },
         "CLUE-C10": {
-            "clue": "sheep color for your brother whose job is trying to get hit by a limouCLUE-C9e",
+            "clue": "sheep color for your brother whose \"job\" is trying to get hit by a limouCLUE-C9e",
             "answer": "black",
             "depends_on": [
                 "CLUE-C9"
