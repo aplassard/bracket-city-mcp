@@ -6,7 +6,7 @@ from typing import List, Dict, Any
 Main module for the BracketCity MCP server.
 
 This module initializes and runs the FastMCP server for the BracketCity game.
-It defines MCP tools and resources for interacting with the game, such as
+It defines MCP tools for interacting with the game, such as
 retrieving game state, clue details, and submitting answers.
 
 The current testing strategy for this server involves running it in a separate
@@ -27,15 +27,15 @@ def health() -> str:
     """Provides a simple health check for the server."""
     return "OK"
 
-@mcp.resource("bracketcity://game")
+@mcp.tool(name="get_full_game_text")
 def get_full_game_text() -> str:
-    """Retrieves the full game text, showing all clues and their current state."""
+    """Tool to retrieve the full game text, showing all clues and their current state."""
     return game.get_rendered_game_text()
 
-@mcp.resource("bracketcity://clue/{clue_id}")
+@mcp.tool(name="get_clue_text")
 def get_clue_text(clue_id: str) -> str:
     """
-    Retrieves the rendered text for a specific clue.
+    Tool to retrieve the rendered text for a specific clue.
 
     Args:
         clue_id: The ID of the clue to retrieve.
@@ -52,9 +52,9 @@ def get_clue_text(clue_id: str) -> str:
         # for machine clients.
         return str(e)
 
-@mcp.resource("bracketcity://clues/available")
+@mcp.tool(name="get_available_clues")
 def get_available_clues() -> List[str]:
-    """Retrieves a list of IDs for all currently available (active) clues."""
+    """Tool to retrieve a list of IDs for all currently available (active) clues."""
     return list(game.active_clues)
 
 @mcp.tool(name="get_clue_context")
