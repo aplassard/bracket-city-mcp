@@ -20,6 +20,7 @@ not provide a direct test_client() method. This is a known limitation.
 game = Game.from_json_file("games/json/20250110.json")
 
 # Create the MCP server
+# TODO: Make host and port configurable (future enhancement for server execution)
 mcp = FastMCP("BracketCity", host="0.0.0.0", port=8080)
 
 # Health check endpoint
@@ -189,15 +190,8 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
     return response
 
 def main():
-    # TODO: Make host and port configurable (future enhancement for server execution)
-    mcp.run() # This was causing TypeError
-    #uvicorn.run(mcp, host="0.0.0.0", port=8080)
+    
+    mcp.run()
 
 if __name__ == "__main__":
     main()
-
-# TODO: Implement tests for the BracketCity MCP server. (See module docstring for more details)
-# The FastMCP library does not seem to provide a test_client() method.
-# A different testing strategy is needed, possibly involving running the
-# server in a separate thread/process and using an MCP client to make requests.
-# Consult FastMCP documentation or examples for the recommended approach.
