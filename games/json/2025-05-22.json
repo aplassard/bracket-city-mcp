@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "decide to end, as a TV show \u274c\ud83d\udcfa",
+            "depends_on": [],
+            "answer": "cancel"
+        },
+        "CLUE-C7": {
+            "clue": "\"___ off\" (CLUE-C8, as a wedding)",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "call"
+        },
+        "CLUE-C1": {
+            "clue": "___-up CLUE-C7 (extravagant alternative to an alarm clock at a hotel)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "wake"
+        },
+        "CLUE-C9": {
+            "clue": "unpleasant kind of aCLUE-C1ning",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "rude"
+        },
+        "CLUE-C4": {
+            "clue": "___ serve (ice cream extCLUE-C9d into a swirl)",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "soft"
+        },
+        "CLUE-C3": {
+            "clue": "theater teacher's advice to the CLUE-C4-spoken actor",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "project"
+        },
+        "CLUE-C10": {
+            "clue": "tiny post-nuptial CLUE-C3ile",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "rice"
+        },
+        "CLUE-C15": {
+            "clue": "\"The PCLUE-C10 Is ___\"",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "right"
+        },
+        "CLUE-C13": {
+            "clue": "\"For Whom the ___ Tolls\"",
+            "depends_on": [],
+            "answer": "bell"
+        },
+        "CLUE-C12": {
+            "clue": "word before pong or CLUE-C13y",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "beer"
+        },
+        "CLUE-C16": {
+            "clue": "\"head\" on a CLUE-C12",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "foam"
+        },
+        "CLUE-C14": {
+            "clue": "tubular CLUE-C16 pool toy",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "noodle"
+        },
+        "CLUE-C6": {
+            "clue": "soup minus the CLUE-C14s / other stuff",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Broth"
+        },
+        "CLUE-C11": {
+            "clue": "iron on the periodic table",
+            "depends_on": [],
+            "answer": "Fe"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C11rrari's biggest Italian rival, briefly",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "lambo"
+        },
+        "CLUE-C2": {
+            "clue": "body part involved in a fCLUE-C5yant refusal from little pigs",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "chin"
+        },
+        "CLUE-ROOT": {
+            "clue": "the WCLUE-C15 CLUE-C6ers are granted a patent on their \"Flying-MaCLUE-C2e\"",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C2",
+                "CLUE-C6"
+            ],
+            "answer": "the Wright Brothers are granted a patent on their \"Flying-Machine\""
+        }
+    }
+}

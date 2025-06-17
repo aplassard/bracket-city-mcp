@@ -1,0 +1,134 @@
+{
+    "clues": {
+        "CLUE-C19": {
+            "clue": "\ud83d\udc40",
+            "depends_on": [],
+            "answer": "eyes"
+        },
+        "CLUE-C3": {
+            "clue": "something to keep your CLUE-C19 on, with \"the\"",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "prize"
+        },
+        "CLUE-C11": {
+            "clue": "they often make a scene",
+            "depends_on": [],
+            "answer": "actors"
+        },
+        "CLUE-C10": {
+            "clue": "statuette CLUE-C3d by CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3"
+            ],
+            "answer": "Oscar"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C10 the ___",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Grouch"
+        },
+        "CLUE-C15": {
+            "clue": "free ___ line",
+            "depends_on": [],
+            "answer": "throw"
+        },
+        "CLUE-C5": {
+            "clue": "you CLUE-C15 a tantrum, you make a ___",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "stink"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C5 to high ___",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "heaven"
+        },
+        "CLUE-C4": {
+            "clue": "instrument apparently popular in CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Harp"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C16o or CLUE-C4o",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C4"
+            ],
+            "answer": "Marx"
+        },
+        "CLUE-C7": {
+            "clue": "applies goop, as to one's hair",
+            "depends_on": [],
+            "answer": "gels"
+        },
+        "CLUE-C17": {
+            "clue": "festive event",
+            "depends_on": [],
+            "answer": "party"
+        },
+        "CLUE-C9": {
+            "clue": "line that sometimes recedes",
+            "depends_on": [],
+            "answer": "hair"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83c\udf4a",
+            "depends_on": [],
+            "answer": "orange"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C9 color that is actually closer to CLUE-C18",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C9"
+            ],
+            "answer": "red"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C17 linked with the color CLUE-C2",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C2"
+            ],
+            "answer": "Communist"
+        },
+        "CLUE-C12": {
+            "clue": "demand from a bouncer",
+            "depends_on": [],
+            "answer": "id"
+        },
+        "CLUE-C1": {
+            "clue": "recommendation to someone who posts too much, with \"off\"",
+            "depends_on": [],
+            "answer": "log"
+        },
+        "CLUE-C8": {
+            "clue": "an CLUE-C12eoCLUE-C1ue might write one",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12"
+            ],
+            "answer": "Manifesto"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14 and EnCLUE-C7 publish \"The CLUE-C6 CLUE-C8\"",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C6",
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "Marx and Engels publish \"The Communist Manifesto\""
+        }
+    }
+}

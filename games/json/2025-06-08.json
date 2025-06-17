@@ -1,0 +1,143 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "good thing to be of the party",
+            "depends_on": [],
+            "answer": "life"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C8 ___ death",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "after"
+        },
+        "CLUE-C1": {
+            "clue": "pre is a prefix for before, ___ is a prefix for CLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "Post"
+        },
+        "CLUE-C13": {
+            "clue": "\"the ___ is the limit\"",
+            "depends_on": [],
+            "answer": "sky"
+        },
+        "CLUE-C16": {
+            "clue": "some is saturated",
+            "depends_on": [],
+            "answer": "fat"
+        },
+        "CLUE-C10": {
+            "clue": "riCLUE-C13 thing to do with CLUE-C16e",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C16"
+            ],
+            "answer": "tempt"
+        },
+        "CLUE-C14": {
+            "clue": "cloak-and-dagger types",
+            "depends_on": [],
+            "answer": "spies"
+        },
+        "CLUE-C20": {
+            "clue": "___ KriCLUE-C14",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "rice"
+        },
+        "CLUE-C3": {
+            "clue": "high (as a pCLUE-C20), scary (as a ski run)",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "steep"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C3le location",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "church"
+        },
+        "CLUE-C11": {
+            "clue": "big instrument in a CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "organ"
+        },
+        "CLUE-C4": {
+            "clue": "one of two rolled at a craps table \ud83c\udfb2",
+            "depends_on": [],
+            "answer": "Die"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C4go or Juan or Antonio",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "San"
+        },
+        "CLUE-C6": {
+            "clue": "\"__!\" (x3) says CLUE-C12ta Claus \ud83c\udf84",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "ho"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C11 that breaks down alcoCLUE-C6l",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C6"
+            ],
+            "answer": "liver"
+        },
+        "CLUE-C15": {
+            "clue": "\"one ___ fits all\"",
+            "depends_on": [],
+            "answer": "size"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C15 for Bo Peep or Boy Blue",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "little"
+        },
+        "CLUE-C19": {
+            "clue": "two after tic",
+            "depends_on": [],
+            "answer": "toe"
+        },
+        "CLUE-C2": {
+            "clue": "\"CLUE-C9\" animal evoked by a CLUE-C19, apparently",
+            "depends_on": [
+                "CLUE-C19",
+                "CLUE-C9"
+            ],
+            "answer": "Piggy"
+        },
+        "CLUE-C7": {
+            "clue": "honorific for CLUE-C2 or Marple",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "miss"
+        },
+        "CLUE-ROOT": {
+            "clue": "the US CLUE-C1al Service atCLUE-C10s to deCLUE-C5 mail by CLUE-C7ile",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C10",
+                "CLUE-C5",
+                "CLUE-C7"
+            ],
+            "answer": "the US Postal Service attempts to deliver mail by missile"
+        }
+    }
+}

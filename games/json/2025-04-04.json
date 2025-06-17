@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "__Fi \ud83d\udedc",
+            "depends_on": [],
+            "answer": "wi"
+        },
+        "CLUE-C11": {
+            "clue": "\"___ the slate clean\"",
+            "depends_on": [],
+            "answer": "wipe"
+        },
+        "CLUE-C2": {
+            "clue": "single ___ \u27a1\ufe0f triple ___ = harrowing, delicate CLUE-C16pe \u27a1\ufe0f confident, luxurious CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C16"
+            ],
+            "answer": "ply"
+        },
+        "CLUE-C4": {
+            "clue": "prefix with turn, action, call, CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Re"
+        },
+        "CLUE-C10": {
+            "clue": "after CLUE-C4 but before Fa",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "MI"
+        },
+        "CLUE-C14": {
+            "clue": "the B in BCLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "body"
+        },
+        "CLUE-C12": {
+            "clue": "\"over my ___ CLUE-C14!\"",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "dead"
+        },
+        "CLUE-C7": {
+            "clue": "street signs indicate a CLUE-C12 one",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "end"
+        },
+        "CLUE-C9": {
+            "clue": "mon ___ (\"my friCLUE-C7\" in \ud83c\uddeb\ud83c\uddf7)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "ami"
+        },
+        "CLUE-C6": {
+            "clue": "old-fashioned word for a criminal",
+            "depends_on": [],
+            "answer": "crook"
+        },
+        "CLUE-C15": {
+            "clue": "not later",
+            "depends_on": [],
+            "answer": "now"
+        },
+        "CLUE-C13": {
+            "clue": "\"it's CLUE-C15 or ___\"",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "never"
+        },
+        "CLUE-C8": {
+            "clue": "like two lines that CLUE-C13 meet",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "parallel"
+        },
+        "CLUE-C1": {
+            "clue": "viral gesture in which a person leans forward into the bent CLUE-C6 of a slanted, upward angled arm, while raising the opposite arm out straight in a CLUE-C8 direction",
+            "depends_on": [
+                "CLUE-C6",
+                "CLUE-C8"
+            ],
+            "answer": "dab"
+        },
+        "CLUE-C3": {
+            "clue": "the first word embodied in \"fuhgedCLUE-C1oudit\"",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "forget"
+        },
+        "CLUE-C5": {
+            "clue": "fee sometimes paid by the CLUE-C3ful",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "late"
+        },
+        "CLUE-ROOT": {
+            "clue": "VitCLUE-C9n C is isoCLUE-C5d",
+            "depends_on": [
+                "CLUE-C5",
+                "CLUE-C9"
+            ],
+            "answer": "Vitamin C is isolated by Charles Glen King"
+        }
+    }
+}

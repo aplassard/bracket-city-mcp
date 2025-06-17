@@ -1,0 +1,130 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "the I in VIP",
+            "depends_on": [],
+            "answer": "important"
+        },
+        "CLUE-C2": {
+            "clue": "___out (lonely but CLUE-C18 job in a heist)",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "look"
+        },
+        "CLUE-C15": {
+            "clue": "a furtive CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "peek"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C15-a-___ \ud83d\ude48\ud83d\ude49",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "boo"
+        },
+        "CLUE-C11": {
+            "clue": "word with Nobel or CLUE-C16by",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "prize"
+        },
+        "CLUE-C17": {
+            "clue": "\"Lean __ Me\"",
+            "depends_on": [],
+            "answer": "on"
+        },
+        "CLUE-C4": {
+            "clue": "midday meal that \"eCLUE-C17\" makes fancier",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "lunch"
+        },
+        "CLUE-C5": {
+            "clue": "granola ___ (CLUE-C11d CLUE-C4box item)",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C4"
+            ],
+            "answer": "bar"
+        },
+        "CLUE-C1": {
+            "clue": "\"step into my ___\" you say as you gesture toward the SCLUE-C5ro door",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "office"
+        },
+        "CLUE-C13": {
+            "clue": "\"___ the alarm!\"",
+            "depends_on": [],
+            "answer": "sound"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C13 associated with an owl",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "hoot"
+        },
+        "CLUE-C3": {
+            "clue": "unfair place to try to sCLUE-C8 (?) fish",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "barrel"
+        },
+        "CLUE-C9": {
+            "clue": "\ud83c\udde9\ud83c\uddea = nein, \ud83c\udde8\ud83c\uddf3 = \u4e0d, \ud83c\uddfa\ud83c\uddf8 = __",
+            "depends_on": [],
+            "answer": "no"
+        },
+        "CLUE-C10": {
+            "clue": "test episode of a TV show",
+            "depends_on": [],
+            "answer": "pilot"
+        },
+        "CLUE-C7": {
+            "clue": "word for \"CLUE-C9\" favored by CLUE-C10s",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C9"
+            ],
+            "answer": "negative"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C7 ___ (what's NOT there)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "space"
+        },
+        "CLUE-C12": {
+            "clue": "Jay married to Beyonc\u00e9",
+            "depends_on": [],
+            "answer": "Z"
+        },
+        "CLUE-C14": {
+            "clue": "Ctrl-CLUE-C12 to __do",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "un"
+        },
+        "CLUE-ROOT": {
+            "clue": "English custom CLUE-C1rs seize the CLUE-C3 of a CLUE-C6 gCLUE-C14",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C14",
+                "CLUE-C3",
+                "CLUE-C6"
+            ],
+            "answer": "English custom officers seize the barrel of a space gun"
+        }
+    }
+}

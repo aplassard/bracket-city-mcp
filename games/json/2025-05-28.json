@@ -1,0 +1,125 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "word after chronological or alphabetical",
+            "depends_on": [],
+            "answer": "order"
+        },
+        "CLUE-C15": {
+            "clue": "\"til ___ do us part\"",
+            "depends_on": [],
+            "answer": "Death"
+        },
+        "CLUE-C3": {
+            "clue": "Oscar ___ (something you practice in the mirror after your audition for \"Claus of CLUE-C15\")",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "speech"
+        },
+        "CLUE-C17": {
+            "clue": "text-__-CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "to"
+        },
+        "CLUE-C7": {
+            "clue": "camcCLUE-C9 butCLUE-C17n that often looks like this \ud83d\udd34",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C9"
+            ],
+            "answer": "record"
+        },
+        "CLUE-C14": {
+            "clue": "\"don't be ___ of the problem\"",
+            "depends_on": [],
+            "answer": "part"
+        },
+        "CLUE-C1": {
+            "clue": "*CLUE-C7 ___* (everyone's head turns toward you after you say YOU got the CLUE-C14 in \"Claus of Death\")",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C7"
+            ],
+            "answer": "scratch"
+        },
+        "CLUE-C13": {
+            "clue": "subject of a desire to CLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "itch"
+        },
+        "CLUE-C8": {
+            "clue": "___ up (motion for a pCLUE-C13er or an old clock)",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "wind"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C8 turns them inside-out and then you get wet",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "umbrellas"
+        },
+        "CLUE-C10": {
+            "clue": "\"lost and ___\" (home to many CLUE-C6)",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "found"
+        },
+        "CLUE-C11": {
+            "clue": "bugs CLUE-C10 in trousers, it is said",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "ants"
+        },
+        "CLUE-C2": {
+            "clue": "\"___!\" yells the director when your Santa pCLUE-C11 fall down in the middle of the big fight scene",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "cut"
+        },
+        "CLUE-C5": {
+            "clue": "___board (metaphorical destination for your CLUE-C2 or copied text)",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "clip"
+        },
+        "CLUE-C16": {
+            "clue": "it waxes and wanes",
+            "depends_on": [],
+            "answer": "Moon"
+        },
+        "CLUE-C12": {
+            "clue": "Blue CLUE-C16 or Samuel Adams, e.g.",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "beer"
+        },
+        "CLUE-C4": {
+            "clue": "style of CLUE-C12 that was an important source of nutrition in medieval Europe",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "ale"
+        },
+        "CLUE-ROOT": {
+            "clue": "the ECLUE-C5se of ThCLUE-C4s",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C5"
+            ],
+            "answer": "May 28, 585 BC: the Eclipse of Thales"
+        }
+    }
+}

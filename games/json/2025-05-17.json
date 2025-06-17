@@ -1,0 +1,146 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "appetizer or main, e.g.",
+            "depends_on": [],
+            "answer": "course"
+        },
+        "CLUE-C9": {
+            "clue": "part of the golf CLUE-C14 where you putt",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "green"
+        },
+        "CLUE-C8": {
+            "clue": "methane is considered a CLUE-C9house one \ud83d\udca8",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "gas"
+        },
+        "CLUE-C5": {
+            "clue": "a car with this two-letter distinction requires no CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "ev"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83c\udfb9 legend StCLUE-C5ie",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Wonder"
+        },
+        "CLUE-C17": {
+            "clue": "\"work hard, ___ hard\"",
+            "depends_on": [],
+            "answer": "play"
+        },
+        "CLUE-C15": {
+            "clue": "\"let's CLUE-C17 it by ___ \"",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "ear"
+        },
+        "CLUE-C4": {
+            "clue": "this type of bCLUE-C15 is actually black underneath its fur",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Polar"
+        },
+        "CLUE-C11": {
+            "clue": "hobby for someone with a CLUE-C4oid",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "photography"
+        },
+        "CLUE-C3": {
+            "clue": "this kind of CLUE-C11 is often a no-no at the museum",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "flash"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C3y jewelry",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "bling"
+        },
+        "CLUE-C6": {
+            "clue": "keep to oneself selfishly, in the manner of a siCLUE-C19",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "Hog"
+        },
+        "CLUE-C1": {
+            "clue": "number at which the New Year's Eve countdown often starts",
+            "depends_on": [],
+            "answer": "ten"
+        },
+        "CLUE-C2": {
+            "clue": "stocky cousin of a frog or a top-heavy NinCLUE-C1do character",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "toad"
+        },
+        "CLUE-C10": {
+            "clue": "imperfections, especially on a CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "warts"
+        },
+        "CLUE-C12": {
+            "clue": "one roaming the halls of CLUE-C6CLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C6"
+            ],
+            "answer": "Wizard"
+        },
+        "CLUE-C13": {
+            "clue": "these impressions are important",
+            "depends_on": [],
+            "answer": "first"
+        },
+        "CLUE-C20": {
+            "clue": "CLUE-C13 man",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "adam"
+        },
+        "CLUE-C7": {
+            "clue": "where Margot Robbie and macCLUE-C20ia nuts originated \ud83c\udde6\ud83c\uddfa",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "Australia"
+        },
+        "CLUE-C16": {
+            "clue": "nickname for CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Oz"
+        },
+        "CLUE-ROOT": {
+            "clue": "The CLUE-C18ful CLUE-C12 of CLUE-C16 is published",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C16",
+                "CLUE-C18"
+            ],
+            "answer": "The Wonderful Wizard of Oz is published"
+        }
+    }
+}

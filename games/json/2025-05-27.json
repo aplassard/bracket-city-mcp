@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "litter box user",
+            "depends_on": [],
+            "answer": "cat"
+        },
+        "CLUE-C7": {
+            "clue": "\"say __ for me!\" (you probably won't)",
+            "depends_on": [],
+            "answer": "hi"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C7bernating animal",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "bear"
+        },
+        "CLUE-C3": {
+            "clue": "bad thing to do with your marbles or CLUE-C16ings",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "lose"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C17astrophic thing for your vacuum to CLUE-C3",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C3"
+            ],
+            "answer": "suction"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C5 ___",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "cup"
+        },
+        "CLUE-C12": {
+            "clue": "edible alternative to a CLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "cone"
+        },
+        "CLUE-C10": {
+            "clue": "vision feature powered by CLUE-C12s",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "color"
+        },
+        "CLUE-C1": {
+            "clue": "some think using this CLUE-C10 plate will make you eat less",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "blue"
+        },
+        "CLUE-C15": {
+            "clue": "dark CLUE-C1 suit color",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Navy"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C15 with reasonably priced sweaters",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "old"
+        },
+        "CLUE-C11": {
+            "clue": "form factor for toilet paper",
+            "depends_on": [],
+            "answer": "roll"
+        },
+        "CLUE-C2": {
+            "clue": "more formal thing to say during CLUE-C11 call than \"here\"",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "present"
+        },
+        "CLUE-C14": {
+            "clue": "gift ___ (lazy CLUE-C2)",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "card"
+        },
+        "CLUE-C4": {
+            "clue": "cold body part you might be given at a party",
+            "depends_on": [],
+            "answer": "shoulder"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C4 insert popular in the 80s",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "pad"
+        },
+        "CLUE-C13": {
+            "clue": "use a CLUE-C9dle to spend money",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "bid"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C14 game with CLUE-C13s and a lot of rules",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14"
+            ],
+            "answer": "Bridge"
+        },
+        "CLUE-ROOT": {
+            "clue": "the GCLUE-C8en Gate CLUE-C6 opens",
+            "depends_on": [
+                "CLUE-C6",
+                "CLUE-C8"
+            ],
+            "answer": "the Golden Gate Bridge opens"
+        }
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "to smoke like one is to smoke too much",
+            "depends_on": [],
+            "answer": "chimney"
+        },
+        "CLUE-C5": {
+            "clue": "day preceded by a home invasion via CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Christmas"
+        },
+        "CLUE-C4": {
+            "clue": "the Grinch's grew \"three sizes\" on CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "heart"
+        },
+        "CLUE-C7": {
+            "clue": "one might be trapped in an invisible box",
+            "depends_on": [],
+            "answer": "mime"
+        },
+        "CLUE-C2": {
+            "clue": "kind of party where someone might do \"fake CLUE-C4 attack\" CLUE-C7",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C7"
+            ],
+            "answer": "surprise"
+        },
+        "CLUE-C14": {
+            "clue": "quiz that might CLUE-C2 you",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Pop"
+        },
+        "CLUE-C19": {
+            "clue": "golfer \ud83d\udc2f",
+            "depends_on": [],
+            "answer": "woods"
+        },
+        "CLUE-C17": {
+            "clue": "\"my ___ of the CLUE-C19\"",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "neck"
+        },
+        "CLUE-C12": {
+            "clue": "stop oneself from doing something",
+            "depends_on": [],
+            "answer": "refrain"
+        },
+        "CLUE-C13": {
+            "clue": "\"shh\" is a common CLUE-C12 here",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "library"
+        },
+        "CLUE-C1": {
+            "clue": "\"your CLUE-C13 just burned down, both books were lost, and you hadn't even finished coloring one of them\", e.g.",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "insult"
+        },
+        "CLUE-C15": {
+            "clue": "like an CLUE-C1 or an odor",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "offensive"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C15 move in fencing that's also an exercise",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "lunge"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C17 style that sometimes pCLUE-C3s",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C3"
+            ],
+            "answer": "V"
+        },
+        "CLUE-C11": {
+            "clue": "rest you might silently fight for",
+            "depends_on": [],
+            "answer": "arm"
+        },
+        "CLUE-C16": {
+            "clue": "one with shining CLUE-C11or",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Knight"
+        },
+        "CLUE-C18": {
+            "clue": "not absent",
+            "depends_on": [],
+            "answer": "present"
+        },
+        "CLUE-C8": {
+            "clue": "\"your ___ is CLUE-C18 enough\" (no gifts)",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "presence"
+        },
+        "CLUE-C6": {
+            "clue": "fleeting CLUE-C8 in an office, for short",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Temp"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14e Clement CLUE-C10 dissolves the CLUE-C16s CLUE-C6lar",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C14",
+                "CLUE-C16",
+                "CLUE-C6"
+            ],
+            "answer": "Pope Clement V dissolves the Knights Temp lar"
+        }
+    }
+}

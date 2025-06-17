@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "\"___ among thieves\"",
+            "depends_on": [],
+            "answer": "honor"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C16ific for a young lady",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "miss"
+        },
+        "CLUE-C2": {
+            "clue": "Craig's has CLUE-C11ed connections and used furniture",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "List"
+        },
+        "CLUE-C18": {
+            "clue": "\"to ___ is human\"",
+            "depends_on": [],
+            "answer": "err"
+        },
+        "CLUE-C8": {
+            "clue": "you eat it when you admit CLUE-C18or",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "crow"
+        },
+        "CLUE-C5": {
+            "clue": "like a CLUE-C8d that's hard to please",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "tough"
+        },
+        "CLUE-C14": {
+            "clue": "\"a CLUE-C5 ___ to follow\"",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "act"
+        },
+        "CLUE-C6": {
+            "clue": "place for a tCLUE-C14less person's foot",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "mouth"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C2erine product, with \"CLUE-C6\"",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C6"
+            ],
+            "answer": "Wash"
+        },
+        "CLUE-C17": {
+            "clue": "buttocks in Britain",
+            "depends_on": [],
+            "answer": "arse"
+        },
+        "CLUE-C12": {
+            "clue": "coCLUE-C17 paper that smooths",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "Sand"
+        },
+        "CLUE-C10": {
+            "clue": "hour with discounted drinks",
+            "depends_on": [],
+            "answer": "Happy"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C12ler who played CLUE-C10 Gilmore",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C12"
+            ],
+            "answer": "Adam"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C7's companion in Eden",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "eve"
+        },
+        "CLUE-C3": {
+            "clue": "like some tales that are hard to beliCLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "tall"
+        },
+        "CLUE-C4": {
+            "clue": "___bucks where \"CLUE-C3\" = \"small\" (???)",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "star"
+        },
+        "CLUE-C1": {
+            "clue": "coat material favored by some old hollywood CLUE-C4lets",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "fur"
+        },
+        "CLUE-C15": {
+            "clue": "one with CLUE-C1ry patients",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "vet"
+        },
+        "CLUE-ROOT": {
+            "clue": "George CLUE-C9ington uses first-ever CLUE-C15o",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C9"
+            ],
+            "answer": "George Washington uses first-ever veto"
+        }
+    }
+}

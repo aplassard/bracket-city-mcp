@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "name for a Barbie doll played by Ryan Gosling",
+            "depends_on": [],
+            "answer": "Ken"
+        },
+        "CLUE-C18": {
+            "clue": "Dick \u2b05\ufe0f ___ \u27a1\ufe0f CLUE-C8t",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Clark"
+        },
+        "CLUE-C4": {
+            "clue": "frankly, what CLUE-C18 Gable didn't do with a damn, my dear",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "give"
+        },
+        "CLUE-C3": {
+            "clue": "something you might CLUE-C4 someone when they need help or have performed admirably, with \"a\"",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "hand"
+        },
+        "CLUE-C11": {
+            "clue": "something of theirs one might strut",
+            "depends_on": [],
+            "answer": "stuff"
+        },
+        "CLUE-C1": {
+            "clue": "a \"holographic\" one is CLUE-C3written, but still describes what to do with someone's CLUE-C11 when they die",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3"
+            ],
+            "answer": "will"
+        },
+        "CLUE-C7": {
+            "clue": "what there is when there is a CLUE-C1, it is said",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "way"
+        },
+        "CLUE-C17": {
+            "clue": "\"the one that ___ aCLUE-C7\"",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "got"
+        },
+        "CLUE-C16": {
+            "clue": "how some gains are CLUE-C17ten",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "ill"
+        },
+        "CLUE-C13": {
+            "clue": "a big one might have 2,000+ pieces",
+            "depends_on": [],
+            "answer": "puzzle"
+        },
+        "CLUE-C5": {
+            "clue": "(temporarily?) unable to proceed with this CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "stuck"
+        },
+        "CLUE-C10": {
+            "clue": "like ___ and water (not compatible)",
+            "depends_on": [],
+            "answer": "oil"
+        },
+        "CLUE-C12": {
+            "clue": "you might be asked not to spCLUE-C10 it",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "ending"
+        },
+        "CLUE-C2": {
+            "clue": "\"I'm all ___\" you say soliciting ideas for how to get your hand unCLUE-C5 from the vCLUE-C12 machine",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C5"
+            ],
+            "answer": "ears"
+        },
+        "CLUE-C9": {
+            "clue": "word associated with CLUE-C2, candy, feet",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "corn"
+        },
+        "CLUE-C6": {
+            "clue": "one at the end of a level or in a CLUE-C9er office",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "boss"
+        },
+        "CLUE-C15": {
+            "clue": "one a mob CLUE-C6 might smell",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "rat"
+        },
+        "CLUE-C14": {
+            "clue": "word after amazing or CLUE-C15 or foot",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "race"
+        },
+        "CLUE-ROOT": {
+            "clue": "PriscCLUE-C16a Presley opens GCLUE-C14land to the public",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C16"
+            ],
+            "answer": "Priscilla Presley opens Graceland to the public"
+        }
+    }
+}

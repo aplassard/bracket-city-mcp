@@ -1,0 +1,130 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "\"deus __ machina\"",
+            "depends_on": [],
+            "answer": "ex"
+        },
+        "CLUE-C1": {
+            "clue": "\"It's Sex AND the ___, not SCLUE-C15 IN the ___\" you scream at your mom",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "city"
+        },
+        "CLUE-C9": {
+            "clue": "\"__ problemo\" (correcci\u00f3n: __ hay problema)",
+            "depends_on": [],
+            "answer": "no"
+        },
+        "CLUE-C16": {
+            "clue": "\"___ your CLUE-C9se\" \ud83e\udd27",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "blow"
+        },
+        "CLUE-C4": {
+            "clue": "\"___ last words\" (portentous statement to/from a CLUE-C16hard)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "famous"
+        },
+        "CLUE-C7": {
+            "clue": "the masculine form of FeliCLUE-C1 or a CLUE-C4 cat",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C4"
+            ],
+            "answer": "Felix"
+        },
+        "CLUE-C17": {
+            "clue": "\"___ it forward\"",
+            "depends_on": [],
+            "answer": "pay"
+        },
+        "CLUE-C10": {
+            "clue": "taking a CLUE-C17 one is a bummer",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "cut"
+        },
+        "CLUE-C14": {
+            "clue": "do this or CLUE-C10 bait",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "fish"
+        },
+        "CLUE-C8": {
+            "clue": "domain for retail cop with limited authority",
+            "depends_on": [],
+            "answer": "mall"
+        },
+        "CLUE-C12": {
+            "clue": "low-rise kind of CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "strip"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C12ed canes",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "candy"
+        },
+        "CLUE-C5": {
+            "clue": "night you are finally free to demand CLUE-C18 from strangers",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "halloween"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C5 blood type",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "fake"
+        },
+        "CLUE-C3": {
+            "clue": "to ___CLUE-C14, to lure someone in using a CLUE-C13 internet persona",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14"
+            ],
+            "answer": "cat"
+        },
+        "CLUE-C11": {
+            "clue": "\"ready or ___, here I come\"",
+            "depends_on": [],
+            "answer": "NOT"
+        },
+        "CLUE-C6": {
+            "clue": "if yours is upset you can stay home from school",
+            "depends_on": [],
+            "answer": "stomach"
+        },
+        "CLUE-C2": {
+            "clue": "rocks when added to soda will CLUE-C11 cause your CLUE-C6 to explode",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C6"
+            ],
+            "answer": "pop"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C7 V abdiCLUE-C3es, ending the reign of the final AntiCLUE-C2e",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "Felix V abdicates, ending the reign of the final Antipope"
+        }
+    }
+}

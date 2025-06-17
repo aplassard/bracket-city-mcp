@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "\"you can ___ shotgun\" (nice concession from a sibling)",
+            "depends_on": [],
+            "answer": "ride"
+        },
+        "CLUE-C7": {
+            "clue": "kind of CLUE-C6 you might take in a stolen car",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Joy"
+        },
+        "CLUE-C4": {
+            "clue": "color seen on a majority of the flags of island nations",
+            "depends_on": [],
+            "answer": "blue"
+        },
+        "CLUE-C1": {
+            "clue": "famously difficult CLUE-C7ce novel that originally had a CLUE-C4 cover to match the Greek flag",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C7"
+            ],
+            "answer": "Ulysses"
+        },
+        "CLUE-C3": {
+            "clue": "weirdly judgmental word for closing a computer application",
+            "depends_on": [],
+            "answer": "quit"
+        },
+        "CLUE-C17": {
+            "clue": "you throw it in when you CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "towel"
+        },
+        "CLUE-C10": {
+            "clue": "more disparaging term for a dish CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "rag"
+        },
+        "CLUE-C18": {
+            "clue": "to toot your own is to bCLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "horn"
+        },
+        "CLUE-C13": {
+            "clue": "huge CLUE-C18ed herbivore, for short",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "rhino"
+        },
+        "CLUE-C8": {
+            "clue": "kind of surgeon who performs CLUE-C13plasties",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "plastic"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C8 red building on Marvin Gardens",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "hotel"
+        },
+        "CLUE-C2": {
+            "clue": "an \"Ocean ___\" at a CLUE-C9 usually denotes a more expensive room",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "view"
+        },
+        "CLUE-C14": {
+            "clue": "a really good reCLUE-C2 \u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f\u2b50\ufe0f",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "rave"
+        },
+        "CLUE-C12": {
+            "clue": "you might ___ and CLUE-C14 when irate",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "rant"
+        },
+        "CLUE-C11": {
+            "clue": "\ud83d\udc88 indicates a place to get this cut",
+            "depends_on": [],
+            "answer": "hair"
+        },
+        "CLUE-C16": {
+            "clue": "kind of cCLUE-C11 for a little one",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "high"
+        },
+        "CLUE-C5": {
+            "clue": "\"___ tell?\" (CLUE-C16falutin way of asking for explanation)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "pray"
+        },
+        "CLUE-C15": {
+            "clue": "useful sCLUE-C5 on a camping trip",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "bug"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C1 S. GCLUE-C12 arrested for speeding in his horse CLUE-C15gy",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12",
+                "CLUE-C15"
+            ],
+            "answer": "Ulysses S. Grant arrested for speeding in his horse buggy"
+        }
+    }
+}

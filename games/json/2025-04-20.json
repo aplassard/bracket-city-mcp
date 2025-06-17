@@ -1,0 +1,115 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "place in a city where a polar bear might live",
+            "depends_on": [],
+            "answer": "zoo"
+        },
+        "CLUE-C5": {
+            "clue": "gymnastics apparatus you launch yourself off of",
+            "depends_on": [],
+            "answer": "vault"
+        },
+        "CLUE-C15": {
+            "clue": "place with a CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "bank"
+        },
+        "CLUE-C3": {
+            "clue": "___ and vinegar (inexplicably popular potato chip flavor)",
+            "depends_on": [],
+            "answer": "salt"
+        },
+        "CLUE-C4": {
+            "clue": "guy whose wife turned to a pillar of CLUE-C3 in the Bible",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "lot"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C6morphic CLUE-C15 with a little sCLUE-C4 on top",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C4",
+                "CLUE-C6"
+            ],
+            "answer": "piggy"
+        },
+        "CLUE-C10": {
+            "clue": "destination for the first little CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "market"
+        },
+        "CLUE-C9": {
+            "clue": "US financial CLUE-C10s regulator, briefly",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Sec"
+        },
+        "CLUE-C2": {
+            "clue": "\"___ worth\" (something Google tends to autocomplete after a celebrity's name)",
+            "depends_on": [],
+            "answer": "net"
+        },
+        "CLUE-C14": {
+            "clue": "roofless cell for an infant",
+            "depends_on": [],
+            "answer": "crib"
+        },
+        "CLUE-C7": {
+            "clue": "kiCLUE-C2ic sculpture often secured above a CLUE-C14",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C2"
+            ],
+            "answer": "mobile"
+        },
+        "CLUE-C16": {
+            "clue": "\ud83e\ude80 \u2797 2",
+            "depends_on": [],
+            "answer": "yo"
+        },
+        "CLUE-C13": {
+            "clue": "kind of reader who spots tCLUE-C16ps",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "proof"
+        },
+        "CLUE-C1": {
+            "clue": "___CLUE-C7 (vehicle named for its occupant in a bulletCLUE-C13 glass compartment)",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C7"
+            ],
+            "answer": "Pope"
+        },
+        "CLUE-C12": {
+            "clue": "knot, foot, ton, or mole, e.g.",
+            "depends_on": [],
+            "answer": "unit"
+        },
+        "CLUE-C11": {
+            "clue": "summertime window CLUE-C12, for short",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "ac"
+        },
+        "CLUE-ROOT": {
+            "clue": "the \"CLUE-C9chi disk\" is demonstrated on CLUE-C1 Pius IX's yCLUE-C11ht",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C9"
+            ],
+            "answer": "the \"Secchi disk\" is demonstrated on Pope Pius IX's yacht"
+        }
+    }
+}

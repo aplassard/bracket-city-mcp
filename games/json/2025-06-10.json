@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C3": {
+            "clue": "Cookie ___ (blue \ud83c\udf6a fanatic of Sesame Street)",
+            "depends_on": [],
+            "answer": "monster"
+        },
+        "CLUE-C8": {
+            "clue": "prefix with chute or meter or dox",
+            "depends_on": [],
+            "answer": "Para"
+        },
+        "CLUE-C9": {
+            "clue": "John who wrote \"CLUE-C8dise Lost\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "milton"
+        },
+        "CLUE-C10": {
+            "clue": "Manuel Miranda of \"HaCLUE-C9\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Lin"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C10coln, to his friends",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "abe"
+        },
+        "CLUE-C12": {
+            "clue": "sCLUE-C11r wielded by a Jedi",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "light"
+        },
+        "CLUE-C13": {
+            "clue": "unit of CLUE-C12ning",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "bolt"
+        },
+        "CLUE-C5": {
+            "clue": "stein who made a CLUE-C3 with neck CLUE-C13s",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C3"
+            ],
+            "answer": "Franken"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C5 or Roker",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Al"
+        },
+        "CLUE-C16": {
+            "clue": "the S in TSA",
+            "depends_on": [],
+            "answer": "security"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C16 ___ (sum held hostage by a landlord)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "deposit"
+        },
+        "CLUE-C4": {
+            "clue": "where there's ___ there's fire, it is said",
+            "depends_on": [],
+            "answer": "smoke"
+        },
+        "CLUE-C6": {
+            "clue": "tabletop ash CLUE-C2ory for a CLUE-C4r",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C4"
+            ],
+            "answer": "tray"
+        },
+        "CLUE-C1": {
+            "clue": "fancy fridges make this in a machine instead of CLUE-C6s",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "ice"
+        },
+        "CLUE-C7": {
+            "clue": "little visible part of the CLUE-C1berg",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "tip"
+        },
+        "CLUE-C15": {
+            "clue": "like many CLUE-C7s",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Anonymous"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14coholics CLUE-C15 is founded in Akron, Ohio",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C15"
+            ],
+            "answer": "Alcoholics Anonymous is founded in Akron, Ohio"
+        }
+    }
+}

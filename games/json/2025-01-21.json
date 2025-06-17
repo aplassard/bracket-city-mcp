@@ -1,0 +1,108 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "it's good to catch one",
+            "depends_on": [],
+            "answer": "break"
+        },
+        "CLUE-C14": {
+            "clue": "ad CLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "commercial"
+        },
+        "CLUE-C12": {
+            "clue": "___ artist",
+            "depends_on": [],
+            "answer": "Con"
+        },
+        "CLUE-C3": {
+            "clue": "communicate, as grievances",
+            "depends_on": [],
+            "answer": "Air"
+        },
+        "CLUE-C15": {
+            "clue": "\ud83e\udd55\ud83e\udd55\ud83e\udd55",
+            "depends_on": [],
+            "answer": "carrots"
+        },
+        "CLUE-C7": {
+            "clue": "like ___ and CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "peas"
+        },
+        "CLUE-C10": {
+            "clue": "homes to CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Pods"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C3CLUE-C10 conspicuously lack one",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C3"
+            ],
+            "answer": "cord"
+        },
+        "CLUE-C8": {
+            "clue": "emotionally distant",
+            "depends_on": [],
+            "answer": "cold"
+        },
+        "CLUE-C4": {
+            "clue": "word before CLUE-C8 or sense",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "common"
+        },
+        "CLUE-C2": {
+            "clue": "most CLUE-C4 letter in English",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "e"
+        },
+        "CLUE-C5": {
+            "clue": "___ red: a bad situation",
+            "depends_on": [],
+            "answer": "code"
+        },
+        "CLUE-C9": {
+            "clue": "computer CLUE-C5 error",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "bug"
+        },
+        "CLUE-C13": {
+            "clue": "___ humCLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Bah"
+        },
+        "CLUE-C11": {
+            "clue": "puddle maker",
+            "depends_on": [],
+            "answer": "rain"
+        },
+        "CLUE-ROOT": {
+            "clue": "the first two CLUE-C14 CLUE-C12CLUE-C1CLUE-C2 flights arrive in CLUE-C13CLUE-C11 and Brazil",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C2"
+            ],
+            "answer": "the first two commercial Concorde flights arrive in Bahrain and Brazil"
+        }
+    }
+}

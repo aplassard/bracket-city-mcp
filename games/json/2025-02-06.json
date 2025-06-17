@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "bar you press with your thumb",
+            "depends_on": [],
+            "answer": "space"
+        },
+        "CLUE-C12": {
+            "clue": "person in a CLUE-C8suit",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "astronaut"
+        },
+        "CLUE-C11": {
+            "clue": "working the night ___",
+            "depends_on": [],
+            "answer": "shift"
+        },
+        "CLUE-C6": {
+            "clue": "stick ___, found in older cars",
+            "depends_on": [],
+            "answer": "shift"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C11 9 and CLUE-C6 0",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C6"
+            ],
+            "answer": "parentheses"
+        },
+        "CLUE-C3": {
+            "clue": "kind of code usually shown in CLUE-C14",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "area"
+        },
+        "CLUE-C2": {
+            "clue": "color of an CLUE-C3 where things are not clear",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Gray"
+        },
+        "CLUE-C4": {
+            "clue": "\"by the power of CLUE-C2skull !\": __-Man",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "he"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C4 said, ___ said",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "She"
+        },
+        "CLUE-C1": {
+            "clue": "touch a beard or a cat in a vaguely villainous way",
+            "depends_on": [],
+            "answer": "stroke"
+        },
+        "CLUE-C13": {
+            "clue": "target CLUE-C1 count",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "par"
+        },
+        "CLUE-C9": {
+            "clue": "you might join them on campus",
+            "depends_on": [],
+            "answer": "clubs"
+        },
+        "CLUE-C10": {
+            "clue": "you play it with CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "golf"
+        },
+        "CLUE-C5": {
+            "clue": "prefix with appear or information",
+            "depends_on": [],
+            "answer": "dis"
+        },
+        "CLUE-C16": {
+            "clue": "triangular button",
+            "depends_on": [],
+            "answer": "play"
+        },
+        "CLUE-C18": {
+            "clue": "\"at long ___\"",
+            "depends_on": [],
+            "answer": "last"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C18 car of a train",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "caboose"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C5CLUE-C16 your CLUE-C15 playfully",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C16",
+                "CLUE-C5"
+            ],
+            "answer": "moon"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C12 Alan CLUE-C17CLUE-C13d hits three CLUE-C10 balls on the CLUE-C7",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C17",
+                "CLUE-C7"
+            ],
+            "answer": "astronaut Alan Shepard hits three golf balls on the moon"
+        }
+    }
+}

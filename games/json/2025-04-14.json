@@ -1,0 +1,130 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "\ud83d\udcaf\ud83d\udcaf\ud83d\udcaf",
+            "depends_on": [],
+            "answer": "hundreds"
+        },
+        "CLUE-C15": {
+            "clue": "winter skating surface",
+            "depends_on": [],
+            "answer": "ice"
+        },
+        "CLUE-C7": {
+            "clue": "offCLUE-C15 you might work in pantsless",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "home"
+        },
+        "CLUE-C12": {
+            "clue": "\"There's no place ___ CLUE-C7\"",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "like"
+        },
+        "CLUE-C4": {
+            "clue": "\"the ___ suspect\" (the most CLUE-C12ly culprit)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "prime"
+        },
+        "CLUE-C14": {
+            "clue": "you do this with this \ud83d\udc45",
+            "depends_on": [],
+            "answer": "lick"
+        },
+        "CLUE-C3": {
+            "clue": "creature that is the CEO of Disney, according to my niece",
+            "depends_on": [],
+            "answer": "mouse"
+        },
+        "CLUE-C9": {
+            "clue": "___ cCLUE-C14 (iconic CLUE-C3 action)",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C3"
+            ],
+            "answer": "double"
+        },
+        "CLUE-C1": {
+            "clue": "think of a number, CLUE-C9 it, add 4, divide by 2, subtract the number you started with",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "2"
+        },
+        "CLUE-C11": {
+            "clue": "like every CLUE-C4 number but CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C4"
+            ],
+            "answer": "odd"
+        },
+        "CLUE-C2": {
+            "clue": "kind of sand that, contrary to popular belief, you cannot be completely consumed by",
+            "depends_on": [],
+            "answer": "quick"
+        },
+        "CLUE-C6": {
+            "clue": "to get this CLUE-C2 you might need a scheme",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "rich"
+        },
+        "CLUE-C17": {
+            "clue": "fund for CLUE-C6 baby",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "trust"
+        },
+        "CLUE-C5": {
+            "clue": "kind of system that requires a lot of CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "honor"
+        },
+        "CLUE-C16": {
+            "clue": "\"___ion, your CLUE-C5!\"",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "object"
+        },
+        "CLUE-C13": {
+            "clue": "Sherlock Holmes accessory",
+            "depends_on": [],
+            "answer": "pipe"
+        },
+        "CLUE-C10": {
+            "clue": "a CLUE-C13 one is a real longshot",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "dream"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C10-heavy sleep phase, briefly",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "rem"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C18 of CLUE-C11-shaped CLUE-C16s observed over NuCLUE-C8berg",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C16",
+                "CLUE-C18",
+                "CLUE-C8"
+            ],
+            "answer": "hundreds of odd-shaped objects observed over Nuremberg"
+        }
+    }
+}

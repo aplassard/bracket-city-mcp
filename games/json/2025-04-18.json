@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "signer of permission slip, typically",
+            "depends_on": [],
+            "answer": "parent"
+        },
+        "CLUE-C6": {
+            "clue": "list of children apCLUE-C10ly prepared by \ud83c\udf85\ud83c\udffb",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Nice"
+        },
+        "CLUE-C13": {
+            "clue": "mythical city of gold __ Dorado",
+            "depends_on": [],
+            "answer": "El"
+        },
+        "CLUE-C4": {
+            "clue": "\"Let It __\" (CLUE-C13sa's musical instruction to herself) \u2744\ufe0f",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "go"
+        },
+        "CLUE-C5": {
+            "clue": "forerunner of \"set\" and \"CLUE-C4\" at an informal race",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "ready"
+        },
+        "CLUE-C14": {
+            "clue": "\"let's get CLUE-C5 to ___!!!!\" \ud83e\udd4a",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "rumble"
+        },
+        "CLUE-C11": {
+            "clue": "gCLUE-C14 something under your breath",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "mutter"
+        },
+        "CLUE-C1": {
+            "clue": "\"no ___ Mr. CLUE-C6 Guy!\" you CLUE-C11 as you drop another quarter in the pinball machine",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C6"
+            ],
+            "answer": "more"
+        },
+        "CLUE-C15": {
+            "clue": "a film, more casually",
+            "depends_on": [],
+            "answer": "movie"
+        },
+        "CLUE-C7": {
+            "clue": "\"this goes ___ saying\" (apparently not)",
+            "depends_on": [],
+            "answer": "without"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C7 it there is no gain, it is said",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "pain"
+        },
+        "CLUE-C16": {
+            "clue": "south in SCLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "sur"
+        },
+        "CLUE-C3": {
+            "clue": "word for a submission to an inCLUE-C16ance company that already implies skepticism",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "claim"
+        },
+        "CLUE-C2": {
+            "clue": "unexpected moment at the end of a CLUE-C15 that might cause you to exCLUE-C3 this word",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C3"
+            ],
+            "answer": "Twist"
+        },
+        "CLUE-C9": {
+            "clue": "when repeated, a famously extinct bird",
+            "depends_on": [],
+            "answer": "Do"
+        },
+        "CLUE-C12": {
+            "clue": "\"The CLUE-C2\" or \"The CLUE-C9ugie\", e.g.",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "dance"
+        },
+        "CLUE-ROOT": {
+            "clue": "ElCLUE-C1 City, Oklahoma holds the first CLUE-C12 in town history",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12"
+            ],
+            "answer": "Elmore City, Oklahoma holds the first dance in town history"
+        }
+    }
+}

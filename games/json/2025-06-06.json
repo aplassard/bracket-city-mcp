@@ -1,0 +1,131 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "\"you can ___ that again\"",
+            "depends_on": [],
+            "answer": "say"
+        },
+        "CLUE-C3": {
+            "clue": "two letters you might CLUE-C13 to abbreviate a two-word vulgarity",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Fu"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C3dd who is often thwarted by a wascally wabbit",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Elmer"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C4's or Krazy",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "glue"
+        },
+        "CLUE-C8": {
+            "clue": "crafty CLUE-C17 that you melt in a gun",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "hot"
+        },
+        "CLUE-C5": {
+            "clue": "kind of hat for a construction worker",
+            "depends_on": [],
+            "answer": "Hard"
+        },
+        "CLUE-C9": {
+            "clue": "\"open ___\" (noisy kind of office)",
+            "depends_on": [],
+            "answer": "plan"
+        },
+        "CLUE-C1": {
+            "clue": "button in an airCLUE-C9e bathroom that makes a startlingly loud sound",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "flush"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C1 that always wins in poker",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "royal"
+        },
+        "CLUE-C7": {
+            "clue": "bee that grew up eating CLUE-C10 jelly",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "queen"
+        },
+        "CLUE-C11": {
+            "clue": "___ Majesty (when it's a CLUE-C7)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "her"
+        },
+        "CLUE-C6": {
+            "clue": "actually only PART of the NetCLUE-C11lands",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Holland"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C5y, Hanks, or CLUE-C6",
+            "depends_on": [
+                "CLUE-C5",
+                "CLUE-C6"
+            ],
+            "answer": "tom"
+        },
+        "CLUE-C15": {
+            "clue": "\"like father, like ___\"",
+            "depends_on": [],
+            "answer": "son"
+        },
+        "CLUE-C2": {
+            "clue": "spy org that experimented with mind control and poiCLUE-C15ed cigars",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "cia"
+        },
+        "CLUE-C18": {
+            "clue": "make stitches",
+            "depends_on": [],
+            "answer": "sew"
+        },
+        "CLUE-C16": {
+            "clue": "man___ (CLUE-C18er access)",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "hole"
+        },
+        "CLUE-C12": {
+            "clue": "appreCLUE-C2te or make a CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C2"
+            ],
+            "answer": "dig"
+        },
+        "CLUE-ROOT": {
+            "clue": "Canadian voyageur is sCLUE-C8 in the sCLUE-C14ach, leading to a greater understanding of CLUE-C12estion",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C14",
+                "CLUE-C8"
+            ],
+            "answer": "Canadian voyageur is shot in the stomach, leading to a greater understanding of digestion"
+        }
+    }
+}

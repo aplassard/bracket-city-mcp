@@ -1,0 +1,143 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "kind of chip in a \ud83c\udf6a",
+            "depends_on": [],
+            "answer": "chocolate"
+        },
+        "CLUE-C14": {
+            "clue": "\"some ___ required\"",
+            "depends_on": [],
+            "answer": "assembly"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C14 line location",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "factory"
+        },
+        "CLUE-C4": {
+            "clue": "Charlie got one of a CLUE-C15 CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C15"
+            ],
+            "answer": "Tour"
+        },
+        "CLUE-C20": {
+            "clue": "\ud83c\uddeb\ud83c\uddf7",
+            "depends_on": [],
+            "answer": "France"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C4 __ CLUE-C20",
+            "depends_on": [
+                "CLUE-C20",
+                "CLUE-C4"
+            ],
+            "answer": "de"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83d\udc24 or \ud83d\udc19 jaw",
+            "depends_on": [],
+            "answer": "beak"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C18er enthusiast, stereotypically",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "scientist"
+        },
+        "CLUE-C16": {
+            "clue": "unit of sunshine",
+            "depends_on": [],
+            "answer": "ray"
+        },
+        "CLUE-C1": {
+            "clue": "kind of CLUE-C5 who might be working on a death CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C5"
+            ],
+            "answer": "Mad"
+        },
+        "CLUE-C13": {
+            "clue": "\"living on the ___\"",
+            "depends_on": [],
+            "answer": "edge"
+        },
+        "CLUE-C9": {
+            "clue": "fancy CLUE-C13less kind of pool",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "infinity"
+        },
+        "CLUE-C19": {
+            "clue": "big \ud83d\udc37",
+            "depends_on": [],
+            "answer": "hog"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C19wash, vulgarly, for short",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "BS"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C8, PhD, and JD, e.g.",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "degrees"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C9 symbol rotated 90 CLUE-C12, spelled out",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C9"
+            ],
+            "answer": "eight"
+        },
+        "CLUE-C2": {
+            "clue": "to be behind the CLUE-C3 one isn't good, it is said",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "ball"
+        },
+        "CLUE-C10": {
+            "clue": "game using this CLUE-C2 \ud83c\udfbe",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "tennis"
+        },
+        "CLUE-C6": {
+            "clue": "word with protection or CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "racket"
+        },
+        "CLUE-C7": {
+            "clue": "month of CLUE-C1ness and bCLUE-C6s",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C6"
+            ],
+            "answer": "March"
+        },
+        "CLUE-ROOT": {
+            "clue": "the ICLUE-C17s of CLUE-C7",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C7"
+            ],
+            "answer": "March 15, 44 BC: the Ides of March"
+        }
+    }
+}

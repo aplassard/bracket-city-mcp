@@ -1,0 +1,111 @@
+{
+    "clues": {
+        "CLUE-C1": {
+            "clue": "meaning of a gesture in which a person extends one arm forward, presenting an open palm perpendicular to the ground and fingers upright",
+            "depends_on": [],
+            "answer": "stop"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C1 pursuing a subject in conversation",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "drop"
+        },
+        "CLUE-C14": {
+            "clue": "\"a CLUE-C7 __ the bucket\"",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "in"
+        },
+        "CLUE-C12": {
+            "clue": "\"nope unintended\", e.g.",
+            "depends_on": [],
+            "answer": "pun"
+        },
+        "CLUE-C8": {
+            "clue": "twice-imposed CLUE-C12ishment for Napoleon",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "exile"
+        },
+        "CLUE-C6": {
+            "clue": "enticing buffet policy: \"all you ___ eat\"",
+            "depends_on": [],
+            "answer": "CAN"
+        },
+        "CLUE-C15": {
+            "clue": "the B in FBI",
+            "depends_on": [],
+            "answer": "bureau"
+        },
+        "CLUE-C9": {
+            "clue": "unit of CLUE-C15cracy that you fill out",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "form"
+        },
+        "CLUE-C13": {
+            "clue": "the formal CLUE-C9 of \"ow\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "ouch"
+        },
+        "CLUE-C3": {
+            "clue": "a show___ might do an elaborate tCLUE-C13down dance",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "boat"
+        },
+        "CLUE-C2": {
+            "clue": "\"I'm the king of the ___!\" you shout moments before falling off the prow of your pedal CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "world"
+        },
+        "CLUE-C4": {
+            "clue": "the most popular vehicle in the CLUE-C2, briefly",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "bike"
+        },
+        "CLUE-C11": {
+            "clue": "fancy word for riding a CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "cycling"
+        },
+        "CLUE-C5": {
+            "clue": "in \ud83c\uddfa\ud83c\uddf8 it's a trash CLUE-C6, but a reCLUE-C11 ___",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C6"
+            ],
+            "answer": "bin"
+        },
+        "CLUE-C10": {
+            "clue": "Kennedy \u27a1\ufe0f \"___ CLUE-C5 ein Berliner\"",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "ich"
+        },
+        "CLUE-ROOT": {
+            "clue": "LenCLUE-C14 returns from CLUE-C8 in ZurCLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C14",
+                "CLUE-C8"
+            ],
+            "answer": "Lenin returns from exile in Zurich"
+        }
+    }
+}

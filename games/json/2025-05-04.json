@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "month directly affected by leap years",
+            "depends_on": [],
+            "answer": "February"
+        },
+        "CLUE-C7": {
+            "clue": "shape seen everywhere on CLUE-C8 14th",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "heart"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C7 ___ (it goes up when you are nervous)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "rate"
+        },
+        "CLUE-C9": {
+            "clue": "\"oy ___\" says the exaspeCLUE-C4d bubbie",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "VEY"
+        },
+        "CLUE-C12": {
+            "clue": "\"The ___\" (this magazine)",
+            "depends_on": [],
+            "answer": "Atlantic"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C12 ___ (\ud83c\udfb2\ud83c\udfb0\ud83c\udfb2)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "city"
+        },
+        "CLUE-C10": {
+            "clue": "sash-wearing CLUE-C15 official, maybe",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "mayor"
+        },
+        "CLUE-C2": {
+            "clue": "send your social ___ number to CLUE-C10@bracket.city",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "security"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C2 device for your bike or luggage",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "lock"
+        },
+        "CLUE-C11": {
+            "clue": "six, on a somewhat fancy cCLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "VI"
+        },
+        "CLUE-C1": {
+            "clue": "instinctual, impulsive companion of \"ego\" and \"superego\"",
+            "depends_on": [],
+            "answer": "ID"
+        },
+        "CLUE-C14": {
+            "clue": "the \"CLUE-C11\" in \"COVCLUE-C1\"",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11"
+            ],
+            "answer": "virus"
+        },
+        "CLUE-C16": {
+            "clue": "\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c",
+            "depends_on": [],
+            "answer": "bananas"
+        },
+        "CLUE-C13": {
+            "clue": "perform for an audience",
+            "depends_on": [],
+            "answer": "act"
+        },
+        "CLUE-C6": {
+            "clue": "___ fact, e.g. \"CLUE-C16 are radioCLUE-C13ive\"",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C16"
+            ],
+            "answer": "fun"
+        },
+        "CLUE-C3": {
+            "clue": "\"___ the room\" you are told at the CLUE-C6eral, again",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "read"
+        },
+        "CLUE-ROOT": {
+            "clue": "the ILOCLUE-C9OU computer CLUE-C14 begins spCLUE-C3ing",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C3",
+                "CLUE-C9"
+            ],
+            "answer": "the ILOVEYOU computer virus begins spreading"
+        }
+    }
+}

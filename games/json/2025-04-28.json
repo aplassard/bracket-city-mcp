@@ -1,0 +1,106 @@
+{
+    "clues": {
+        "CLUE-C3": {
+            "clue": "at 5,400 feet, Siberia's Baikal is the ___ lake in the world",
+            "depends_on": [],
+            "answer": "deepest"
+        },
+        "CLUE-C7": {
+            "clue": "the first one is the CLUE-C3, it is said",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "cut"
+        },
+        "CLUE-C9": {
+            "clue": "not CLUE-C7ting in line is a social ___",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "norm"
+        },
+        "CLUE-C10": {
+            "clue": "humorous name for an eCLUE-C9ous dog",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "tiny"
+        },
+        "CLUE-C12": {
+            "clue": "\"ABC, it's as easy as ___\"",
+            "depends_on": [],
+            "answer": "123"
+        },
+        "CLUE-C11": {
+            "clue": "the most common one is \"CLUE-C12456\"",
+            "depends_on": [
+                "CLUE-C12456"
+            ],
+            "answer": "password"
+        },
+        "CLUE-C1": {
+            "clue": "house that you might need a rope ladder and a CLUE-C11 to access",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "tree"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C1 scent and silhouette featured in many cars",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "pine"
+        },
+        "CLUE-C2": {
+            "clue": "\"I'll take __\" you say suCLUE-C5 on the waterbed in the showroom",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "it"
+        },
+        "CLUE-C4": {
+            "clue": "shape you will approximate if you trace a DorCLUE-C2o",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "triangle"
+        },
+        "CLUE-C6": {
+            "clue": "kind of CLUE-C4 that can cause acute heartache",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "love"
+        },
+        "CLUE-C13": {
+            "clue": "\"CLUE-C6 __ first sight\"",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "At"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C13tila the ___",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "hun"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C14ter motivated by a wanted poster",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Bounty"
+        },
+        "CLUE-ROOT": {
+            "clue": "muCLUE-C10 on the HMS CLUE-C8",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C8"
+            ],
+            "answer": "mutiny on the HMS Bounty"
+        }
+    }
+}

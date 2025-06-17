@@ -1,0 +1,176 @@
+{
+    "clues": {
+        "CLUE-C7": {
+            "clue": "something to ask a boss for",
+            "depends_on": [],
+            "answer": "raise"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C7, as a child",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "rear"
+        },
+        "CLUE-C25": {
+            "clue": "CLUE-C17 end",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "fanny"
+        },
+        "CLUE-C3": {
+            "clue": "close a CLUE-C25 pack, maybe, with \"up\"",
+            "depends_on": [
+                "CLUE-C25"
+            ],
+            "answer": "zip"
+        },
+        "CLUE-C19": {
+            "clue": "nil, zilch, CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "nada"
+        },
+        "CLUE-C11": {
+            "clue": "kid's playroom, often",
+            "depends_on": [],
+            "answer": "Mess"
+        },
+        "CLUE-C4": {
+            "clue": "something notably absent from \"team\"",
+            "depends_on": [],
+            "answer": "i"
+        },
+        "CLUE-C18": {
+            "clue": "licking necessity",
+            "depends_on": [],
+            "answer": "tongue"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C11CLUE-C4's native CLUE-C18",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C18",
+                "CLUE-C4"
+            ],
+            "answer": "spanish"
+        },
+        "CLUE-C1": {
+            "clue": "\"___ CLUE-C19\", \"you're welcome\" in CLUE-C12",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C19"
+            ],
+            "answer": "de"
+        },
+        "CLUE-C14": {
+            "clue": "you order off of it",
+            "depends_on": [],
+            "answer": "menu"
+        },
+        "CLUE-C23": {
+            "clue": "cut a movie",
+            "depends_on": [],
+            "answer": "Edit"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C14 left of CLUE-C23 usually",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C23"
+            ],
+            "answer": "file"
+        },
+        "CLUE-C21": {
+            "clue": "CLUE-C1CLUE-C9 or soil",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C9"
+            ],
+            "answer": "Sully"
+        },
+        "CLUE-C24": {
+            "clue": "come next",
+            "depends_on": [],
+            "answer": "follow"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C24 in a cop car, perhaps",
+            "depends_on": [
+                "CLUE-C24"
+            ],
+            "answer": "pursue"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C6 romantically",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "court"
+        },
+        "CLUE-C20": {
+            "clue": "CLUE-C15room event",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "hearing"
+        },
+        "CLUE-C5": {
+            "clue": "iconic composer who lost his CLUE-C20",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "Beethoven"
+        },
+        "CLUE-C8": {
+            "clue": "___ Bernard, like CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "saint"
+        },
+        "CLUE-C2": {
+            "clue": "you need at least one to become a CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Miracle"
+        },
+        "CLUE-C22": {
+            "clue": "\"cry me a ___\"",
+            "depends_on": [],
+            "answer": "river"
+        },
+        "CLUE-C16": {
+            "clue": "rule-following sort",
+            "depends_on": [],
+            "answer": "Square"
+        },
+        "CLUE-C13": {
+            "clue": "home of Times CLUE-C16",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "Manhattan"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C22 west of CLUE-C13",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C22"
+            ],
+            "answer": "Hudson"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C21 performs the \"CLUE-C2 on the CLUE-C10\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C2",
+                "CLUE-C21"
+            ],
+            "answer": "Sully performs the \"Miracle on the Hudson\""
+        }
+    }
+}

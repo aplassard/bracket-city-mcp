@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "pig___ (very messy place)",
+            "depends_on": [],
+            "answer": "sty"
+        },
+        "CLUE-C4": {
+            "clue": "word for CLUE-C10lish borrowed from French",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Chic"
+        },
+        "CLUE-C11": {
+            "clue": "one playing \ud83c\udfc0 in CLUE-C4ago",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "bull"
+        },
+        "CLUE-C13": {
+            "clue": "board with a CLUE-C11seye",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Dart"
+        },
+        "CLUE-C8": {
+            "clue": "Kylo Ren's grandfather CLUE-C13h",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "vader"
+        },
+        "CLUE-C9": {
+            "clue": "jolly serial home inCLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Santa"
+        },
+        "CLUE-C2": {
+            "clue": "last option on a lot of survey questions",
+            "depends_on": [],
+            "answer": "other"
+        },
+        "CLUE-C16": {
+            "clue": "smoCLUE-C2 jam?",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "jelly"
+        },
+        "CLUE-C1": {
+            "clue": "ever-present threat from a CLUE-C16fish or bee",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "sting"
+        },
+        "CLUE-C7": {
+            "clue": "word after CLUE-C1, manta, or X-",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Ray"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C7-___ (\ud83d\udd76\ufe0f company)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "ban"
+        },
+        "CLUE-C15": {
+            "clue": "desk at a hotel",
+            "depends_on": [],
+            "answer": "front"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C15 part of your head",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "face"
+        },
+        "CLUE-C6": {
+            "clue": "where surCLUE-C12 and sky appear to meet",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "horizon"
+        },
+        "CLUE-C5": {
+            "clue": "pivot CLUE-C6tally, as a video camera",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "pan"
+        },
+        "CLUE-C3": {
+            "clue": "\"___ your Rs\" says your SCLUE-C5ish teacher",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "roll"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C9 Cruz CLUE-C14s rock 'n' CLUE-C3 music",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C3",
+                "CLUE-C9"
+            ],
+            "answer": "Santa Cruz bans rock 'n' roll music"
+        }
+    }
+}

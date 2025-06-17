@@ -1,0 +1,159 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "one thousand years",
+            "depends_on": [],
+            "answer": "Millennium"
+        },
+        "CLUE-C9": {
+            "clue": "oft-trained bird of prey",
+            "depends_on": [],
+            "answer": "Falcon"
+        },
+        "CLUE-C2": {
+            "clue": "their CLUE-C14 CLUE-C9 set has 7,541 pieces",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C9"
+            ],
+            "answer": "Lego"
+        },
+        "CLUE-C22": {
+            "clue": "___ Vegas",
+            "depends_on": [],
+            "answer": "las"
+        },
+        "CLUE-C7": {
+            "clue": "Actor Bloom who played CLUE-C2CLUE-C22",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C22"
+            ],
+            "answer": "Orlando"
+        },
+        "CLUE-C6": {
+            "clue": "there is a magic one in CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "kingdom"
+        },
+        "CLUE-C5": {
+            "clue": "person who is apparently always right",
+            "depends_on": [],
+            "answer": "customer"
+        },
+        "CLUE-C21": {
+            "clue": "bit of advice",
+            "depends_on": [],
+            "answer": "tip"
+        },
+        "CLUE-C23": {
+            "clue": "sharp CLUE-C21",
+            "depends_on": [
+                "CLUE-C21"
+            ],
+            "answer": "point"
+        },
+        "CLUE-C16": {
+            "clue": "Pixar's \"Toy ___\"",
+            "depends_on": [],
+            "answer": "story"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C23 of a CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C23"
+            ],
+            "answer": "moral"
+        },
+        "CLUE-C8": {
+            "clue": "word after CLUE-C5 or CLUE-C18",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C5"
+            ],
+            "answer": "support"
+        },
+        "CLUE-C10": {
+            "clue": "add CLUE-C8, with \"up\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "shore"
+        },
+        "CLUE-C13": {
+            "clue": "like an empty party",
+            "depends_on": [],
+            "answer": "Dead"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Jordan"
+        },
+        "CLUE-C12": {
+            "clue": "famous Mormon Brigham",
+            "depends_on": [],
+            "answer": "young"
+        },
+        "CLUE-C15": {
+            "clue": "\"the ___ is CLUE-C12\"",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "night"
+        },
+        "CLUE-C17": {
+            "clue": "calls it a CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "retires"
+        },
+        "CLUE-C19": {
+            "clue": "golfer's target",
+            "depends_on": [],
+            "answer": "hole"
+        },
+        "CLUE-C11": {
+            "clue": "type of CLUE-C19 in a door",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "peep"
+        },
+        "CLUE-C4": {
+            "clue": "letters on a CLUE-C11 show marquee, maybe",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "XXX"
+        },
+        "CLUE-C20": {
+            "clue": "\"one in a ___\"",
+            "depends_on": [],
+            "answer": "million"
+        },
+        "CLUE-C3": {
+            "clue": "one of more than CLUE-C1 CLUE-C20 in a year",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C20"
+            ],
+            "answer": "second"
+        },
+        "CLUE-ROOT": {
+            "clue": "Michael CLUE-C1 CLUE-C17 for a CLUE-C3 time",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C17",
+                "CLUE-C3"
+            ],
+            "answer": "Michael Jordan retires a second time"
+        }
+    }
+}

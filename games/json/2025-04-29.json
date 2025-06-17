@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C7": {
+            "clue": "letters at the bottom of a letter",
+            "depends_on": [],
+            "answer": "PS"
+        },
+        "CLUE-C15": {
+            "clue": "the G in GCLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "global"
+        },
+        "CLUE-C3": {
+            "clue": "two letters at the beginning of two CLUE-C15 conflicts",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "ww"
+        },
+        "CLUE-C12": {
+            "clue": "the third \"w\" in \"CLUE-C3w\"",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "web"
+        },
+        "CLUE-C13": {
+            "clue": "expert CLUE-C12 developer?",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "spider"
+        },
+        "CLUE-C10": {
+            "clue": "daddy CLUE-C13's leg length",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "long"
+        },
+        "CLUE-C9": {
+            "clue": "\"___ up with a good book\"",
+            "depends_on": [],
+            "answer": "curl"
+        },
+        "CLUE-C4": {
+            "clue": "it can be CLUE-C10, short, CLUE-C9y, straight, etc.",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C9"
+            ],
+            "answer": "Hair"
+        },
+        "CLUE-C14": {
+            "clue": "Juan or Quixote",
+            "depends_on": [],
+            "answer": "don"
+        },
+        "CLUE-C5": {
+            "clue": "one of two that CLUE-C14't lie for Shakira",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "hip"
+        },
+        "CLUE-C6": {
+            "clue": "\"at the ___\" (in control of a sCLUE-C5)",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "helm"
+        },
+        "CLUE-C2": {
+            "clue": "the fetal one is sometimes assumed by the overwCLUE-C6ed",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "position"
+        },
+        "CLUE-C11": {
+            "clue": "noble title for a bug \ud83d\udc1e",
+            "depends_on": [],
+            "answer": "lady"
+        },
+        "CLUE-C16": {
+            "clue": "first CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "eve"
+        },
+        "CLUE-C8": {
+            "clue": "good card to have up your sleCLUE-C16",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "ace"
+        },
+        "CLUE-C1": {
+            "clue": "word before \"CLUE-C2\" or \"house\" or \"-fCLUE-C8d sandwich\"",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C8"
+            ],
+            "answer": "open"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"CLUE-C4\" CLUE-C1s on Broadway",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C4"
+            ],
+            "answer": "\"Hair\" opens on Broadway"
+        }
+    }
+}

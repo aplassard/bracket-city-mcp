@@ -1,0 +1,131 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "noodly staple for college students",
+            "depends_on": [],
+            "answer": "ramen"
+        },
+        "CLUE-C4": {
+            "clue": "water fight weapon vastly more powerful than a squirt gun or balloon",
+            "depends_on": [],
+            "answer": "hose"
+        },
+        "CLUE-C5": {
+            "clue": "___ brigade \ud83e\udea3 (firefighting technique mostly outmoded by the CLUE-C4)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "bucket"
+        },
+        "CLUE-C12": {
+            "clue": "word after grocery or guest or CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "list"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C12 featuring a lot of ch\u00e2teaux \ud83c\udf77",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "wine"
+        },
+        "CLUE-C17": {
+            "clue": "\"every little ___ counts!\"",
+            "depends_on": [],
+            "answer": "bit"
+        },
+        "CLUE-C8": {
+            "clue": "loop___ (like sacCLUE-C13tal CLUE-C14 during ProhiCLUE-C17ion)",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C17"
+            ],
+            "answer": "hole"
+        },
+        "CLUE-C9": {
+            "clue": "breakfast treat that requires an iron to prepare",
+            "depends_on": [],
+            "answer": "Waffle"
+        },
+        "CLUE-C1": {
+            "clue": "\"it's a ___!\" you gasp as the fallen weather vane points directly toward the CLUE-C9 House",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "sign"
+        },
+        "CLUE-C18": {
+            "clue": "ice ___ truck \ud83c\udf66",
+            "depends_on": [],
+            "answer": "cream"
+        },
+        "CLUE-C15": {
+            "clue": "Edvard who painted \"The SCLUE-C18\" \ud83d\ude31",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "munch"
+        },
+        "CLUE-C11": {
+            "clue": "brick color for CLUE-C15kin laborers in Oz",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "yellow"
+        },
+        "CLUE-C6": {
+            "clue": "a CLUE-C11 one will make you cry the most when you cut it",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "onion"
+        },
+        "CLUE-C7": {
+            "clue": "an CLUE-C6 one is fried and about the size of a bangle",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "ring"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C7s that grow as they float through the air \ud83d\udca8",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "smoke"
+        },
+        "CLUE-C2": {
+            "clue": "\"from a CLUE-C10-___ home\" says the ad for the used La-Z-Boy you've been eying",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "free"
+        },
+        "CLUE-C16": {
+            "clue": "\"no such thing as a CLUE-C2 ___\"",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "lunch"
+        },
+        "CLUE-C3": {
+            "clue": "\"school ___\" (street CLUE-C1 that often features figures holding CLUE-C16boxes)",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C16"
+            ],
+            "answer": "zone"
+        },
+        "CLUE-ROOT": {
+            "clue": "scientists announce the discovery of a CLUE-C8 in the oCLUE-C3 layer",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C8"
+            ],
+            "answer": "scientists announce the discovery of a hole in the ozone layer"
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "clues": {
+        "CLUE-C4": {
+            "clue": "\"the (board) game of global domination\"",
+            "depends_on": [],
+            "answer": "risk"
+        },
+        "CLUE-C15": {
+            "clue": "\"at your ___ CLUE-C4\"",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "own"
+        },
+        "CLUE-C10": {
+            "clue": "drCLUE-C15ing in debt, maybe",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "underwater"
+        },
+        "CLUE-C6": {
+            "clue": "prefix for your chief nemesis",
+            "depends_on": [],
+            "answer": "arch"
+        },
+        "CLUE-C9": {
+            "clue": "about 2.2 pounds, briefly",
+            "depends_on": [],
+            "answer": "KG"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C9B agent, maybe",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "spy"
+        },
+        "CLUE-C14": {
+            "clue": "story for CLUE-C16, maybe",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "cover"
+        },
+        "CLUE-C19": {
+            "clue": "\ud835\udf0b",
+            "depends_on": [],
+            "answer": "pi"
+        },
+        "CLUE-C8": {
+            "clue": "down position on a switch",
+            "depends_on": [],
+            "answer": "off"
+        },
+        "CLUE-C2": {
+            "clue": "rarely heard nickname for designer Vuitton",
+            "depends_on": [],
+            "answer": "lou"
+        },
+        "CLUE-C18": {
+            "clue": "\"ew\"",
+            "depends_on": [],
+            "answer": "ick"
+        },
+        "CLUE-C11": {
+            "clue": "through thCLUE-C18 and ___",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "thin"
+        },
+        "CLUE-C7": {
+            "clue": "it's periCLUE-C2s if it's CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C2"
+            ],
+            "answer": "ice"
+        },
+        "CLUE-C3": {
+            "clue": "one with menial assignments in an CLUE-C8CLUE-C7",
+            "depends_on": [
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "Intern"
+        },
+        "CLUE-C17": {
+            "clue": "___ in progress",
+            "depends_on": [],
+            "answer": "Work"
+        },
+        "CLUE-C1": {
+            "clue": "month featuring CLUE-C3ational CLUE-C17ers' Day",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C3"
+            ],
+            "answer": "may"
+        },
+        "CLUE-C5": {
+            "clue": "hall where you might find the CLUE-C1or",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "city"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C19___ns (CLUE-C5 birds)",
+            "depends_on": [
+                "CLUE-C19",
+                "CLUE-C5"
+            ],
+            "answer": "Geo"
+        },
+        "CLUE-C12": {
+            "clue": "___ing ball (smash!)",
+            "depends_on": [],
+            "answer": "wreck"
+        },
+        "CLUE-ROOT": {
+            "clue": "teenage CLUE-C10 CLUE-C6aeologist disCLUE-C14s SS CLUE-C13rgiana CLUE-C12",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C6"
+            ],
+            "answer": "teenage underwater archeologist discovers SS Georgiana wreck"
+        }
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "in good spirits",
+            "depends_on": [],
+            "answer": "happy"
+        },
+        "CLUE-C18": {
+            "clue": "not used",
+            "depends_on": [],
+            "answer": "new"
+        },
+        "CLUE-C17": {
+            "clue": "365 days",
+            "depends_on": [],
+            "answer": "year"
+        },
+        "CLUE-C8": {
+            "clue": "Actor John with a sweet name",
+            "depends_on": [],
+            "answer": "Candy"
+        },
+        "CLUE-C11": {
+            "clue": "place to get a drink",
+            "depends_on": [],
+            "answer": "bar"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C8 CLUE-C11 that's an onomatopoeia",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C8"
+            ],
+            "answer": "Crunch"
+        },
+        "CLUE-C13": {
+            "clue": "Morgan or CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Captain"
+        },
+        "CLUE-C6": {
+            "clue": "composer and songwriter Irving",
+            "depends_on": [],
+            "answer": "Berlin"
+        },
+        "CLUE-C14": {
+            "clue": "above, in CLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "uber"
+        },
+        "CLUE-C9": {
+            "clue": "you might call one with CLUE-C14",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "car"
+        },
+        "CLUE-C16": {
+            "clue": "Nader's party",
+            "depends_on": [],
+            "answer": "green"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C9 rental firm with a CLUE-C16 logo",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C9"
+            ],
+            "answer": "National"
+        },
+        "CLUE-C7": {
+            "clue": "American and CLUE-C4, for two",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Leagues"
+        },
+        "CLUE-C3": {
+            "clue": "Spooky Kubrick classic with \"The\"",
+            "depends_on": [],
+            "answer": "shining"
+        },
+        "CLUE-C10": {
+            "clue": "\"From __ to CLUE-C3 __\"",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Sea"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C13 from \"20,000 CLUE-C7 Under the CLUE-C10\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C13",
+                "CLUE-C7"
+            ],
+            "answer": "Nemo"
+        },
+        "CLUE-C12": {
+            "clue": "___fish, like CLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "clown"
+        },
+        "CLUE-C2": {
+            "clue": "iconic CLUE-C12 with a four-letter name",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "bozo"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C15 CLUE-C18 CLUE-C17 CLUE-C2",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C17",
+                "CLUE-C18",
+                "CLUE-C2"
+            ],
+            "answer": "happy new year bozo"
+        }
+    }
+}

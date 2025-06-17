@@ -1,0 +1,131 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "\"you've come to a fork in the ___\"",
+            "depends_on": [],
+            "answer": "road"
+        },
+        "CLUE-C10": {
+            "clue": "make like a CLUE-C6side chicken",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "cross"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C10ed ones lead to confusion",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "wires"
+        },
+        "CLUE-C13": {
+            "clue": "speeding might get you one",
+            "depends_on": [],
+            "answer": "ticket"
+        },
+        "CLUE-C8": {
+            "clue": "VIP CLUE-C13 perk, with \"greet\"",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "meet"
+        },
+        "CLUE-C9": {
+            "clue": "if you CLUE-C8 yours, you are \ud83d\udc80",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "maker"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C9 invited to a lot of weddings, maybe",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "match"
+        },
+        "CLUE-C11": {
+            "clue": "timer you start with a CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "fuse"
+        },
+        "CLUE-C1": {
+            "clue": "it has many colorful CLUE-C7 to hinder deCLUE-C11rs in a movie",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C7"
+            ],
+            "answer": "bomb"
+        },
+        "CLUE-C3": {
+            "clue": "sometimes exaggerated figure on a dating profile",
+            "depends_on": [],
+            "answer": "height"
+        },
+        "CLUE-C5": {
+            "clue": "time dreaded by some dogs and toddlers",
+            "depends_on": [],
+            "answer": "Bath"
+        },
+        "CLUE-C15": {
+            "clue": "right when facing north",
+            "depends_on": [],
+            "answer": "east"
+        },
+        "CLUE-C16": {
+            "clue": "last ___ not lCLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "But"
+        },
+        "CLUE-C2": {
+            "clue": "call made by Anita CLUE-C5 or Seymour CLUE-C16z, most likely",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C5"
+            ],
+            "answer": "prank"
+        },
+        "CLUE-C12": {
+            "clue": "a practical one is a CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "joke"
+        },
+        "CLUE-C14": {
+            "clue": "brow CLUE-C3 of poop CLUE-C12s",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C3"
+            ],
+            "answer": "low"
+        },
+        "CLUE-C18": {
+            "clue": "UPPER or CLUE-C14er",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "case"
+        },
+        "CLUE-C17": {
+            "clue": "\"I ___ my CLUE-C18\"",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "rest"
+        },
+        "CLUE-ROOT": {
+            "clue": "UnaCLUE-C1er arCLUE-C17ed",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C17"
+            ],
+            "answer": "Unabomber arrested"
+        }
+    }
+}

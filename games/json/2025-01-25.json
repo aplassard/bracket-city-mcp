@@ -1,0 +1,134 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "Oslo native",
+            "depends_on": [],
+            "answer": "Norwegian"
+        },
+        "CLUE-C17": {
+            "clue": "not for or against",
+            "depends_on": [],
+            "answer": "neutral"
+        },
+        "CLUE-C8": {
+            "clue": "leave it running in CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "idle"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C8 couch-loving people",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "loafers"
+        },
+        "CLUE-C7": {
+            "clue": "kind of lane that's not for cars",
+            "depends_on": [],
+            "answer": "bike"
+        },
+        "CLUE-C11": {
+            "clue": "inflates, as a CLUE-C7 tire",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "pumps"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C9 or CLUE-C11, e.g.",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C9"
+            ],
+            "answer": "shoes"
+        },
+        "CLUE-C4": {
+            "clue": "two-fingered attack from a kid, often",
+            "depends_on": [],
+            "answer": "pinch"
+        },
+        "CLUE-C2": {
+            "clue": "secret ones are good to have in a CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "weapons"
+        },
+        "CLUE-C13": {
+            "clue": "be on ___ and needles",
+            "depends_on": [],
+            "answer": "pins"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C2 with safety CLUE-C13",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C2"
+            ],
+            "answer": "grenades"
+        },
+        "CLUE-C1": {
+            "clue": "it counts in horseCLUE-C12 and hand CLUE-C10, it is said",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C12"
+            ],
+            "answer": "close"
+        },
+        "CLUE-C14": {
+            "clue": "index or middle, e.g.",
+            "depends_on": [],
+            "answer": "finger"
+        },
+        "CLUE-C3": {
+            "clue": "sort of CLUE-C14 that can do some damage",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "trigger"
+        },
+        "CLUE-C16": {
+            "clue": "fancy formal dance",
+            "depends_on": [],
+            "answer": "ball"
+        },
+        "CLUE-C5": {
+            "clue": "1985 sci-fi film \"Back to the ___\"",
+            "depends_on": [],
+            "answer": "future"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C16 that can show you the CLUE-C5",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C5"
+            ],
+            "answer": "crystal"
+        },
+        "CLUE-C19": {
+            "clue": "Coke rival",
+            "depends_on": [],
+            "answer": "Pepsi"
+        },
+        "CLUE-C15": {
+            "clue": "like CLUE-C6 CLUE-C19",
+            "depends_on": [
+                "CLUE-C19",
+                "CLUE-C6"
+            ],
+            "answer": "clear"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C18 scientists come CLUE-C1 to CLUE-C3ing nuCLUE-C15 war",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C15",
+                "CLUE-C18",
+                "CLUE-C3"
+            ],
+            "answer": "Norwegian scientists come close to triggering nuclear war"
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "clues": {
+        "CLUE-C5": {
+            "clue": "sandwich that's actually a punch in the mouth",
+            "depends_on": [],
+            "answer": "knuckle"
+        },
+        "CLUE-C11": {
+            "clue": "prefix relating to space \ud83d\ude80",
+            "depends_on": [],
+            "answer": "Astro"
+        },
+        "CLUE-C4": {
+            "clue": "it is said to always be greener on the other side",
+            "depends_on": [],
+            "answer": "Grass"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C11___ (originally marketed as \"ChemCLUE-C4\")",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C4"
+            ],
+            "answer": "turf"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C6 \u2b05\ufe0f ___ \u27a1\ufe0f chest",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "war"
+        },
+        "CLUE-C1": {
+            "clue": "raise both hands to eye level, clench them into fists, position them just below your eyes with CLUE-C5s upward, twist your fists upCLUE-C12ds and downwards and say \"___-hoo\"",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C5"
+            ],
+            "answer": "boo"
+        },
+        "CLUE-C13": {
+            "clue": "caCLUE-C1dle's companion",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "kit"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C13chen fixture that remains when everything else gets included",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "sink"
+        },
+        "CLUE-C9": {
+            "clue": "classic cabin construction material",
+            "depends_on": [],
+            "answer": "log"
+        },
+        "CLUE-C7": {
+            "clue": "interpret an anaCLUE-C9 clock face, with \"time\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "tell"
+        },
+        "CLUE-C8": {
+            "clue": "what you need to do to CLUE-C7 the tale",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "live"
+        },
+        "CLUE-C14": {
+            "clue": "\"sensed\" tense",
+            "depends_on": [],
+            "answer": "past"
+        },
+        "CLUE-C2": {
+            "clue": "OCLUE-C8 ___ (establishment that sometimes sells lifetime CLUE-C14a passes)",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C8"
+            ],
+            "answer": "garden"
+        },
+        "CLUE-C10": {
+            "clue": "location of the most famous CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "eden"
+        },
+        "CLUE-ROOT": {
+            "clue": "HelCLUE-C3i founded by King Gustav I of SwCLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C3"
+            ],
+            "answer": "Helsinki founded by King Gustav I of Sweden"
+        }
+    }
+}

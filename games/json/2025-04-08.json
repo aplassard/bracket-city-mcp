@@ -1,0 +1,123 @@
+{
+    "clues": {
+        "CLUE-C5": {
+            "clue": "call unintentionally, with (your) \"butt\"",
+            "depends_on": [],
+            "answer": "dial"
+        },
+        "CLUE-C17": {
+            "clue": "a baker's is 13 \ud83e\udd56",
+            "depends_on": [],
+            "answer": "dozen"
+        },
+        "CLUE-C8": {
+            "clue": "low price for a CLUE-C17, it is said",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "dime"
+        },
+        "CLUE-C15": {
+            "clue": "precarious ice to be on",
+            "depends_on": [],
+            "answer": "thin"
+        },
+        "CLUE-C12": {
+            "clue": "not all, but also not none",
+            "depends_on": [],
+            "answer": "some"
+        },
+        "CLUE-C1": {
+            "clue": "\"___ goes noCLUE-C15g\" you say as you attempt an underwater CLUE-C12rsault",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C15"
+            ],
+            "answer": "here"
+        },
+        "CLUE-C16": {
+            "clue": "\"the ___ of nowCLUE-C1\"",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "middle"
+        },
+        "CLUE-C6": {
+            "clue": "your CLUE-C16 one can get you grounded",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "finger"
+        },
+        "CLUE-C2": {
+            "clue": "two-CLUE-C8nsional CLUE-C6 puppet projected on a wall",
+            "depends_on": [
+                "CLUE-C6",
+                "CLUE-C8"
+            ],
+            "answer": "shadow"
+        },
+        "CLUE-C11": {
+            "clue": "___CLUE-C5 (CLUE-C2-based clock)",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C5"
+            ],
+            "answer": "Sun"
+        },
+        "CLUE-C14": {
+            "clue": "second rock from the CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Venus"
+        },
+        "CLUE-C10": {
+            "clue": "vehicle that's a palindrome \ud83c\udfce\ufe0f",
+            "depends_on": [],
+            "answer": "racecar"
+        },
+        "CLUE-C13": {
+            "clue": "kind of stop for a CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "pit"
+        },
+        "CLUE-C9": {
+            "clue": "a mechanic might look under it",
+            "depends_on": [],
+            "answer": "hood"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C9 color for a little girl with a wolf problem",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "red"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C3 spandex halloween costume, maybe",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "devil"
+        },
+        "CLUE-C4": {
+            "clue": "guy with a CLUE-C13chfork that's not the CLUE-C7",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C7"
+            ],
+            "answer": "farmer"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C14 de Milo is discovered by a Greek CLUE-C4",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C4"
+            ],
+            "answer": "the Venus de Milo is discovered by a Greek farmer"
+        }
+    }
+}

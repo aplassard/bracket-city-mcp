@@ -1,0 +1,108 @@
+{
+    "clues": {
+        "CLUE-C4": {
+            "clue": "kids love to hear songs on this",
+            "depends_on": [],
+            "answer": "repeat"
+        },
+        "CLUE-C9": {
+            "clue": "not once, not twice, but",
+            "depends_on": [],
+            "answer": "thrice"
+        },
+        "CLUE-C1": {
+            "clue": "you might CLUE-C4 this word CLUE-C9 when the tables turn in your favor",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C9"
+            ],
+            "answer": "well"
+        },
+        "CLUE-C13": {
+            "clue": "Lucas or OrCLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "George"
+        },
+        "CLUE-C12": {
+            "clue": "ID prized by teens",
+            "depends_on": [],
+            "answer": "fake"
+        },
+        "CLUE-C14": {
+            "clue": "number to hang",
+            "depends_on": [],
+            "answer": "Ten"
+        },
+        "CLUE-C2": {
+            "clue": "Heston wore a CLUE-C12 beard to play him in \"The CLUE-C14 Commandments\"",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C14"
+            ],
+            "answer": "Moses"
+        },
+        "CLUE-C15": {
+            "clue": "corn units",
+            "depends_on": [],
+            "answer": "ears"
+        },
+        "CLUE-C3": {
+            "clue": "like your CLUE-C15 when someone is talking about you",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "burning"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C2 encountered a CLUE-C3 one",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C3"
+            ],
+            "answer": "Bush"
+        },
+        "CLUE-C6": {
+            "clue": "has multiple partners, briefly",
+            "depends_on": [],
+            "answer": "poly"
+        },
+        "CLUE-C8": {
+            "clue": "suffix with para- or CLUE-C6-",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "graph"
+        },
+        "CLUE-C7": {
+            "clue": "X or Y on CLUE-C8 paper, maybe",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "axis"
+        },
+        "CLUE-C11": {
+            "clue": "bed for one, oddly",
+            "depends_on": [],
+            "answer": "twin"
+        },
+        "CLUE-C10": {
+            "clue": "like one CLUE-C11, maybe \ud83d\ude08",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "evil"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C13 W. CLUE-C5 first describes the \"CLUE-C7 of CLUE-C10\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C13",
+                "CLUE-C5",
+                "CLUE-C7"
+            ],
+            "answer": "George W. Bush first describes the \"axis of evil\""
+        }
+    }
+}

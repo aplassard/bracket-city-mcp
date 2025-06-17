@@ -1,0 +1,136 @@
+{
+    "clues": {
+        "CLUE-C11": {
+            "clue": "vacation in the UK",
+            "depends_on": [],
+            "answer": "holiday"
+        },
+        "CLUE-C3": {
+            "clue": "like a CLUE-C11 or an anthem, maybe",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "national"
+        },
+        "CLUE-C13": {
+            "clue": "putting surface",
+            "depends_on": [],
+            "answer": "green"
+        },
+        "CLUE-C15": {
+            "clue": "shade of CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Hunter"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C15 got one from his dad",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "pardon"
+        },
+        "CLUE-C12": {
+            "clue": "\"___ your CLUE-C8\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "beg"
+        },
+        "CLUE-C7": {
+            "clue": "quaint lodging for travelers",
+            "depends_on": [],
+            "answer": "inn"
+        },
+        "CLUE-C17": {
+            "clue": "esque, e.g.",
+            "depends_on": [],
+            "answer": "suffix"
+        },
+        "CLUE-C16": {
+            "clue": "gerund CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "ing"
+        },
+        "CLUE-C6": {
+            "clue": "like the CLUE-C12CLUE-C7CLUE-C16 of \"Psycho\"?",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C16",
+                "CLUE-C7"
+            ],
+            "answer": "silent"
+        },
+        "CLUE-C4": {
+            "clue": "famous first name in CLUE-C6 cinema",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Charlie"
+        },
+        "CLUE-C9": {
+            "clue": "often illuminated sign",
+            "depends_on": [],
+            "answer": "exit"
+        },
+        "CLUE-C10": {
+            "clue": "skydiving essential",
+            "depends_on": [],
+            "answer": "parachute"
+        },
+        "CLUE-C1": {
+            "clue": "lucrative CLUE-C9 package, with \"CLUE-C10\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C9"
+            ],
+            "answer": "golden"
+        },
+        "CLUE-C19": {
+            "clue": "not a Mac",
+            "depends_on": [],
+            "answer": "PC"
+        },
+        "CLUE-C18": {
+            "clue": "the P in CLUE-C19",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "political"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C18 nerd",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "Wonk"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C4 got a CLUE-C1 one from CLUE-C14a",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C14",
+                "CLUE-C4"
+            ],
+            "answer": "ticket"
+        },
+        "CLUE-C5": {
+            "clue": "type of CLUE-C2 you might scratch",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "lottery"
+        },
+        "CLUE-ROOT": {
+            "clue": "first ever CLUE-C3 CLUE-C5 held in England",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C5"
+            ],
+            "answer": "first ever national lottery held in England"
+        }
+    }
+}

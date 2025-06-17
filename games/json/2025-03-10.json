@@ -1,0 +1,143 @@
+{
+    "clues": {
+        "CLUE-C19": {
+            "clue": "\ud83d\udd12",
+            "depends_on": [],
+            "answer": "lock"
+        },
+        "CLUE-C14": {
+            "clue": "SherCLUE-C19 Holmes's pal",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "Watson"
+        },
+        "CLUE-C20": {
+            "clue": "\ud83d\udccc",
+            "depends_on": [],
+            "answer": "pin"
+        },
+        "CLUE-C1": {
+            "clue": "if you are sCLUE-C20ning yours you might be wasting time",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "wheels"
+        },
+        "CLUE-C9": {
+            "clue": "like some CLUE-C1 or dog toys",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "squeaky"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C9 ___",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "clean"
+        },
+        "CLUE-C6": {
+            "clue": "comfortable seating in a diner",
+            "depends_on": [],
+            "answer": "booth"
+        },
+        "CLUE-C12": {
+            "clue": "white-collar job, maybe",
+            "depends_on": [],
+            "answer": "priest"
+        },
+        "CLUE-C4": {
+            "clue": "thing to do in a CLUE-C6 with a CLUE-C12",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C6"
+            ],
+            "answer": "confess"
+        },
+        "CLUE-C15": {
+            "clue": "___ CLUE-C18 (CLUE-C4)",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C4"
+            ],
+            "answer": "come"
+        },
+        "CLUE-C17": {
+            "clue": "no longer in",
+            "depends_on": [],
+            "answer": "out"
+        },
+        "CLUE-C13": {
+            "clue": "\"let's get CLUE-C17 of ___\"",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "here"
+        },
+        "CLUE-C7": {
+            "clue": "something stuck on an envelope",
+            "depends_on": [],
+            "answer": "stamp"
+        },
+        "CLUE-C3": {
+            "clue": "kind of CLUE-C7 that doesn't mean much",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "rubber"
+        },
+        "CLUE-C5": {
+            "clue": "the government makes you pay them",
+            "depends_on": [],
+            "answer": "taxes"
+        },
+        "CLUE-C10": {
+            "clue": "really CLUE-C5, as a battery",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "drains"
+        },
+        "CLUE-C16": {
+            "clue": "banes of CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "clogs"
+        },
+        "CLUE-C8": {
+            "clue": "one of a pair of CLUE-C3y CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C3"
+            ],
+            "answer": "croc"
+        },
+        "CLUE-C2": {
+            "clue": "\"actually that's not a CLUE-C8odile, it's an ___\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "alligator"
+        },
+        "CLUE-C11": {
+            "clue": "\"___ you later, CLUE-C2\"",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "see"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"Mr. CLUE-C14, CLUE-C15 CLUE-C13 I want to CLUE-C11 you\"",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C15"
+            ],
+            "answer": "\"Mr. Watson, come here I want to see you\""
+        }
+    }
+}

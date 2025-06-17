@@ -1,0 +1,130 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "midnight snack destination, for short",
+            "depends_on": [],
+            "answer": "fridge"
+        },
+        "CLUE-C1": {
+            "clue": "kind of card that might end up on the CLUE-C10 or secretly disposed of",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "report"
+        },
+        "CLUE-C7": {
+            "clue": "kind of CLUE-C1 that might feature \ud83c\udf27\ufe0f or \u2600\ufe0f",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "weather"
+        },
+        "CLUE-C15": {
+            "clue": "__ Ni\u00f1o (CLUE-C7 pattern)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "El"
+        },
+        "CLUE-C8": {
+            "clue": "large industrial tub or a consumption tax",
+            "depends_on": [],
+            "answer": "vat"
+        },
+        "CLUE-C17": {
+            "clue": "\"practice what you ___\"",
+            "depends_on": [],
+            "answer": "preach"
+        },
+        "CLUE-C13": {
+            "clue": "eleCLUE-C8ed spot for a CLUE-C17er",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C8"
+            ],
+            "answer": "pulpit"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C13 from which to push an agenda",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "bully"
+        },
+        "CLUE-C18": {
+            "clue": "this kind of wand \ud83e\ude84",
+            "depends_on": [],
+            "answer": "magic"
+        },
+        "CLUE-C14": {
+            "clue": "kind of \u2708\ufe0f made by folding",
+            "depends_on": [],
+            "answer": "paper"
+        },
+        "CLUE-C16": {
+            "clue": "surprise loser to CLUE-C14",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Rock"
+        },
+        "CLUE-C6": {
+            "clue": "basic action for a CLUE-C16ette or a footballer",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "kick"
+        },
+        "CLUE-C5": {
+            "clue": "something to CLUE-C6 or wear (if you are a nun)",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "habit"
+        },
+        "CLUE-C12": {
+            "clue": "legless CLUE-C18al lamp inCLUE-C5ant",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C5"
+            ],
+            "answer": "genie"
+        },
+        "CLUE-C9": {
+            "clue": "\"your wish is my ___\" (CLUE-C12 commonplace)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "command"
+        },
+        "CLUE-C4": {
+            "clue": "\"___ him!\" (CLUE-C9 shouted at palace guards)",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "seize"
+        },
+        "CLUE-C3": {
+            "clue": "the shortest player to ever do this in the NBA was 5'7\"",
+            "depends_on": [],
+            "answer": "Dunk"
+        },
+        "CLUE-C2": {
+            "clue": "\"you and what ___\" says the CLUE-C11 who has CLUE-C4d your CLUE-C3aroos",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3",
+                "CLUE-C4"
+            ],
+            "answer": "Army"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C15vis joins the CLUE-C2",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C2"
+            ],
+            "answer": "Elvis joins the Army"
+        }
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "the B in BFF",
+            "depends_on": [],
+            "answer": "best"
+        },
+        "CLUE-C6": {
+            "clue": "it's a good idea to put your CLUE-C16 one forward",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "foot"
+        },
+        "CLUE-C4": {
+            "clue": "flip ___ (CLUE-C6wear choice for the discerning and stylish)",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "flop"
+        },
+        "CLUE-C14": {
+            "clue": "home of your teeth and tongue",
+            "depends_on": [],
+            "answer": "mouth"
+        },
+        "CLUE-C2": {
+            "clue": "tooth___ (cool thing to have in your CLUE-C14 when you narrow your eyes)",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "pick"
+        },
+        "CLUE-C10": {
+            "clue": "something that gets CLUE-C2ed or put up",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "fight"
+        },
+        "CLUE-C11": {
+            "clue": "edged tool carried by fireCLUE-C10ers",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "ax"
+        },
+        "CLUE-C7": {
+            "clue": "kind of CLUE-C4 that mCLUE-C11imizes the splash radius",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C4"
+            ],
+            "answer": "belly"
+        },
+        "CLUE-C9": {
+            "clue": "more common CLUE-C7 button configuration",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "innie"
+        },
+        "CLUE-C3": {
+            "clue": "Coca-___ (beverage brand that often suggests it's endorsed by Santa)",
+            "depends_on": [],
+            "answer": "cola"
+        },
+        "CLUE-C15": {
+            "clue": "\"assault and ___\"",
+            "depends_on": [],
+            "answer": "battery"
+        },
+        "CLUE-C8": {
+            "clue": "9 ___ CLUE-C15 + tongue (science experiment)",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "volt"
+        },
+        "CLUE-C1": {
+            "clue": "NiCLUE-C3s who stole the Declaration of Independence and John TraCLUE-C8a's face",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C8"
+            ],
+            "answer": "cage"
+        },
+        "CLUE-C5": {
+            "clue": "some stores keep the spray variety in a locked CLUE-C1 \ud83e\udedf",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "paint"
+        },
+        "CLUE-C12": {
+            "clue": "like CLUE-C5 that you mustn't touch",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "wet"
+        },
+        "CLUE-C13": {
+            "clue": "hydro___ (skid on a CLUE-C12 road)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Plane"
+        },
+        "CLUE-ROOT": {
+            "clue": "first appearance of MCLUE-C9 Mouse in \"CLUE-C13 Crazy\"",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C9"
+            ],
+            "answer": "first appearance of Minnie Mouse in \"Plane Crazy\""
+        }
+    }
+}

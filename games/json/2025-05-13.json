@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C11": {
+            "clue": "word for a gas + electric car",
+            "depends_on": [],
+            "answer": "hybrid"
+        },
+        "CLUE-C6": {
+            "clue": "suffix that indicates a CLUE-C11 dog breed \ud83d\udc29",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "doodle"
+        },
+        "CLUE-C7": {
+            "clue": "syllable following \"cocka\" and \"CLUE-C6\"",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "doo"
+        },
+        "CLUE-C8": {
+            "clue": "word on a CLUE-C7r that opens toward you",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "pull"
+        },
+        "CLUE-C10": {
+            "clue": "material CLUE-C8ed over some eyes",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "wool"
+        },
+        "CLUE-C13": {
+            "clue": "better than never, it is said",
+            "depends_on": [],
+            "answer": "late"
+        },
+        "CLUE-C3": {
+            "clue": "identity ___ (sinister use for a social security number)",
+            "depends_on": [],
+            "answer": "Theft"
+        },
+        "CLUE-C16": {
+            "clue": "\"___ CLUE-C3 Auto\"",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "grand"
+        },
+        "CLUE-C15": {
+            "clue": "game with CLUE-C16masters",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "chess"
+        },
+        "CLUE-C14": {
+            "clue": "crenelCLUE-C13d turret of CLUE-C15",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C15"
+            ],
+            "answer": "rook"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C10ly animal herded with a cCLUE-C14",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C14"
+            ],
+            "answer": "sheep"
+        },
+        "CLUE-C12": {
+            "clue": "___ laughing matter (serious)",
+            "depends_on": [],
+            "answer": "no"
+        },
+        "CLUE-C4": {
+            "clue": "\"___ willy\" (horrible cousin of a CLUE-C12ogie or a wedgie \ud83d\udc42)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Wet"
+        },
+        "CLUE-C5": {
+            "clue": "\"Home ___\" (1990 movie featuring the CLUE-C4 Bandits)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "alone"
+        },
+        "CLUE-C1": {
+            "clue": "suffix you might use standCLUE-C5 when someone offers a description that is pretty close",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "ish"
+        },
+        "CLUE-C2": {
+            "clue": "\"___ on down!\" is the last thing you remember hearing before winning a dCLUE-C1washer",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Come"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C9 farmer discovers the Great CLUE-C2t of 1861",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "sheep farmer discovers the Great Comet of 1861"
+        }
+    }
+}

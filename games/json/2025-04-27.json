@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "log domicile for Lincoln",
+            "depends_on": [],
+            "answer": "cabin"
+        },
+        "CLUE-C4": {
+            "clue": "reasonably private CLUE-C14 in a public bathroom",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "stall"
+        },
+        "CLUE-C9": {
+            "clue": "something you inCLUE-C4 on your phone",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "app"
+        },
+        "CLUE-C17": {
+            "clue": "\"hCLUE-C9ily ever ___\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "after"
+        },
+        "CLUE-C7": {
+            "clue": "generally preferred CLUE-C17life destination",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "heaven"
+        },
+        "CLUE-C2": {
+            "clue": "Reverend Lovejoy: \"see you in ___! *long pause* from CLUE-C7!\"",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "hell"
+        },
+        "CLUE-C13": {
+            "clue": "informal form of \"CLUE-C2o\"",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "hi"
+        },
+        "CLUE-C11": {
+            "clue": "word after rock or marching",
+            "depends_on": [],
+            "answer": "band"
+        },
+        "CLUE-C8": {
+            "clue": "sweet contraCLUE-C11 at some summer camps",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "candy"
+        },
+        "CLUE-C6": {
+            "clue": "small capsule-shaped hard CLUE-C8, with \"tac\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "tic"
+        },
+        "CLUE-C15": {
+            "clue": "home of sumo wrestling",
+            "depends_on": [],
+            "answer": "japan"
+        },
+        "CLUE-C16": {
+            "clue": "thick CLUE-C15ese noodle",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "udon"
+        },
+        "CLUE-C5": {
+            "clue": "letters between a pseCLUE-C16ym and a real name",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "aka"
+        },
+        "CLUE-C18": {
+            "clue": "# in \ud83c\uddfa\ud83c\uddf8, \u00a3 in \ud83c\uddec\ud83c\udde7",
+            "depends_on": [],
+            "answer": "pound"
+        },
+        "CLUE-C1": {
+            "clue": "two-letter abbreviation for \"CLUE-C18\" neither of which appear in the word",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "lb"
+        },
+        "CLUE-C12": {
+            "clue": "\"___y ___\" CLUE-C5 ___ WahCLUE-C1erg",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C5"
+            ],
+            "answer": "mark"
+        },
+        "CLUE-C3": {
+            "clue": "a sharply criCLUE-C6al reCLUE-C12 (emphasis on \"sharp\")",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C6"
+            ],
+            "answer": "Barb"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C3ie's romantic associate",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "ken"
+        },
+        "CLUE-ROOT": {
+            "clue": "Matilda is declared the world's oldest cCLUE-C13cCLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C13"
+            ],
+            "answer": "Matilda is declared the world's oldest chicken"
+        }
+    }
+}

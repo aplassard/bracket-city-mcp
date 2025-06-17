@@ -1,0 +1,129 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "food for carbo-loading",
+            "depends_on": [],
+            "answer": "pasta"
+        },
+        "CLUE-C7": {
+            "clue": "\"born on third base and thinks he hit a ___\"",
+            "depends_on": [],
+            "answer": "triple"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C7 ___ (good at three things)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "threat"
+        },
+        "CLUE-C13": {
+            "clue": "bully's CLUE-C12: \"you're dead ___\"",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "meat"
+        },
+        "CLUE-C3": {
+            "clue": "kind of unit where you might keep your old yearbooks",
+            "depends_on": [],
+            "answer": "storage"
+        },
+        "CLUE-C18": {
+            "clue": "letter before Beta",
+            "depends_on": [],
+            "answer": "alpha"
+        },
+        "CLUE-C9": {
+            "clue": "highest level in the NCAA, CLUE-C18numerically",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "D1"
+        },
+        "CLUE-C8": {
+            "clue": "classic board game where \"CLUE-C9\" might be a hit",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "battleship"
+        },
+        "CLUE-C2": {
+            "clue": "\"moth___\": puts in long-term CLUE-C3 (as a CLUE-C8)",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C8"
+            ],
+            "answer": "balls"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C17 iconically paired with CLUE-C13CLUE-C2",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C17",
+                "CLUE-C2"
+            ],
+            "answer": "Spaghetti"
+        },
+        "CLUE-C1": {
+            "clue": "an American frontier film produced in Europe, a CLUE-C10 ___",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Western"
+        },
+        "CLUE-C14": {
+            "clue": "period before the Renaissance",
+            "depends_on": [],
+            "answer": "medieval"
+        },
+        "CLUE-C6": {
+            "clue": "to have foreign-born parents, to be first ___",
+            "depends_on": [],
+            "answer": "generation"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C6 closely associated with flannel shirts",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "X"
+        },
+        "CLUE-C15": {
+            "clue": "kind of map with an CLUE-C4 on it",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "treasure"
+        },
+        "CLUE-C11": {
+            "clue": "\"I need to get something off my ___\"",
+            "depends_on": [],
+            "answer": "chest"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C15 CLUE-C11 contents",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C15"
+            ],
+            "answer": "gold"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C14 science concerned with creating CLUE-C16",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C16"
+            ],
+            "answer": "alchemy"
+        },
+        "CLUE-ROOT": {
+            "clue": "the birth of CLUE-C1 CLUE-C5",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C5"
+            ],
+            "answer": "the birth of Western alchemy"
+        }
+    }
+}

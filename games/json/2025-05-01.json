@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "final year of high school",
+            "depends_on": [],
+            "answer": "senior"
+        },
+        "CLUE-C15": {
+            "clue": "short sleep session",
+            "depends_on": [],
+            "answer": "Nap"
+        },
+        "CLUE-C10": {
+            "clue": "word after inferiority or CLUE-C15oleon",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "complex"
+        },
+        "CLUE-C13": {
+            "clue": "consumer commerce CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "mall"
+        },
+        "CLUE-C16": {
+            "clue": "court in a CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "food"
+        },
+        "CLUE-C11": {
+            "clue": "word after CLUE-C16 or pillow \u2694\ufe0f",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "fight"
+        },
+        "CLUE-C3": {
+            "clue": "one of two that you might be told to get up before a CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "duke"
+        },
+        "CLUE-C9": {
+            "clue": "something to do on the dotted line",
+            "depends_on": [],
+            "answer": "sign"
+        },
+        "CLUE-C2": {
+            "clue": "\"out of ___\" (disappointing CLUE-C9 to encounter on a vending machine)",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "order"
+        },
+        "CLUE-C7": {
+            "clue": "kind of CLUE-C2 that's hard to carry out",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "tall"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C7y the number of items in a group",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "count"
+        },
+        "CLUE-C6": {
+            "clue": "ArchCLUE-C3 or VisCLUE-C8 or Assistant Manager",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C8"
+            ],
+            "answer": "title"
+        },
+        "CLUE-C5": {
+            "clue": "a CLUE-C14 ___ might be enCLUE-C6d to a discount",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C6"
+            ],
+            "answer": "Citizen"
+        },
+        "CLUE-C1": {
+            "clue": "\"do you want to get ___bite?!\" (dire warning from your mom on a cold day)",
+            "depends_on": [],
+            "answer": "frost"
+        },
+        "CLUE-C12": {
+            "clue": "delectable oft-CLUE-C1ed tart",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "pop"
+        },
+        "CLUE-C4": {
+            "clue": "_-CLUE-C12 (genre originating in \ud83c\uddf0\ud83c\uddf7 with devoted fans)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "K"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"CLUE-C5 CLUE-C4ane\" premieres at the RKO Palace",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C5"
+            ],
+            "answer": "\"Citizen Kane\" premieres at the RKO Palace"
+        }
+    }
+}

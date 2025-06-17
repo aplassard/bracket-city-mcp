@@ -1,0 +1,116 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "wee garden statue, maybe",
+            "depends_on": [],
+            "answer": "gnome"
+        },
+        "CLUE-C1": {
+            "clue": "blue CLUE-C12-like creature with a white Phrygian cap",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "smurf"
+        },
+        "CLUE-C3": {
+            "clue": "the eldest CLUE-C1, sworn enemy of Gargamel",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "papa"
+        },
+        "CLUE-C9": {
+            "clue": "country that sounds like \ud83d\udc33\ud83d\udc33\ud83d\udc33",
+            "depends_on": [],
+            "answer": "Wales"
+        },
+        "CLUE-C8": {
+            "clue": "the United one contains CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "kingdom"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C8 we are a part of",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "animal"
+        },
+        "CLUE-C11": {
+            "clue": "adjective for Jay Gatsby",
+            "depends_on": [],
+            "answer": "Great"
+        },
+        "CLUE-C14": {
+            "clue": "home of the CLUE-C11 Wall",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "china"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C13 unwelcome in a CLUE-C14 shop",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14"
+            ],
+            "answer": "bull"
+        },
+        "CLUE-C7": {
+            "clue": "cost to call someone who cares",
+            "depends_on": [],
+            "answer": "quarter"
+        },
+        "CLUE-C15": {
+            "clue": "famous CLUE-C7back Tom",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Brady"
+        },
+        "CLUE-C6": {
+            "clue": "eldest of the CLUE-C15 Bunch kids",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Greg"
+        },
+        "CLUE-C16": {
+            "clue": "\ud83d\udd25",
+            "depends_on": [],
+            "answer": "fire"
+        },
+        "CLUE-C4": {
+            "clue": "meat ___ pizza (without the apostrophe)",
+            "depends_on": [],
+            "answer": "lovers"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C4 say they are not them",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "fighters"
+        },
+        "CLUE-C2": {
+            "clue": "place to find 12 shirtless CLUE-C16CLUE-C10, maybe",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C16"
+            ],
+            "answer": "calendar"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C3l CLUE-C5 announces the CLUE-C6orian CLUE-C2",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C3",
+                "CLUE-C5",
+                "CLUE-C6"
+            ],
+            "answer": "papal bull announces the Gregorian calendar"
+        }
+    }
+}

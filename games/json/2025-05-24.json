@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "palindromic name in Eden",
+            "depends_on": [],
+            "answer": "eve"
+        },
+        "CLUE-C10": {
+            "clue": "\"___ peCLUE-C14\" (dating profile tidbit)",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "pet"
+        },
+        "CLUE-C7": {
+            "clue": "a CLUE-C10ri one often harbors microorganisms",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "dish"
+        },
+        "CLUE-C1": {
+            "clue": "something you might deftly slide under a guest's drink before it's placed on your fancy new table",
+            "depends_on": [],
+            "answer": "coaster"
+        },
+        "CLUE-C3": {
+            "clue": "place in your body where you feel the drop on a roller CLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "stomach"
+        },
+        "CLUE-C2": {
+            "clue": "if swallowed, it apparently will NOT stay in your CLUE-C3 for seven years",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "gum"
+        },
+        "CLUE-C11": {
+            "clue": "SweCLUE-C7 ones are red and CLUE-C2my",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C7"
+            ],
+            "answer": "fish"
+        },
+        "CLUE-C5": {
+            "clue": "sushi roll with no raw CLUE-C11 named after a state",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "California"
+        },
+        "CLUE-C9": {
+            "clue": "\"___ in\" (secure a child in their bed)",
+            "depends_on": [],
+            "answer": "tuck"
+        },
+        "CLUE-C4": {
+            "clue": "\"___ball!\" you bellow from your majestic CLUE-C9 above the pool",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "cannon"
+        },
+        "CLUE-C8": {
+            "clue": "be careful \u2014 that guy is a ____ CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "loose"
+        },
+        "CLUE-C6": {
+            "clue": "to have one CLUE-C8 suggests a certain zaniness",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "screw"
+        },
+        "CLUE-C16": {
+            "clue": "hammer___ shark",
+            "depends_on": [],
+            "answer": "head"
+        },
+        "CLUE-C12": {
+            "clue": "cruciform CLUE-C6 CLUE-C16 type \u2a01",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C6"
+            ],
+            "answer": "Phillips"
+        },
+        "CLUE-C13": {
+            "clue": "Gehrig or Diamond CLUE-C12",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Lou"
+        },
+        "CLUE-C15": {
+            "clue": "home of the CLUE-C13vre",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Paris"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C5 wines triumph at the Judgment of CLUE-C15",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C5"
+            ],
+            "answer": "California wines triumph at the Judgment of Paris"
+        }
+    }
+}

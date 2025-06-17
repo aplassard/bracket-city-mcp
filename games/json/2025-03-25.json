@@ -1,0 +1,138 @@
+{
+    "clues": {
+        "CLUE-C7": {
+            "clue": "one might have a president or a clown",
+            "depends_on": [],
+            "answer": "class"
+        },
+        "CLUE-C5": {
+            "clue": "a floor one shows you the layout of a house",
+            "depends_on": [],
+            "answer": "plan"
+        },
+        "CLUE-C16": {
+            "clue": "devise, as a CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "hatch"
+        },
+        "CLUE-C2": {
+            "clue": "one might scrub the decks or batten down the CLUE-C16es",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "sailor"
+        },
+        "CLUE-C3": {
+            "clue": "a \u2693\ufe0f is a CLUE-C7ic one for a CLUE-C2, for short",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C7"
+            ],
+            "answer": "tat"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C3tled",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "told"
+        },
+        "CLUE-C4": {
+            "clue": "usually annoying statement: \"I CLUE-C19 you __\"",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "SO"
+        },
+        "CLUE-C18": {
+            "clue": "the O in CLUE-C4S",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "our"
+        },
+        "CLUE-C15": {
+            "clue": "one is 8,760 hCLUE-C18s",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "year"
+        },
+        "CLUE-C12": {
+            "clue": "the Dead one is very salty",
+            "depends_on": [],
+            "answer": "sea"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C12 in Spanish",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Mar"
+        },
+        "CLUE-C1": {
+            "clue": "kind of night when bedtime is more strictly enforced",
+            "depends_on": [],
+            "answer": "school"
+        },
+        "CLUE-C9": {
+            "clue": "kind of CLUE-C1 for an attorney",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "law"
+        },
+        "CLUE-C14": {
+            "clue": "DeCLUE-C9are or Arizona, e.g.",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "state"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C14 of the ___ (cutting edge)",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "art"
+        },
+        "CLUE-C11": {
+            "clue": "number of cents in a quCLUE-C8er",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "25"
+        },
+        "CLUE-C10": {
+            "clue": "\"you can bet your ___ dollar\"",
+            "depends_on": [],
+            "answer": "bottom"
+        },
+        "CLUE-C6": {
+            "clue": "word after ball or mosh or CLUE-C10less",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "pit"
+        },
+        "CLUE-C13": {
+            "clue": "thyroid or CLUE-C6uitary, e.g.",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "gland"
+        },
+        "CLUE-ROOT": {
+            "clue": "the final CLUE-C15 that CLUE-C17ch CLUE-C11 is the first day of the year in EnCLUE-C13",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C13",
+                "CLUE-C15",
+                "CLUE-C17"
+            ],
+            "answer": "the final year that March 25 is the first day of the year in England"
+        }
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "keyboard key that indents",
+            "depends_on": [],
+            "answer": "tab"
+        },
+        "CLUE-C15": {
+            "clue": "longer hand on a face",
+            "depends_on": [],
+            "answer": "minute"
+        },
+        "CLUE-C9": {
+            "clue": "you might get 15 CLUE-C15s of it",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "fame"
+        },
+        "CLUE-C4": {
+            "clue": "having one with CLUE-C9 or death could be bracing",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "brush"
+        },
+        "CLUE-C3": {
+            "clue": "you are supposed to CLUE-C4 them for two minutes",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "teeth"
+        },
+        "CLUE-C5": {
+            "clue": "vegeCLUE-C13le that might turn your CLUE-C3 red",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C3"
+            ],
+            "answer": "Beet"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C5hoven wrote one to Joy",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "ode"
+        },
+        "CLUE-C6": {
+            "clue": "kind of talk that might get you fouled",
+            "depends_on": [],
+            "answer": "trash"
+        },
+        "CLUE-C16": {
+            "clue": "\"you ___?\" \ud83d\udece\ufe0f",
+            "depends_on": [],
+            "answer": "rang"
+        },
+        "CLUE-C8": {
+            "clue": "one might have a CLUE-C16e and an island",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "kitchen"
+        },
+        "CLUE-C2": {
+            "clue": "what originally distinguished this from \"CLUE-C6\" is that it comes from the CLUE-C8 or bathroom",
+            "depends_on": [
+                "CLUE-C6",
+                "CLUE-C8"
+            ],
+            "answer": "garbage"
+        },
+        "CLUE-C12": {
+            "clue": "joust weapon for a knight",
+            "depends_on": [],
+            "answer": "lance"
+        },
+        "CLUE-C10": {
+            "clue": "a tight one requires baCLUE-C12",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "rope"
+        },
+        "CLUE-C7": {
+            "clue": "headwear with a pCLUE-C10ller, sometimes",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Beanie"
+        },
+        "CLUE-C1": {
+            "clue": "\"I've hit the ___ lCLUE-C11!\" you say pawing through a CLUE-C2 bag full of CLUE-C7 Babies at a flea market",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C2",
+                "CLUE-C7"
+            ],
+            "answer": "Mother"
+        },
+        "CLUE-C14": {
+            "clue": "\"How I ___ Your CLUE-C1\"",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Met"
+        },
+        "CLUE-ROOT": {
+            "clue": "the New York CLUE-C14s win their first game ever",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "the New York Mets win their first game ever"
+        }
+    }
+}

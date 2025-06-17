@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "a strong connection between friends",
+            "depends_on": [],
+            "answer": "Bond"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C6 or Dean",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "James"
+        },
+        "CLUE-C8": {
+            "clue": "maritime military force",
+            "depends_on": [],
+            "answer": "navy"
+        },
+        "CLUE-C2": {
+            "clue": "leave someone stuck on the last word of this puzzle, maybe",
+            "depends_on": [],
+            "answer": "maroon"
+        },
+        "CLUE-C3": {
+            "clue": "ECLUE-C12enCLUE-C5er CLUE-C7 or candy companion of Mike",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C5",
+                "CLUE-C7"
+            ],
+            "answer": "ike"
+        },
+        "CLUE-C9": {
+            "clue": "\ud83d\udc43 CLUE-C3 for a sycophant",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Brown"
+        },
+        "CLUE-C12": {
+            "clue": "as __ (no returns!)",
+            "depends_on": [],
+            "answer": "is"
+        },
+        "CLUE-C10": {
+            "clue": "\"___ Let the Dogs Out?\"",
+            "depends_on": [],
+            "answer": "who"
+        },
+        "CLUE-C15": {
+            "clue": "\"way back ___\"",
+            "depends_on": [],
+            "answer": "when"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C10? what? where? CLUE-C15? why? and...",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C15"
+            ],
+            "answer": "how"
+        },
+        "CLUE-C16": {
+            "clue": "an x in xoxo \ud83d\udc8b",
+            "depends_on": [],
+            "answer": "kiss"
+        },
+        "CLUE-C11": {
+            "clue": "a chart with wedges",
+            "depends_on": [],
+            "answer": "pie"
+        },
+        "CLUE-C13": {
+            "clue": "one might be tinted",
+            "depends_on": [],
+            "answer": "window"
+        },
+        "CLUE-C1": {
+            "clue": "\"ah, the ___ crime\" you say as you steal the steaming CLUE-C11 from the CLUE-C13 sill",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C13"
+            ],
+            "answer": "perfect"
+        },
+        "CLUE-C4": {
+            "clue": "one whose CLUE-C16 might mean \"just CLUE-C1\"",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C16"
+            ],
+            "answer": "Chef"
+        },
+        "CLUE-C7": {
+            "clue": "RiRi or CLUE-C4 Curry, e.g.",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "nickname"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83c\udfdd\ufe0f",
+            "depends_on": [],
+            "answer": "Island"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C17 CLUE-C9 performs at RCLUE-C3rs CLUE-C18",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C18",
+                "CLUE-C3",
+                "CLUE-C9"
+            ],
+            "answer": "James Brown performs at Rikers Island"
+        }
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "fried cylindrical taters",
+            "depends_on": [],
+            "answer": "Tots"
+        },
+        "CLUE-C19": {
+            "clue": "things for CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Toys"
+        },
+        "CLUE-C14": {
+            "clue": "fun store: \"CLUE-C19 \u042f __\"",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "US"
+        },
+        "CLUE-C8": {
+            "clue": "many use internal combustion",
+            "depends_on": [],
+            "answer": "engines"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C8 with ads",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "search"
+        },
+        "CLUE-C12": {
+            "clue": "they get tossed at bad acts",
+            "depends_on": [],
+            "answer": "tomatoes"
+        },
+        "CLUE-C18": {
+            "clue": "sun-___ CLUE-C12",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "dried"
+        },
+        "CLUE-C7": {
+            "clue": "the \"kissing disease\", for short",
+            "depends_on": [],
+            "answer": "mono"
+        },
+        "CLUE-C16": {
+            "clue": "really really tiny",
+            "depends_on": [],
+            "answer": "microscopic"
+        },
+        "CLUE-C4": {
+            "clue": "conclusive evidence of guilt, with \"gun\"",
+            "depends_on": [],
+            "answer": "smoking"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C4 science fair project, maybe",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "volcano"
+        },
+        "CLUE-C1": {
+            "clue": "superlative for the word pneuCLUE-C7ultraCLUE-C16silicoCLUE-C6coniosis",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C6",
+                "CLUE-C7"
+            ],
+            "answer": "longest"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C1 country in the world",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "chile"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C18 Mexican CLUE-C9",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C9"
+            ],
+            "answer": "ancho"
+        },
+        "CLUE-C5": {
+            "clue": "founder of modern nursing Nightingale",
+            "depends_on": [],
+            "answer": "Florence"
+        },
+        "CLUE-C3": {
+            "clue": "kids often debate whether top or bottom is better",
+            "depends_on": [],
+            "answer": "bunk"
+        },
+        "CLUE-C2": {
+            "clue": "cold cut with an alt spelling associated with CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Bologna"
+        },
+        "CLUE-C10": {
+            "clue": "home of CLUE-C5 and CLUE-C2",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C5"
+            ],
+            "answer": "Italy"
+        },
+        "CLUE-C11": {
+            "clue": "fancy house in CLUE-C10, maybe",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Villa"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14 ends CLUE-C17 for PCLUE-C15 CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C14",
+                "CLUE-C15",
+                "CLUE-C17"
+            ],
+            "answer": "US ends search for Pancho Villa"
+        }
+    }
+}

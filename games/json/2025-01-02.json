@@ -1,0 +1,121 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "not latter",
+            "depends_on": [],
+            "answer": "former"
+        },
+        "CLUE-C12": {
+            "clue": "military toilet",
+            "depends_on": [],
+            "answer": "head"
+        },
+        "CLUE-C13": {
+            "clue": "25 cent pieces",
+            "depends_on": [],
+            "answer": "quarters"
+        },
+        "CLUE-C11": {
+            "clue": "DoD CLUE-C12CLUE-C13",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13"
+            ],
+            "answer": "pentagon"
+        },
+        "CLUE-C3": {
+            "clue": "plate that's an irregular CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "home"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C14 CLUE-C3 of the Dodgers",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C3"
+            ],
+            "answer": "Brooklyn"
+        },
+        "CLUE-C9": {
+            "clue": "download illegally",
+            "depends_on": [],
+            "answer": "pirate"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C9 symbol, sometimes",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "skull"
+        },
+        "CLUE-C8": {
+            "clue": "Jack who killed Oswald",
+            "depends_on": [],
+            "answer": "ruby"
+        },
+        "CLUE-C1": {
+            "clue": "like a CLUE-C7 in \"Hamlet\" and Dorothy's CLUE-C8 slippers",
+            "depends_on": [
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "props"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C1, so to speak",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "credit"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C10 ___",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "card"
+        },
+        "CLUE-C5": {
+            "clue": "Donald of \"The Apprentice\"",
+            "depends_on": [],
+            "answer": "trump"
+        },
+        "CLUE-C16": {
+            "clue": "nail tool",
+            "depends_on": [],
+            "answer": "file"
+        },
+        "CLUE-C17": {
+            "clue": "attempt",
+            "depends_on": [],
+            "answer": "try"
+        },
+        "CLUE-C2": {
+            "clue": "something you might CLUE-C16 or CLUE-C17 on",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C17"
+            ],
+            "answer": "suit"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C15 game with a CLUE-C5 CLUE-C2",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C2",
+                "CLUE-C5"
+            ],
+            "answer": "Bridge"
+        },
+        "CLUE-ROOT": {
+            "clue": "construction begins on the CLUE-C6 CLUE-C4",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C6"
+            ],
+            "answer": "construction begins on the Brooklyn Bridge"
+        }
+    }
+}

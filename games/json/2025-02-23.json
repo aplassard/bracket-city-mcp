@@ -1,0 +1,142 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "this kind of ball \ud83e\udea9",
+            "depends_on": [],
+            "answer": "disco"
+        },
+        "CLUE-C16": {
+            "clue": "Shack with burgers",
+            "depends_on": [],
+            "answer": "shake"
+        },
+        "CLUE-C1": {
+            "clue": "a CLUE-C14 anthem instructs you to CLUE-C16 (x7) your ___",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C16"
+            ],
+            "answer": "booty"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C1 chasers",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Pirates"
+        },
+        "CLUE-C4": {
+            "clue": "almost six trillion miles, missing a hyphen",
+            "depends_on": [],
+            "answer": "Lightyear"
+        },
+        "CLUE-C15": {
+            "clue": "Aldrin or CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "buzz"
+        },
+        "CLUE-C11": {
+            "clue": "workers or drones that CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "bees"
+        },
+        "CLUE-C5": {
+            "clue": "along with CLUE-C11, initial guidance on sex",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "birds"
+        },
+        "CLUE-C3": {
+            "clue": "flightless CLUE-C5 NOT found at the north pole",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Penguins"
+        },
+        "CLUE-C7": {
+            "clue": "home of the CLUE-C19 and CLUE-C3",
+            "depends_on": [
+                "CLUE-C19",
+                "CLUE-C3"
+            ],
+            "answer": "Pittsburgh"
+        },
+        "CLUE-C13": {
+            "clue": "more melancholy keys",
+            "depends_on": [],
+            "answer": "minors"
+        },
+        "CLUE-C8": {
+            "clue": "kind of hall that detains CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "juvenile"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C8 humans",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "children"
+        },
+        "CLUE-C9": {
+            "clue": "one who speaks for transcription",
+            "depends_on": [],
+            "answer": "dictator"
+        },
+        "CLUE-C6": {
+            "clue": "water boiling vessel, often for tea",
+            "depends_on": [],
+            "answer": "kettle"
+        },
+        "CLUE-C18": {
+            "clue": "casual workday",
+            "depends_on": [],
+            "answer": "friday"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C18 with doorbuster sales",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "black"
+        },
+        "CLUE-C2": {
+            "clue": "one that calls the CLUE-C6 CLUE-C10, hypocritically",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C6"
+            ],
+            "answer": "Pot"
+        },
+        "CLUE-C12": {
+            "clue": "Cambodian CLUE-C9 ___ CLUE-C2",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "pol"
+        },
+        "CLUE-C20": {
+            "clue": "ae__u",
+            "depends_on": [],
+            "answer": "io"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C7 CLUE-C17 receive first CLUE-C12CLUE-C20 vaccine",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C17",
+                "CLUE-C20",
+                "CLUE-C7"
+            ],
+            "answer": "Pittsburgh children receive first polio vaccine"
+        }
+    }
+}

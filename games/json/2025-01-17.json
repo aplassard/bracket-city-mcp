@@ -1,0 +1,129 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "not against",
+            "depends_on": [],
+            "answer": "for"
+        },
+        "CLUE-C18": {
+            "clue": "tattle",
+            "depends_on": [],
+            "answer": "tell"
+        },
+        "CLUE-C1": {
+            "clue": "hands sometimes help you CLUE-C18 it",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "time"
+        },
+        "CLUE-C9": {
+            "clue": "\"CLUE-C16 the CLUE-C1 ___\"",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C16"
+            ],
+            "answer": "being"
+        },
+        "CLUE-C11": {
+            "clue": "reason for CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "purpose"
+        },
+        "CLUE-C14": {
+            "clue": "not on CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "accidentally"
+        },
+        "CLUE-C17": {
+            "clue": "lozenges",
+            "depends_on": [],
+            "answer": "drops"
+        },
+        "CLUE-C8": {
+            "clue": "title for a priest",
+            "depends_on": [],
+            "answer": "father"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C8, familiary",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "daddy"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C10 long ___",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "legs"
+        },
+        "CLUE-C2": {
+            "clue": "name for rear CLUE-C13 on an animal",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Hind"
+        },
+        "CLUE-C4": {
+            "clue": "the CLUE-C2enburg was full of it",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "hydrogen"
+        },
+        "CLUE-C5": {
+            "clue": "like some hair days or apples",
+            "depends_on": [],
+            "answer": "bad"
+        },
+        "CLUE-C3": {
+            "clue": "very CLUE-C5 news on a report card",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "F"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C3 ones might get censored",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "bombs"
+        },
+        "CLUE-C12": {
+            "clue": "Nashville genre",
+            "depends_on": [],
+            "answer": "country"
+        },
+        "CLUE-C15": {
+            "clue": "Tour de ___",
+            "depends_on": [],
+            "answer": "France"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C12 southwest of CLUE-C15",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C15"
+            ],
+            "answer": "Spain"
+        },
+        "CLUE-ROOT": {
+            "clue": "US CLUE-C14 CLUE-C17 four CLUE-C4 CLUE-C7 on CLUE-C6",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C17",
+                "CLUE-C4",
+                "CLUE-C6",
+                "CLUE-C7"
+            ],
+            "answer": "US accidentally drops four hydrogen bombs on Spain"
+        }
+    }
+}

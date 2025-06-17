@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "___ in America",
+            "depends_on": [],
+            "answer": "made"
+        },
+        "CLUE-C4": {
+            "clue": "it might be made up, lost, or blown",
+            "depends_on": [],
+            "answer": "mind"
+        },
+        "CLUE-C11": {
+            "clue": "too much is usurious",
+            "depends_on": [],
+            "answer": "interest"
+        },
+        "CLUE-C16": {
+            "clue": "___ 'N Slide",
+            "depends_on": [],
+            "answer": "slip"
+        },
+        "CLUE-C6": {
+            "clue": "kind of CLUE-C16 that's revealing",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "Freudian"
+        },
+        "CLUE-C3": {
+            "clue": "part of the CLUE-C4 of CLUE-C11 to a CLUE-C6",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C4",
+                "CLUE-C6"
+            ],
+            "answer": "unconscious"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C15 CLUE-C3, with \"out\"",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C3"
+            ],
+            "answer": "knocked"
+        },
+        "CLUE-C1": {
+            "clue": "they might get CLUE-C7 off by something impressive",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Socks"
+        },
+        "CLUE-C13": {
+            "clue": "the opposite of \ud83d\udeb7",
+            "depends_on": [],
+            "answer": "walk"
+        },
+        "CLUE-C9": {
+            "clue": "isometric core exercise",
+            "depends_on": [],
+            "answer": "plank"
+        },
+        "CLUE-C10": {
+            "clue": "kind of CLUE-C9 you walk",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Gang"
+        },
+        "CLUE-C18": {
+            "clue": "\u262e\ufe0f",
+            "depends_on": [],
+            "answer": "Peace"
+        },
+        "CLUE-C14": {
+            "clue": "\"___ and CLUE-C18\"",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "war"
+        },
+        "CLUE-C2": {
+            "clue": "something pigs are unlikely to do, it is said",
+            "depends_on": [],
+            "answer": "fly"
+        },
+        "CLUE-C17": {
+            "clue": "no CLUE-C2 ___",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "zone"
+        },
+        "CLUE-C8": {
+            "clue": "'60s CLUE-C14 CLUE-C17, for short",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C17"
+            ],
+            "answer": "nam"
+        },
+        "CLUE-C12": {
+            "clue": "word with CLUE-C10CLUE-C8",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C8"
+            ],
+            "answer": "style"
+        },
+        "CLUE-C5": {
+            "clue": "kind of CLUE-C13 walked with CLUE-C12",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13"
+            ],
+            "answer": "cat"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C1 the CLUE-C5 passes away",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C5"
+            ],
+            "answer": "Socks the cat passes away"
+        }
+    }
+}

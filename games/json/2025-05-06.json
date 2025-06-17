@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "\"policy ___\" (one with detailed political knowledge)",
+            "depends_on": [],
+            "answer": "Wonk"
+        },
+        "CLUE-C3": {
+            "clue": "Ever___ing Gobstopper (much celebrated CLUE-C6a confection)",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "last"
+        },
+        "CLUE-C12": {
+            "clue": "something you give before your CLUE-C3 day",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "notice"
+        },
+        "CLUE-C10": {
+            "clue": "parental CLUE-C12 issued prior to punishment",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "warning"
+        },
+        "CLUE-C11": {
+            "clue": "row that sometimes gets a splash CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Front"
+        },
+        "CLUE-C16": {
+            "clue": "lightly irritate",
+            "depends_on": [],
+            "answer": "irk"
+        },
+        "CLUE-C9": {
+            "clue": "space is the ___ CLUE-C11ier (says Captain KCLUE-C16)",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C16"
+            ],
+            "answer": "final"
+        },
+        "CLUE-C1": {
+            "clue": "system often celebrated because it makes more sense for water to freeze at 0 than 32",
+            "depends_on": [],
+            "answer": "metric"
+        },
+        "CLUE-C15": {
+            "clue": "a CLUE-C1 one is 1000 kilograms",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "ton"
+        },
+        "CLUE-C4": {
+            "clue": "shape embedded down 15 blocks of Hollywood Boulevard",
+            "depends_on": [],
+            "answer": "Star"
+        },
+        "CLUE-C14": {
+            "clue": "mobile ___ (e.g. CLUE-C4TAC or RAZR)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "phone"
+        },
+        "CLUE-C5": {
+            "clue": "Clinton who played the saxoCLUE-C14 at his inauguration",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "bill"
+        },
+        "CLUE-C13": {
+            "clue": "like a square $100 CLUE-C5, most probably",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "fake"
+        },
+        "CLUE-C7": {
+            "clue": "one of ten CharlCLUE-C15 Heston received in a CLUE-C13 beard",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C15"
+            ],
+            "answer": "Commandment"
+        },
+        "CLUE-C8": {
+            "clue": "serious crime explicitly covered by a CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "murder"
+        },
+        "CLUE-C2": {
+            "clue": "to \"tie up loose ___\" in a movie usually has a CLUE-C8ous connotation",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "ends"
+        },
+        "CLUE-ROOT": {
+            "clue": "the series CLUE-C9e of \"FriCLUE-C2\" airs",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "the series finale of \"Friends\" airs"
+        }
+    }
+}

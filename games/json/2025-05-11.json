@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "U2 frontman",
+            "depends_on": [],
+            "answer": "bono"
+        },
+        "CLUE-C13": {
+            "clue": "___ CLUE-C16 (like free legal work)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "pro"
+        },
+        "CLUE-C11": {
+            "clue": "list usually to the right of CLUE-C13s",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Cons"
+        },
+        "CLUE-C14": {
+            "clue": "\"___ naked\" (not quite nude)",
+            "depends_on": [],
+            "answer": "half"
+        },
+        "CLUE-C3": {
+            "clue": "weapon for a halloween prankster (escalation from toilet paper)",
+            "depends_on": [],
+            "answer": "egg"
+        },
+        "CLUE-C10": {
+            "clue": "kind of CLUE-C3 that you grow to retire",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "nest"
+        },
+        "CLUE-C7": {
+            "clue": "like a CLUE-C10 recently relieved of teenagers",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "empty"
+        },
+        "CLUE-C15": {
+            "clue": "glass-CLUE-C14-CLUE-C7 type",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C7"
+            ],
+            "answer": "pessimist"
+        },
+        "CLUE-C1": {
+            "clue": "first name for an \"arrogant duck with a CLUE-C15ic attitude and an insecure disposition\" (per Wikipedia)",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Donald"
+        },
+        "CLUE-C12": {
+            "clue": "largest asset for Old MacCLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "farm"
+        },
+        "CLUE-C8": {
+            "clue": "kind of CLUE-C12 with tiny six-legged animals",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "ant"
+        },
+        "CLUE-C2": {
+            "clue": "\"___ it\" (usually said rapidly in an effort to avoid an undesirable assignment)",
+            "depends_on": [],
+            "answer": "Not"
+        },
+        "CLUE-C4": {
+            "clue": "airline seat preferred by those who can hold it, maybe",
+            "depends_on": [],
+            "answer": "Window"
+        },
+        "CLUE-C5": {
+            "clue": "famous CLUE-C4s 95 button or an instruction to begin",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "start"
+        },
+        "CLUE-C9": {
+            "clue": "room many CEOs claim to have CLUE-C5ed in",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Mail"
+        },
+        "CLUE-C6": {
+            "clue": "___-com (like \"CLUE-C2ting Hill\" or \"You've Got CLUE-C9\")",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "Rom"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C11tantine changes the name of ByzCLUE-C8ium to New CLUE-C6e",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C6",
+                "CLUE-C8"
+            ],
+            "answer": "May 11, 330: Constantine changes the name of Byzantium to New Rome"
+        }
+    }
+}

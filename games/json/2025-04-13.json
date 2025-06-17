@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "book with a little \ud83d\udd12 maybe",
+            "depends_on": [],
+            "answer": "diary"
+        },
+        "CLUE-C4": {
+            "clue": "you might tell your CLUE-C12 about your first one",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "kiss"
+        },
+        "CLUE-C9": {
+            "clue": "kind of CLUE-C4 that doesn't quite land",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "air"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C9 is only about 21% this",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "oxygen"
+        },
+        "CLUE-C8": {
+            "clue": "\"___ in the blank\" (lazy kind of clue)",
+            "depends_on": [],
+            "answer": "fill"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C8ed \ud83c\udf69 varietal",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "jelly"
+        },
+        "CLUE-C15": {
+            "clue": "a CLUE-C18 one can sting you",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "fish"
+        },
+        "CLUE-C16": {
+            "clue": "word after CLUE-C15 or think",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "tank"
+        },
+        "CLUE-C1": {
+            "clue": "rule that makes you feel better about eating food off the floor, with \"second\"",
+            "depends_on": [],
+            "answer": "five"
+        },
+        "CLUE-C7": {
+            "clue": "less popular but still pretty cool CLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "low"
+        },
+        "CLUE-C17": {
+            "clue": "stone house with a moat",
+            "depends_on": [],
+            "answer": "castle"
+        },
+        "CLUE-C2": {
+            "clue": "\"you'll ___ for this!\" you belCLUE-C7 over your demolished sandCLUE-C17",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C7"
+            ],
+            "answer": "pay"
+        },
+        "CLUE-C11": {
+            "clue": "it doesn't CLUE-C2, we are told",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "crime"
+        },
+        "CLUE-C5": {
+            "clue": "word with \"for your CLUE-C11s\" or \"the phone\u201d",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "answer"
+        },
+        "CLUE-C3": {
+            "clue": "like an CLUE-C5 that gets an \u274c or a harsh buzzer",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "wrong"
+        },
+        "CLUE-C10": {
+            "clue": "using one, CLUE-C3 can be confusing",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "comma"
+        },
+        "CLUE-C6": {
+            "clue": "something given by a CLUE-C10nding officer",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "order"
+        },
+        "CLUE-C13": {
+            "clue": "\ud83d\udc14 south of the (US) bCLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "pollo"
+        },
+        "CLUE-ROOT": {
+            "clue": "an CLUE-C14 CLUE-C16 explodes aboard ACLUE-C13 13",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C16"
+            ],
+            "answer": "an oxygen tank explodes aboard Apollo 13"
+        }
+    }
+}

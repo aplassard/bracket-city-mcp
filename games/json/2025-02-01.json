@@ -1,0 +1,112 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "German for \"yes\"",
+            "depends_on": [],
+            "answer": "Ja"
+        },
+        "CLUE-C5": {
+            "clue": "spilling them might be a betrayal",
+            "depends_on": [],
+            "answer": "beans"
+        },
+        "CLUE-C11": {
+            "clue": "he bought magic CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Jack"
+        },
+        "CLUE-C7": {
+            "clue": "word with married or kidding",
+            "depends_on": [],
+            "answer": "Just"
+        },
+        "CLUE-C3": {
+            "clue": "something to yell when a tree is falling",
+            "depends_on": [],
+            "answer": "Timber"
+        },
+        "CLUE-C13": {
+            "clue": "body of fresh water",
+            "depends_on": [],
+            "answer": "lake"
+        },
+        "CLUE-C15": {
+            "clue": "reporter's asset",
+            "depends_on": [],
+            "answer": "source"
+        },
+        "CLUE-C14": {
+            "clue": "give a bad review",
+            "depends_on": [],
+            "answer": "pan"
+        },
+        "CLUE-C2": {
+            "clue": "precious metal that is the CLUE-C15 of the phrase \"CLUE-C14 out\"",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C15"
+            ],
+            "answer": "gold"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C2 price unit, for short",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Oz"
+        },
+        "CLUE-C6": {
+            "clue": "animal in need of courage, in CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Lion"
+        },
+        "CLUE-C10": {
+            "clue": "one might ride a broom",
+            "depends_on": [],
+            "answer": "Witch"
+        },
+        "CLUE-C4": {
+            "clue": "\"The CLUE-C6, the CLUE-C10, and the ___\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C6"
+            ],
+            "answer": "wardrobe"
+        },
+        "CLUE-C1": {
+            "clue": "like a movie where the audio and the actors' lips don't line up, maybe",
+            "depends_on": [],
+            "answer": "dubbed"
+        },
+        "CLUE-C12": {
+            "clue": "haze or heart color",
+            "depends_on": [],
+            "answer": "purple"
+        },
+        "CLUE-C9": {
+            "clue": "target of a CLUE-C12-nurple",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Nipple"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C16net CLUE-C11son and CLUE-C7in CLUE-C3CLUE-C13 experience a \"CLUE-C4 malfunction\" CLUE-C1 \"CLUE-C9gate\"",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C13",
+                "CLUE-C16",
+                "CLUE-C3",
+                "CLUE-C4",
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "Janet Jackson and Justin Timberlake experience a \"wardrobe malfunction\" dubbed \"Nipplegate\""
+        }
+    }
+}

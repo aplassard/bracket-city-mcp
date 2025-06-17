@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "\ud83d\udc8d\ud83d\udc8d\ud83d\udc8d",
+            "depends_on": [],
+            "answer": "Rings"
+        },
+        "CLUE-C1": {
+            "clue": "you might check it by looking at the corner of a screen",
+            "depends_on": [],
+            "answer": "time"
+        },
+        "CLUE-C7": {
+            "clue": "what CLUE-C1 does when you are having fun",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Flies"
+        },
+        "CLUE-C14": {
+            "clue": "___ of the CLUE-C17/CLUE-C7",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C7"
+            ],
+            "answer": "lord"
+        },
+        "CLUE-C16": {
+            "clue": "teller with a \ud83d\udd2e",
+            "depends_on": [],
+            "answer": "fortune"
+        },
+        "CLUE-C10": {
+            "clue": "one place to find a CLUE-C16",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "cookie"
+        },
+        "CLUE-C6": {
+            "clue": "compromise offer re: last CLUE-C10, maybe",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "half"
+        },
+        "CLUE-C11": {
+            "clue": "type of tags for a soldier",
+            "depends_on": [],
+            "answer": "dog"
+        },
+        "CLUE-C15": {
+            "clue": "___ of the trade",
+            "depends_on": [],
+            "answer": "tricks"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C11 that infrequently learns new CLUE-C15, it is said",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C15"
+            ],
+            "answer": "old"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83c\udf80",
+            "depends_on": [],
+            "answer": "bow"
+        },
+        "CLUE-C8": {
+            "clue": "5th arc color in a classic rainCLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "blue"
+        },
+        "CLUE-C3": {
+            "clue": "category missing from CLUE-C2, borrowed, and CLUE-C8",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C8"
+            ],
+            "answer": "New"
+        },
+        "CLUE-C13": {
+            "clue": "person from around here",
+            "depends_on": [],
+            "answer": "local"
+        },
+        "CLUE-C5": {
+            "clue": "more affected by a CLUE-C13 anesthetic, maybe",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "number"
+        },
+        "CLUE-C9": {
+            "clue": "garment with a CLUE-C5 on it, often",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Jersey"
+        },
+        "CLUE-C4": {
+            "clue": "an open one might feature a lot of amateurs",
+            "depends_on": [],
+            "answer": "mic"
+        },
+        "CLUE-C12": {
+            "clue": "earth___ (seisCLUE-C4 event)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Quake"
+        },
+        "CLUE-ROOT": {
+            "clue": "English CLUE-C14 sells CLUE-C6 of CLUE-C3 CLUE-C9 to two CLUE-C12rs",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C14",
+                "CLUE-C3",
+                "CLUE-C6",
+                "CLUE-C9"
+            ],
+            "answer": "English lord sells half of New Jersey to two Quakers"
+        }
+    }
+}

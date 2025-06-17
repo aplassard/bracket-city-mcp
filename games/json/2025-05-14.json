@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "___-me-down",
+            "depends_on": [],
+            "answer": "hand"
+        },
+        "CLUE-C7": {
+            "clue": "\"___ your eyes and make a wish\"",
+            "depends_on": [],
+            "answer": "close"
+        },
+        "CLUE-C12": {
+            "clue": "\"___ cut\" (not a CLUE-C7 call)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "clear"
+        },
+        "CLUE-C4": {
+            "clue": "something you might CLUE-C12 before speaking",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "throat"
+        },
+        "CLUE-C2": {
+            "clue": "bad guy \u27a1\ufe0f \"take him ___\" *drags finger across CLUE-C4*",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "out"
+        },
+        "CLUE-C3": {
+            "clue": "___ball (offer that might provoke CLUE-C2rage)",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "low"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C16held gCLUE-C3ing object at a rave",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C3"
+            ],
+            "answer": "stick"
+        },
+        "CLUE-C13": {
+            "clue": "word after CLUE-C6y or ransom",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "note"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C13 many prefer to end on",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "high"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C14 kind of dive (from a \u2708\ufe0f)",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Sky"
+        },
+        "CLUE-C15": {
+            "clue": "\"read the fine ___\"",
+            "depends_on": [],
+            "answer": "print"
+        },
+        "CLUE-C10": {
+            "clue": "digit with a CLUE-C15 and a nail",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "finger"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C10 named for its adornment",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "ring"
+        },
+        "CLUE-C8": {
+            "clue": "one might CLUE-C9 after a concert",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "ear"
+        },
+        "CLUE-C1": {
+            "clue": "type of walking where you glide backward while appCLUE-C8ing to walk forward",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "moon"
+        },
+        "CLUE-C5": {
+            "clue": "race that ended on the CLUE-C1, in a sense",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "space"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C11lab CLUE-C5 station launches",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C5"
+            ],
+            "answer": "Skylab space station launches"
+        }
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "title for Quimby or Giuliani",
+            "depends_on": [],
+            "answer": "mayor"
+        },
+        "CLUE-C15": {
+            "clue": "\"oh ___\" \ud83d\ude44",
+            "depends_on": [],
+            "answer": "brother"
+        },
+        "CLUE-C10": {
+            "clue": "your dad's CLUE-C15 to you",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "uncle"
+        },
+        "CLUE-C17": {
+            "clue": "say CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "surrender"
+        },
+        "CLUE-C3": {
+            "clue": "flag color that communicates CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "White"
+        },
+        "CLUE-C11": {
+            "clue": "a sleazy guy, a ___ball",
+            "depends_on": [],
+            "answer": "slime"
+        },
+        "CLUE-C8": {
+            "clue": "creature with a CLUE-C11 trail",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "slug"
+        },
+        "CLUE-C13": {
+            "clue": "strong attachments",
+            "depends_on": [],
+            "answer": "Bonds"
+        },
+        "CLUE-C4": {
+            "clue": "crooner CLUE-C3 or CLUE-C8ger CLUE-C13",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C3",
+                "CLUE-C8"
+            ],
+            "answer": "Barry"
+        },
+        "CLUE-C2": {
+            "clue": "poker variant that might leave you cold",
+            "depends_on": [],
+            "answer": "strip"
+        },
+        "CLUE-C5": {
+            "clue": "one of many on the vegas CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "casino"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C5 employee at a table",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "dealer"
+        },
+        "CLUE-C16": {
+            "clue": "___ CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "drug"
+        },
+        "CLUE-C12": {
+            "clue": "color to paint the town",
+            "depends_on": [],
+            "answer": "red"
+        },
+        "CLUE-C1": {
+            "clue": "a jagged CLUE-C12 underline might indicate an issue with this",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "spelling"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C1 contest",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "bee"
+        },
+        "CLUE-C7": {
+            "clue": "result of making a CLUE-C14 angry",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "sting"
+        },
+        "CLUE-ROOT": {
+            "clue": "DC CLUE-C6 Marion CLUE-C4 arrested in CLUE-C16 enforcement CLUE-C7",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C4",
+                "CLUE-C6",
+                "CLUE-C7"
+            ],
+            "answer": "DC mayor Marion Barry arrested in drug enforcement sting"
+        }
+    }
+}

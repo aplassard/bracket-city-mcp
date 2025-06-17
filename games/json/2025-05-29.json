@@ -1,0 +1,112 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "pub to an American",
+            "depends_on": [],
+            "answer": "Bar"
+        },
+        "CLUE-C1": {
+            "clue": "\"when in ___...\" you say as you reluctantly dab at the CLUE-C13 Mitzvah party",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Rome"
+        },
+        "CLUE-C8": {
+            "clue": "how CLUE-C1o is connected to Juliet?",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "and"
+        },
+        "CLUE-C14": {
+            "clue": "rCLUE-C8um prefix",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "memo"
+        },
+        "CLUE-C5": {
+            "clue": "one of six in the answer to this clue",
+            "depends_on": [],
+            "answer": "letter"
+        },
+        "CLUE-C9": {
+            "clue": "especially private kind of CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "love"
+        },
+        "CLUE-C15": {
+            "clue": "gCLUE-C9 filler",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "hand"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C14rable part of a song or one-CLUE-C15ed arcing \ud83c\udfc0 shot",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C15"
+            ],
+            "answer": "Hook"
+        },
+        "CLUE-C10": {
+            "clue": "profession for Captain CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "pirate"
+        },
+        "CLUE-C11": {
+            "clue": "___ lubber (CLUE-C10 insult)",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "land"
+        },
+        "CLUE-C3": {
+            "clue": "word before roll or break or after box or PoCLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Spring"
+        },
+        "CLUE-C12": {
+            "clue": "the number 0 en espa\u00f1ol",
+            "depends_on": [],
+            "answer": "cero"
+        },
+        "CLUE-C6": {
+            "clue": "number of toes on a rhinoCLUE-C12s foot \ud83e\udd8f",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "three"
+        },
+        "CLUE-C4": {
+            "clue": "one more than CLUE-C6, one less than five",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "four"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C4-ringed German luxury automaker",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "audi"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"The Rite of CLUE-C3\" shocks CLUE-C7ence at Paris premiere",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "\"The Rite of Spring\" shocks audience at Paris premiere"
+        }
+    }
+}

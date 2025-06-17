@@ -1,0 +1,121 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "Sarandon or Sontag",
+            "depends_on": [],
+            "answer": "Susan"
+        },
+        "CLUE-C16": {
+            "clue": "plays a record",
+            "depends_on": [],
+            "answer": "spins"
+        },
+        "CLUE-C4": {
+            "clue": "this kind of CLUE-C13 CLUE-C16, funnily enough",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C16"
+            ],
+            "answer": "lazy"
+        },
+        "CLUE-C3": {
+            "clue": "when repeated, a treat for the stereotypically CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "bon"
+        },
+        "CLUE-C2": {
+            "clue": "catching it in a bottle is very tough, but very good",
+            "depends_on": [],
+            "answer": "lightning"
+        },
+        "CLUE-C17": {
+            "clue": "\ud83e\udd5a + ___ = \ud83c\udf46",
+            "depends_on": [],
+            "answer": "plant"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C17 a listening device",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "bug"
+        },
+        "CLUE-C9": {
+            "clue": "___fly aka CLUE-C2 CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C2"
+            ],
+            "answer": "fire"
+        },
+        "CLUE-C15": {
+            "clue": "very hot Valley",
+            "depends_on": [],
+            "answer": "death"
+        },
+        "CLUE-C5": {
+            "clue": "letters you might say after a CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Rip"
+        },
+        "CLUE-C6": {
+            "clue": "kind of walking you don't remember",
+            "depends_on": [],
+            "answer": "sleep"
+        },
+        "CLUE-C1": {
+            "clue": "the absolute minimal amount of CLUE-C6, metaphorically",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Wink"
+        },
+        "CLUE-C8": {
+            "clue": "kid's sound for a laser gun",
+            "depends_on": [],
+            "answer": "Pew"
+        },
+        "CLUE-C10": {
+            "clue": "famous skunk Pepe __ CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "le"
+        },
+        "CLUE-C7": {
+            "clue": "sleepy character CLUE-C5 ___ CLUE-C1CLUE-C10",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C10",
+                "CLUE-C5"
+            ],
+            "answer": "van"
+        },
+        "CLUE-C12": {
+            "clue": "my ___ of the woods",
+            "depends_on": [],
+            "answer": "neck"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C12 adornments",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "ties"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C3CLUE-C9 of the CLUE-C7iCLUE-C14 is held in Florence",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C3",
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "the bonfire of the vanities is held in Florence"
+        }
+    }
+}

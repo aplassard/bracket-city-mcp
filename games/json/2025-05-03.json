@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "classic gift to a teacher",
+            "depends_on": [],
+            "answer": "Apple"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C15 makes one with a square-ish face",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "watch"
+        },
+        "CLUE-C3": {
+            "clue": "\"CLUE-C9 your ___!\" your mom snaps as you swear at the pinball machine",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "language"
+        },
+        "CLUE-C5": {
+            "clue": "you might get a ___-out from a friend for your help",
+            "depends_on": [],
+            "answer": "SHOUT"
+        },
+        "CLUE-C14": {
+            "clue": "case you use to CLUE-C5 online",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "upper"
+        },
+        "CLUE-C2": {
+            "clue": "\"it's a bit of a ___er-CLUE-C14\" says the broker about the dilapidated shed",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "fix"
+        },
+        "CLUE-C11": {
+            "clue": "___CLUE-C2 with -med or -nup or -school",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "pre"
+        },
+        "CLUE-C12": {
+            "clue": "gold container for a leCLUE-C11chaun \ud83c\udf40",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "pot"
+        },
+        "CLUE-C8": {
+            "clue": "to move heaven and this is to try very hard",
+            "depends_on": [],
+            "answer": "Earth"
+        },
+        "CLUE-C10": {
+            "clue": "word before CLUE-C8, Nature, or Goose",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Mother"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C10 Teresa's job",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "nun"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C3 shown here \u27a1\ufe0f \"si hoc legere CLUE-C12es, praetor urbis CLUE-C16tium tuum exspectat\"",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C16",
+                "CLUE-C3"
+            ],
+            "answer": "latin"
+        },
+        "CLUE-C4": {
+            "clue": "we are often encouraged to start with the low-hanging ___",
+            "depends_on": [],
+            "answer": "fruit"
+        },
+        "CLUE-C6": {
+            "clue": "what CLUE-C4 does eventually if you leave it out",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "rot"
+        },
+        "CLUE-C7": {
+            "clue": "genre for Hercule PoiCLUE-C6 and Sherlock Holmes",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "mystery"
+        },
+        "CLUE-C13": {
+            "clue": "geCLUE-C1ous canned CLUE-C7 meat",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C7"
+            ],
+            "answer": "spam"
+        },
+        "CLUE-ROOT": {
+            "clue": "the first CLUE-C13 email is sent",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "the first spam email is sent"
+        }
+    }
+}

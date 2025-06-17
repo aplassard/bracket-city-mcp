@@ -1,0 +1,103 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "grant from a genie",
+            "depends_on": [],
+            "answer": "wish"
+        },
+        "CLUE-C1": {
+            "clue": "you might toss a coin into one and make a CLUE-C12",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "well"
+        },
+        "CLUE-C2": {
+            "clue": "when things go CLUE-C1, where they fall into",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "place"
+        },
+        "CLUE-C5": {
+            "clue": "___ \u2b05\ufe0f you, maybe \u27a1\ufe0f hard CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "rock"
+        },
+        "CLUE-C8": {
+            "clue": "time to put both hands up?",
+            "depends_on": [],
+            "answer": "midnight"
+        },
+        "CLUE-C13": {
+            "clue": "olive or motor",
+            "depends_on": [],
+            "answer": "oil"
+        },
+        "CLUE-C11": {
+            "clue": "___ the CLUE-C8 CLUE-C13",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C8"
+            ],
+            "answer": "burn"
+        },
+        "CLUE-C7": {
+            "clue": "to drive fast: to CLUE-C11 ___",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "rubber"
+        },
+        "CLUE-C10": {
+            "clue": "word with CLUE-C7 or aid",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "band"
+        },
+        "CLUE-C9": {
+            "clue": "word with weight or potty",
+            "depends_on": [],
+            "answer": "training"
+        },
+        "CLUE-C4": {
+            "clue": "flight CLUE-C9 machine, for short",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "sim"
+        },
+        "CLUE-C3": {
+            "clue": "\"CLUE-C4\" in portuguese or \"s\u00ed\" in spanish",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Yes"
+        },
+        "CLUE-C14": {
+            "clue": "___ Musketeers",
+            "depends_on": [],
+            "answer": "three"
+        },
+        "CLUE-C6": {
+            "clue": "one of CLUE-C14 to get you out",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "strike"
+        },
+        "CLUE-ROOT": {
+            "clue": "UK CLUE-C5 CLUE-C10 \"CLUE-C3\" benefits from postal CLUE-C6",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C3",
+                "CLUE-C5",
+                "CLUE-C6"
+            ],
+            "answer": "UK rock band \"Yes\" benefits from postal strike"
+        }
+    }
+}

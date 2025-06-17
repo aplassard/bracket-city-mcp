@@ -1,0 +1,148 @@
+{
+    "clues": {
+        "CLUE-C3": {
+            "clue": "if you do this to the bottom, everybody loses",
+            "depends_on": [],
+            "answer": "race"
+        },
+        "CLUE-C2": {
+            "clue": "Stewart with a hospitality empire and a felony conviction",
+            "depends_on": [],
+            "answer": "Martha"
+        },
+        "CLUE-C9": {
+            "clue": "the first First one was CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Lady"
+        },
+        "CLUE-C7": {
+            "clue": "like a camper or an ending, maybe",
+            "depends_on": [],
+            "answer": "happy"
+        },
+        "CLUE-C5": {
+            "clue": "on \ud83c\udf84 they say \"CLUE-C7\" instead in the UK",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "merry"
+        },
+        "CLUE-C4": {
+            "clue": "the multiplication one is usually 12 by 12",
+            "depends_on": [],
+            "answer": "table"
+        },
+        "CLUE-C14": {
+            "clue": "like King Arthur's CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "round"
+        },
+        "CLUE-C21": {
+            "clue": "CLUE-C5-__-CLUE-C14",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C5"
+            ],
+            "answer": "Go"
+        },
+        "CLUE-C18": {
+            "clue": "one of 88 on a piano",
+            "depends_on": [],
+            "answer": "key"
+        },
+        "CLUE-C15": {
+            "clue": "Ben with a CLUE-C18 and kite",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "Franklin"
+        },
+        "CLUE-C17": {
+            "clue": "biggest city in Texas",
+            "depends_on": [],
+            "answer": "Houston"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C15 or CLUE-C17, e.g.",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C17"
+            ],
+            "answer": "diva"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C9 CLUE-C21CLUE-C12 rode one nude",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C21",
+                "CLUE-C9"
+            ],
+            "answer": "horse"
+        },
+        "CLUE-C20": {
+            "clue": "give up in poker",
+            "depends_on": [],
+            "answer": "fold"
+        },
+        "CLUE-C8": {
+            "clue": "you can CLUE-C20 it to make a plane",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "paper"
+        },
+        "CLUE-C11": {
+            "clue": "famed enemy of rock and CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "scissors"
+        },
+        "CLUE-C19": {
+            "clue": "nice dishes, maybe",
+            "depends_on": [],
+            "answer": "China"
+        },
+        "CLUE-C10": {
+            "clue": "___ out, let your mind wander",
+            "depends_on": [],
+            "answer": "zone"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C19 only has one of this type of CLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C19"
+            ],
+            "answer": "Time"
+        },
+        "CLUE-C16": {
+            "clue": "New York or CLUE-C6, e.g.",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "magazine"
+        },
+        "CLUE-C1": {
+            "clue": "you might use CLUE-C11 and a CLUE-C16 to make this kind of note",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C16"
+            ],
+            "answer": "ransom"
+        },
+        "CLUE-ROOT": {
+            "clue": "Irish CLUE-C3CLUE-C13 held for CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C13",
+                "CLUE-C3"
+            ],
+            "answer": "Irish race horse held for ransom"
+        }
+    }
+}

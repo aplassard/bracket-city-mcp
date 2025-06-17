@@ -1,0 +1,114 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "Cinnamon Toast ___",
+            "depends_on": [],
+            "answer": "crunch"
+        },
+        "CLUE-C14": {
+            "clue": "Amazon service",
+            "depends_on": [],
+            "answer": "prime"
+        },
+        "CLUE-C4": {
+            "clue": "wrongdoers may have to do this to the music",
+            "depends_on": [],
+            "answer": "face"
+        },
+        "CLUE-C1": {
+            "clue": "word after big, small, CLUE-C12, CLUE-C14, quality, CLUE-C4, and dinner",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C14",
+                "CLUE-C4"
+            ],
+            "answer": "Time"
+        },
+        "CLUE-C5": {
+            "clue": "way to lie, with \"in\" (ready to pounce)",
+            "depends_on": [],
+            "answer": "wait"
+        },
+        "CLUE-C6": {
+            "clue": "one might be perused in a CLUE-C5ing room",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "magazine"
+        },
+        "CLUE-C15": {
+            "clue": "snake ___ \ud83c\udfb2 \ud83c\udfb2",
+            "depends_on": [],
+            "answer": "eyes"
+        },
+        "CLUE-C2": {
+            "clue": "something your CLUE-C15 might be doing at the chili festival",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "watering"
+        },
+        "CLUE-C16": {
+            "clue": "\ud83e\udddb\ud83c\udffb\u200d\u2642\ufe0f",
+            "depends_on": [],
+            "answer": "vampire"
+        },
+        "CLUE-C8": {
+            "clue": "kind of truck with giant tires",
+            "depends_on": [],
+            "answer": "monster"
+        },
+        "CLUE-C10": {
+            "clue": "moon-related CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "werewolf"
+        },
+        "CLUE-C3": {
+            "clue": "celebrated CLUE-C16 and CLUE-C10 story featuring teens",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C16"
+            ],
+            "answer": "Twilight"
+        },
+        "CLUE-C11": {
+            "clue": "\"The CLUE-C3 ___\" \uaa5c",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "zone"
+        },
+        "CLUE-C13": {
+            "clue": "oCLUE-C11 layer fear",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "hole"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C2 CLUE-C13, perhaps in the UK",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C2"
+            ],
+            "answer": "pub"
+        },
+        "CLUE-C9": {
+            "clue": "suffix indicating \"kinda\"",
+            "depends_on": [],
+            "answer": "ish"
+        },
+        "CLUE-ROOT": {
+            "clue": "first issue of CLUE-C1 CLUE-C6 is CLUE-C7lCLUE-C9ed",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C6",
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "first issue of Time magazine is published"
+        }
+    }
+}

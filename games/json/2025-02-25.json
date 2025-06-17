@@ -1,0 +1,124 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "\ud83c\udfc8 field unit",
+            "depends_on": [],
+            "answer": "yard"
+        },
+        "CLUE-C2": {
+            "clue": "kind of engineer with knowledge of circuits",
+            "depends_on": [],
+            "answer": "electrical"
+        },
+        "CLUE-C10": {
+            "clue": "like some drinks or metaphors",
+            "depends_on": [],
+            "answer": "mixed"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C1 ___",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "date"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C10 ones can be confusing on a CLUE-C17",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C17"
+            ],
+            "answer": "signals"
+        },
+        "CLUE-C8": {
+            "clue": "system with CLUE-C2 CLUE-C6",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C6"
+            ],
+            "answer": "nervous"
+        },
+        "CLUE-C13": {
+            "clue": "word after ship or CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "wreck"
+        },
+        "CLUE-C14": {
+            "clue": "co-__, like some dorms",
+            "depends_on": [],
+            "answer": "ed"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C16 featuring CLUE-C13CLUE-C14 cars and scrap metal",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C16"
+            ],
+            "answer": "junk"
+        },
+        "CLUE-C7": {
+            "clue": "the place in which some have CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "trunk"
+        },
+        "CLUE-C1": {
+            "clue": "one of a few needed if your CLUE-C7 won't close, maybe",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "bungee"
+        },
+        "CLUE-C12": {
+            "clue": "undersized, overpriced bar",
+            "depends_on": [],
+            "answer": "mini"
+        },
+        "CLUE-C11": {
+            "clue": "a CLUE-C12 one is great for kids",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Van"
+        },
+        "CLUE-C9": {
+            "clue": "in a relationship or glued on",
+            "depends_on": [],
+            "answer": "attached"
+        },
+        "CLUE-C4": {
+            "clue": "it's generally good when none are CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "strings"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C4 that can be pulled by a sad tale",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "heart"
+        },
+        "CLUE-C15": {
+            "clue": "word with CLUE-C5y",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Hale"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"CLUE-C17\" by CLUE-C11 CLUE-C15n hits number 1",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C15",
+                "CLUE-C17"
+            ],
+            "answer": "\"Jump\" by Van Hale n hits number 1"
+        }
+    }
+}

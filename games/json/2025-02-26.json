@@ -1,0 +1,134 @@
+{
+    "clues": {
+        "CLUE-C2": {
+            "clue": "oft-checked hiding place on a magician",
+            "depends_on": [],
+            "answer": "sleeve"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C2 length for a tee",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "short"
+        },
+        "CLUE-C8": {
+            "clue": "low-power state for a computer",
+            "depends_on": [],
+            "answer": "sleep"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C17 daytime CLUE-C8 session",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C8"
+            ],
+            "answer": "Nap"
+        },
+        "CLUE-C19": {
+            "clue": "Trotsky or Bridges",
+            "depends_on": [],
+            "answer": "leon"
+        },
+        "CLUE-C6": {
+            "clue": "expel from one's native country",
+            "depends_on": [],
+            "answer": "exile"
+        },
+        "CLUE-C10": {
+            "clue": "dirty dishes location, often",
+            "depends_on": [],
+            "answer": "sink"
+        },
+        "CLUE-C4": {
+            "clue": "loose ones CLUE-C10 ships, it is said",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "lips"
+        },
+        "CLUE-C18": {
+            "clue": "kind of stick for CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Chap"
+        },
+        "CLUE-C14": {
+            "clue": "it's more, some say (???)",
+            "depends_on": [],
+            "answer": "less"
+        },
+        "CLUE-C16": {
+            "clue": "little dish for a teacup",
+            "depends_on": [],
+            "answer": "saucer"
+        },
+        "CLUE-C9": {
+            "clue": "flying CLUE-C16, e.g., briefly",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "UFO"
+        },
+        "CLUE-C13": {
+            "clue": "like many alleged CLUE-C9 pics",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "blurry"
+        },
+        "CLUE-C7": {
+            "clue": "word between lights and action",
+            "depends_on": [],
+            "answer": "camera"
+        },
+        "CLUE-C1": {
+            "clue": "overused CLUE-C13-background phone CLUE-C7 mode",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C7"
+            ],
+            "answer": "portrait"
+        },
+        "CLUE-C11": {
+            "clue": "limbCLUE-C14 CLUE-C1 sculpture",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C14"
+            ],
+            "answer": "bust"
+        },
+        "CLUE-C3": {
+            "clue": "kind of CLUE-C11 that might feature dogs",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "drug"
+        },
+        "CLUE-C5": {
+            "clue": "__ CLUE-C18o (Mexican CLUE-C3 kingpin)",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C3"
+            ],
+            "answer": "El"
+        },
+        "CLUE-C15": {
+            "clue": "college degree, for short",
+            "depends_on": [],
+            "answer": "ba"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C12oCLUE-C19 escapes from CLUE-C6 on the island of CLUE-C5CLUE-C15",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C15",
+                "CLUE-C19",
+                "CLUE-C5",
+                "CLUE-C6"
+            ],
+            "answer": "Napoleon escapes from exile on the island of El ba"
+        }
+    }
+}

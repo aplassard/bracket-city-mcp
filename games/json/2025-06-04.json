@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "one of two needed to fly (usually)",
+            "depends_on": [],
+            "answer": "wing"
+        },
+        "CLUE-C3": {
+            "clue": "something you join or sCLUE-C10 or wait in line in front of",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "club"
+        },
+        "CLUE-C11": {
+            "clue": "container for gum or cigarettes",
+            "depends_on": [],
+            "answer": "pack"
+        },
+        "CLUE-C8": {
+            "clue": "average name before six-CLUE-C11 or schmo",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Joe"
+        },
+        "CLUE-C2": {
+            "clue": "_._. CLUE-C8 (toy for which the term \"action figure\" was coined)",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "GI"
+        },
+        "CLUE-C15": {
+            "clue": "the F in TCLUE-C2F",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Friday"
+        },
+        "CLUE-C5": {
+            "clue": "\"add to ___\" (popular button on Black CLUE-C15)",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "cart"
+        },
+        "CLUE-C13": {
+            "clue": "sport with CLUE-C3s and CLUE-C5s",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C5"
+            ],
+            "answer": "golf"
+        },
+        "CLUE-C14": {
+            "clue": "\"game, ___, match\"",
+            "depends_on": [],
+            "answer": "Set"
+        },
+        "CLUE-C1": {
+            "clue": "actor CLUE-C14h who pronounces his last name the same as podcaster Joe (but spells it differently!)",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "rogen"
+        },
+        "CLUE-C16": {
+            "clue": "bumble___ \ud83d\udc1d",
+            "depends_on": [],
+            "answer": "bee"
+        },
+        "CLUE-C6": {
+            "clue": "___ frisCLUE-C16 (fun sport born in New Jersey)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "ultimate"
+        },
+        "CLUE-C9": {
+            "clue": "desk ___ (role away from the action)",
+            "depends_on": [],
+            "answer": "Job"
+        },
+        "CLUE-C12": {
+            "clue": "Cook who took over after CLUE-C9s",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "tim"
+        },
+        "CLUE-C4": {
+            "clue": "antepenCLUE-C6 and penulCLUE-C12ate letters of the alphabet",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C6"
+            ],
+            "answer": "xy"
+        },
+        "CLUE-C7": {
+            "clue": "it's ~78% nitCLUE-C1 and only ~21% oCLUE-C4gen",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C4"
+            ],
+            "answer": "air"
+        },
+        "CLUE-ROOT": {
+            "clue": "the MontCLUE-C13ier brothers demonstrate their hot CLUE-C7 balloon",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C7"
+            ],
+            "answer": "the Montgolfier brothers demonstrate their hot air balloon"
+        }
+    }
+}

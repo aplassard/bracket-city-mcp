@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "jangly items on a janitor's ring",
+            "depends_on": [],
+            "answer": "keys"
+        },
+        "CLUE-C3": {
+            "clue": "\ud83d\ude48\ud83d\ude49\ud83d\ude4a (what these monCLUE-C10 are not seeing, hearing, or speaking)",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "evil"
+        },
+        "CLUE-C16": {
+            "clue": "\"Of Mice and ___\"",
+            "depends_on": [],
+            "answer": "Men"
+        },
+        "CLUE-C7": {
+            "clue": "test taken to qualify for CLUE-C16sa, for short",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "IQ"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C3 ___ (high CLUE-C7 bad guy)",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "genius"
+        },
+        "CLUE-C9": {
+            "clue": "Bracket ___ (puzzle game for CLUE-C13es)",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "city"
+        },
+        "CLUE-C14": {
+            "clue": "fire \u2b05\ufe0f ___ \u27a1\ufe0f veloCLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "escape"
+        },
+        "CLUE-C15": {
+            "clue": "\"To ___ a Mockingbird\"",
+            "depends_on": [],
+            "answer": "kill"
+        },
+        "CLUE-C8": {
+            "clue": "creature CLUE-C15ed by curiousity, it is said",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "cat"
+        },
+        "CLUE-C11": {
+            "clue": "word after gas, bus, or radio",
+            "depends_on": [],
+            "answer": "station"
+        },
+        "CLUE-C1": {
+            "clue": "the ___-around (what the guy who said he'd buy your lightly-used CLUE-C11ary bike keeps giving you)",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "run"
+        },
+        "CLUE-C4": {
+            "clue": "letter that often goes unread by prospective employers",
+            "depends_on": [],
+            "answer": "cover"
+        },
+        "CLUE-C5": {
+            "clue": "kind of talent that might be disCLUE-C4ed and molded",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "raw"
+        },
+        "CLUE-C2": {
+            "clue": "obstacle ___ (place you might CLUE-C1, climb, jump, cCLUE-C5l, balance, etc.)",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C5"
+            ],
+            "answer": "course"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C2 needed by a last-second substitute, maybe",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "crash"
+        },
+        "CLUE-C12": {
+            "clue": "inanimate one in a CLUE-C6 test",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "dummy"
+        },
+        "CLUE-ROOT": {
+            "clue": "three men CLUE-C14 from AlCLUE-C8raz using CLUE-C12 heads",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C14",
+                "CLUE-C8"
+            ],
+            "answer": "three men escape from Alcatraz using dummy heads"
+        }
+    }
+}

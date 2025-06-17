@@ -1,0 +1,130 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "___ honcho",
+            "depends_on": [],
+            "answer": "head"
+        },
+        "CLUE-C4": {
+            "clue": "a CLUE-C17 one is an advantage in a race",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "start"
+        },
+        "CLUE-C6": {
+            "clue": "bang that some say CLUE-C4ed it all",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "big"
+        },
+        "CLUE-C12": {
+            "clue": "\"I ___ be so lucky!\"",
+            "depends_on": [],
+            "answer": "should"
+        },
+        "CLUE-C8": {
+            "clue": "unfriendly CLUE-C12er temperature",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "cold"
+        },
+        "CLUE-C13": {
+            "clue": "sCLUE-C8, with \"at\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "yell"
+        },
+        "CLUE-C5": {
+            "clue": "something golfers' apparently CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "fore"
+        },
+        "CLUE-C1": {
+            "clue": "\"thereCLUE-C5\", but shorter and somehow more fancy",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "thus"
+        },
+        "CLUE-C9": {
+            "clue": "eager ___ (enCLUE-C1iastic one)",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "beaver"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C9's project",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "dam"
+        },
+        "CLUE-C15": {
+            "clue": "bouncy material",
+            "depends_on": [],
+            "answer": "rubber"
+        },
+        "CLUE-C3": {
+            "clue": "finding the murder one can help crack the case",
+            "depends_on": [],
+            "answer": "weapon"
+        },
+        "CLUE-C2": {
+            "clue": "a CLUE-C15 one can be a menacing CLUE-C3 in class",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C3"
+            ],
+            "answer": "band"
+        },
+        "CLUE-C7": {
+            "clue": "key piece of baseball equipment",
+            "depends_on": [],
+            "answer": "Bat"
+        },
+        "CLUE-C10": {
+            "clue": "\"The ___ Knight\" (CLUE-C7man)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "dark"
+        },
+        "CLUE-C16": {
+            "clue": "___-in-the-CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "glow"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83d\udc1c",
+            "depends_on": [],
+            "answer": "ant"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C16ing remnCLUE-C18 of a fire",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C18"
+            ],
+            "answer": "ember"
+        },
+        "CLUE-ROOT": {
+            "clue": "ACLUE-C6ail ACLUE-C14s urges her husCLUE-C2 to \u201cremCLUE-C11 the ladies\u201d",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C14",
+                "CLUE-C2",
+                "CLUE-C6"
+            ],
+            "answer": "Abigail Adams urges her husband to \u201cremember the ladies\u201d"
+        }
+    }
+}

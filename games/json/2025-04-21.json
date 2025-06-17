@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "General noted for their warnings on packaging",
+            "depends_on": [],
+            "answer": "Surgeon"
+        },
+        "CLUE-C5": {
+            "clue": "apparently the only shot type allowed on mini-golf courses \ud83d\ude44",
+            "depends_on": [],
+            "answer": "putt"
+        },
+        "CLUE-C4": {
+            "clue": "politicians often complain about rivals CLUE-C5ing these in their mouths",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "words"
+        },
+        "CLUE-C7": {
+            "clue": "\"open ___\" (magic CLUE-C4 spoken by one of 40 thieves)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Sesame"
+        },
+        "CLUE-C3": {
+            "clue": "noble title for a \"CLUE-C7 Street\" vampire who prefers numbers to blood",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "count"
+        },
+        "CLUE-C13": {
+            "clue": "famous \ud83c\udf4a CLUE-C3y south of LA, for short",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "oc"
+        },
+        "CLUE-C8": {
+            "clue": "\"__ you ask me\" (phrase often spoken by the unasked)",
+            "depends_on": [],
+            "answer": "if"
+        },
+        "CLUE-C11": {
+            "clue": "certCLUE-C8icate you get just for showing up",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "birth"
+        },
+        "CLUE-C16": {
+            "clue": "red CLUE-C11stone for July",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "ruby"
+        },
+        "CLUE-C9": {
+            "clue": "like a lightsaber or CLUE-C16 slipper on a movie set",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "prop"
+        },
+        "CLUE-C15": {
+            "clue": "a CLUE-C9er one is usually capitalized",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "noun"
+        },
+        "CLUE-C6": {
+            "clue": "suffix that turns adjectives (like \"happy\") into CLUE-C15s",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Ness"
+        },
+        "CLUE-C14": {
+            "clue": "something pulled by senior officers",
+            "depends_on": [],
+            "answer": "rank"
+        },
+        "CLUE-C12": {
+            "clue": "word spelled by Aretha FCLUE-C14lin in song",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "respect"
+        },
+        "CLUE-C2": {
+            "clue": "\"you wanna ___ outside?\" (invitation to fight that is CLUE-C12ful of your host)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "step"
+        },
+        "CLUE-C1": {
+            "clue": "\"CLUE-C2 __ it!\" you yell as you get into your mom's car after another incident at the arcade",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "on"
+        },
+        "CLUE-ROOT": {
+            "clue": "the \"CLUE-C10's photograph\" of the LCLUE-C13h CLUE-C6 MCLUE-C1ster is published",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C10",
+                "CLUE-C13",
+                "CLUE-C6"
+            ],
+            "answer": "the \"Surgeon's photograph\" of the Loch Ness Monster is published"
+        }
+    }
+}

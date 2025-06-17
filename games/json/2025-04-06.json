@@ -1,0 +1,126 @@
+{
+    "clues": {
+        "CLUE-C11": {
+            "clue": "word after shoe, fog, or air",
+            "depends_on": [],
+            "answer": "horn"
+        },
+        "CLUE-C9": {
+            "clue": "something to grab by its CLUE-C11s",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "bull"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C9s___ \ud83c\udfaf",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "eye"
+        },
+        "CLUE-C8": {
+            "clue": "close one CLUE-C17 but not the other",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "wink"
+        },
+        "CLUE-C12": {
+            "clue": "tree noted for its strength",
+            "depends_on": [],
+            "answer": "oak"
+        },
+        "CLUE-C5": {
+            "clue": "sleeveless clCLUE-C12 worn by some superheroes",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Cape"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C5 of Good ___",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Hope"
+        },
+        "CLUE-C16": {
+            "clue": "Han or CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Solo"
+        },
+        "CLUE-C3": {
+            "clue": "red CLUE-C16 ___ (one often seen at a frat party)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "cup"
+        },
+        "CLUE-C1": {
+            "clue": "\"you may ___\" (kind of grandiose response to a knock)",
+            "depends_on": [],
+            "answer": "enter"
+        },
+        "CLUE-C10": {
+            "clue": "___ shoot (risky CLUE-C1prise)",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "crap"
+        },
+        "CLUE-C14": {
+            "clue": "sCLUE-C10ers full of offices",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "sky"
+        },
+        "CLUE-C6": {
+            "clue": "Chicken that warned the CLUE-C14 was falling",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "little"
+        },
+        "CLUE-C4": {
+            "clue": "when repeated, a CLUE-C6 kid's minor injury",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "boo"
+        },
+        "CLUE-C7": {
+            "clue": "a CLUE-C4gey one frightens children",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "man"
+        },
+        "CLUE-C13": {
+            "clue": "suffix with CLUE-C7i- or pedi-",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "cure"
+        },
+        "CLUE-C2": {
+            "clue": "___CLUE-C3! (some say getting scared is the CLUE-C13)",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C3"
+            ],
+            "answer": "hic"
+        },
+        "CLUE-ROOT": {
+            "clue": "the TCLUE-C8ie is invented in CCLUE-C2ago",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C8"
+            ],
+            "answer": "the Twinkie invented in Chicago"
+        }
+    }
+}

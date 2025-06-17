@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C7": {
+            "clue": "homophone for pointy nails on a cat",
+            "depends_on": [],
+            "answer": "Claus"
+        },
+        "CLUE-C12": {
+            "clue": "coal unit for Santa CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "lump"
+        },
+        "CLUE-C2": {
+            "clue": "one of Ginger, Baby, Scary, Sporty, or Posh, with \"Girl\"",
+            "depends_on": [],
+            "answer": "Spice"
+        },
+        "CLUE-C15": {
+            "clue": "deodorant ___ CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "old"
+        },
+        "CLUE-C9": {
+            "clue": "the gCLUE-C15en one uses \"unto\" twice",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "rule"
+        },
+        "CLUE-C13": {
+            "clue": "\"CLUE-C9 with an iron ___\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "fist"
+        },
+        "CLUE-C10": {
+            "clue": "cold cut with -handed or -CLUE-C13ed",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Ham"
+        },
+        "CLUE-C16": {
+            "clue": "\u2b06\ufe0f or \u2b07\ufe0f, e.g.",
+            "depends_on": [],
+            "answer": "arrow"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C10m or FCLUE-C16",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C16"
+            ],
+            "answer": "mia"
+        },
+        "CLUE-C1": {
+            "clue": "seCLUE-C17quatic mammal of the weasel family often confused with a sea lion",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "otter"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C12 ___ (option for a lCLUE-C1y winner)",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12"
+            ],
+            "answer": "sum"
+        },
+        "CLUE-C18": {
+            "clue": "___ CLUE-C4 \ud83e\udd5f",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "dim"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C18inutive adjective for many rappers",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "lil"
+        },
+        "CLUE-C3": {
+            "clue": "office location sought by business-minded strivers",
+            "depends_on": [],
+            "answer": "corner"
+        },
+        "CLUE-C6": {
+            "clue": "word with bicycle, penalty, or CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "kick"
+        },
+        "CLUE-C11": {
+            "clue": "kind of CLUE-C6 for a superhero",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "side"
+        },
+        "CLUE-C8": {
+            "clue": "like anger kept inCLUE-C11, with \"up\"",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "penT"
+        },
+        "CLUE-C14": {
+            "clue": "OCLUE-C8able competitor",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "resy"
+        },
+        "CLUE-ROOT": {
+            "clue": "GaCLUE-C5eo goes on trial for heCLUE-C14",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C5"
+            ],
+            "answer": "Galileo goes on trial for heresy"
+        }
+    }
+}

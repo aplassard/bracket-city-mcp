@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C11": {
+            "clue": "word bowdlerized in \"what the hey?!?\"",
+            "depends_on": [],
+            "answer": "hell"
+        },
+        "CLUE-C15": {
+            "clue": "staff member in CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "demon"
+        },
+        "CLUE-C17": {
+            "clue": "small to a Scot",
+            "depends_on": [],
+            "answer": "wee"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C15 barber SCLUE-C17ney",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C17"
+            ],
+            "answer": "todd"
+        },
+        "CLUE-C5": {
+            "clue": "when repeated, what a CLUE-C16ler might call their stomach",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "tum"
+        },
+        "CLUE-C9": {
+            "clue": "how you might feel after a public flub \ud83d\ude33",
+            "depends_on": [],
+            "answer": "embarrassed"
+        },
+        "CLUE-C6": {
+            "clue": "if your dirty ___ gets aired you might get CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "laundry"
+        },
+        "CLUE-C7": {
+            "clue": "spin ___ (period of great CLUE-C5ult when doing CLUE-C6)",
+            "depends_on": [
+                "CLUE-C5",
+                "CLUE-C6"
+            ],
+            "answer": "cycle"
+        },
+        "CLUE-C3": {
+            "clue": "\"___ first\" you say as you buy wristguards for your uniCLUE-C7 class",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "safety"
+        },
+        "CLUE-C14": {
+            "clue": "flight pattern for a vulture",
+            "depends_on": [],
+            "answer": "circle"
+        },
+        "CLUE-C13": {
+            "clue": "concentric CLUE-C14s you aim at",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "target"
+        },
+        "CLUE-C8": {
+            "clue": "fundraising CLUE-C13 for a university, briefly",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "alum"
+        },
+        "CLUE-C1": {
+            "clue": "tin was superseded by CLUE-C8inum in rolls of this after World War II",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "foil"
+        },
+        "CLUE-C2": {
+            "clue": "\"who ___ you??\" (something yelled at a CLUE-C1ed assassin in a movie)",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "sent"
+        },
+        "CLUE-C18": {
+            "clue": "French asCLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "oui"
+        },
+        "CLUE-C4": {
+            "clue": "there is one in St. LCLUE-C18s that is exactly as tall as it is wide",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "arch"
+        },
+        "CLUE-C12": {
+            "clue": "stretch when a monCLUE-C4 is in charge",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "reign"
+        },
+        "CLUE-C10": {
+            "clue": "an ex___ bar might show foCLUE-C12 sports",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "pat"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C3 pin is CLUE-C10ented",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C3"
+            ],
+            "answer": "the safety pin is patented"
+        }
+    }
+}

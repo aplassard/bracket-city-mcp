@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "one often thanked in speeches, briefly",
+            "depends_on": [],
+            "answer": "mom"
+        },
+        "CLUE-C4": {
+            "clue": "kind of date your CLUE-C9 might arrange for you",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "play"
+        },
+        "CLUE-C15": {
+            "clue": "a little informal CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "skit"
+        },
+        "CLUE-C1": {
+            "clue": "\"the coast is ___\" you say to yourself as you CLUE-C15ter away with an armful of cookies",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "clear"
+        },
+        "CLUE-C3": {
+            "clue": "Aesop wrote about one that laid golden eggs",
+            "depends_on": [],
+            "answer": "goose"
+        },
+        "CLUE-C16": {
+            "clue": "like most CLUE-C3 chases",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Wild"
+        },
+        "CLUE-C12": {
+            "clue": "Oscar CLUE-C16e was famous for his",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "wit"
+        },
+        "CLUE-C10": {
+            "clue": "kind of CLUE-C12ness who saw what happened",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "eye"
+        },
+        "CLUE-C5": {
+            "clue": "a mischief-maker might have this in his CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "twinkle"
+        },
+        "CLUE-C8": {
+            "clue": "a little one is said to CLUE-C5 in song",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Star"
+        },
+        "CLUE-C6": {
+            "clue": "kind of trooper with bad aim in \"CLUE-C8 Wars\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "storm"
+        },
+        "CLUE-C14": {
+            "clue": "a CLUE-C6 that gets a name",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "hurricane"
+        },
+        "CLUE-C18": {
+            "clue": "\"make up your ___!\"",
+            "depends_on": [],
+            "answer": "mind"
+        },
+        "CLUE-C7": {
+            "clue": "channel ___ing (CLUE-C18less activity of old)",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "surf"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C7er's conveyance",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "wave"
+        },
+        "CLUE-C2": {
+            "clue": "a CLUE-C14 or a tidal CLUE-C17 is a natural ___",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C17"
+            ],
+            "answer": "disaster"
+        },
+        "CLUE-C11": {
+            "clue": "\"I simply cannot ___ what you mean!\"",
+            "depends_on": [],
+            "answer": "fathom"
+        },
+        "CLUE-C13": {
+            "clue": "one is about 880 CLUE-C11s",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Mile"
+        },
+        "CLUE-ROOT": {
+            "clue": "nuCLUE-C1 CLUE-C2 at Three CLUE-C13 Island",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C13",
+                "CLUE-C2"
+            ],
+            "answer": "nuclear disaster at Three Mile Island"
+        }
+    }
+}

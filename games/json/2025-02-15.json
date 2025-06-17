@@ -1,0 +1,134 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "type of concrete block",
+            "depends_on": [],
+            "answer": "Cinder"
+        },
+        "CLUE-C17": {
+            "clue": "\ud83d\udd11\ud83d\udd11\ud83d\udd11",
+            "depends_on": [],
+            "answer": "keys"
+        },
+        "CLUE-C5": {
+            "clue": "a speed one is meant to slow you down",
+            "depends_on": [],
+            "answer": "bump"
+        },
+        "CLUE-C7": {
+            "clue": "they can be grand or upright",
+            "depends_on": [],
+            "answer": "pianos"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C7 that plug in, maybe",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "keyboards"
+        },
+        "CLUE-C1": {
+            "clue": "one of two CLUE-C17 with a little tactile CLUE-C5 on most CLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C17",
+                "CLUE-C5"
+            ],
+            "answer": "F"
+        },
+        "CLUE-C9": {
+            "clue": "Elizabeth and Latifah, e.g.",
+            "depends_on": [],
+            "answer": "Queens"
+        },
+        "CLUE-C4": {
+            "clue": "alternative to LGA that's also in CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "JFK"
+        },
+        "CLUE-C16": {
+            "clue": "The CLUE-C1 in CLUE-C4",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C4"
+            ],
+            "answer": "Fitzgerald"
+        },
+        "CLUE-C14": {
+            "clue": "\"___ Who's Talking\"",
+            "depends_on": [],
+            "answer": "look"
+        },
+        "CLUE-C3": {
+            "clue": "you are not supposed to CLUE-C14 directly at it",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Sun"
+        },
+        "CLUE-C19": {
+            "clue": "\ud83d\udc80",
+            "depends_on": [],
+            "answer": "Skull"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83c\udfdd\ufe0f",
+            "depends_on": [],
+            "answer": "Island"
+        },
+        "CLUE-C6": {
+            "clue": "Kong who came from CLUE-C19 CLUE-C18",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C19"
+            ],
+            "answer": "King"
+        },
+        "CLUE-C12": {
+            "clue": "XIV was the \"CLUE-C3 CLUE-C6\"",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C6"
+            ],
+            "answer": "Louis"
+        },
+        "CLUE-C8": {
+            "clue": "a horologist might make one",
+            "depends_on": [],
+            "answer": "watch"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C8 your ___",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "step"
+        },
+        "CLUE-C11": {
+            "clue": "Neil who took a small CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Armstrong"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C16 who collaborated musically with CLUE-C12 CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C12",
+                "CLUE-C16"
+            ],
+            "answer": "ella"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"CLUE-C13CLUE-C2\" opens in theaters",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C2"
+            ],
+            "answer": "\"Cinder ella\" opens in theaters"
+        }
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "clues": {
+        "CLUE-C11": {
+            "clue": "decided what to call a baby",
+            "depends_on": [],
+            "answer": "named"
+        },
+        "CLUE-C9": {
+            "clue": "\"___ who shall not be CLUE-C11\"",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "He"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C9 or Fe, e.g.",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "element"
+        },
+        "CLUE-C14": {
+            "clue": "anatomical macaroni shape",
+            "depends_on": [],
+            "answer": "elbow"
+        },
+        "CLUE-C12": {
+            "clue": "tweed jacket CLUE-C14 feature",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Patch"
+        },
+        "CLUE-C15": {
+            "clue": "Sour CLUE-C12 ___",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "kids"
+        },
+        "CLUE-C1": {
+            "clue": "system used in CLUE-C16ary schools that keeps CLUE-C15 together",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C16"
+            ],
+            "answer": "Buddy"
+        },
+        "CLUE-C17": {
+            "clue": "Rubik's ___",
+            "depends_on": [],
+            "answer": "cube"
+        },
+        "CLUE-C19": {
+            "clue": "\ud83e\uddfd",
+            "depends_on": [],
+            "answer": "Sponge"
+        },
+        "CLUE-C8": {
+            "clue": "use your head to grab apples",
+            "depends_on": [],
+            "answer": "bob"
+        },
+        "CLUE-C13": {
+            "clue": "shape of CLUE-C19CLUE-C8's pants",
+            "depends_on": [
+                "CLUE-C19",
+                "CLUE-C8"
+            ],
+            "answer": "square"
+        },
+        "CLUE-C6": {
+            "clue": "like a CLUE-C17, but not a CLUE-C13",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C17"
+            ],
+            "answer": "3D"
+        },
+        "CLUE-C7": {
+            "clue": "shutterbug's glass collection",
+            "depends_on": [],
+            "answer": "lenses"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C6 ones have red and blue CLUE-C7",
+            "depends_on": [
+                "CLUE-C6",
+                "CLUE-C7"
+            ],
+            "answer": "glasses"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83c\udf85\ud83c\udffb\ud83c\udf85\ud83c\udffb\ud83c\udf85\ud83c\udffb",
+            "depends_on": [],
+            "answer": "santas"
+        },
+        "CLUE-C10": {
+            "clue": "like some admirers or CLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "secret"
+        },
+        "CLUE-C3": {
+            "clue": "___ calls (usually red on your phone)",
+            "depends_on": [],
+            "answer": "missed"
+        },
+        "CLUE-C4": {
+            "clue": "badly CLUE-C3 basketball shot, slangly",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "brick"
+        },
+        "CLUE-C2": {
+            "clue": "member of a CLUE-C10 society or a CLUE-C4layer",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C4"
+            ],
+            "answer": "Mason"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C1 Holly's CLUE-C5 found in CLUE-C2 City, Iowa",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C2",
+                "CLUE-C5"
+            ],
+            "answer": "Buddy Holly 's glasses found in Mason City, Iowa"
+        }
+    }
+}

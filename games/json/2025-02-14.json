@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "___ in comparison",
+            "depends_on": [],
+            "answer": "Pale"
+        },
+        "CLUE-C11": {
+            "clue": "word with venture or punishment",
+            "depends_on": [],
+            "answer": "capital"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C11 letter that becomes another letter when flipped upside down",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "M"
+        },
+        "CLUE-C4": {
+            "clue": "color of the pages of a huge obsolete book",
+            "depends_on": [],
+            "answer": "yellow"
+        },
+        "CLUE-C9": {
+            "clue": "word with \"scene\" on some CLUE-C4 tape",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "crime"
+        },
+        "CLUE-C15": {
+            "clue": "like some CLUE-C9 or labor",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "organized"
+        },
+        "CLUE-C3": {
+            "clue": "___-coded, like an CLUE-C15 person's binder",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "color"
+        },
+        "CLUE-C10": {
+            "clue": "you might lie in a bed to get one",
+            "depends_on": [],
+            "answer": "tan"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C1&M CLUE-C3 that replaced \"CLUE-C10\"",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C10",
+                "CLUE-C3"
+            ],
+            "answer": "Blue"
+        },
+        "CLUE-C8": {
+            "clue": "one of too many in the kitchen, maybe",
+            "depends_on": [],
+            "answer": "Cook"
+        },
+        "CLUE-C18": {
+            "clue": "Altman or CLUE-C8e",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Sam"
+        },
+        "CLUE-C2": {
+            "clue": "morning designation on clocks unknown to Europeans",
+            "depends_on": [],
+            "answer": "Am"
+        },
+        "CLUE-C6": {
+            "clue": "monkey's unenviable position in a game",
+            "depends_on": [],
+            "answer": "middle"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C18 CLUE-C2's CLUE-C6 initial?",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C2",
+                "CLUE-C6"
+            ],
+            "answer": "i"
+        },
+        "CLUE-C7": {
+            "clue": "something the fastidious do to every CLUE-C16",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "Dot"
+        },
+        "CLUE-C5": {
+            "clue": "thing to do before dropping and rolling",
+            "depends_on": [],
+            "answer": "Stop"
+        },
+        "CLUE-C14": {
+            "clue": "\"Don't CLUE-C5 Believin'\" band",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "journey"
+        },
+        "CLUE-C13": {
+            "clue": "a long CLUE-C14, often by sea",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Voyage"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C17 CLUE-C12 CLUE-C7 photograph is taken by CLUE-C13r 1",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C17",
+                "CLUE-C7"
+            ],
+            "answer": "the Pale Blue Dot photograph is taken by Voyager 1"
+        }
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "___ 51 (\ud83d\udc7d\ud83d\udc7d\ud83d\udc7d?)",
+            "depends_on": [],
+            "answer": "Area"
+        },
+        "CLUE-C6": {
+            "clue": "kids sometimes pretend the floor is this \ud83c\udf0b",
+            "depends_on": [],
+            "answer": "lava"
+        },
+        "CLUE-C8": {
+            "clue": "one of 26 in English (or 30 in Bulgarian)",
+            "depends_on": [],
+            "answer": "Letter"
+        },
+        "CLUE-C9": {
+            "clue": "job for Johnny Carson or David CLUE-C8man",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "host"
+        },
+        "CLUE-C12": {
+            "clue": "Ebenezer who met three gCLUE-C9s",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Scrooge"
+        },
+        "CLUE-C7": {
+            "clue": "like chocolate CLUE-C6 cake or CLUE-C12 McDuck",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C6"
+            ],
+            "answer": "rich"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C15 full of CLUE-C7 nerds",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C7"
+            ],
+            "answer": "Bay"
+        },
+        "CLUE-C11": {
+            "clue": "activator of many porch chimes",
+            "depends_on": [],
+            "answer": "wind"
+        },
+        "CLUE-C13": {
+            "clue": "word with CLUE-C11 or circuit",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "breaker"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C13 of the camel's back, it is said",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "straw"
+        },
+        "CLUE-C4": {
+            "clue": "celebrated foot-long sandwich style, for short",
+            "depends_on": [],
+            "answer": "sub"
+        },
+        "CLUE-C3": {
+            "clue": "if you read between them you might find the CLUE-C4text",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "lines"
+        },
+        "CLUE-C5": {
+            "clue": "kind of skater often adorned with rhinestones",
+            "depends_on": [],
+            "answer": "figure"
+        },
+        "CLUE-C2": {
+            "clue": "one of two CLUE-C3 that look this /\\ on a classic stick CLUE-C5",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C5"
+            ],
+            "answer": "Leg"
+        },
+        "CLUE-C16": {
+            "clue": "unit of CLUE-C2o",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "brick"
+        },
+        "CLUE-C1": {
+            "clue": "three famously built their houses out of CLUE-C10, sticks, and CLUE-C16s",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C16"
+            ],
+            "answer": "Pigs"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C14 of CLUE-C1 invasion begins",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C14"
+            ],
+            "answer": "the Bay of Pigs invasion begins"
+        }
+    }
+}

@@ -1,0 +1,134 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "___ nog",
+            "depends_on": [],
+            "answer": "egg"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C17 container",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "carton"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C16 that might be whole or skim",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "milk"
+        },
+        "CLUE-C9": {
+            "clue": "word after protein or CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Shake"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83d\ude07",
+            "depends_on": [],
+            "answer": "angel"
+        },
+        "CLUE-C6": {
+            "clue": "instrument for an CLUE-C18, maybe",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "harp"
+        },
+        "CLUE-C10": {
+            "clue": "javelin or CLUE-C6oon, e.g.",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "spear"
+        },
+        "CLUE-C19": {
+            "clue": "\ud83e\udde2",
+            "depends_on": [],
+            "answer": "hat"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C9CLUE-C10e or SCLUE-C19ner",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C19",
+                "CLUE-C9"
+            ],
+            "answer": "William"
+        },
+        "CLUE-C5": {
+            "clue": "one might be compact or herniated",
+            "depends_on": [],
+            "answer": "disc"
+        },
+        "CLUE-C14": {
+            "clue": "no longer interested",
+            "depends_on": [],
+            "answer": "over"
+        },
+        "CLUE-C3": {
+            "clue": "informal promise to pay, for short",
+            "depends_on": [],
+            "answer": "iou"
+        },
+        "CLUE-C7": {
+            "clue": "\"__ up?\" (lascivCLUE-C3s inquiry)",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "U"
+        },
+        "CLUE-C15": {
+            "clue": "run in the past?",
+            "depends_on": [],
+            "answer": "ran"
+        },
+        "CLUE-C2": {
+            "clue": "an unbelievable plot might have one",
+            "depends_on": [],
+            "answer": "hole"
+        },
+        "CLUE-C8": {
+            "clue": "\"this is not a ___\" (uh oh)",
+            "depends_on": [],
+            "answer": "drill"
+        },
+        "CLUE-C11": {
+            "clue": "made a CLUE-C2 with a CLUE-C8",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C8"
+            ],
+            "answer": "bored"
+        },
+        "CLUE-C1": {
+            "clue": "if you say you are CLUE-C11 to this you are probably exaggerating",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "death"
+        },
+        "CLUE-C13": {
+            "clue": "\"til CLUE-C1 do __ part\"",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "us"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C12 Herschel CLUE-C5CLUE-C14s CLUE-C7CLUE-C15CLUE-C13",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C15",
+                "CLUE-C5",
+                "CLUE-C7"
+            ],
+            "answer": "William Herschel discovers Uranus"
+        }
+    }
+}

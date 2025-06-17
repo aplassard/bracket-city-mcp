@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "famous Canyon",
+            "depends_on": [],
+            "answer": "Grand"
+        },
+        "CLUE-C9": {
+            "clue": "nickname for songstress CLUE-C15e",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "ari"
+        },
+        "CLUE-C4": {
+            "clue": "cheapest water vCLUE-C9ety at a restaurant",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "tap"
+        },
+        "CLUE-C16": {
+            "clue": "Dracula, e.g.",
+            "depends_on": [],
+            "answer": "vampire"
+        },
+        "CLUE-C11": {
+            "clue": "dietary sCLUE-C4le for CLUE-C16s",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C4"
+            ],
+            "answer": "Blood"
+        },
+        "CLUE-C3": {
+            "clue": "\"___ dare you!\" says the indignant grandee",
+            "depends_on": [],
+            "answer": "how"
+        },
+        "CLUE-C2": {
+            "clue": "you might ___ the sCLUE-C3 with your soft shoe routine",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "steal"
+        },
+        "CLUE-C7": {
+            "clue": "Cape of Good \u2b05\ufe0f___\u27a1\ufe0f for the best",
+            "depends_on": [],
+            "answer": "hope"
+        },
+        "CLUE-C12": {
+            "clue": "like a trial, CLUE-C7fully",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "fair"
+        },
+        "CLUE-C1": {
+            "clue": "having a stiff upper ___ might suggest a certain stoicism",
+            "depends_on": [],
+            "answer": "lip"
+        },
+        "CLUE-C14": {
+            "clue": "\"___ my CLUE-C1s\"",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "read"
+        },
+        "CLUE-C6": {
+            "clue": "companion with \"CLUE-C14y\" and \"willing\"",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "able"
+        },
+        "CLUE-C8": {
+            "clue": "the Prodigal ___ (parCLUE-C6 star)",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "son"
+        },
+        "CLUE-C5": {
+            "clue": "Johnny who performed at Folsom PriCLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "cash"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C12y who carries CLUE-C5",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C5"
+            ],
+            "answer": "tooth"
+        },
+        "CLUE-C10": {
+            "clue": "topper for a king or a CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "crown"
+        },
+        "CLUE-ROOT": {
+            "clue": "Thomas CLUE-C11 attempts to CLUE-C2 England's CLUE-C10 jewels",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C11",
+                "CLUE-C2"
+            ],
+            "answer": "Thomas Blood attempts to steal England's crown jewels"
+        }
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "the B in BCC",
+            "depends_on": [],
+            "answer": "blind"
+        },
+        "CLUE-C10": {
+            "clue": "alternative to damn, darn, and drat",
+            "depends_on": [],
+            "answer": "dang"
+        },
+        "CLUE-C4": {
+            "clue": "\"___ in there!\" says the poster with the CLUE-C10ling cat",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "hang"
+        },
+        "CLUE-C3": {
+            "clue": "you (ought to) check your CLUE-C18 one when cCLUE-C4ing lanes",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C4"
+            ],
+            "answer": "spot"
+        },
+        "CLUE-C12": {
+            "clue": "the original one involved an \ud83c\udf4e",
+            "depends_on": [],
+            "answer": "sin"
+        },
+        "CLUE-C2": {
+            "clue": "sheep color for your brother whose \"job\" is trying to get hit by a limouCLUE-C12e",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Black"
+        },
+        "CLUE-C15": {
+            "clue": "Three Wise \u2b05\ufe0f___\u27a1\ufe0f in CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "men"
+        },
+        "CLUE-C8": {
+            "clue": "one might be in the ointCLUE-C15t or on the wall",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "fly"
+        },
+        "CLUE-C11": {
+            "clue": "to CLUE-C8 this way is to go it alone",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Solo"
+        },
+        "CLUE-C17": {
+            "clue": "\"null and ___\"",
+            "depends_on": [],
+            "answer": "void"
+        },
+        "CLUE-C7": {
+            "clue": "you must aCLUE-C17 biting off more than you can ___",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "Chew"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C11 who knows CLUE-C7bacca",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C7"
+            ],
+            "answer": "Han"
+        },
+        "CLUE-C13": {
+            "clue": "home for a bear or a plasma TV",
+            "depends_on": [],
+            "answer": "den"
+        },
+        "CLUE-C14": {
+            "clue": "kind of shop for a CLUE-C13ted car",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "body"
+        },
+        "CLUE-C9": {
+            "clue": "\"muscle-___\" adjective for a CLUE-C14builder",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "bound"
+        },
+        "CLUE-C1": {
+            "clue": "___tails (two gathered and CLUE-C9 hanks of hair emanating from the side of the head)",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "pig"
+        },
+        "CLUE-C6": {
+            "clue": "one with porcine features resembles this animal",
+            "depends_on": [],
+            "answer": "pig"
+        },
+        "CLUE-C5": {
+            "clue": "\"Guinea CLUE-C1\" is a mis___ (not from Guinea, not a CLUE-C6)",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C6"
+            ],
+            "answer": "nomer"
+        },
+        "CLUE-ROOT": {
+            "clue": "a sunCLUE-C3 is observed by CLUE-C16 dynasty astroCLUE-C5s",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C3",
+                "CLUE-C5"
+            ],
+            "answer": "May 10, 28 BC: a sunspot is observed by Han dynasty astronomers"
+        }
+    }
+}

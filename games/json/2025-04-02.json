@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "word with pep or \"the troops\"",
+            "depends_on": [],
+            "answer": "rally"
+        },
+        "CLUE-C2": {
+            "clue": "visceCLUE-C12 distasteful, to a small child maybe",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "icky"
+        },
+        "CLUE-C9": {
+            "clue": "his friends might call him RCLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "eric"
+        },
+        "CLUE-C3": {
+            "clue": "faraway place with exactly six AmCLUE-C9an flags",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "moon"
+        },
+        "CLUE-C7": {
+            "clue": "like the budget for a student film",
+            "depends_on": [],
+            "answer": "low"
+        },
+        "CLUE-C5": {
+            "clue": "the CLUE-C3 decides whether it's high or CLUE-C7",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "tide"
+        },
+        "CLUE-C8": {
+            "clue": "the tables or CLUE-C5 might do this",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Turn"
+        },
+        "CLUE-C17": {
+            "clue": "Fey or CLUE-C8er",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "tina"
+        },
+        "CLUE-C15": {
+            "clue": "\"___ casa es su casa\"",
+            "depends_on": [],
+            "answer": "Mi"
+        },
+        "CLUE-C14": {
+            "clue": "after CLUE-C15 but before Sol",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Fa"
+        },
+        "CLUE-C1": {
+            "clue": "loudly announce the size of your Transformers collection, say",
+            "depends_on": [],
+            "answer": "Brag"
+        },
+        "CLUE-C18": {
+            "clue": "Knox or CLUE-C1g",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "fort"
+        },
+        "CLUE-C16": {
+            "clue": "a CLUE-C18night is 336",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "hours"
+        },
+        "CLUE-C4": {
+            "clue": "\"the ___ CLUE-C16 of the night\" (really late)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "wee"
+        },
+        "CLUE-C13": {
+            "clue": "a CLUE-C4 young lady, perhaps",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "lass"
+        },
+        "CLUE-C10": {
+            "clue": "western-themed event with CLUE-C13os",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Rodeo"
+        },
+        "CLUE-C11": {
+            "clue": "home of CLUE-C10 Drive, for short",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "la"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C11 la ___ (state of blissful ignorance)",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "land"
+        },
+        "CLUE-ROOT": {
+            "clue": "ArgenCLUE-C17 invades the CLUE-C14lkCLUE-C6s",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C17",
+                "CLUE-C6"
+            ],
+            "answer": "Argentina invades the Falklands"
+        }
+    }
+}

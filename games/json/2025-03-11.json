@@ -1,0 +1,136 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "\"___ your engines\"",
+            "depends_on": [],
+            "answer": "start"
+        },
+        "CLUE-C2": {
+            "clue": "kind of CLUE-C13 that can be discouraging",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "slow"
+        },
+        "CLUE-C18": {
+            "clue": "\ud83d\udc2a",
+            "depends_on": [],
+            "answer": "camel"
+        },
+        "CLUE-C12": {
+            "clue": "iconic CLUE-C18 feature",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "Hump"
+        },
+        "CLUE-C4": {
+            "clue": "a good one is welcome in a restaurant",
+            "depends_on": [],
+            "answer": "tipper"
+        },
+        "CLUE-C7": {
+            "clue": "___ truck, called a \"CLUE-C4\" in \ud83c\uddec\ud83c\udde7",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Dump"
+        },
+        "CLUE-C8": {
+            "clue": "\"CLUE-C12ty CLUE-C7ty\" is a nursery one",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C7"
+            ],
+            "answer": "rhyme"
+        },
+        "CLUE-C17": {
+            "clue": "\u26ea\ufe0f",
+            "depends_on": [],
+            "answer": "Church"
+        },
+        "CLUE-C16": {
+            "clue": "wunder___",
+            "depends_on": [],
+            "answer": "kind"
+        },
+        "CLUE-C14": {
+            "clue": "confirms a flight",
+            "depends_on": [],
+            "answer": "books"
+        },
+        "CLUE-C3": {
+            "clue": "most children's CLUE-C14 have a happy one",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "ending"
+        },
+        "CLUE-C11": {
+            "clue": "give away the CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "spoil"
+        },
+        "CLUE-C1": {
+            "clue": "document of great interest to CLUE-C11ed children, maybe",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "will"
+        },
+        "CLUE-C15": {
+            "clue": "bad CLUE-C16 of CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C16"
+            ],
+            "answer": "ill"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C17CLUE-C15 was the prime one",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C17"
+            ],
+            "answer": "minister"
+        },
+        "CLUE-C9": {
+            "clue": "unfortunate CLUE-C8 with CLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C8"
+            ],
+            "answer": "sinister"
+        },
+        "CLUE-C6": {
+            "clue": "move verrrrry CLUE-C2ly and CLUE-C9ly",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "creep"
+        },
+        "CLUE-C5": {
+            "clue": "a CLUE-C6 might do this, with \"a feel\"",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Cop"
+        },
+        "CLUE-C19": {
+            "clue": "\ud83e\udd8a",
+            "depends_on": [],
+            "answer": "Fox"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"CLUE-C5s\" debuts on CLUE-C19",
+            "depends_on": [
+                "CLUE-C19",
+                "CLUE-C5"
+            ],
+            "answer": "\"Cops\" debuts on Fox"
+        }
+    }
+}

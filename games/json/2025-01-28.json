@@ -1,0 +1,80 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "wrongdoers may have to face it, with \"the\"",
+            "depends_on": [],
+            "answer": "music"
+        },
+        "CLUE-C3": {
+            "clue": "something a kid in class might be doing, along with telling",
+            "depends_on": [],
+            "answer": "showing"
+        },
+        "CLUE-C9": {
+            "clue": "\"___ it or not\"",
+            "depends_on": [],
+            "answer": "believe"
+        },
+        "CLUE-C1": {
+            "clue": "word you might say while CLUE-C3 someone something you told them about but they didn't CLUE-C9 you",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C9"
+            ],
+            "answer": "see"
+        },
+        "CLUE-C11": {
+            "clue": "lettuce unit",
+            "depends_on": [],
+            "answer": "head"
+        },
+        "CLUE-C4": {
+            "clue": "you might CLUE-C1 them if you get bonked on the CLUE-C11",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11"
+            ],
+            "answer": "stars"
+        },
+        "CLUE-C8": {
+            "clue": "as the ___ flies",
+            "depends_on": [],
+            "answer": "crow"
+        },
+        "CLUE-C7": {
+            "clue": "character looking for a brain, with \"CLUE-C8\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "scare"
+        },
+        "CLUE-C2": {
+            "clue": "semi-mythical document used to CLUE-C7 kids: their permanent ___",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "record"
+        },
+        "CLUE-C5": {
+            "clue": "self-referential plural pronoun for a monarch",
+            "depends_on": [],
+            "answer": "We"
+        },
+        "CLUE-C10": {
+            "clue": "\"roses ___ red\"",
+            "depends_on": [],
+            "answer": "Are"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C6 CLUE-C4 gather to CLUE-C2 \"CLUE-C5 CLUE-C10 the World\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C2",
+                "CLUE-C4",
+                "CLUE-C5",
+                "CLUE-C6"
+            ],
+            "answer": "music stars gather to record \"We Are the World\""
+        }
+    }
+}

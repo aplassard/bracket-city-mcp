@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "impractical slipper material for Cinderella",
+            "depends_on": [],
+            "answer": "glass"
+        },
+        "CLUE-C10": {
+            "clue": "kind of CLUE-C6es rarely worn inside",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Sun"
+        },
+        "CLUE-C5": {
+            "clue": "the \"___ of surprise\" celebrated by CLUE-C10 Tzu",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "element"
+        },
+        "CLUE-C8": {
+            "clue": "tot's three-wheeled conveyance, for short",
+            "depends_on": [],
+            "answer": "trike"
+        },
+        "CLUE-C11": {
+            "clue": "something you sCLUE-C8 for a picture",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Pose"
+        },
+        "CLUE-C14": {
+            "clue": "spear for CLUE-C11idon",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Trident"
+        },
+        "CLUE-C12": {
+            "clue": "Orbit or CLUE-C14, e.g.",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "gum"
+        },
+        "CLUE-C7": {
+            "clue": "fierce animal frequently rendered in CLUE-C12my",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Bear"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C5al enemy of Smokey (the) CLUE-C7",
+            "depends_on": [
+                "CLUE-C5",
+                "CLUE-C7"
+            ],
+            "answer": "fire"
+        },
+        "CLUE-C1": {
+            "clue": "place where sound does not travel and water boils at room temperature",
+            "depends_on": [],
+            "answer": "Vacuum"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C1 brand popular enough that it's a verb in \ud83c\uddec\ud83c\udde7",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Hoover"
+        },
+        "CLUE-C15": {
+            "clue": "a million million",
+            "depends_on": [],
+            "answer": "trillion"
+        },
+        "CLUE-C2": {
+            "clue": "the CLUE-C4 one holds back CLUE-C15s (!) of gallons of water",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C4"
+            ],
+            "answer": "Dam"
+        },
+        "CLUE-C13": {
+            "clue": "Thurman of \"Kill Bill\"",
+            "depends_on": [],
+            "answer": "uma"
+        },
+        "CLUE-C3": {
+            "clue": "word missing from this list \u27a1\ufe0f sweet, salty, bitter, CLUE-C13mi",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "sour"
+        },
+        "CLUE-C16": {
+            "clue": "\"meow\" CLUE-C3ce",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Cat"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C9 at the Notre-CLUE-C2e CLUE-C16hedral",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "fire at the Notre-Dame Cathedral"
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "one of two you might get out as a kid",
+            "depends_on": [],
+            "answer": "tonsil"
+        },
+        "CLUE-C14": {
+            "clue": "Miami \ud83c\udfc0 team",
+            "depends_on": [],
+            "answer": "heat"
+        },
+        "CLUE-C2": {
+            "clue": "feature that makes a shirt a little dressier",
+            "depends_on": [],
+            "answer": "collar"
+        },
+        "CLUE-C12": {
+            "clue": "some is white-CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "crime"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C14 or CLUE-C12 ones are dangerous",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C14"
+            ],
+            "answer": "waves"
+        },
+        "CLUE-C7": {
+            "clue": "___ CLUE-C9 (causing problems, maybe)",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "making"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C6 ___ (queasy metaphor for CLUE-C7 out)",
+            "depends_on": [
+                "CLUE-C6",
+                "CLUE-C7"
+            ],
+            "answer": "hockey"
+        },
+        "CLUE-C15": {
+            "clue": "\ud83e\udd8d\ud83e\udda7, e.g.",
+            "depends_on": [],
+            "answer": "apes"
+        },
+        "CLUE-C1": {
+            "clue": "scammy kind of letter that urges you to send CLUE-C1 to others",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "chain"
+        },
+        "CLUE-C4": {
+            "clue": "what a fabulist does to your CLUE-C1 or leg",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "pulls"
+        },
+        "CLUE-C8": {
+            "clue": "like a volleyball or punch, maybe",
+            "depends_on": [],
+            "answer": "spiked"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C8 sea creature",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "urchin"
+        },
+        "CLUE-C10": {
+            "clue": "kind of CLUE-C13 or smarts",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "street"
+        },
+        "CLUE-C5": {
+            "clue": "one happened on 34th CLUE-C10, it is said",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Miracle"
+        },
+        "CLUE-C11": {
+            "clue": "cold kind of Capades",
+            "depends_on": [],
+            "answer": "Ice"
+        },
+        "CLUE-ROOT": {
+            "clue": "US CLUE-C3 team CLUE-C4 off \"CLUE-C5 on CLUE-C11\"",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3",
+                "CLUE-C4",
+                "CLUE-C5"
+            ],
+            "answer": "US hockey team pulls off \"Miracle on Ice\""
+        }
+    }
+}

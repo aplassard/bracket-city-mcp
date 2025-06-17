@@ -1,0 +1,143 @@
+{
+    "clues": {
+        "CLUE-C20": {
+            "clue": "\ud83c\udf39\ud83c\udf39\ud83c\udf39",
+            "depends_on": [],
+            "answer": "roses"
+        },
+        "CLUE-C13": {
+            "clue": "the CLUE-C20 are in ___",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "Bloom"
+        },
+        "CLUE-C14": {
+            "clue": "Dukakis or CLUE-C13berg",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Michael"
+        },
+        "CLUE-C15": {
+            "clue": "working nine to ___",
+            "depends_on": [],
+            "answer": "five"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C15 in Spanish",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "cinco"
+        },
+        "CLUE-C10": {
+            "clue": "pants that suggest snobbery",
+            "depends_on": [],
+            "answer": "fancy"
+        },
+        "CLUE-C6": {
+            "clue": "aioli is basically CLUE-C10 this, for short",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "mayo"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C18 __ CLUE-C6",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C6"
+            ],
+            "answer": "De"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C14 J. who traveled to 1955 in a CLUE-C19Lorean",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C19"
+            ],
+            "answer": "fox"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C3 that has still got it",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "silver"
+        },
+        "CLUE-C1": {
+            "clue": "old name for something that used to be 140 characters max",
+            "depends_on": [],
+            "answer": "Tweet"
+        },
+        "CLUE-C8": {
+            "clue": "music festival held in 1969",
+            "depends_on": [],
+            "answer": "Woodstock"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C1y or CLUE-C8",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C8"
+            ],
+            "answer": "bird"
+        },
+        "CLUE-C4": {
+            "clue": "twig and leaf engineering project for a CLUE-C16",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "nest"
+        },
+        "CLUE-C5": {
+            "clue": "kind of wheel that's red, black, and green",
+            "depends_on": [],
+            "answer": "roulette"
+        },
+        "CLUE-C7": {
+            "clue": "high-stakes style of CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Russian"
+        },
+        "CLUE-C9": {
+            "clue": "one of a CLUE-C4ed CLUE-C7 set",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C7"
+            ],
+            "answer": "doll"
+        },
+        "CLUE-C11": {
+            "clue": "pages at the end of a book",
+            "depends_on": [],
+            "answer": "index"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C11 or ring, e.g.",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "finger"
+        },
+        "CLUE-C2": {
+            "clue": "chicken format nearly interchangeable with a CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "tender"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C12 CLUE-C9ars made legal CLUE-C2",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "silver dollars made legal"
+        }
+    }
+}

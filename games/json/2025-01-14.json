@@ -1,0 +1,115 @@
+{
+    "clues": {
+        "CLUE-C4": {
+            "clue": "building maintenance boss, for short",
+            "depends_on": [],
+            "answer": "super"
+        },
+        "CLUE-C6": {
+            "clue": "old computer disk type, familiarly",
+            "depends_on": [],
+            "answer": "floppy"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C6 ladder material",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "rope"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C17 in CLUE-C14",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C17"
+            ],
+            "answer": "boat"
+        },
+        "CLUE-C12": {
+            "clue": "causes strong feelings",
+            "depends_on": [],
+            "answer": "moves"
+        },
+        "CLUE-C16": {
+            "clue": "gravy vessels",
+            "depends_on": [],
+            "answer": "boats"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C1 that CLUE-C12 other CLUE-C16",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12",
+                "CLUE-C16"
+            ],
+            "answer": "tug"
+        },
+        "CLUE-C13": {
+            "clue": "\"___ Mice and Men\"",
+            "depends_on": [],
+            "answer": "of"
+        },
+        "CLUE-C3": {
+            "clue": "game that uses a CLUE-C11, with \"CLUE-C9 CLUE-C13\"",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C13",
+                "CLUE-C9"
+            ],
+            "answer": "war"
+        },
+        "CLUE-C10": {
+            "clue": "word after CLUE-C4 or CLUE-C3",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C4"
+            ],
+            "answer": "powers"
+        },
+        "CLUE-C5": {
+            "clue": "those in charge, with \"CLUE-C10 that\"",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Be"
+        },
+        "CLUE-C7": {
+            "clue": "they might show you to your seat",
+            "depends_on": [],
+            "answer": "ushers"
+        },
+        "CLUE-C8": {
+            "clue": "ability to handle booze, maybe",
+            "depends_on": [],
+            "answer": "tolerance"
+        },
+        "CLUE-C17": {
+            "clue": "___ CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "zero"
+        },
+        "CLUE-C2": {
+            "clue": "imperfections or geological fissures",
+            "depends_on": [],
+            "answer": "faults"
+        },
+        "CLUE-C14": {
+            "clue": "sport with CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "tennis"
+        },
+        "CLUE-ROOT": {
+            "clue": "the Human CLUE-C5-In CLUE-C7 in the Summer of CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C5",
+                "CLUE-C7"
+            ],
+            "answer": "the Human Be-In ushers in the Summer of Love"
+        }
+    }
+}

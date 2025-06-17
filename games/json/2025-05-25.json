@@ -1,0 +1,146 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "\"___ to the chase\"",
+            "depends_on": [],
+            "answer": "cut"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C18 together as a film",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "edit"
+        },
+        "CLUE-C14": {
+            "clue": "something you interview for",
+            "depends_on": [],
+            "answer": "job"
+        },
+        "CLUE-C9": {
+            "clue": "kind of CLUE-C14 performed by a plastic surgeon",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "nose"
+        },
+        "CLUE-C2": {
+            "clue": "the prefix \"uni\" is added when one meets its match above the CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "brow"
+        },
+        "CLUE-C1": {
+            "clue": "\"get a ___ of this guy\" you say with your CLUE-C2 furrowed and thumb extended",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "load"
+        },
+        "CLUE-C4": {
+            "clue": "\"rule the ___\" (to be in charge of a coop or otherwise)",
+            "depends_on": [],
+            "answer": "roost"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C4er's companion",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "hen"
+        },
+        "CLUE-C3": {
+            "clue": "villain's command quieting a CLUE-C17chman's bumbling explanation",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "silence"
+        },
+        "CLUE-C6": {
+            "clue": "contemplative one who might take a vow of CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "monk"
+        },
+        "CLUE-C13": {
+            "clue": "curious CLUE-C6ey with a man's name",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "George"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C13 W. who got a shoe thrown at him",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "bush"
+        },
+        "CLUE-C8": {
+            "clue": "to do this around the CLUE-C11 is to be evasive",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Beat"
+        },
+        "CLUE-C12": {
+            "clue": "2\u2076 or age of concern for the CLUE-C8les",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "64"
+        },
+        "CLUE-C10": {
+            "clue": "one might be CLUE-C1ed or leading or $CLUE-C12,000",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12"
+            ],
+            "answer": "question"
+        },
+        "CLUE-C19": {
+            "clue": "___ the CLUE-C10 \ud83d\udc8d",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "pop"
+        },
+        "CLUE-C20": {
+            "clue": "\"a CLUE-C19\"",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "each"
+        },
+        "CLUE-C7": {
+            "clue": "MCLUE-C15erranean or South BCLUE-C20 or Atkins, e.g.",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C20"
+            ],
+            "answer": "Diet"
+        },
+        "CLUE-C16": {
+            "clue": "\"catch me if you ___\"",
+            "depends_on": [],
+            "answer": "can"
+        },
+        "CLUE-C5": {
+            "clue": "opening a CLUE-C16 of them might lead to many complications",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "Worms"
+        },
+        "CLUE-ROOT": {
+            "clue": "The CLUE-C7 of CLUE-C5 ends",
+            "depends_on": [
+                "CLUE-C5",
+                "CLUE-C7"
+            ],
+            "answer": "The Diet of Worms ends"
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "body of water for some koi",
+            "depends_on": [],
+            "answer": "pond"
+        },
+        "CLUE-C6": {
+            "clue": "___ favor (resCLUE-C13a en espa\u00f1ol, ___ favor)",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "por"
+        },
+        "CLUE-C12": {
+            "clue": "conveyance over whitewater",
+            "depends_on": [],
+            "answer": "raft"
+        },
+        "CLUE-C5": {
+            "clue": "button you click to start dCLUE-C12ing an email",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "compose"
+        },
+        "CLUE-C1": {
+            "clue": "without \"un\" \u27a1\ufe0f Bol\u00e9ro CLUE-C5r, with \"un\" \u27a1\ufe0f lose your composure",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "ravel"
+        },
+        "CLUE-C8": {
+            "clue": "kind of book in the \"tCLUE-C1\" section",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "guide"
+        },
+        "CLUE-C16": {
+            "clue": "be in tent, maybe",
+            "depends_on": [],
+            "answer": "camp"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C8 that might show you around CLUE-C16us",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C8"
+            ],
+            "answer": "tour"
+        },
+        "CLUE-C9": {
+            "clue": "___pockets (menace of CLUE-C7ists)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "pick"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C9 someone for a role",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "cast"
+        },
+        "CLUE-C14": {
+            "clue": "temCLUE-C6ary kind of CLUE-C15le",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C6"
+            ],
+            "answer": "sand"
+        },
+        "CLUE-C4": {
+            "clue": "noble title for the popularizer of the CLUE-C14wich",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "earl"
+        },
+        "CLUE-C3": {
+            "clue": "direction of travel that is often gravity-assisted",
+            "depends_on": [],
+            "answer": "down"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C3ed, as food",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "ate"
+        },
+        "CLUE-C18": {
+            "clue": "___-fil-A",
+            "depends_on": [],
+            "answer": "chick"
+        },
+        "CLUE-C10": {
+            "clue": "GCLUE-C17s or Murray or BeliCLUE-C18",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C18"
+            ],
+            "answer": "Bill"
+        },
+        "CLUE-C11": {
+            "clue": "one of ten on a famous CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "right"
+        },
+        "CLUE-C2": {
+            "clue": "kind of fCLUE-C11 that might interfere with your acting career",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "stage"
+        },
+        "CLUE-ROOT": {
+            "clue": "PCLUE-C4 Hart robs a CLUE-C2coach near Globe, Arizona",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C4"
+            ],
+            "answer": "Pearl Hart robs a stagecoach near Globe, Arizona"
+        }
+    }
+}

@@ -1,0 +1,106 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "\ud83c\udf41\ud83c\udf41\ud83c\udf41",
+            "depends_on": [],
+            "answer": "leaves"
+        },
+        "CLUE-C1": {
+            "clue": "response to an invitation that CLUE-C14 you wondering if they really want to go",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "sure"
+        },
+        "CLUE-C10": {
+            "clue": "container for treaCLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "chest"
+        },
+        "CLUE-C6": {
+            "clue": "scary sounding place for an orCLUE-C10ra",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "pit"
+        },
+        "CLUE-C8": {
+            "clue": "planet between JuCLUE-C6er and Uranus",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Saturn"
+        },
+        "CLUE-C3": {
+            "clue": "company that phased out CLUE-C8 and Oldsmobile",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "gm"
+        },
+        "CLUE-C9": {
+            "clue": "most famous SiCLUE-C3und by a lot",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Freud"
+        },
+        "CLUE-C4": {
+            "clue": "major for CLUE-C9 and Skinner fans, briefly",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "psych"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C4ic power letters",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "esp"
+        },
+        "CLUE-C13": {
+            "clue": "\"and\" en CLUE-C11a\u00f1ol",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "y"
+        },
+        "CLUE-C12": {
+            "clue": "___ body president",
+            "depends_on": [],
+            "answer": "student"
+        },
+        "CLUE-C2": {
+            "clue": "like a CLUE-C12 who is temporarily barred from school",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "suspended"
+        },
+        "CLUE-C5": {
+            "clue": "a cloud of tiny CLUE-C2 water droplets",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Mist"
+        },
+        "CLUE-C7": {
+            "clue": "letters after sex, phys, or CLUE-C5er",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Ed"
+        },
+        "CLUE-ROOT": {
+            "clue": "Bob DCLUE-C13lan walks out of \"The CLUE-C7 Sullivan Show\"",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C7"
+            ],
+            "answer": "Bob Dylan walks out of \"The Ed Sullivan Show\""
+        }
+    }
+}

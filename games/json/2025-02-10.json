@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C1": {
+            "clue": "skeptical exclamation by a scientist in a movie witness to something previously unimaginable",
+            "depends_on": [],
+            "answer": "impossible"
+        },
+        "CLUE-C17": {
+            "clue": "Little Bo-___",
+            "depends_on": [],
+            "answer": "peep"
+        },
+        "CLUE-C15": {
+            "clue": "one might be CLUE-C17ing",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "Tom"
+        },
+        "CLUE-C11": {
+            "clue": "___blades, inline skates",
+            "depends_on": [],
+            "answer": "roller"
+        },
+        "CLUE-C14": {
+            "clue": "cartoon panther color",
+            "depends_on": [],
+            "answer": "pink"
+        },
+        "CLUE-C7": {
+            "clue": "insult: \"don't quit your day ___\"",
+            "depends_on": [],
+            "answer": "job"
+        },
+        "CLUE-C5": {
+            "clue": "a CLUE-C14 one is bad news at your CLUE-C7",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C7"
+            ],
+            "answer": "slip"
+        },
+        "CLUE-C4": {
+            "clue": "you might CLUE-C5 one under a guest's glass",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "coaster"
+        },
+        "CLUE-C2": {
+            "clue": "kind of ship that might have a CLUE-C11 CLUE-C4 on board",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C4"
+            ],
+            "answer": "Cruise"
+        },
+        "CLUE-C3": {
+            "clue": "an CLUE-C1 one might feature CLUE-C15 CLUE-C2",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C15",
+                "CLUE-C2"
+            ],
+            "answer": "mission"
+        },
+        "CLUE-C9": {
+            "clue": "sought adCLUE-C3, to college",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "applied"
+        },
+        "CLUE-C10": {
+            "clue": "it might be CLUE-C9 to nails",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Polish"
+        },
+        "CLUE-C18": {
+            "clue": "___ dipper",
+            "depends_on": [],
+            "answer": "big"
+        },
+        "CLUE-C13": {
+            "clue": "language of many mottos",
+            "depends_on": [],
+            "answer": "latin"
+        },
+        "CLUE-C8": {
+            "clue": "form of CLUE-C13 favored by kids",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "pig"
+        },
+        "CLUE-C12": {
+            "clue": "noble title for Dracula",
+            "depends_on": [],
+            "answer": "count"
+        },
+        "CLUE-C16": {
+            "clue": "little CLUE-C8 CLUE-C12",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C8"
+            ],
+            "answer": "three"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C18 day with CLUE-C16 bands, often \ud83c\udf8a",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C18"
+            ],
+            "answer": "Wedding"
+        },
+        "CLUE-ROOT": {
+            "clue": "the first CLUE-C10 CLUE-C6 to the Sea",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C6"
+            ],
+            "answer": "the first Polish Wedding to the Sea"
+        }
+    }
+}

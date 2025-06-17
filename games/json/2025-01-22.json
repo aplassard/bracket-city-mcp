@@ -1,0 +1,123 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "Wall ___",
+            "depends_on": [],
+            "answer": "street"
+        },
+        "CLUE-C13": {
+            "clue": "___ on the CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "word"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C13 photographers sometimes demand to hear",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "cheese"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C4 full of holes",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Swiss"
+        },
+        "CLUE-C14": {
+            "clue": "Julius with bangs",
+            "depends_on": [],
+            "answer": "Caesar"
+        },
+        "CLUE-C16": {
+            "clue": "___ naked",
+            "depends_on": [],
+            "answer": "Buck"
+        },
+        "CLUE-C11": {
+            "clue": "illicitly tamper with",
+            "depends_on": [],
+            "answer": "doctor"
+        },
+        "CLUE-C3": {
+            "clue": "stereotypically illegible scribble by a CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "prescription"
+        },
+        "CLUE-C15": {
+            "clue": "sets a time for",
+            "depends_on": [],
+            "answer": "schedules"
+        },
+        "CLUE-C8": {
+            "clue": "org that CLUE-C15 substances",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "DEA"
+        },
+        "CLUE-C7": {
+            "clue": "___ bust, typical CLUE-C8 operation",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "drug"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C3 CLUE-C7 dosage units, often",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "milligrams"
+        },
+        "CLUE-C1": {
+            "clue": "fastener that typically weighs about 32 CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "staple"
+        },
+        "CLUE-C10": {
+            "clue": "like some shiny ceramics",
+            "depends_on": [],
+            "answer": "glazed"
+        },
+        "CLUE-C6": {
+            "clue": "Christmas CLUE-C1 that's often CLUE-C10",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C10"
+            ],
+            "answer": "ham"
+        },
+        "CLUE-C9": {
+            "clue": "like CLUE-C14's or CLUE-C16ingCLUE-C6",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C16",
+                "CLUE-C6"
+            ],
+            "answer": "palace"
+        },
+        "CLUE-C2": {
+            "clue": "word you might shout to call security at a CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Guards"
+        },
+        "CLUE-ROOT": {
+            "clue": "the first 150 CLUE-C12 CLUE-C2 arrive at the Vatican",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C2"
+            ],
+            "answer": "the first 150 Swiss Guards arrive at the Vatican"
+        }
+    }
+}

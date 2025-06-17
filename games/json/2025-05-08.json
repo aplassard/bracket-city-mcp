@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "kind of sickness induced by \ud83d\ude97, \ud83d\udea2, or \u2708\ufe0f, maybe",
+            "depends_on": [],
+            "answer": "motion"
+        },
+        "CLUE-C15": {
+            "clue": "dog tail CLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "wag"
+        },
+        "CLUE-C9": {
+            "clue": "kind of CLUE-C15on that greets newcomers",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "welcome"
+        },
+        "CLUE-C5": {
+            "clue": "a reprobate might not be CLUE-C9 in \"___ society\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "polite"
+        },
+        "CLUE-C7": {
+            "clue": "more CLUE-C5 name for a fiery abyss of despair",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "heck"
+        },
+        "CLUE-C8": {
+            "clue": "syllable for CLUE-C7lers at a performance",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "boo"
+        },
+        "CLUE-C4": {
+            "clue": "something you (used to) pay someone in a CLUE-C8th on a highway",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Toll"
+        },
+        "CLUE-C10": {
+            "clue": "Bugs might be the most famous one",
+            "depends_on": [],
+            "answer": "bunny"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C10 that fears the vacuum",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "dust"
+        },
+        "CLUE-C11": {
+            "clue": "entry in a book for a sorcerer",
+            "depends_on": [],
+            "answer": "spell"
+        },
+        "CLUE-C16": {
+            "clue": "the A in MoMA",
+            "depends_on": [],
+            "answer": "art"
+        },
+        "CLUE-C1": {
+            "clue": "\"Don't have a ___, man!\" says BCLUE-C16 Simpson following his antics",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "cow"
+        },
+        "CLUE-C14": {
+            "clue": "onomatopoeic CLUE-C1 sound",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "moo"
+        },
+        "CLUE-C3": {
+            "clue": "a sCLUE-C14th transition from one part of a performance to another",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "segue"
+        },
+        "CLUE-C12": {
+            "clue": "common misCLUE-C11ing of \"CLUE-C3\"",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3"
+            ],
+            "answer": "Segway"
+        },
+        "CLUE-C2": {
+            "clue": "\"___ my CLUE-C13!\" you say as you attempt a burnout on your CLUE-C12",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13"
+            ],
+            "answer": "eat"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C4und Man is discovered in a pCLUE-C2 bog in Denmark",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C4"
+            ],
+            "answer": "the Tollund Man is discovered in a peat bog in Denmark"
+        }
+    }
+}

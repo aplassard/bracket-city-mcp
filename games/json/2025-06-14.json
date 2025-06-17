@@ -1,0 +1,133 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "\"believe it or ___\"",
+            "depends_on": [],
+            "answer": "not"
+        },
+        "CLUE-C10": {
+            "clue": "one CLUE-C18ch above \"walk\", for a horse",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "trot"
+        },
+        "CLUE-C17": {
+            "clue": "Tango or FoxCLUE-C10, e.g.",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "dance"
+        },
+        "CLUE-C3": {
+            "clue": "\"___!\" cries the toddler as he snatches back his special rock",
+            "depends_on": [],
+            "answer": "mine"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C3 that explodes (metaphorically or otherwise)",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "land"
+        },
+        "CLUE-C4": {
+            "clue": "where you plug in a CLUE-C5line (ancient word for \"port\")",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "jack"
+        },
+        "CLUE-C15": {
+            "clue": "co-___ (hiCLUE-C4, in sense)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "opt"
+        },
+        "CLUE-C16": {
+            "clue": "helicCLUE-C15er \u2b05\ufe0f ___ \u27a1\ufe0f trap",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "parent"
+        },
+        "CLUE-C9": {
+            "clue": "more square version of a CLUE-C16hesis",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "bracket"
+        },
+        "CLUE-C1": {
+            "clue": "prefix whose opposite is \"no\" when attached to the suffix beyond this CLUE-C9 \u27a1\ufe0f",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "some"
+        },
+        "CLUE-C6": {
+            "clue": "___ into (gently introduce to CLUE-C1thing new)",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "ease"
+        },
+        "CLUE-C13": {
+            "clue": "so goes the wCLUE-C6l, it is said",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "pop"
+        },
+        "CLUE-C8": {
+            "clue": "they get CLUE-C17d with on a CLUE-C13ular TV show",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C17"
+            ],
+            "answer": "Stars"
+        },
+        "CLUE-C2": {
+            "clue": "much-ballyhooed stone-age innovation that we are cautioned not to reinvent",
+            "depends_on": [],
+            "answer": "Wheel"
+        },
+        "CLUE-C11": {
+            "clue": "one for sale on \"CLUE-C2 of Fortune\"",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "vowel"
+        },
+        "CLUE-C7": {
+            "clue": "article that might come out before a CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "an"
+        },
+        "CLUE-C14": {
+            "clue": "___ SCLUE-C7s (much-mocked font)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "comic"
+        },
+        "CLUE-C12": {
+            "clue": "word after Vegas, CLUE-C14, or M\u00f6bius",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Strip"
+        },
+        "CLUE-ROOT": {
+            "clue": "Congress approves the \"CLUE-C8 and CLUE-C12es\" flag design",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C8"
+            ],
+            "answer": "Congress approves the \"Stars and Stripes\" flag design"
+        }
+    }
+}

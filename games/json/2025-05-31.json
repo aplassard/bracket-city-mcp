@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "something you take after performing well",
+            "depends_on": [],
+            "answer": "bow"
+        },
+        "CLUE-C16": {
+            "clue": "word after CLUE-C9 or zip",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "tie"
+        },
+        "CLUE-C1": {
+            "clue": "word you might exclaim with increasing incredulity as you discover more and more commonaliCLUE-C16s with a new friend",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "same"
+        },
+        "CLUE-C8": {
+            "clue": "one might be plain, seCLUE-C1, or everything",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "bagel"
+        },
+        "CLUE-C10": {
+            "clue": "characteristic of a CLUE-C8 or a doughnut",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "hole"
+        },
+        "CLUE-C4": {
+            "clue": "shaker with fewer CLUE-C10s than the other one, usually (at least in \ud83c\uddfa\ud83c\uddf8)",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "salt"
+        },
+        "CLUE-C13": {
+            "clue": "about 97% of it is CLUE-C4y (on Earth)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Water"
+        },
+        "CLUE-C14": {
+            "clue": "more generic term for lyrics",
+            "depends_on": [],
+            "answer": "words"
+        },
+        "CLUE-C5": {
+            "clue": "you might do this with your CLUE-C14 when proved wrong",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "eat"
+        },
+        "CLUE-C12": {
+            "clue": "\"take a ___ brCLUE-C5h\" (evergreen advice)",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Deep"
+        },
+        "CLUE-C2": {
+            "clue": "popular name for when you lie down and hold a kid up by their belly using your feet",
+            "depends_on": [],
+            "answer": "airplane"
+        },
+        "CLUE-C3": {
+            "clue": "one of eight required to make a paper CLUE-C2 (at least how I make them)",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "fold"
+        },
+        "CLUE-C11": {
+            "clue": "sign on a t-shirt of aggressive CLUE-C3ing",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "crease"
+        },
+        "CLUE-C15": {
+            "clue": "small inCLUE-C11, as a salary",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "bump"
+        },
+        "CLUE-C7": {
+            "clue": "\"___ me\" (words after an inadvertent CLUE-C15)",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "excuse"
+        },
+        "CLUE-C6": {
+            "clue": "sore ___ (second place CLUE-C7 after stomach ache)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Throat"
+        },
+        "CLUE-ROOT": {
+            "clue": "Mark Felt is revealed as CLUE-C13gate source \"CLUE-C12 CLUE-C6\"",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C6"
+            ],
+            "answer": "Mark Felt is revealed as Watergate source \"Deep Throat\""
+        }
+    }
+}

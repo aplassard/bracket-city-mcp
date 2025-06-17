@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C15": {
+            "clue": "comfort a sad person",
+            "depends_on": [],
+            "answer": "console"
+        },
+        "CLUE-C13": {
+            "clue": "X___ (gaming CLUE-C15)",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "box"
+        },
+        "CLUE-C2": {
+            "clue": "kind of books that have yielded over $35B in CLUE-C13 office",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "comic"
+        },
+        "CLUE-C17": {
+            "clue": "___ old days",
+            "depends_on": [],
+            "answer": "good"
+        },
+        "CLUE-C10": {
+            "clue": "a CLUE-C17y has two, it is said",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "shoes"
+        },
+        "CLUE-C6": {
+            "clue": "one noted for their CLUE-C2ally large CLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C2"
+            ],
+            "answer": "clown"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C6 Ronald's surname",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "McDonald"
+        },
+        "CLUE-C14": {
+            "clue": "Old CLUE-C12 had one",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "farm"
+        },
+        "CLUE-C9": {
+            "clue": "your eyes might be bigger than it",
+            "depends_on": [],
+            "answer": "stomach"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C14 animal sometimes mistakenly thought to have four CLUE-C9s",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C9"
+            ],
+            "answer": "cow"
+        },
+        "CLUE-C7": {
+            "clue": "add this to carbon and you've got steel",
+            "depends_on": [],
+            "answer": "iron"
+        },
+        "CLUE-C4": {
+            "clue": "prefix that suggests envCLUE-C7mental friendliness",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "eco"
+        },
+        "CLUE-C8": {
+            "clue": "you spin one in a saucy party game",
+            "depends_on": [],
+            "answer": "bottle"
+        },
+        "CLUE-C5": {
+            "clue": "you might take one before an inspiring speech",
+            "depends_on": [],
+            "answer": "knee"
+        },
+        "CLUE-C11": {
+            "clue": "word with CLUE-C8 or CLUE-C5",
+            "depends_on": [
+                "CLUE-C5",
+                "CLUE-C8"
+            ],
+            "answer": "cap"
+        },
+        "CLUE-C18": {
+            "clue": "you are here",
+            "depends_on": [],
+            "answer": "Earth"
+        },
+        "CLUE-C16": {
+            "clue": "Christian service",
+            "depends_on": [],
+            "answer": "mass"
+        },
+        "CLUE-C3": {
+            "clue": "it represents about 11% of the CLUE-C18's landCLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C18"
+            ],
+            "answer": "Russia"
+        },
+        "CLUE-ROOT": {
+            "clue": "MosCLUE-C1 bCLUE-C4mes the CLUE-C11ital of CLUE-C3, again",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C3",
+                "CLUE-C4"
+            ],
+            "answer": "Moscow becomes the capital of Russia, again"
+        }
+    }
+}

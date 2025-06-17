@@ -1,0 +1,131 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "\"___ to self\"",
+            "depends_on": [],
+            "answer": "note"
+        },
+        "CLUE-C5": {
+            "clue": "a sun, a heart, or a cool, stylized S in a CLUE-C18book, maybe",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "doodle"
+        },
+        "CLUE-C2": {
+            "clue": "\"___-steven\" you say, having perfectly divided the snickerCLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "even"
+        },
+        "CLUE-C8": {
+            "clue": "one made of cards is famously unstable",
+            "depends_on": [],
+            "answer": "house"
+        },
+        "CLUE-C4": {
+            "clue": "one of a list of sCLUE-C2 including a colossus and a lightCLUE-C8",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C8"
+            ],
+            "answer": "Wonder"
+        },
+        "CLUE-C3": {
+            "clue": "instrument historically used to play \"CLUE-C4wall\" in dorm rooms",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "guitar"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C3ist's opportunity to shred",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "solo"
+        },
+        "CLUE-C14": {
+            "clue": "it can get boggled or blown",
+            "depends_on": [],
+            "answer": "mind"
+        },
+        "CLUE-C13": {
+            "clue": "word with blame or CLUE-C14 or war",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "game"
+        },
+        "CLUE-C1": {
+            "clue": "___man (pretty high stakes word CLUE-C13 from the perspective of the \"man\")",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "hang"
+        },
+        "CLUE-C6": {
+            "clue": "kind of seeker drawn to CLUE-C1 gliding and ziplines",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "thrill"
+        },
+        "CLUE-C17": {
+            "clue": "to flutter, as eyelashes",
+            "depends_on": [],
+            "answer": "bat"
+        },
+        "CLUE-C7": {
+            "clue": "prefix for a CLUE-C17 who flies without wings",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "acro"
+        },
+        "CLUE-C9": {
+            "clue": "major who might take mCLUE-C7 or micro",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "econ"
+        },
+        "CLUE-C16": {
+            "clue": "\"I ___ you to rCLUE-C9sider\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "urge"
+        },
+        "CLUE-C15": {
+            "clue": "outermost hambCLUE-C16r element",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "bun"
+        },
+        "CLUE-C11": {
+            "clue": "more perilous but CLUE-C6ing CLUE-C15k",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C6"
+            ],
+            "answer": "top"
+        },
+        "CLUE-C10": {
+            "clue": "interjection expressing hesitation",
+            "depends_on": [],
+            "answer": "um"
+        },
+        "CLUE-ROOT": {
+            "clue": "the first CLUE-C12 nonsCLUE-C11 circCLUE-C10navigation of the world",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C11",
+                "CLUE-C12"
+            ],
+            "answer": "the first solo nonstop circumnavigation of the world"
+        }
+    }
+}

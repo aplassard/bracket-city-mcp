@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "food served out of a truck or on a Tuesday",
+            "depends_on": [],
+            "answer": "Taco"
+        },
+        "CLUE-C3": {
+            "clue": "\"__ Quiero CLUE-C10 Bell\" \u27a1\ufe0f a chihuahua from the 90s",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Yo"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C3ko who staged \"bed-ins\" with John",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "ono"
+        },
+        "CLUE-C2": {
+            "clue": "sometimes involuntarily applied neckwear in HCLUE-C12lulu",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Lei"
+        },
+        "CLUE-C18": {
+            "clue": "Peach or CLUE-C2a",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "princess"
+        },
+        "CLUE-C4": {
+            "clue": "you might go on one at the request of a CLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "quest"
+        },
+        "CLUE-C17": {
+            "clue": "\"___ CLUE-C4ions?\"",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "any"
+        },
+        "CLUE-C15": {
+            "clue": "flossing evangelist, often",
+            "depends_on": [],
+            "answer": "dentist"
+        },
+        "CLUE-C14": {
+            "clue": "\"___ wide\" says the CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "open"
+        },
+        "CLUE-C8": {
+            "clue": "place other than your browser to CLUE-C14 a tab",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "bar"
+        },
+        "CLUE-C9": {
+            "clue": "something not to let hit you on the way out",
+            "depends_on": [],
+            "answer": "door"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C9 at which you might wait for the magician to get an autograph",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "stage"
+        },
+        "CLUE-C11": {
+            "clue": "___ mark (much-improved name for a mole)",
+            "depends_on": [],
+            "answer": "Beauty"
+        },
+        "CLUE-C5": {
+            "clue": "suitor/hoCLUE-C1-taker of CLUE-C11 in a fairy tale",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11"
+            ],
+            "answer": "beast"
+        },
+        "CLUE-C7": {
+            "clue": "\"the ___ of the CLUE-C5\" (something's essence)",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "nature"
+        },
+        "CLUE-C13": {
+            "clue": "illicitly imitate, as a sigCLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "forge"
+        },
+        "CLUE-C6": {
+            "clue": "something yelled by a CLUE-C13tful actor, maybe",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "line"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C6s made at the beach",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Tan"
+        },
+        "CLUE-ROOT": {
+            "clue": "TangCLUE-C17ika and ZanziCLUE-C8 merge to form CLUE-C16zania",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C17",
+                "CLUE-C8"
+            ],
+            "answer": "Tanganyika and Zanzibar merge to form Tanzania"
+        }
+    }
+}

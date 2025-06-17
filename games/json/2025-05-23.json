@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "\"out of ___ world\"",
+            "depends_on": [],
+            "answer": "this"
+        },
+        "CLUE-C6": {
+            "clue": "one of six in CLUE-C14 sentence",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "word"
+        },
+        "CLUE-C7": {
+            "clue": "less fancy CLUE-C6 for cursive",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "script"
+        },
+        "CLUE-C3": {
+            "clue": "over the ___ (no preCLUE-C7ion needed \ud83c\udf89)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "counter"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C3part to yang",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "yin"
+        },
+        "CLUE-C8": {
+            "clue": "egg-laCLUE-C13g spot for birds",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "nest"
+        },
+        "CLUE-C11": {
+            "clue": "bowling ball targets",
+            "depends_on": [],
+            "answer": "pins"
+        },
+        "CLUE-C18": {
+            "clue": "Tu___ Shakur",
+            "depends_on": [],
+            "answer": "Pac"
+        },
+        "CLUE-C17": {
+            "clue": "Jazeera or CLUE-C18ino",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "al"
+        },
+        "CLUE-C10": {
+            "clue": "PopCLUE-C11 or MagdCLUE-C17ene",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C17"
+            ],
+            "answer": "Mary"
+        },
+        "CLUE-C12": {
+            "clue": "size of CLUE-C10's lamb",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "little"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C12 green ___ \ud83d\udef8",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "men"
+        },
+        "CLUE-C5": {
+            "clue": "a CLUE-C16sch might go the extra one",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "mile"
+        },
+        "CLUE-C9": {
+            "clue": "one of 63,360 in a CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "inch"
+        },
+        "CLUE-C4": {
+            "clue": "exclamation in response to a pCLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "ouch"
+        },
+        "CLUE-C2": {
+            "clue": "game that involves tCLUE-C4ing and fleeing",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "tag"
+        },
+        "CLUE-C15": {
+            "clue": "\"no-___ situation\"",
+            "depends_on": [],
+            "answer": "win"
+        },
+        "CLUE-C1": {
+            "clue": "___CLUE-C2 (kind of group that, you know, just might CLUE-C15 this thing)",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C2"
+            ],
+            "answer": "rag"
+        },
+        "CLUE-ROOT": {
+            "clue": "the Third DefeCLUE-C8ration of PCLUE-C1ue",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C8"
+            ],
+            "answer": "the Third Defenestration of Prague"
+        }
+    }
+}

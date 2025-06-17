@@ -1,0 +1,144 @@
+{
+    "clues": {
+        "CLUE-C13": {
+            "clue": "place with a warden",
+            "depends_on": [],
+            "answer": "prison"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C13 or biology unit",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "cell"
+        },
+        "CLUE-C16": {
+            "clue": "kid's \ud83c\udf81, often",
+            "depends_on": [],
+            "answer": "toy"
+        },
+        "CLUE-C2": {
+            "clue": "hyphenated spool-like CLUE-C16 that dates to at least 440 BC \ud83e\ude80",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "Yo-Yo"
+        },
+        "CLUE-C10": {
+            "clue": "celebrated CLUE-C12ist CLUE-C2",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C2"
+            ],
+            "answer": "ma"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C10's companion",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Pa"
+        },
+        "CLUE-C20": {
+            "clue": "\ud83d\udc3b",
+            "depends_on": [],
+            "answer": "bear"
+        },
+        "CLUE-C6": {
+            "clue": "opposite of CLUE-C20, as a market",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "bull"
+        },
+        "CLUE-C8": {
+            "clue": "stab with a horn, as a CLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Gore"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C17cino or CLUE-C8",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C8"
+            ],
+            "answer": "Al"
+        },
+        "CLUE-C18": {
+            "clue": "belt feature",
+            "depends_on": [],
+            "answer": "buckle"
+        },
+        "CLUE-C11": {
+            "clue": "\"CLUE-C18 __\", for safety",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "up"
+        },
+        "CLUE-C14": {
+            "clue": "word with \"CLUE-C11\" \ud83d\udc94",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "break"
+        },
+        "CLUE-C3": {
+            "clue": "you might CLUE-C14 it on a date, with \"the\"",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Ice"
+        },
+        "CLUE-C4": {
+            "clue": "Channel you cross in the Chunnel",
+            "depends_on": [],
+            "answer": "English"
+        },
+        "CLUE-C5": {
+            "clue": "you might toast an CLUE-C4 one",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "muffin"
+        },
+        "CLUE-C1": {
+            "clue": "how much you have left in it might determine how far you can go",
+            "depends_on": [],
+            "answer": "tank"
+        },
+        "CLUE-C9": {
+            "clue": "word after CLUE-C5 or CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C5"
+            ],
+            "answer": "top"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C9 ___ \ud83e\udd2b",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "secret"
+        },
+        "CLUE-C7": {
+            "clue": "kind of CLUE-C19 everyone knows",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "open"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C15thing in CLUE-C3land reCLUE-C7s",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "the Althing in Iceland reopen]s"
+        }
+    }
+}

@@ -1,0 +1,124 @@
+{
+    "clues": {
+        "CLUE-C11": {
+            "clue": "not looking great",
+            "depends_on": [],
+            "answer": "grim"
+        },
+        "CLUE-C8": {
+            "clue": "the CLUE-C11 reaper's reaper",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "scythe"
+        },
+        "CLUE-C5": {
+            "clue": "tool oft confused with a CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "sickle"
+        },
+        "CLUE-C15": {
+            "clue": "Havana native",
+            "depends_on": [],
+            "answer": "Cuban"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C15 or Twain",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "mark"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C14 that can be inverted in Spanish",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "question"
+        },
+        "CLUE-C1": {
+            "clue": "like a CLUE-C2 that suggests an answer",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "leading"
+        },
+        "CLUE-C10": {
+            "clue": "misCLUE-C1 herring",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "red"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C5's companion on a CLUE-C10 flag",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C5"
+            ],
+            "answer": "Hammer"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C4 or Escher",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Mc"
+        },
+        "CLUE-C9": {
+            "clue": "\"it fits like a ___\"",
+            "depends_on": [],
+            "answer": "Glove"
+        },
+        "CLUE-C13": {
+            "clue": "Trump or CLUE-C9r",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Donald"
+        },
+        "CLUE-C17": {
+            "clue": "the B in BC",
+            "depends_on": [],
+            "answer": "before"
+        },
+        "CLUE-C6": {
+            "clue": "performs CLUE-C17 the main act",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "opens"
+        },
+        "CLUE-C7": {
+            "clue": "like some manners or moods",
+            "depends_on": [],
+            "answer": "bad"
+        },
+        "CLUE-C3": {
+            "clue": "___ tear (CLUE-C7 news for an athlete)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "ACL"
+        },
+        "CLUE-C16": {
+            "clue": "the U in CLUE-C3U",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Union"
+        },
+        "CLUE-ROOT": {
+            "clue": "the first CLUE-C12CLUE-C13's CLUE-C6 in the Soviet CLUE-C16",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C16",
+                "CLUE-C6"
+            ],
+            "answer": "the first McDonald's opens in the Soviet Union"
+        }
+    }
+}

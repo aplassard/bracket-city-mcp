@@ -1,0 +1,114 @@
+{
+    "clues": {
+        "CLUE-C4": {
+            "clue": "\"shake ___\", admonition to fighting kids",
+            "depends_on": [],
+            "answer": "hands"
+        },
+        "CLUE-C8": {
+            "clue": "put your CLUE-C4 together",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Clap"
+        },
+        "CLUE-C14": {
+            "clue": "goose ___",
+            "depends_on": [],
+            "answer": "bumps"
+        },
+        "CLUE-C5": {
+            "clue": "greetings also known as fist CLUE-C14",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "pounds"
+        },
+        "CLUE-C13": {
+            "clue": "2000 CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "ton"
+        },
+        "CLUE-C12": {
+            "clue": "hunch, for lunch",
+            "depends_on": [],
+            "answer": "rhyme"
+        },
+        "CLUE-C9": {
+            "clue": "\"without CLUE-C12 or ___\"",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "reason"
+        },
+        "CLUE-C10": {
+            "clue": "a clean ___ of health",
+            "depends_on": [],
+            "answer": "Bill"
+        },
+        "CLUE-C11": {
+            "clue": "barriers to entry",
+            "depends_on": [],
+            "answer": "Gates"
+        },
+        "CLUE-C6": {
+            "clue": "___soft, co-founded by CLUE-C10 CLUE-C11",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C11"
+            ],
+            "answer": "micro"
+        },
+        "CLUE-C16": {
+            "clue": "\ud83d\udc4b",
+            "depends_on": [],
+            "answer": "wave"
+        },
+        "CLUE-C15": {
+            "clue": "gossip",
+            "depends_on": [],
+            "answer": "dish"
+        },
+        "CLUE-C2": {
+            "clue": "kind of shopping that doesn't cost anything",
+            "depends_on": [],
+            "answer": "window"
+        },
+        "CLUE-C3": {
+            "clue": "job that may require a harness: CLUE-C2 ___",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "washer"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C6CLUE-C16 or CLUE-C15CLUE-C3, e.g.",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C16",
+                "CLUE-C3",
+                "CLUE-C6"
+            ],
+            "answer": "appliance"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C9 that an CLUE-C7 won't work that might make you feel dumb",
+            "depends_on": [
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "Unplugged"
+        },
+        "CLUE-ROOT": {
+            "clue": "Eric CLUE-C8CLUE-C13 records iconic \"CLUE-C1\" album",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C13",
+                "CLUE-C8"
+            ],
+            "answer": "Eric Clapton records iconic \\\"Unplugged\\\" album"
+        }
+    }
+}

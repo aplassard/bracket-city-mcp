@@ -1,0 +1,122 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "a few = 3, a ___ = 2",
+            "depends_on": [],
+            "answer": "couple"
+        },
+        "CLUE-C10": {
+            "clue": "__nup (CLUE-C12's contract)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Pre"
+        },
+        "CLUE-C14": {
+            "clue": "very painful spray",
+            "depends_on": [],
+            "answer": "Pepper"
+        },
+        "CLUE-C13": {
+            "clue": "start a tennis point",
+            "depends_on": [],
+            "answer": "serve"
+        },
+        "CLUE-C11": {
+            "clue": "\"drum ___, please\" \ud83e\udd41",
+            "depends_on": [],
+            "answer": "roll"
+        },
+        "CLUE-C5": {
+            "clue": "lane you can stCLUE-C11 down without walking",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "memory"
+        },
+        "CLUE-C1": {
+            "clue": "\"the ___?\" (question from a diner CLUE-C13r with a good CLUE-C5)",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C5"
+            ],
+            "answer": "usual"
+        },
+        "CLUE-C16": {
+            "clue": "unCLUE-C1 or weird",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Strange"
+        },
+        "CLUE-C6": {
+            "clue": "letters before CLUE-C14 or CLUE-C16love",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C16"
+            ],
+            "answer": "Dr"
+        },
+        "CLUE-C17": {
+            "clue": "Nero's nine",
+            "depends_on": [],
+            "answer": "ix"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C6aper or QuCLUE-C17ote",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C6"
+            ],
+            "answer": "don"
+        },
+        "CLUE-C2": {
+            "clue": "with \"CLUE-C15g\" the sound we make to imitate a doorbell",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "ding"
+        },
+        "CLUE-C9": {
+            "clue": "more than a CLUE-C2 for a car",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "dent"
+        },
+        "CLUE-C7": {
+            "clue": "Noah's featured \ud83e\udd81\ud83e\udd81\ud83d\udc18\ud83d\udc18\ud83d\udc14\ud83d\udc14 etc.",
+            "depends_on": [],
+            "answer": "ark"
+        },
+        "CLUE-C3": {
+            "clue": "child that might come out when you see a ball pit",
+            "depends_on": [],
+            "answer": "inner"
+        },
+        "CLUE-C4": {
+            "clue": "\"___ Who's Coming to DCLUE-C3\" (1967 film)",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "guess"
+        },
+        "CLUE-C8": {
+            "clue": "one in the dCLUE-C7 is a CLUE-C4",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C7"
+            ],
+            "answer": "shot"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C10siCLUE-C9 Reagan CLUE-C8",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C8",
+                "CLUE-C9"
+            ],
+            "answer": "President Reagan shot"
+        }
+    }
+}

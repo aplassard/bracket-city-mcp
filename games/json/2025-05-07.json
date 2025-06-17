@@ -1,0 +1,131 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "___ biz \ud83c\udfac",
+            "depends_on": [],
+            "answer": "show"
+        },
+        "CLUE-C11": {
+            "clue": "immersive alternative to a CLUE-C18er",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "bath"
+        },
+        "CLUE-C17": {
+            "clue": "\"food ___ thought\"",
+            "depends_on": [],
+            "answer": "for"
+        },
+        "CLUE-C5": {
+            "clue": "one of many in the closet of a reCLUE-C17med scoundrel",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "skeleton"
+        },
+        "CLUE-C12": {
+            "clue": "A major, CLUE-C5, shift, e.g.",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "key"
+        },
+        "CLUE-C14": {
+            "clue": "place to stay with room CLUE-C12s",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "hotel"
+        },
+        "CLUE-C8": {
+            "clue": "a CLUE-C11 one might be stolen from a CLUE-C14",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C14"
+            ],
+            "answer": "Robe"
+        },
+        "CLUE-C9": {
+            "clue": "platform that juts out into the water",
+            "depends_on": [],
+            "answer": "pier"
+        },
+        "CLUE-C6": {
+            "clue": "expose your nether regions (intentionally or not)",
+            "depends_on": [],
+            "answer": "flash"
+        },
+        "CLUE-C4": {
+            "clue": "CLUE-C6 of connection you are looking for on a date",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "spark"
+        },
+        "CLUE-C3": {
+            "clue": "tenacious CLUE-C4les that can never be fully cleaned up",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "glitter"
+        },
+        "CLUE-C13": {
+            "clue": "prospector's CLUE-C3ing goal",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "gold"
+        },
+        "CLUE-C16": {
+            "clue": "unit of purity for CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Karat"
+        },
+        "CLUE-C10": {
+            "clue": "___ arts, e.g. CLUE-C16e, Judo, etc.",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "martial"
+        },
+        "CLUE-C1": {
+            "clue": "like a flight that takes off and lands in the same country",
+            "depends_on": [],
+            "answer": "domestic"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C1ated fish habitat",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "tank"
+        },
+        "CLUE-C2": {
+            "clue": "___-CLUE-C10 (tribunal for a soldier who steals a CLUE-C15)",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C15"
+            ],
+            "answer": "court"
+        },
+        "CLUE-C7": {
+            "clue": "\ud83c\udfdb\ufe0f Court with a \ud83c\udfc0 CLUE-C2 on its top floor",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Supreme"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C8sCLUE-C9re establishes the Cult of the CLUE-C7 Being",
+            "depends_on": [
+                "CLUE-C7",
+                "CLUE-C8",
+                "CLUE-C9"
+            ],
+            "answer": "Robespierre establishes the Cult of the Supreme Being"
+        }
+    }
+}

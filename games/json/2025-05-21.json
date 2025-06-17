@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "___ Everest",
+            "depends_on": [],
+            "answer": "Mount"
+        },
+        "CLUE-C1": {
+            "clue": "\"great minds ___ alike\" you say to the other gentleman with the CLUE-C16ain Dew Code Red coupon",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "think"
+        },
+        "CLUE-C3": {
+            "clue": "\"CLUE-C1 ___!\" says your older sister before throwing something at you",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "fast"
+        },
+        "CLUE-C12": {
+            "clue": "\"caught in the ___\" (uh oh)",
+            "depends_on": [],
+            "answer": "act"
+        },
+        "CLUE-C6": {
+            "clue": "something you might be asked to sign by an CLUE-C12ivist",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "petition"
+        },
+        "CLUE-C11": {
+            "clue": "name for a spelling comCLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "bee"
+        },
+        "CLUE-C2": {
+            "clue": "breakCLUE-C3 food peddled by a tiger, CLUE-C11, rabbit, and toucan, among others",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3"
+            ],
+            "answer": "cereal"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C2 box activity with dead ends",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "maze"
+        },
+        "CLUE-C15": {
+            "clue": "\"happy new ___!\" \ud83c\udf89",
+            "depends_on": [],
+            "answer": "year"
+        },
+        "CLUE-C13": {
+            "clue": "one of 8,760 in a CLUE-C15",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "hour"
+        },
+        "CLUE-C9": {
+            "clue": "one might be of the CLUE-C13 or the cloth",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "man"
+        },
+        "CLUE-C5": {
+            "clue": "kind of CLUE-C10 you might get lost in at a country CLUE-C9or",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C9"
+            ],
+            "answer": "hedge"
+        },
+        "CLUE-C14": {
+            "clue": "famous blue CLUE-C5hog",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "sonic"
+        },
+        "CLUE-C4": {
+            "clue": "your train of this might get interrupted by a real train",
+            "depends_on": [],
+            "answer": "thought"
+        },
+        "CLUE-C8": {
+            "clue": "\"let me walk you through my CLUE-C4 ___\"",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "process"
+        },
+        "CLUE-C7": {
+            "clue": "word before CLUE-C8 or diligence or date",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Due"
+        },
+        "CLUE-ROOT": {
+            "clue": "the membership list of MaCLUE-C14 lodge \"Propaganda CLUE-C7\" is released",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C7"
+            ],
+            "answer": "the membership list of Masonic lodge \"Propaganda Due\" is released"
+        }
+    }
+}

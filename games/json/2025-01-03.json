@@ -1,0 +1,107 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "\"___ of Arabia\"",
+            "depends_on": [],
+            "answer": "Lawrence"
+        },
+        "CLUE-C5": {
+            "clue": "capital of Mississippi",
+            "depends_on": [],
+            "answer": "Jackson"
+        },
+        "CLUE-C4": {
+            "clue": "monosyllabic Michael CLUE-C5 album",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Bad"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C12 who starred in \"CLUE-C4 Boys\"",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C4"
+            ],
+            "answer": "Martin"
+        },
+        "CLUE-C2": {
+            "clue": "the only polysyllabic letter in english",
+            "depends_on": [],
+            "answer": "W"
+        },
+        "CLUE-C15": {
+            "clue": "Not a CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "L"
+        },
+        "CLUE-C14": {
+            "clue": "The CLUE-C15 in MLK",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Luther"
+        },
+        "CLUE-C13": {
+            "clue": "not a fighter",
+            "depends_on": [],
+            "answer": "lover"
+        },
+        "CLUE-C6": {
+            "clue": "former CLUE-C13, briefly",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "ex"
+        },
+        "CLUE-C8": {
+            "clue": "411 by another name",
+            "depends_on": [],
+            "answer": "information"
+        },
+        "CLUE-C7": {
+            "clue": "conveyed CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "communicated"
+        },
+        "CLUE-C1": {
+            "clue": "piece that only moves diagonally in chess",
+            "depends_on": [],
+            "answer": "bishop"
+        },
+        "CLUE-C9": {
+            "clue": "the CLUE-C1 of Rome",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Pope"
+        },
+        "CLUE-C10": {
+            "clue": "summer zodiac sign",
+            "depends_on": [],
+            "answer": "Leo"
+        },
+        "CLUE-C11": {
+            "clue": "formerly Twitter",
+            "depends_on": [],
+            "answer": "X"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C3 CLUE-C14 CLUE-C6CLUE-C7 by CLUE-C9 CLUE-C10 CLUE-C11",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C11",
+                "CLUE-C14",
+                "CLUE-C3",
+                "CLUE-C6",
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "Martin Luther excommunicated by Pope Leo X"
+        }
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "sixteenth letter of the alphabet",
+            "depends_on": [],
+            "answer": "P"
+        },
+        "CLUE-C19": {
+            "clue": "the CLUE-C8 in RPG",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "playing"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C19 the waiting one is boring",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "game"
+        },
+        "CLUE-C4": {
+            "clue": "the friendly version is still very bad",
+            "depends_on": [],
+            "answer": "fire"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C4place tool",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "poker"
+        },
+        "CLUE-C3": {
+            "clue": "you might put on a CLUE-C7 one or a CLUE-C17 one",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C7"
+            ],
+            "answer": "face"
+        },
+        "CLUE-C14": {
+            "clue": "Scrub Daddy, e.g.",
+            "depends_on": [],
+            "answer": "sponge"
+        },
+        "CLUE-C11": {
+            "clue": "word after CLUE-C14 or blood",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "bath"
+        },
+        "CLUE-C16": {
+            "clue": "fun kind of CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "bubble"
+        },
+        "CLUE-C5": {
+            "clue": "late 90s CLUE-C16, including punctuation",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": ".com"
+        },
+        "CLUE-C2": {
+            "clue": "___ at the altar, like some spurned partners",
+            "depends_on": [],
+            "answer": "left"
+        },
+        "CLUE-C1": {
+            "clue": "last word you might hear before getting hit with something",
+            "depends_on": [],
+            "answer": "duck"
+        },
+        "CLUE-C13": {
+            "clue": "facial feature on a CLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Bill"
+        },
+        "CLUE-C10": {
+            "clue": "one of ten on a famous CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "right"
+        },
+        "CLUE-C15": {
+            "clue": "insect leg count",
+            "depends_on": [],
+            "answer": "six"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C15 feet ___",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "under"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C2-, CLUE-C10-, or CLUE-C18-",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C18",
+                "CLUE-C2"
+            ],
+            "answer": "handed"
+        },
+        "CLUE-C6": {
+            "clue": "you might get CLUE-C12 one at a show",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "program"
+        },
+        "CLUE-C9": {
+            "clue": "exciting space CLUE-C6 events",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "launches"
+        },
+        "CLUE-ROOT": {
+            "clue": "theCLUE-C3bookCLUE-C5 CLUE-C9",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C5",
+                "CLUE-C9"
+            ],
+            "answer": "thefacebook.com launches"
+        }
+    }
+}

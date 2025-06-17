@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "something followed by a bloodhound",
+            "depends_on": [],
+            "answer": "scent"
+        },
+        "CLUE-C16": {
+            "clue": "\"___ off the CLUE-C8\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "throw"
+        },
+        "CLUE-C1": {
+            "clue": "zebra-striped official at a football game, for short",
+            "depends_on": [],
+            "answer": "ref"
+        },
+        "CLUE-C5": {
+            "clue": "something you CLUE-C1lect on in the bathroom",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "mirror"
+        },
+        "CLUE-C14": {
+            "clue": "house with zany CLUE-C5s",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "fun"
+        },
+        "CLUE-C12": {
+            "clue": "\ud83c\udf6b size even smaller than \"CLUE-C14\"",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "bite"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C12 for your \ud83d\udc42 not for your \ud83d\udc44",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "sound"
+        },
+        "CLUE-C7": {
+            "clue": "when repeated, CLUE-C13 associated with \ud83d\ude82",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "choo"
+        },
+        "CLUE-C6": {
+            "clue": "something you might not CLUE-C7se to die on",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "hill"
+        },
+        "CLUE-C9": {
+            "clue": "lively and boisterous play session",
+            "depends_on": [],
+            "answer": "romp"
+        },
+        "CLUE-C2": {
+            "clue": "cards that were mostly replaced by telepCLUE-C9ters",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "cue"
+        },
+        "CLUE-C15": {
+            "clue": "game played with CLUE-C2s",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "pool"
+        },
+        "CLUE-C11": {
+            "clue": "cold ___ (cCLUE-C6y CLUE-C15 at a spa)",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C6"
+            ],
+            "answer": "plunge"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C11d elegantly into the water",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "dove"
+        },
+        "CLUE-C4": {
+            "clue": "government overCLUE-C16 that sounds like a CLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C16"
+            ],
+            "answer": "coup"
+        },
+        "CLUE-C3": {
+            "clue": "night often prescribed by a CLUE-C4le's therapist",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "date"
+        },
+        "CLUE-ROOT": {
+            "clue": "the perfect CLUE-C3 according to Miss Rhode Island",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "the perfect date according to Miss Rhode Island"
+        }
+    }
+}

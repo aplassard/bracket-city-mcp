@@ -1,0 +1,122 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "a crook might have a rap one",
+            "depends_on": [],
+            "answer": "sheet"
+        },
+        "CLUE-C9": {
+            "clue": "luxurious CLUE-C6 material",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "silk"
+        },
+        "CLUE-C7": {
+            "clue": "something spun out of CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "web"
+        },
+        "CLUE-C16": {
+            "clue": "___ wide CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "world"
+        },
+        "CLUE-C17": {
+            "clue": "___ pooper",
+            "depends_on": [],
+            "answer": "party"
+        },
+        "CLUE-C2": {
+            "clue": "type of CLUE-C17 you HAVE to be on time for",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "surprise"
+        },
+        "CLUE-C5": {
+            "clue": "a dark one might CLUE-C2 you",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "horse"
+        },
+        "CLUE-C15": {
+            "clue": "one might have acts",
+            "depends_on": [],
+            "answer": "play"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C5CLUE-C15, with \"house\"",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C5"
+            ],
+            "answer": "rough"
+        },
+        "CLUE-C3": {
+            "clue": "you might find one in the CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "diamond"
+        },
+        "CLUE-C14": {
+            "clue": "a nice zone to be in",
+            "depends_on": [],
+            "answer": "comfort"
+        },
+        "CLUE-C10": {
+            "clue": "feathers in a CLUE-C14er",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "down"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C10 on a map, usually",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "South"
+        },
+        "CLUE-C4": {
+            "clue": "Don Draper was this kind of man",
+            "depends_on": [],
+            "answer": "Mad"
+        },
+        "CLUE-C8": {
+            "clue": "you can pump it or pass it",
+            "depends_on": [],
+            "answer": "gas"
+        },
+        "CLUE-C1": {
+            "clue": "the bumper version might have a height requirement",
+            "depends_on": [],
+            "answer": "car"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C4aCLUE-C8CLUE-C1's continent",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C4",
+                "CLUE-C8"
+            ],
+            "answer": "Africa"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C16's largest CLUE-C3 discovered in CLUE-C12 CLUE-C13",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C16",
+                "CLUE-C3"
+            ],
+            "answer": "world's largest diamond discovered in South Africa"
+        }
+    }
+}

@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "\"context clues! ___ between the lines!\"",
+            "depends_on": [],
+            "answer": "Read"
+        },
+        "CLUE-C8": {
+            "clue": "___road (CLUE-C9ing or Short Line, e.g. \ud83d\ude82)",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "rail"
+        },
+        "CLUE-C4": {
+            "clue": "tCLUE-C8 that's trouble for white-collar criminals, maybe",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "paper"
+        },
+        "CLUE-C10": {
+            "clue": "consume very quickly, with \"up\" \ud83e\udd83",
+            "depends_on": [],
+            "answer": "gobble"
+        },
+        "CLUE-C14": {
+            "clue": "\"CLUE-C10\" but for a cow",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "moo"
+        },
+        "CLUE-C11": {
+            "clue": "paradigmatically sCLUE-C14th fabric",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "silk"
+        },
+        "CLUE-C1": {
+            "clue": "\"The ___ of War\" (book older than CLUE-C4 \u2014 it was probably first written on bamboo or CLUE-C11)",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C4"
+            ],
+            "answer": "art"
+        },
+        "CLUE-C12": {
+            "clue": "___ track (artificial guffaws)",
+            "depends_on": [],
+            "answer": "laugh"
+        },
+        "CLUE-C7": {
+            "clue": "make someone CLUE-C12 (involuntarily sometimes)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "tickle"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C7d \u2b05\ufe0f ___ \u27a1\ufe0f Floyd",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "pink"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C13 noodle?",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "brain"
+        },
+        "CLUE-C3": {
+            "clue": "___ your CLUE-C16 (really really try to think of something)",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "rack"
+        },
+        "CLUE-C2": {
+            "clue": "tickets with names like \"Double Doubler\" or \"Set for Life\"",
+            "depends_on": [],
+            "answer": "lottery"
+        },
+        "CLUE-C5": {
+            "clue": "bCLUE-C3et that might change for a CLUE-C2 winner",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C3"
+            ],
+            "answer": "tax"
+        },
+        "CLUE-C6": {
+            "clue": "word after CLUE-C5 or fare that quarterbacks yell",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "hike"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C6 with a \ud83d\udc4d",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "hitch"
+        },
+        "CLUE-ROOT": {
+            "clue": "MCLUE-C1in Luther gets CLUE-C15ed",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C15"
+            ],
+            "answer": "Martin Luther gets hitched"
+        }
+    }
+}

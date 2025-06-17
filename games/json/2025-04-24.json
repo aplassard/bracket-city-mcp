@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "animal thought of as sly or cunning",
+            "depends_on": [],
+            "answer": "Fox"
+        },
+        "CLUE-C1": {
+            "clue": "Michael J. CLUE-C9 played a teen one that was good at basketball for some reason \ud83d\udc3a",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Wolf"
+        },
+        "CLUE-C16": {
+            "clue": "Hanks or CLUE-C1e",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "tom"
+        },
+        "CLUE-C2": {
+            "clue": "there are more aCLUE-C16s in one grain than there are grains of this on Earth",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "sand"
+        },
+        "CLUE-C15": {
+            "clue": "savior or CLUE-C2wich",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "hero"
+        },
+        "CLUE-C8": {
+            "clue": "oft-frozen little green spCLUE-C15id legume",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "pea"
+        },
+        "CLUE-C4": {
+            "clue": "when reCLUE-C8ted, a situation that's good for both of us",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Win"
+        },
+        "CLUE-C3": {
+            "clue": "possible nickname for Kendrick or CLUE-C4tour that's actually longer",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Annie"
+        },
+        "CLUE-C13": {
+            "clue": "\"a cure for the ___ cold\"",
+            "depends_on": [],
+            "answer": "common"
+        },
+        "CLUE-C7": {
+            "clue": "politicians often claim to possess CLUE-C13 ___",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "sense"
+        },
+        "CLUE-C10": {
+            "clue": "accessory awarded by a CLUE-C7i",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "belt"
+        },
+        "CLUE-C12": {
+            "clue": "kind of CLUE-C10 for a handyman",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "tool"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C12 used to bisect someone in a classic magic trick",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "saw"
+        },
+        "CLUE-C14": {
+            "clue": "like a guy from WarCLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "polish"
+        },
+        "CLUE-C6": {
+            "clue": "\"good\" is a good example of this type of word",
+            "depends_on": [],
+            "answer": "adjective"
+        },
+        "CLUE-C11": {
+            "clue": "verb = CLUE-C14, CLUE-C6 = \ud83d\udcaa",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C6"
+            ],
+            "answer": "Buff"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C3 Oakley joins CLUE-C11alo Bill's stage show",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3"
+            ],
+            "answer": "Annie Oakley joins Buffalo Bill's stage show"
+        }
+    }
+}

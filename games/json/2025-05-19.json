@@ -1,0 +1,111 @@
+{
+    "clues": {
+        "CLUE-C7": {
+            "clue": "organization with a Secretary General, briefly",
+            "depends_on": [],
+            "answer": "un"
+        },
+        "CLUE-C2": {
+            "clue": "focus ___ (six people around a table eating experimental FunyCLUE-C7s, perhaps)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "group"
+        },
+        "CLUE-C11": {
+            "clue": "relative's name you say to surrender",
+            "depends_on": [],
+            "answer": "uncle"
+        },
+        "CLUE-C9": {
+            "clue": "___ reunion (event often featuring CLUE-C11s)",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "family"
+        },
+        "CLUE-C6": {
+            "clue": "you might make a CLUE-C9 one as a school project",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "tree"
+        },
+        "CLUE-C10": {
+            "clue": "kind of CLUE-C6 associated with the tropics",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "palm"
+        },
+        "CLUE-C1": {
+            "clue": "word for when you press your thumb firmly against the pad of your middle finger, and release it quickly so the finger strikes the CLUE-C10, and a sound is generated as skin, bone, and air collide",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "snap"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C2er or fluke or CLUE-C1per, e.g.",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C2"
+            ],
+            "answer": "fish"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C12 eggs",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "roe"
+        },
+        "CLUE-C14": {
+            "clue": "\"the whole ___ yards\"",
+            "depends_on": [],
+            "answer": "nine"
+        },
+        "CLUE-C13": {
+            "clue": "molar or caCLUE-C14, e.g.",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "tooth"
+        },
+        "CLUE-C4": {
+            "clue": "kind of CLUE-C13brush my dentist is always trying to sell me",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "electric"
+        },
+        "CLUE-C5": {
+            "clue": "source of light that doesn't require CLUE-C4ity",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "candle"
+        },
+        "CLUE-C8": {
+            "clue": "event with CLUE-C5s that are only briefly lit",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Birthday"
+        },
+        "CLUE-C3": {
+            "clue": "letter is ILLEGAL to walk but (increasingly) LEGAL to smoke",
+            "depends_on": [],
+            "answer": "J"
+        },
+        "CLUE-ROOT": {
+            "clue": "Marilyn MonCLUE-C15 sings \"Happy CLUE-C8\" to CLUE-C3FK",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C3",
+                "CLUE-C8"
+            ],
+            "answer": "Marilyn Monroe sings \"Happy Birthday\" to JFK"
+        }
+    }
+}

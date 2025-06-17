@@ -1,0 +1,139 @@
+{
+    "clues": {
+        "CLUE-C19": {
+            "clue": "big bed",
+            "depends_on": [],
+            "answer": "King"
+        },
+        "CLUE-C7": {
+            "clue": "type of dew with bubbles",
+            "depends_on": [],
+            "answer": "mountain"
+        },
+        "CLUE-C14": {
+            "clue": "kind of pageant",
+            "depends_on": [],
+            "answer": "beauty"
+        },
+        "CLUE-C6": {
+            "clue": "bad situation for a king",
+            "depends_on": [],
+            "answer": "check"
+        },
+        "CLUE-C11": {
+            "clue": "question or CLUE-C6?",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "mark"
+        },
+        "CLUE-C1": {
+            "clue": "if you are CLUE-C5 CLUE-C13 one you are probably not crazy",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C5"
+            ],
+            "answer": "Fox"
+        },
+        "CLUE-C3": {
+            "clue": "\"make a CLUE-C7 out of a CLUE-C1___\"",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C7"
+            ],
+            "answer": "Hill"
+        },
+        "CLUE-C18": {
+            "clue": "not local",
+            "depends_on": [],
+            "answer": "Express"
+        },
+        "CLUE-C17": {
+            "clue": "___ CLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "American"
+        },
+        "CLUE-C4": {
+            "clue": "about 42% of the CLUE-C17 flag",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "red"
+        },
+        "CLUE-C10": {
+            "clue": "Berlin's fell in 1989",
+            "depends_on": [],
+            "answer": "wall"
+        },
+        "CLUE-C2": {
+            "clue": "type of paper that's often patterned",
+            "depends_on": [],
+            "answer": "wall"
+        },
+        "CLUE-C8": {
+            "clue": "it might be CLUE-C10 to CLUE-C2",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C2"
+            ],
+            "answer": "carpet"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C4 CLUE-C8 events",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C8"
+            ],
+            "answer": "premieres"
+        },
+        "CLUE-C21": {
+            "clue": "can",
+            "depends_on": [],
+            "answer": "fire"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C21-breather",
+            "depends_on": [
+                "CLUE-C21"
+            ],
+            "answer": "dragon"
+        },
+        "CLUE-C9": {
+            "clue": "one with a CLUE-C15 tattoo",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "girl"
+        },
+        "CLUE-C20": {
+            "clue": "mix up",
+            "depends_on": [],
+            "answer": "stir"
+        },
+        "CLUE-C5": {
+            "clue": "word with boy, CLUE-C9, or CLUE-C20",
+            "depends_on": [
+                "CLUE-C20",
+                "CLUE-C9"
+            ],
+            "answer": "crazy"
+        },
+        "CLUE-C13": {
+            "clue": "cat-___ reflexes",
+            "depends_on": [],
+            "answer": "like"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"CLUE-C19 of the CLUE-C3\" CLUE-C12 on CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12",
+                "CLUE-C19",
+                "CLUE-C3"
+            ],
+            "answer": "\"King of the Hill\" premieres on Fox"
+        }
+    }
+}

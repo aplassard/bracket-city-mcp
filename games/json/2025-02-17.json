@@ -1,0 +1,134 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "Bed Bath and ___",
+            "depends_on": [],
+            "answer": "beyond"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C14 unsatisfied as an employee",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "disgruntled"
+        },
+        "CLUE-C12": {
+            "clue": "bird whose egg means zero",
+            "depends_on": [],
+            "answer": "goose"
+        },
+        "CLUE-C18": {
+            "clue": "baby CLUE-C12",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Gosling"
+        },
+        "CLUE-C15": {
+            "clue": "Actor CLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "Ryan"
+        },
+        "CLUE-C8": {
+            "clue": "rank of CLUE-C15 that needed saving",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "private"
+        },
+        "CLUE-C1": {
+            "clue": "lets someone in the building, with \"in\"",
+            "depends_on": [],
+            "answer": "buzzes"
+        },
+        "CLUE-C7": {
+            "clue": "title for Zaius or Zhivago, e.g.",
+            "depends_on": [],
+            "answer": "doctor"
+        },
+        "CLUE-C2": {
+            "clue": "kind of call made by a (kind?) CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "House"
+        },
+        "CLUE-C19": {
+            "clue": "\u2764\ufe0f \u2764\ufe0f \u2764\ufe0f",
+            "depends_on": [],
+            "answer": "hearts"
+        },
+        "CLUE-C11": {
+            "clue": "like some valor or CLUE-C19",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "stolen"
+        },
+        "CLUE-C10": {
+            "clue": "suffix with witch or state",
+            "depends_on": [],
+            "answer": "craft"
+        },
+        "CLUE-C4": {
+            "clue": "one might be for punching or sleeping",
+            "depends_on": [],
+            "answer": "bag"
+        },
+        "CLUE-C3": {
+            "clue": "kind of CLUE-C4 that might save your life",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "air"
+        },
+        "CLUE-C16": {
+            "clue": "\"guess ___?\"",
+            "depends_on": [],
+            "answer": "who"
+        },
+        "CLUE-C13": {
+            "clue": "number 1 in the bathroom",
+            "depends_on": [],
+            "answer": "pee"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C16oCLUE-C13 ___",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C16"
+            ],
+            "answer": "cushion"
+        },
+        "CLUE-C6": {
+            "clue": "type of CLUE-C10 with an CLUE-C3 CLUE-C17",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C17",
+                "CLUE-C3"
+            ],
+            "answer": "hover"
+        },
+        "CLUE-C9": {
+            "clue": "metaphor for parents who CLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "helicopter"
+        },
+        "CLUE-ROOT": {
+            "clue": "a CLUE-C5 Army CLUE-C8 CLUE-C1 the White CLUE-C2 in a CLUE-C11 CLUE-C9",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C2",
+                "CLUE-C5",
+                "CLUE-C8",
+                "CLUE-C9"
+            ],
+            "answer": "a disgruntled Army private buzzes the White House in a stolen helicopter"
+        }
+    }
+}

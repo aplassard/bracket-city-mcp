@@ -1,0 +1,126 @@
+{
+    "clues": {
+        "CLUE-C4": {
+            "clue": "hang around somewhere longer than necessary",
+            "depends_on": [],
+            "answer": "linger"
+        },
+        "CLUE-C12": {
+            "clue": "kind of bear or CLUE-C4ie",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Teddy"
+        },
+        "CLUE-C8": {
+            "clue": "a private one is an extravagance",
+            "depends_on": [],
+            "answer": "jet"
+        },
+        "CLUE-C13": {
+            "clue": "word after CLUE-C8 or fanny",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "pack"
+        },
+        "CLUE-C14": {
+            "clue": "bubonic plague villains",
+            "depends_on": [],
+            "answer": "rats"
+        },
+        "CLUE-C15": {
+            "clue": "place with a \ud83d\udebd",
+            "depends_on": [],
+            "answer": "bathroom"
+        },
+        "CLUE-C1": {
+            "clue": "source of interactive CLUE-C15 entertainment for many",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "phone"
+        },
+        "CLUE-C18": {
+            "clue": "jolly saint",
+            "depends_on": [],
+            "answer": "nick"
+        },
+        "CLUE-C16": {
+            "clue": "LeBron or Etta",
+            "depends_on": [],
+            "answer": "James"
+        },
+        "CLUE-C6": {
+            "clue": "homoCLUE-C1 for a CLUE-C18name for CLUE-C16 \ud83c\udfcb\ufe0f\u200d\u2640\ufe0f",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C16",
+                "CLUE-C18"
+            ],
+            "answer": "gym"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C13 sought by CLUE-C14 in the CLUE-C6",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C6"
+            ],
+            "answer": "six"
+        },
+        "CLUE-C17": {
+            "clue": "cozy footwear",
+            "depends_on": [],
+            "answer": "Slippers"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C12 Roosevelt had a CLUE-C10-toed one named CLUE-C17",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C12",
+                "CLUE-C17"
+            ],
+            "answer": "cat"
+        },
+        "CLUE-C9": {
+            "clue": "viral piece of internet culture",
+            "depends_on": [],
+            "answer": "meme"
+        },
+        "CLUE-C3": {
+            "clue": "unit of heredity that inspired that word \"CLUE-C9\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "gene"
+        },
+        "CLUE-C7": {
+            "clue": "one of a numismatist's collection \ud83e\ude99",
+            "depends_on": [],
+            "answer": "coin"
+        },
+        "CLUE-C11": {
+            "clue": "blacken a surface with fire",
+            "depends_on": [],
+            "answer": "char"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C3ration that CLUE-C7ed \"rizz\" (CLUE-C11isma)",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "z"
+        },
+        "CLUE-ROOT": {
+            "clue": "AlCLUE-C2raCLUE-C5 closes",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C5"
+            ],
+            "answer": "Alcatraz closes"
+        }
+    }
+}

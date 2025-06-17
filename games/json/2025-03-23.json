@@ -1,0 +1,145 @@
+{
+    "clues": {
+        "CLUE-C20": {
+            "clue": "\ud83d\udca5 for your ___",
+            "depends_on": [],
+            "answer": "buck"
+        },
+        "CLUE-C5": {
+            "clue": "something to do with the CLUE-C20 or the baton",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "pass"
+        },
+        "CLUE-C19": {
+            "clue": "eulc siht ekil",
+            "depends_on": [],
+            "answer": "backwards"
+        },
+        "CLUE-C13": {
+            "clue": "\"don't ___ over CLUE-C19\"",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "bend"
+        },
+        "CLUE-C1": {
+            "clue": "two fingers aloft CLUE-C13ing and unbending together might represent one, for short",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "quote"
+        },
+        "CLUE-C14": {
+            "clue": "\"and this is a ___ CLUE-C1\"",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "direct"
+        },
+        "CLUE-C12": {
+            "clue": "something a CLUE-C14or yells",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "cut"
+        },
+        "CLUE-C7": {
+            "clue": "deep hole with a pulley and bucket, maybe",
+            "depends_on": [],
+            "answer": "well"
+        },
+        "CLUE-C8": {
+            "clue": "like one of these \ud83d\udd2a that doesn't CLUE-C12 CLUE-C7",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C7"
+            ],
+            "answer": "dull"
+        },
+        "CLUE-C9": {
+            "clue": "line made of ribbon at a race, maybe",
+            "depends_on": [],
+            "answer": "finish"
+        },
+        "CLUE-C10": {
+            "clue": "it might be funny or unCLUE-C9ed",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "business"
+        },
+        "CLUE-C6": {
+            "clue": "parental injunction: \"now no ___ CLUE-C10\"",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "monkey"
+        },
+        "CLUE-C4": {
+            "clue": "playground agility apparatus, with \"CLUE-C6\"",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "bars"
+        },
+        "CLUE-C18": {
+            "clue": "mate behind CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "cell"
+        },
+        "CLUE-C2": {
+            "clue": "\"can you ___ me now?\" (phrase repeated loudly into a CLUE-C18 phone)",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "hear"
+        },
+        "CLUE-C16": {
+            "clue": "\"___ to your CLUE-C2t\"",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "listen"
+        },
+        "CLUE-C3": {
+            "clue": "famously CLUE-C8 music you CLUE-C16 to on your way up",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C8"
+            ],
+            "answer": "elevator"
+        },
+        "CLUE-C17": {
+            "clue": "like the \"h\" in \ud83d\udc7b",
+            "depends_on": [],
+            "answer": "silent"
+        },
+        "CLUE-C11": {
+            "clue": "perform CLUE-C17ly, with \"sync\"",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "lip"
+        },
+        "CLUE-C15": {
+            "clue": "word after CLUE-C11 or secret",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "service"
+        },
+        "CLUE-ROOT": {
+            "clue": "first CLUE-C5enger CLUE-C3 goes into CLUE-C15 at 488 Broadway",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C3",
+                "CLUE-C5"
+            ],
+            "answer": "first passenger elevator goes into service at 488 Broadway"
+        }
+    }
+}

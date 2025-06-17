@@ -1,0 +1,104 @@
+{
+    "clues": {
+        "CLUE-C10": {
+            "clue": "___ and gown (usually rented \ud83c\udf93)",
+            "depends_on": [],
+            "answer": "Cap"
+        },
+        "CLUE-C2": {
+            "clue": "DiCLUE-C10rio (actually a Scorpio \u264f\ufe0f) or da Vinci (actually an Aries \u2648\ufe0f)",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Leo"
+        },
+        "CLUE-C1": {
+            "clue": "___ Rock Cafe (some times found in a building shaped like a guitar)",
+            "depends_on": [],
+            "answer": "hard"
+        },
+        "CLUE-C4": {
+            "clue": "using a pogo one is CLUE-C1er than it looks (sadly)",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "stick"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C4y -Aid that is actually a brand name",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "band"
+        },
+        "CLUE-C12": {
+            "clue": "prized contraCLUE-C5 cigar",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Cuban"
+        },
+        "CLUE-C9": {
+            "clue": "word after midlife or CLUE-C12 Missile",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "crisis"
+        },
+        "CLUE-C8": {
+            "clue": "ominously impend, as a CLUE-C9, maybe",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "loom"
+        },
+        "CLUE-C13": {
+            "clue": "\"in the ___ of time!\"",
+            "depends_on": [],
+            "answer": "nick"
+        },
+        "CLUE-C14": {
+            "clue": "___ kettle",
+            "depends_on": [],
+            "answer": "tea"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C14m that features the best of the best",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "dream"
+        },
+        "CLUE-C3": {
+            "clue": "snow ___ (but a distant CLUE-C6 for schoolkids in Florida)",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "day"
+        },
+        "CLUE-C11": {
+            "clue": "\"___ and CLUE-C3\" (big difference)",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "night"
+        },
+        "CLUE-C7": {
+            "clue": "give a CLUE-C13name or a kCLUE-C11hood, maybe",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C13"
+            ],
+            "answer": "Dub"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C2pold BCLUE-C8 begins his day in CLUE-C7lin",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "Leopold Bloom begins his day in Dublin"
+        }
+    }
+}

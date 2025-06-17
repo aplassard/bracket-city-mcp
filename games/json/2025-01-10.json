@@ -1,0 +1,150 @@
+{
+    "clues": {
+        "CLUE-C4": {
+            "clue": "anatomical term for a part of a journey",
+            "depends_on": [],
+            "answer": "leg"
+        },
+        "CLUE-C16": {
+            "clue": "relaxation's partner",
+            "depends_on": [],
+            "answer": "rest"
+        },
+        "CLUE-C15": {
+            "clue": "word with CLUE-C4 or CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C4"
+            ],
+            "answer": "room"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C15 in a store or a theater",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "dressing"
+        },
+        "CLUE-C10": {
+            "clue": "shorter Morse code signals",
+            "depends_on": [],
+            "answer": "dots"
+        },
+        "CLUE-C1": {
+            "clue": "rectangular gamepiece with CLUE-C10 called pips",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Domino"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C1's order",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "pizza"
+        },
+        "CLUE-C11": {
+            "clue": "polarizing CLUE-C19 toppings",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "anchovies"
+        },
+        "CLUE-C3": {
+            "clue": "salad CLUE-C9 often containing CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C9"
+            ],
+            "answer": "Caesar"
+        },
+        "CLUE-C5": {
+            "clue": "pink and white candy \"Good and ___\"",
+            "depends_on": [],
+            "answer": "plenty"
+        },
+        "CLUE-C8": {
+            "clue": "you'll find CLUE-C5 in a church",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "crosses"
+        },
+        "CLUE-C12": {
+            "clue": "emergency stopping lanes",
+            "depends_on": [],
+            "answer": "shoulders"
+        },
+        "CLUE-C21": {
+            "clue": "___ a friend",
+            "depends_on": [],
+            "answer": "phone"
+        },
+        "CLUE-C14": {
+            "clue": "someone in your CLUE-C21",
+            "depends_on": [
+                "CLUE-C21"
+            ],
+            "answer": "contact"
+        },
+        "CLUE-C20": {
+            "clue": "CLUE-C14 sites?",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "eyes"
+        },
+        "CLUE-C6": {
+            "clue": "something done to CLUE-C12 or CLUE-C20",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C20"
+            ],
+            "answer": "Rub"
+        },
+        "CLUE-C18": {
+            "clue": "\"look out ___!\"",
+            "depends_on": [],
+            "answer": "below"
+        },
+        "CLUE-C17": {
+            "clue": "rank CLUE-C18 pope",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "cardinal"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C17 direction associated with a witch",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "West"
+        },
+        "CLUE-C13": {
+            "clue": "\"CLUE-C2 Side Story\", e.g.",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "musical"
+        },
+        "CLUE-C7": {
+            "clue": "TikTok's looks like a CLUE-C13 note",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "icon"
+        },
+        "CLUE-ROOT": {
+            "clue": "Julius CLUE-C3 CLUE-C8 the CLUE-C6CLUE-C7",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C6",
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "January 10, 49 BC: Julius Caesar crosses the Rubicon"
+        }
+    }
+}

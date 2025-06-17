@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "customer that visits a restaurant a lot",
+            "depends_on": [],
+            "answer": "regular"
+        },
+        "CLUE-C14": {
+            "clue": "___lative for Mario",
+            "depends_on": [],
+            "answer": "super"
+        },
+        "CLUE-C4": {
+            "clue": "\"CLUE-C6\" or \"premium\" or \"CLUE-C14\" fluid, for short",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C6"
+            ],
+            "answer": "gas"
+        },
+        "CLUE-C9": {
+            "clue": "word after middle or gingerbread",
+            "depends_on": [],
+            "answer": "man"
+        },
+        "CLUE-C12": {
+            "clue": "\"___!\" (comCLUE-C9d from a cop) \ud83e\uddca",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "freeze"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C12r ___ (terrible fate for improperly sealed ice cream)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "burn"
+        },
+        "CLUE-C3": {
+            "clue": "VeCLUE-C4 impersonator with sideCLUE-C2s and a white jumpsuit",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C4"
+            ],
+            "answer": "Elvis"
+        },
+        "CLUE-C13": {
+            "clue": "bit___ (crypto asset)",
+            "depends_on": [],
+            "answer": "coin"
+        },
+        "CLUE-C11": {
+            "clue": "word after CLUE-C13 or back or kick",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "flip"
+        },
+        "CLUE-C1": {
+            "clue": "name ___ (let it be known that you met Antonio Banderas at a Sizzler)",
+            "depends_on": [],
+            "answer": "drop"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C1s from the sky",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "rain"
+        },
+        "CLUE-C5": {
+            "clue": "refCLUE-C15 from eating for a period, maybe",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "fast"
+        },
+        "CLUE-C16": {
+            "clue": "___ and breakCLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "bed"
+        },
+        "CLUE-C8": {
+            "clue": "switch that you might CLUE-C11 before CLUE-C16",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C16"
+            ],
+            "answer": "light"
+        },
+        "CLUE-C7": {
+            "clue": "something you do in sunCLUE-C8 or glory",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Bask"
+        },
+        "CLUE-C10": {
+            "clue": "\"The ___ of the CLUE-C7ervilles\" \ud83d\udc15",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Hound"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C3 performs \"CLUE-C10 Dog\" on NBC, scandalizes nation",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C3"
+            ],
+            "answer": "Elvis performs \"Hound Dog\" on NBC, scandalizes nation"
+        }
+    }
+}

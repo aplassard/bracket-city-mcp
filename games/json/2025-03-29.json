@@ -1,0 +1,130 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "instrument oft confused for a violin",
+            "depends_on": [],
+            "answer": "viola"
+        },
+        "CLUE-C18": {
+            "clue": "___mite! \ud83e\udde8",
+            "depends_on": [],
+            "answer": "dyna"
+        },
+        "CLUE-C1": {
+            "clue": "perpetual ___ machine (CLUE-C6tes the laws of thermoCLUE-C18mics!)",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C6"
+            ],
+            "answer": "motion"
+        },
+        "CLUE-C11": {
+            "clue": "green here \ud83d\udea6 means this",
+            "depends_on": [],
+            "answer": "go"
+        },
+        "CLUE-C13": {
+            "clue": "\"here __ CLUE-C11 again!\"",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "we"
+        },
+        "CLUE-C9": {
+            "clue": "the possessive form of \"CLUE-C13\"",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "our"
+        },
+        "CLUE-C16": {
+            "clue": "Cook or Burton",
+            "depends_on": [],
+            "answer": "tim"
+        },
+        "CLUE-C3": {
+            "clue": "cCLUE-C9troom neckwear for a slip and fall vicCLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C9"
+            ],
+            "answer": "brace"
+        },
+        "CLUE-C10": {
+            "clue": "\ud83d\udc3b ___ (eCLUE-C1al emCLUE-C3)",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C3"
+            ],
+            "answer": "hug"
+        },
+        "CLUE-C2": {
+            "clue": "kind of opening that might feature a CLUE-C10e pair of scissors",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Grand"
+        },
+        "CLUE-C12": {
+            "clue": "___ CLUE-C2e (waterway)",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "rio"
+        },
+        "CLUE-C8": {
+            "clue": "MaCLUE-C12 benefits from an extra one",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "life"
+        },
+        "CLUE-C15": {
+            "clue": "\"work-CLUE-C8 ___\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "balance"
+        },
+        "CLUE-C5": {
+            "clue": "apparatus to CLUE-C15 on for a gymnast",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "beam"
+        },
+        "CLUE-C7": {
+            "clue": "include someone on an email, briefly",
+            "depends_on": [],
+            "answer": "CC"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C7 to the Romans",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "200"
+        },
+        "CLUE-C17": {
+            "clue": "the M in MTV",
+            "depends_on": [],
+            "answer": "music"
+        },
+        "CLUE-C4": {
+            "clue": "__3 (groundbreaking digital CLUE-C17 format)",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "mp"
+        },
+        "CLUE-ROOT": {
+            "clue": "the SunCLUE-C5 Mystery breaks CLUE-C14CLUE-C4h in Daytona Beach",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C4",
+                "CLUE-C5"
+            ],
+            "answer": "the Sunbeam Mystery breaks 200mph in Daytona Beach"
+        }
+    }
+}

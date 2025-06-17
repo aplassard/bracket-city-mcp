@@ -1,0 +1,100 @@
+{
+    "clues": {
+        "CLUE-C6": {
+            "clue": "retail event featuring bargains",
+            "depends_on": [],
+            "answer": "Sale"
+        },
+        "CLUE-C3": {
+            "clue": "this many seconds is about 34.7 years",
+            "depends_on": [],
+            "answer": "billion"
+        },
+        "CLUE-C5": {
+            "clue": "number of millions in a CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "1000"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C5 to Caesar",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "m"
+        },
+        "CLUE-C14": {
+            "clue": "back in the ___",
+            "depends_on": [],
+            "answer": "day"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C14 observed by children where yes means no",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "opposite"
+        },
+        "CLUE-C8": {
+            "clue": "the CLUE-C1 of an L",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "w"
+        },
+        "CLUE-C12": {
+            "clue": "capital of Ecuador",
+            "depends_on": [],
+            "answer": "quito"
+        },
+        "CLUE-C11": {
+            "clue": "school of hard ___",
+            "depends_on": [],
+            "answer": "knocks"
+        },
+        "CLUE-C13": {
+            "clue": "elevator selection",
+            "depends_on": [],
+            "answer": "floor"
+        },
+        "CLUE-C2": {
+            "clue": "do this to the CLUE-C4 and get it CLUE-C9 with",
+            "depends_on": [
+                "CLUE-C4",
+                "CLUE-C9"
+            ],
+            "answer": "bite"
+        },
+        "CLUE-C4": {
+            "clue": "kind of point found in many CLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "bullet"
+        },
+        "CLUE-C9": {
+            "clue": "game ___ (you lost)",
+            "depends_on": [],
+            "answer": "over"
+        },
+        "CLUE-C7": {
+            "clue": "mosCLUE-C12 CLUE-C2 feeling",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C2"
+            ],
+            "answer": "itch"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C6CLUE-C15 CLUE-C8CLUE-C7 trials begin",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C6",
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "Salem witch trials begin"
+        }
+    }
+}

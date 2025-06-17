@@ -1,0 +1,128 @@
+{
+    "clues": {
+        "CLUE-C18": {
+            "clue": "\ud83c\udf63",
+            "depends_on": [],
+            "answer": "sushi"
+        },
+        "CLUE-C7": {
+            "clue": "accessory for pageant winner or a mayor",
+            "depends_on": [],
+            "answer": "sash"
+        },
+        "CLUE-C14": {
+            "clue": "found in CLUE-C18 but not CLUE-C7imi",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C7"
+            ],
+            "answer": "rice"
+        },
+        "CLUE-C10": {
+            "clue": "studious thing to hit, with \"the\"",
+            "depends_on": [],
+            "answer": "books"
+        },
+        "CLUE-C13": {
+            "clue": "risky thing to do to the CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "cook"
+        },
+        "CLUE-C12": {
+            "clue": "season named for plummeting \ud83c\udf41\ud83c\udf41\ud83c\udf41",
+            "depends_on": [],
+            "answer": "fall"
+        },
+        "CLUE-C8": {
+            "clue": "a stunt one takes the CLUE-C12 for a star",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "double"
+        },
+        "CLUE-C5": {
+            "clue": "a strange sight might cause you to do a CLUE-C8 one",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "take"
+        },
+        "CLUE-C11": {
+            "clue": "kids are encouraged to CLUE-C5 them",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "turns"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C14 CLUE-C13ed with too much water CLUE-C11 to this",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C13",
+                "CLUE-C14"
+            ],
+            "answer": "mush"
+        },
+        "CLUE-C3": {
+            "clue": "\"rules are made to be ___\" you say before falling into a canyon",
+            "depends_on": [],
+            "answer": "broken"
+        },
+        "CLUE-C1": {
+            "clue": "puzzles like \"what has a neck but no head?\" and \"what has to be CLUE-C3 before you use it?\", e.g.",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Riddles"
+        },
+        "CLUE-C17": {
+            "clue": "gavel swinger",
+            "depends_on": [],
+            "answer": "judge"
+        },
+        "CLUE-C2": {
+            "clue": "\"I'll ___ it\" says a skeptical but interested CLUE-C17 in a tv show",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "allow"
+        },
+        "CLUE-C15": {
+            "clue": "like some beef or rules",
+            "depends_on": [],
+            "answer": "ground"
+        },
+        "CLUE-C9": {
+            "clue": "loss of CLUE-C2ance or CLUE-C15ing, e.g.",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C2"
+            ],
+            "answer": "punishment"
+        },
+        "CLUE-C16": {
+            "clue": "they might get ruffled",
+            "depends_on": [],
+            "answer": "feathers"
+        },
+        "CLUE-C4": {
+            "clue": "component of a form of public CLUE-C9, with CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C9"
+            ],
+            "answer": "tar"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C6er Libby CLUE-C1 becomes the first woman to win the IdiCLUE-C4od",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C4",
+                "CLUE-C6"
+            ],
+            "answer": "musher Libby Riddles becomes the first woman to win the Iditarod"
+        }
+    }
+}

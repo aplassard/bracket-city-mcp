@@ -1,0 +1,95 @@
+{
+    "clues": {
+        "CLUE-C12": {
+            "clue": "hacky ___",
+            "depends_on": [],
+            "answer": "sack"
+        },
+        "CLUE-C2": {
+            "clue": "something you might do to the CLUE-C12 or the road",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "hit"
+        },
+        "CLUE-C11": {
+            "clue": "one-CLUE-C2 ___",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Wonder"
+        },
+        "CLUE-C7": {
+            "clue": "kids toys that spin",
+            "depends_on": [],
+            "answer": "tops"
+        },
+        "CLUE-C9": {
+            "clue": "pie and flow, e.g.",
+            "depends_on": [],
+            "answer": "charts"
+        },
+        "CLUE-C4": {
+            "clue": "track that confers an advantage",
+            "depends_on": [],
+            "answer": "inside"
+        },
+        "CLUE-C5": {
+            "clue": "one might be CLUE-C4 or dirty",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "joke"
+        },
+        "CLUE-C3": {
+            "clue": "when repeated, a classic CLUE-C5 format",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "knock"
+        },
+        "CLUE-C13": {
+            "clue": "Holly___",
+            "depends_on": [],
+            "answer": "wood"
+        },
+        "CLUE-C8": {
+            "clue": "tap or belly, e.g.",
+            "depends_on": [],
+            "answer": "dance"
+        },
+        "CLUE-C10": {
+            "clue": "bit of a CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "step"
+        },
+        "CLUE-C6": {
+            "clue": "word after CLUE-C10 or corporate",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "ladder"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C3 on CLUE-C13 or not walk under a CLUE-C6, e.g.",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C3",
+                "CLUE-C6"
+            ],
+            "answer": "Superstition"
+        },
+        "CLUE-ROOT": {
+            "clue": "Stevie CLUE-C11 CLUE-C7 the CLUE-C9 with \"CLUE-C1\"",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "Stevie Wonder tops the charts with \"Superstition\""
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "most desired grail",
+            "depends_on": [],
+            "answer": "holy"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C14 homophone for money made on a sale",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "prophet"
+        },
+        "CLUE-C11": {
+            "clue": "like some alarms or CLUE-C5s",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "false"
+        },
+        "CLUE-C9": {
+            "clue": "tried and \u2b05\ufe0f ___ \u27a1\ufe0f or CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "true"
+        },
+        "CLUE-C1": {
+            "clue": "\"CLUE-C9 ___\" you assert after describing your harrowing encounter with a goose",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Story"
+        },
+        "CLUE-C15": {
+            "clue": "\"West ___ CLUE-C1\"",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "side"
+        },
+        "CLUE-C2": {
+            "clue": "the guy who becomes president if the preCLUE-C15nt dies, for short",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "VP"
+        },
+        "CLUE-C16": {
+            "clue": "the V in MCLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "valuable"
+        },
+        "CLUE-C8": {
+            "clue": "heavy container for CLUE-C16s",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "safe"
+        },
+        "CLUE-C10": {
+            "clue": "\"your ___ is CLUE-C8 with me\" \ud83e\udd2b",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Secret"
+        },
+        "CLUE-C13": {
+            "clue": "\"a long, long time ___\"",
+            "depends_on": [],
+            "answer": "ago"
+        },
+        "CLUE-C4": {
+            "clue": "wCLUE-C13n you jump on when something is popular",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Band"
+        },
+        "CLUE-C3": {
+            "clue": "remove, maybe painfully, as a CLUE-C4-Aid, with \"off\"",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "rip"
+        },
+        "CLUE-C6": {
+            "clue": "kind of mine that might make you rich",
+            "depends_on": [],
+            "answer": "gold"
+        },
+        "CLUE-C7": {
+            "clue": "one of two CLUE-C6en ones at McDonald's",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "arch"
+        },
+        "CLUE-C12": {
+            "clue": "officially make a monCLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Crown"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C10ariat wins the TCLUE-C3le CLUE-C12",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C12",
+                "CLUE-C3"
+            ],
+            "answer": "Secretariat wins the Triple Crown"
+        }
+    }
+}

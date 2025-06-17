@@ -1,0 +1,140 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "first ones are important on a date",
+            "depends_on": [],
+            "answer": "impressions"
+        },
+        "CLUE-C3": {
+            "clue": "kind of show at a school that might feature CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Talent"
+        },
+        "CLUE-C13": {
+            "clue": "\"America's ___ CLUE-C3\"",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Got"
+        },
+        "CLUE-C11": {
+            "clue": "bunched up position for a diver",
+            "depends_on": [],
+            "answer": "tuck"
+        },
+        "CLUE-C16": {
+            "clue": "one who says \"oink\"",
+            "depends_on": [],
+            "answer": "pig"
+        },
+        "CLUE-C8": {
+            "clue": "white spherical projectile in winter",
+            "depends_on": [],
+            "answer": "Snowball"
+        },
+        "CLUE-C1": {
+            "clue": "\"Animal ___\" where a CLUE-C16 named CLUE-C8 is based on Trotsky",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C8"
+            ],
+            "answer": "farm"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C1yard insult, suggesting cowardice",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "Chicken"
+        },
+        "CLUE-C14": {
+            "clue": "KenCLUE-C11y ___ CLUE-C7",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C7"
+            ],
+            "answer": "fried"
+        },
+        "CLUE-C20": {
+            "clue": "\ud83d\ude92 minus truck",
+            "depends_on": [],
+            "answer": "fire"
+        },
+        "CLUE-C4": {
+            "clue": "stressful thing to wear in the underworld",
+            "depends_on": [],
+            "answer": "wire"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C4 rods that radiate from the center of a bicycle wheel",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Spokes"
+        },
+        "CLUE-C10": {
+            "clue": "keep an eye on a kid, with \"baby\"",
+            "depends_on": [],
+            "answer": "sit"
+        },
+        "CLUE-C6": {
+            "clue": "lining that might make you feel better",
+            "depends_on": [],
+            "answer": "silver"
+        },
+        "CLUE-C17": {
+            "clue": "medal above CLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "gold"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C17 en espa\u00f1ol",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "oro"
+        },
+        "CLUE-C15": {
+            "clue": "\"love ___ neighbor\"",
+            "depends_on": [],
+            "answer": "thy"
+        },
+        "CLUE-C5": {
+            "clue": "metal for man accompanying DCLUE-C19CLUE-C15 to Oz",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C19"
+            ],
+            "answer": "tin"
+        },
+        "CLUE-C18": {
+            "clue": "\"end of an ___\"",
+            "depends_on": [],
+            "answer": "era"
+        },
+        "CLUE-C12": {
+            "clue": "a CLUE-C10CLUE-C5g one is vulnCLUE-C18ble",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C18",
+                "CLUE-C5"
+            ],
+            "answer": "duck"
+        },
+        "CLUE-ROOT": {
+            "clue": "Gilbert CLUE-C13tCLUE-C14 CLUE-C20d as Aflac CLUE-C2CLUE-C12",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C2",
+                "CLUE-C20"
+            ],
+            "answer": "Gilbert Gottfried fired as Aflac Spokesduck"
+        }
+    }
+}

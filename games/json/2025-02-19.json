@@ -1,0 +1,148 @@
+{
+    "clues": {
+        "CLUE-C21": {
+            "clue": "\ud83e\udd54",
+            "depends_on": [],
+            "answer": "potato"
+        },
+        "CLUE-C8": {
+            "clue": "honorific for a CLUE-C21 head",
+            "depends_on": [
+                "CLUE-C21"
+            ],
+            "answer": "Mr"
+        },
+        "CLUE-C20": {
+            "clue": "\u270b",
+            "depends_on": [],
+            "answer": "hand"
+        },
+        "CLUE-C13": {
+            "clue": "\"___ to the CLUE-C20\"",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "talk"
+        },
+        "CLUE-C19": {
+            "clue": "\u270b\u270b",
+            "depends_on": [],
+            "answer": "hands"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C13 with your CLUE-C19",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C19"
+            ],
+            "answer": "sign"
+        },
+        "CLUE-C4": {
+            "clue": "you might ask your friends to CLUE-C11 it",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "cast"
+        },
+        "CLUE-C10": {
+            "clue": "they represent states",
+            "depends_on": [],
+            "answer": "stars"
+        },
+        "CLUE-C2": {
+            "clue": "style of hat adorned with CLUE-C10 and moons, maybe",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "wizard"
+        },
+        "CLUE-C6": {
+            "clue": "one might get CLUE-C4 by a CLUE-C2",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C4"
+            ],
+            "answer": "spell"
+        },
+        "CLUE-C12": {
+            "clue": "Sheeran or Sullivan",
+            "depends_on": [],
+            "answer": "ed"
+        },
+        "CLUE-C14": {
+            "clue": "\"CLUE-C8\" CLUE-C6CLUE-C12 out",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C6",
+                "CLUE-C8"
+            ],
+            "answer": "Mister"
+        },
+        "CLUE-C18": {
+            "clue": "Xerox",
+            "depends_on": [],
+            "answer": "copy"
+        },
+        "CLUE-C17": {
+            "clue": "\"CLUE-C18 that\"",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "Roger"
+        },
+        "CLUE-C16": {
+            "clue": "one dollar ___",
+            "depends_on": [],
+            "answer": "Bill"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C16 and Hillary's daughter",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "Chelsea"
+        },
+        "CLUE-C9": {
+            "clue": "song with 27 words, often",
+            "depends_on": [],
+            "answer": "Alphabet"
+        },
+        "CLUE-C3": {
+            "clue": "checkers variant with a star-shaped board",
+            "depends_on": [],
+            "answer": "Chinese"
+        },
+        "CLUE-C1": {
+            "clue": "common (and harmless) flavor enhancer in CLUE-C3 cuisine, briefly",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "MSG"
+        },
+        "CLUE-C15": {
+            "clue": "it contains CLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "NYC"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C7 or CLUE-C9 City in CLUE-C15",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "Neighborhood"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14 CLUE-C17s' CLUE-C5 premieres",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C17",
+                "CLUE-C5"
+            ],
+            "answer": "Mister Rogers' Neighborhood premieres"
+        }
+    }
+}

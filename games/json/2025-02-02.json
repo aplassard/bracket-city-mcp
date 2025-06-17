@@ -1,0 +1,90 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "dish used for simple haircuts",
+            "depends_on": [],
+            "answer": "bowl"
+        },
+        "CLUE-C11": {
+            "clue": "totally CLUE-C8 over",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "floor"
+        },
+        "CLUE-C12": {
+            "clue": "up to no ___",
+            "depends_on": [],
+            "answer": "good"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C11 that is CLUE-C12 to get in on",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C12"
+            ],
+            "answer": "ground"
+        },
+        "CLUE-C9": {
+            "clue": "breathes quickly, as a dog",
+            "depends_on": [],
+            "answer": "pants"
+        },
+        "CLUE-C1": {
+            "clue": "embarrassing thing to do to your bed or CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "wet"
+        },
+        "CLUE-C10": {
+            "clue": "a CLUE-C1 one is a downer",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "blanket"
+        },
+        "CLUE-C4": {
+            "clue": "selfishly monopolize a CLUE-C10, maybe",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "hog"
+        },
+        "CLUE-C3": {
+            "clue": "international ones are said to be lawless",
+            "depends_on": [],
+            "answer": "Waters"
+        },
+        "CLUE-C5": {
+            "clue": "style associated with John CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "camp"
+        },
+        "CLUE-C7": {
+            "clue": "a kid at CLUE-C5 might be home___",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "sick"
+        },
+        "CLUE-C2": {
+            "clue": "you might take a CLUE-C7 one or have a field one",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "day"
+        },
+        "CLUE-ROOT": {
+            "clue": "the first ever CLUE-C6CLUE-C4 CLUE-C2 is observed",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C4",
+                "CLUE-C6"
+            ],
+            "answer": "the first ever groundhog day is observed"
+        }
+    }
+}

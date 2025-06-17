@@ -1,0 +1,113 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "\ud83e\uddb7\ud83e\uddb7\ud83e\uddb7 \u2194 \ud83e\uddb7\ud83e\uddb7\ud83e\uddb7",
+            "depends_on": [],
+            "answer": "gap"
+        },
+        "CLUE-C15": {
+            "clue": "You___.com",
+            "depends_on": [],
+            "answer": "tube"
+        },
+        "CLUE-C3": {
+            "clue": "\"___ the CLUE-C16\" per the signs in \"the CLUE-C15\"",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C16"
+            ],
+            "answer": "mind"
+        },
+        "CLUE-C10": {
+            "clue": "summons an image to CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "pictures"
+        },
+        "CLUE-C7": {
+            "clue": "smoke ___ (movement concealer)",
+            "depends_on": [],
+            "answer": "screen"
+        },
+        "CLUE-C1": {
+            "clue": "one of many little CLUE-C10 on your homeCLUE-C7",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C7"
+            ],
+            "answer": "icon"
+        },
+        "CLUE-C17": {
+            "clue": "\ud83d\udc15 \ud83d\udc29 \ud83d\udc15\u200d\ud83e\uddba",
+            "depends_on": [],
+            "answer": "dogs"
+        },
+        "CLUE-C12": {
+            "clue": "intimidating end",
+            "depends_on": [],
+            "answer": "deep"
+        },
+        "CLUE-C13": {
+            "clue": "connect the ___",
+            "depends_on": [],
+            "answer": "dots"
+        },
+        "CLUE-C8": {
+            "clue": "two have 42 CLUE-C13 on them total",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "dice"
+        },
+        "CLUE-C6": {
+            "clue": "like some CLUE-C17 or CLUE-C5",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C5"
+            ],
+            "answer": "loaded"
+        },
+        "CLUE-C5": {
+            "clue": "having CLUE-C12 ones means you're CLUE-C6",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C6"
+            ],
+            "answer": "pockets"
+        },
+        "CLUE-C2": {
+            "clue": "kind of sheet that you don't want to be long",
+            "depends_on": [],
+            "answer": "rap"
+        },
+        "CLUE-C14": {
+            "clue": "___ into flames",
+            "depends_on": [],
+            "answer": "Burst"
+        },
+        "CLUE-C4": {
+            "clue": "when repeated (maybe with \ud83d\udc4f\ud83d\udc4f): \"hurry up\"",
+            "depends_on": [],
+            "answer": "chop"
+        },
+        "CLUE-C11": {
+            "clue": "\ud83d\udd79\ufe0f\ud83d\udd79\ufe0f\ud83d\udd79\ufe0f - (\ud83e\udd62 - CLUE-C4)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Joy"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C1ic pCLUE-C6ogCLUE-C2h \"CLUE-C14 of CLUE-C11\" is taken",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C14",
+                "CLUE-C2",
+                "CLUE-C6"
+            ],
+            "answer": "iconic photograph \"Burst of Joy\" is taken"
+        }
+    }
+}

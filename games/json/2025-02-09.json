@@ -1,0 +1,142 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "one of many in a precinct",
+            "depends_on": [],
+            "answer": "cop"
+        },
+        "CLUE-C3": {
+            "clue": "a CLUE-C14 might ask you to put your car in this",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "park"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C7, CLUE-C8",
+            "depends_on": [
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "Homer"
+        },
+        "CLUE-C21": {
+            "clue": "slo-__",
+            "depends_on": [],
+            "answer": "Mo"
+        },
+        "CLUE-C1": {
+            "clue": "\"Bohemian Rhapsody\" is a popular choice for this activity",
+            "depends_on": [],
+            "answer": "karaoke"
+        },
+        "CLUE-C9": {
+            "clue": "moving like the ball in CLUE-C1",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "bouncing"
+        },
+        "CLUE-C4": {
+            "clue": "like a kid who is CLUE-C9 off the walls",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "hyper"
+        },
+        "CLUE-C7": {
+            "clue": "too much can lead to CLUE-C4tension",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "sodium"
+        },
+        "CLUE-C8": {
+            "clue": "at regularly occurring intervals",
+            "depends_on": [],
+            "answer": "periodically"
+        },
+        "CLUE-C12": {
+            "clue": "command from a photographer",
+            "depends_on": [],
+            "answer": "smile"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C21CLUE-C6 with an enigmatic CLUE-C12",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C21",
+                "CLUE-C6"
+            ],
+            "answer": "Lisa"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C6 and CLUE-C10, e.g.",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C6"
+            ],
+            "answer": "Simpsons"
+        },
+        "CLUE-C17": {
+            "clue": "response to Marco",
+            "depends_on": [],
+            "answer": "Polo"
+        },
+        "CLUE-C11": {
+            "clue": "Lauren associated with CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "ralph"
+        },
+        "CLUE-C19": {
+            "clue": "CLUE-C11, with \"up\"",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "throw"
+        },
+        "CLUE-C18": {
+            "clue": "hot sliced bread",
+            "depends_on": [],
+            "answer": "toast"
+        },
+        "CLUE-C20": {
+            "clue": "CLUE-C18 necessity",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "glass"
+        },
+        "CLUE-C2": {
+            "clue": "things you shouldn't CLUE-C19 from your CLUE-C20 house",
+            "depends_on": [
+                "CLUE-C19",
+                "CLUE-C20"
+            ],
+            "answer": "stones"
+        },
+        "CLUE-C5": {
+            "clue": "their world is bigger than their land",
+            "depends_on": [],
+            "answer": "Disney"
+        },
+        "CLUE-C13": {
+            "clue": "like a lot of CLUE-C5 movies",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "animated"
+        },
+        "CLUE-ROOT": {
+            "clue": "\"The CLUE-C15\" surpasses \"The FlintCLUE-C2\" as the longest-running CLUE-C13 series",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C15",
+                "CLUE-C2"
+            ],
+            "answer": "\"The Simpsons\" surpasses \"The Flintstones\" as the longest-running animated series"
+        }
+    }
+}

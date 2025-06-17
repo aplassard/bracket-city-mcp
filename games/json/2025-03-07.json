@@ -1,0 +1,135 @@
+{
+    "clues": {
+        "CLUE-C3": {
+            "clue": "when sparks do this, there's chemistry",
+            "depends_on": [],
+            "answer": "fly"
+        },
+        "CLUE-C17": {
+            "clue": "Venus CLUE-C3___",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "trap"
+        },
+        "CLUE-C2": {
+            "clue": "a villain might have a CLUE-C17 one in their floor",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "door"
+        },
+        "CLUE-C13": {
+            "clue": "alternatives to CLUE-C2knobs",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "handles"
+        },
+        "CLUE-C5": {
+            "clue": "nothing to ___, everything to gain",
+            "depends_on": [],
+            "answer": "lose"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C13 you might try to CLUE-C5",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C5"
+            ],
+            "answer": "love"
+        },
+        "CLUE-C19": {
+            "clue": "\ud83e\udde0",
+            "depends_on": [],
+            "answer": "brain"
+        },
+        "CLUE-C11": {
+            "clue": "\"I'd CLUE-C10 to ___ your CLUE-C19\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C19"
+            ],
+            "answer": "pick"
+        },
+        "CLUE-C8": {
+            "clue": "something you might have to grind",
+            "depends_on": [],
+            "answer": "axe"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C11CLUE-C8 users",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C8"
+            ],
+            "answer": "miners"
+        },
+        "CLUE-C7": {
+            "clue": "baggage area with a conveyor belt",
+            "depends_on": [],
+            "answer": "claim"
+        },
+        "CLUE-C15": {
+            "clue": "like a \ud83d\udc2d but bigger",
+            "depends_on": [],
+            "answer": "rat"
+        },
+        "CLUE-C4": {
+            "clue": "you might play this to avoid detection",
+            "depends_on": [],
+            "answer": "dead"
+        },
+        "CLUE-C1": {
+            "clue": "a labyrinth is like one of these but with no CLUE-C4 ends",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "maze"
+        },
+        "CLUE-C14": {
+            "clue": "kind of CLUE-C15 in a CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C15"
+            ],
+            "answer": "Lab"
+        },
+        "CLUE-C12": {
+            "clue": "run on the treadmill, e.g.",
+            "depends_on": [],
+            "answer": "exercise"
+        },
+        "CLUE-C6": {
+            "clue": "trust ___ (team-building CLUE-C12)",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "fall"
+        },
+        "CLUE-C9": {
+            "clue": "its peel might cause a pratCLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Banana"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C9 ___",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Republic"
+        },
+        "CLUE-ROOT": {
+            "clue": "striking CLUE-C16 proCLUE-C7 the CLUE-C14in CLUE-C18",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C16",
+                "CLUE-C18",
+                "CLUE-C7"
+            ],
+            "answer": "striking miners proclaim the Labin Republic"
+        }
+    }
+}

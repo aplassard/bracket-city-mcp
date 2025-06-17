@@ -1,0 +1,114 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "___ 20",
+            "depends_on": [],
+            "answer": "matchbox"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C13 CLUE-C4",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C4"
+            ],
+            "answer": "Little"
+        },
+        "CLUE-C11": {
+            "clue": "Serling or Blagojevich",
+            "depends_on": [],
+            "answer": "rod"
+        },
+        "CLUE-C6": {
+            "clue": "something you do with a CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "fish"
+        },
+        "CLUE-C12": {
+            "clue": "mythological CLUE-C6 lady",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Mermaid"
+        },
+        "CLUE-C10": {
+            "clue": "John Wilkes Booth, e.g.",
+            "depends_on": [],
+            "answer": "assassin"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C10 in feudal Japan",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "ninja"
+        },
+        "CLUE-C8": {
+            "clue": "muppet who plays the drums",
+            "depends_on": [],
+            "answer": "animal"
+        },
+        "CLUE-C16": {
+            "clue": "some are odd",
+            "depends_on": [],
+            "answer": "Jobs"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C8 linked with tops worn by Steve CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C8"
+            ],
+            "answer": "turtle"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C9 CLUE-C2 with nunchucks",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C9"
+            ],
+            "answer": "Michelangelo"
+        },
+        "CLUE-C3": {
+            "clue": "\"David\" by CLUE-C7, for example",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "statue"
+        },
+        "CLUE-C14": {
+            "clue": "___ of Champions",
+            "depends_on": [],
+            "answer": "breakfast"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C14 pastry",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Danish"
+        },
+        "CLUE-C5": {
+            "clue": "some say it's the best defense",
+            "depends_on": [],
+            "answer": "offense"
+        },
+        "CLUE-C4": {
+            "clue": "kind of CLUE-C5 punishable by death",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "capital"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C1 CLUE-C12 CLUE-C3 decapitated in CLUE-C1",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12",
+                "CLUE-C3"
+            ],
+            "answer": "Little Mermaid statue decapitated in Copenhagen"
+        }
+    }
+}

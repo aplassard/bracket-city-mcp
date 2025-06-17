@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C4": {
+            "clue": "something you start with a button not a \ud83d\udd11 these days",
+            "depends_on": [],
+            "answer": "car"
+        },
+        "CLUE-C10": {
+            "clue": "word with sun or moon for a CLUE-C4 dealer",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "roof"
+        },
+        "CLUE-C9": {
+            "clue": "material for a hot CLUE-C10 with a cat on it",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "tin"
+        },
+        "CLUE-C14": {
+            "clue": "\"__ on\" (please conCLUE-C9ue)",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "go"
+        },
+        "CLUE-C8": {
+            "clue": "the first MGM loCLUE-C14 had one that didn't roar \ud83e\udd81",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "lion"
+        },
+        "CLUE-C1": {
+            "clue": "\"___ me\" you say as the assembled crowd gasps at the blackjack table in your dream",
+            "depends_on": [],
+            "answer": "hit"
+        },
+        "CLUE-C15": {
+            "clue": "not CLUE-C1 the target",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "miss"
+        },
+        "CLUE-C2": {
+            "clue": "common CLUE-C15pelling of a French word meaning \"exclusive social group\"",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "click"
+        },
+        "CLUE-C7": {
+            "clue": "something you CLUE-C2 to get around the internet",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "link"
+        },
+        "CLUE-C16": {
+            "clue": "crash ___ dummy",
+            "depends_on": [],
+            "answer": "test"
+        },
+        "CLUE-C11": {
+            "clue": "longest part of the large inCLUE-C16ine",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "colon"
+        },
+        "CLUE-C6": {
+            "clue": "letters you might say before \"CLUE-C11 slash slash\"",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "http"
+        },
+        "CLUE-C5": {
+            "clue": "something that usually begins with \"CLUE-C6\", briefly",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "url"
+        },
+        "CLUE-C13": {
+            "clue": "salon procedure to install cCLUE-C5s",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "perm"
+        },
+        "CLUE-C3": {
+            "clue": "accessory that apparently rendered SuCLUE-C13an unrecognizable",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "glasses"
+        },
+        "CLUE-C12": {
+            "clue": "word accompanying cCLUE-C7ing CLUE-C3",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C7"
+            ],
+            "answer": "Cheers"
+        },
+        "CLUE-ROOT": {
+            "clue": "80 milCLUE-C8 people watch the series finale of \"CLUE-C12\"",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C8"
+            ],
+            "answer": "80 million people watch the series finale of \"Cheers\""
+        }
+    }
+}

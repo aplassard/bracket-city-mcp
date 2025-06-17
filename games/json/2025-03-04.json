@@ -1,0 +1,122 @@
+{
+    "clues": {
+        "CLUE-C7": {
+            "clue": "___master (flight simulator?)",
+            "depends_on": [],
+            "answer": "stair"
+        },
+        "CLUE-C10": {
+            "clue": "fastball or curveball, e.g.",
+            "depends_on": [],
+            "answer": "Pitch"
+        },
+        "CLUE-C2": {
+            "clue": "2012\u20132017 a capella saga: \"CLUE-C10 ___\"",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "perfect"
+        },
+        "CLUE-C8": {
+            "clue": "it makes CLUE-C2, it is said",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "practice"
+        },
+        "CLUE-C3": {
+            "clue": "run that's CLUE-C8 or ice that mists",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "dry"
+        },
+        "CLUE-C12": {
+            "clue": "flammable CLUE-C3er byproduct",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "lint"
+        },
+        "CLUE-C14": {
+            "clue": "ACLUE-C7e or FCLUE-C12stone",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C7"
+            ],
+            "answer": "Fred"
+        },
+        "CLUE-C6": {
+            "clue": "you turn it over to start timing",
+            "depends_on": [],
+            "answer": "hourglass"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C6 contents",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "sand"
+        },
+        "CLUE-C11": {
+            "clue": "gets tailored, as a garment",
+            "depends_on": [],
+            "answer": "alters"
+        },
+        "CLUE-C5": {
+            "clue": "nickname for StreiCLUE-C15 or WCLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C15"
+            ],
+            "answer": "Barb"
+        },
+        "CLUE-C16": {
+            "clue": "___ with benefits",
+            "depends_on": [],
+            "answer": "Friends"
+        },
+        "CLUE-C1": {
+            "clue": "\"CLUE-C16\" character oft mentioned with Rachel",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "ross"
+        },
+        "CLUE-C13": {
+            "clue": "gingivitis, aka gum ___",
+            "depends_on": [],
+            "answer": "disease"
+        },
+        "CLUE-C4": {
+            "clue": "tiny source of CLUE-C13, informally",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Germ"
+        },
+        "CLUE-C9": {
+            "clue": "a second one is another try",
+            "depends_on": [],
+            "answer": "chance"
+        },
+        "CLUE-C17": {
+            "clue": "\"by ___ CLUE-C9\"",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "any"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14erick CLUE-C5aCLUE-C1a elected King of CLUE-C4CLUE-C17",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C14",
+                "CLUE-C17",
+                "CLUE-C4",
+                "CLUE-C5"
+            ],
+            "answer": "Frederick Barbarossa elected King of Germany"
+        }
+    }
+}

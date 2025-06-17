@@ -1,0 +1,101 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "\"let me be ___\"",
+            "depends_on": [],
+            "answer": "Frank"
+        },
+        "CLUE-C3": {
+            "clue": "burrowing animal associated with espionage",
+            "depends_on": [],
+            "answer": "Mole"
+        },
+        "CLUE-C4": {
+            "clue": "when it's thick you aren't too sensitive",
+            "depends_on": [],
+            "answer": "skin"
+        },
+        "CLUE-C10": {
+            "clue": "like some hopes or heels",
+            "depends_on": [],
+            "answer": "high"
+        },
+        "CLUE-C5": {
+            "clue": "a CLUE-C10 one is a common celebration",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Five"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C3CLUE-C4e and CLUE-C5 Star products",
+            "depends_on": [
+                "CLUE-C3",
+                "CLUE-C4",
+                "CLUE-C5"
+            ],
+            "answer": "notebooks"
+        },
+        "CLUE-C1": {
+            "clue": "\"cool\" letter drawn in many CLUE-C6 using fourteen lines",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "S"
+        },
+        "CLUE-C9": {
+            "clue": "some wish to go out with one",
+            "depends_on": [],
+            "answer": "bang"
+        },
+        "CLUE-C8": {
+            "clue": "point sometimes called a CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "exclamation"
+        },
+        "CLUE-C2": {
+            "clue": "onlooker's CLUE-C8 following an insult: \"oh ___!\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "snap"
+        },
+        "CLUE-C12": {
+            "clue": "CLUE-C2shot, for short",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "pic"
+        },
+        "CLUE-C13": {
+            "clue": "roundest letter",
+            "depends_on": [],
+            "answer": "o"
+        },
+        "CLUE-C11": {
+            "clue": "kind of talk you make",
+            "depends_on": [],
+            "answer": "small"
+        },
+        "CLUE-C7": {
+            "clue": "totally busted or a CLUE-C11 glass",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "shot"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14 CLUE-C1erCLUE-C12CLUE-C13 is CLUE-C7 in Brooklyn",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12",
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C7"
+            ],
+            "answer": "Frank Serpico is shot in Brooklyn"
+        }
+    }
+}

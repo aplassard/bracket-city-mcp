@@ -1,0 +1,131 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "___ of no return",
+            "depends_on": [],
+            "answer": "Point"
+        },
+        "CLUE-C18": {
+            "clue": "group of players",
+            "depends_on": [],
+            "answer": "Team"
+        },
+        "CLUE-C10": {
+            "clue": "___, Excel, PowerCLUE-C17, Outlook, CLUE-C18s",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C18"
+            ],
+            "answer": "word"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C10 after less is or before or less",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "more"
+        },
+        "CLUE-C16": {
+            "clue": "\"the CLUE-C11 you ___\" \ud83d\udcab",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "know"
+        },
+        "CLUE-C4": {
+            "clue": "\"__ you CLUE-C16 who I am??\" you bellow at the arcade security guard",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "do"
+        },
+        "CLUE-C8": {
+            "clue": "a \"CLUE-C4-___\" might be demanded by sore loser",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Over"
+        },
+        "CLUE-C2": {
+            "clue": "\"get off ___-free\" (phrase that apparently has nothing to do with \ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f)",
+            "depends_on": [],
+            "answer": "Scot"
+        },
+        "CLUE-C12": {
+            "clue": "word with USB or HDMI or Lightning",
+            "depends_on": [],
+            "answer": "Port"
+        },
+        "CLUE-C5": {
+            "clue": "\"___ me up, CLUE-C2ty\" you say every time you are in a CLUE-C12a-Potty",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C2"
+            ],
+            "answer": "beam"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C5 we are told will both damage and fix our eyes",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "laser"
+        },
+        "CLUE-C1": {
+            "clue": "\"the exception that proves the ___\" (very convenient maxim when you are wrong)",
+            "depends_on": [],
+            "answer": "rule"
+        },
+        "CLUE-C13": {
+            "clue": "___ the shots (CLUE-C1 the roost)",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "call"
+        },
+        "CLUE-C9": {
+            "clue": "bill on which CLUE-C13s to 900 numbers appear",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "phone"
+        },
+        "CLUE-C6": {
+            "clue": "the CLUE-C7 version is fun, the CLUE-C9 version less so",
+            "depends_on": [
+                "CLUE-C7",
+                "CLUE-C9"
+            ],
+            "answer": "tag"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C6 you might glance down at before greeting someone at a conference",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "name"
+        },
+        "CLUE-C15": {
+            "clue": "Le___ (first CLUE-C3 in \ud83c\udfc0)",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Bron"
+        },
+        "CLUE-C14": {
+            "clue": "Mustang or CLUE-C15co, e.g. \ud83d\ude98",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Ford"
+        },
+        "CLUE-ROOT": {
+            "clue": "the Battle of the CLUE-C8pass is fought at a CLUE-C14 Factory in Michigan",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C8"
+            ],
+            "answer": "the Battle of the Overpass is fought at a Ford Factory in Michigan"
+        }
+    }
+}

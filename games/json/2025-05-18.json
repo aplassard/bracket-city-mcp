@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C14": {
+            "clue": "\"he said, ___ said\"",
+            "depends_on": [],
+            "answer": "She"
+        },
+        "CLUE-C12": {
+            "clue": "delicate part of an egg",
+            "depends_on": [],
+            "answer": "shell"
+        },
+        "CLUE-C7": {
+            "clue": "CLUE-C14ll's is a CLUE-C12, Apple's is an Apple",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C14"
+            ],
+            "answer": "logo"
+        },
+        "CLUE-C5": {
+            "clue": "kind of designer that might make you a CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "graphic"
+        },
+        "CLUE-C3": {
+            "clue": "source of furniture with pictoCLUE-C5 instructions",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "IKEA"
+        },
+        "CLUE-C4": {
+            "clue": "\"__ the Right Thing\" (directed by Spike Lee)",
+            "depends_on": [],
+            "answer": "DO"
+        },
+        "CLUE-C16": {
+            "clue": "the B in CLUE-C4B",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "birth"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C3, by CLUE-C16 \ud83c\uddf8\ud83c\uddea",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C3"
+            ],
+            "answer": "Swedish"
+        },
+        "CLUE-C11": {
+            "clue": "secretly direct, as money",
+            "depends_on": [],
+            "answer": "funnel"
+        },
+        "CLUE-C9": {
+            "clue": "word after CLUE-C11 or pound or carrot",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "cake"
+        },
+        "CLUE-C6": {
+            "clue": "who Marie Antoinette suggested eat CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "them"
+        },
+        "CLUE-C8": {
+            "clue": "tasty-sounding maCLUE-C6atical constant",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "pi"
+        },
+        "CLUE-C10": {
+            "clue": "FBI agent, e.g. (informally)",
+            "depends_on": [],
+            "answer": "fed"
+        },
+        "CLUE-C13": {
+            "clue": "fez or CLUE-C10ora, e.g.",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "hat"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C8e that you might eat along with crow and your CLUE-C13",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C8"
+            ],
+            "answer": "humble"
+        },
+        "CLUE-C1": {
+            "clue": "boxer who said \"it's hard to be CLUE-C2 when you're as great as I am\"",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "ali"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C15 ice hockey player reports CLUE-C1en encounter",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C15"
+            ],
+            "answer": "ice hockey player reports alien encounter in Sweden"
+        }
+    }
+}

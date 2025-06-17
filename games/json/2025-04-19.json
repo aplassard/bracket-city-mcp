@@ -1,0 +1,123 @@
+{
+    "clues": {
+        "CLUE-C5": {
+            "clue": "sliced bread browned by exposure to radiant heat",
+            "depends_on": [],
+            "answer": "toast"
+        },
+        "CLUE-C2": {
+            "clue": "\"I'll just ___ it\" (something said before many catastrophic CLUE-C5s)",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "wing"
+        },
+        "CLUE-C13": {
+            "clue": "round but not a circle",
+            "depends_on": [],
+            "answer": "Oval"
+        },
+        "CLUE-C7": {
+            "clue": "White House CLUE-C2 featuring the CLUE-C13 Office",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C2"
+            ],
+            "answer": "West"
+        },
+        "CLUE-C16": {
+            "clue": "___cent (%)",
+            "depends_on": [],
+            "answer": "per"
+        },
+        "CLUE-C15": {
+            "clue": "a CLUE-C16iod ends one",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "sentence"
+        },
+        "CLUE-C3": {
+            "clue": "wind ___ (factor that lowers the apparent temperature)",
+            "depends_on": [],
+            "answer": "chill"
+        },
+        "CLUE-C1": {
+            "clue": "being told to take a \"CLUE-C3\" one is likely to make your mom even angrier",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Pill"
+        },
+        "CLUE-C17": {
+            "clue": "\ud83d\udd12\ud83d\udd12\ud83d\udd12",
+            "depends_on": [],
+            "answer": "locks"
+        },
+        "CLUE-C4": {
+            "clue": "in 2017 the US Army lifted their ban on these CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "dread"
+        },
+        "CLUE-C11": {
+            "clue": "hour CLUE-C4ed by commuters",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "rush"
+        },
+        "CLUE-C10": {
+            "clue": "KhCLUE-C11chev \u27a1\ufe0f \"we will ___ you\" \ud83e\udea6",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "bury"
+        },
+        "CLUE-C6": {
+            "clue": "pools are host to many ___-holding contests",
+            "depends_on": [],
+            "answer": "breath"
+        },
+        "CLUE-C14": {
+            "clue": "\"a CLUE-C6 of ___ air\"",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Fresh"
+        },
+        "CLUE-C9": {
+            "clue": "CLUE-C1sCLUE-C10 Dough___ aka Poppin' CLUE-C14",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C10",
+                "CLUE-C14"
+            ],
+            "answer": "boy"
+        },
+        "CLUE-C12": {
+            "clue": "\"yee-___\" says the cowCLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "haw"
+        },
+        "CLUE-C8": {
+            "clue": "setting for \"The SCLUE-C12shank Redemption\"",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "prison"
+        },
+        "CLUE-ROOT": {
+            "clue": "Mae CLUE-C7 is CLUE-C15d to ten days in CLUE-C8 for obscenity",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "Mae West is sentenced to ten days in prison for obscenity"
+        }
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "clues": {
+        "CLUE-C17": {
+            "clue": "\u2640",
+            "depends_on": [],
+            "answer": "female"
+        },
+        "CLUE-C5": {
+            "clue": "a kid might have an imaginary one",
+            "depends_on": [],
+            "answer": "friend"
+        },
+        "CLUE-C8": {
+            "clue": "CLUE-C17 CLUE-C5, with \"pal\"",
+            "depends_on": [
+                "CLUE-C17",
+                "CLUE-C5"
+            ],
+            "answer": "Gal"
+        },
+        "CLUE-C4": {
+            "clue": "apparently counting them helps you sleep",
+            "depends_on": [],
+            "answer": "sheep"
+        },
+        "CLUE-C11": {
+            "clue": "CLUE-C4's clothing user",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Wolf"
+        },
+        "CLUE-C1": {
+            "clue": "writing on this might help you see what's coming",
+            "depends_on": [],
+            "answer": "Wall"
+        },
+        "CLUE-C3": {
+            "clue": "kind of money you need to start a business",
+            "depends_on": [],
+            "answer": "seed"
+        },
+        "CLUE-C6": {
+            "clue": "CLUE-C3 that's a bagel topping",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Sesame"
+        },
+        "CLUE-C13": {
+            "clue": "CLUE-C6 or Fleet",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Street"
+        },
+        "CLUE-C2": {
+            "clue": "star of \"The CLUE-C11 of CLUE-C1 CLUE-C13\", informally",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C11",
+                "CLUE-C13"
+            ],
+            "answer": "leo"
+        },
+        "CLUE-C9": {
+            "clue": "like some fuses and ribs",
+            "depends_on": [],
+            "answer": "short"
+        },
+        "CLUE-C12": {
+            "clue": "sibling, for CLUE-C9",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Sis"
+        },
+        "CLUE-C10": {
+            "clue": "kind of lift you drive",
+            "depends_on": [],
+            "answer": "fork"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C10 prong",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "tine"
+        },
+        "CLUE-C7": {
+            "clue": "home of the CLUE-C12CLUE-C15 chapel",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C15"
+            ],
+            "answer": "Rome"
+        },
+        "CLUE-C16": {
+            "clue": "plugs in",
+            "depends_on": [],
+            "answer": "charges"
+        },
+        "CLUE-C14": {
+            "clue": "\ud83d\udccdyou are ___",
+            "depends_on": [],
+            "answer": "here"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C8iCLUE-C2 arrives in CLUE-C7 to face CLUE-C16 of CLUE-C14sy",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C16",
+                "CLUE-C2",
+                "CLUE-C7",
+                "CLUE-C8"
+            ],
+            "answer": "Galileo arrives in Rome to face charges of heresy"
+        }
+    }
+}

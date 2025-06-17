@@ -1,0 +1,115 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "subway in London, with \"the\"",
+            "depends_on": [],
+            "answer": "tube"
+        },
+        "CLUE-C12": {
+            "clue": "oft-candied CLUE-C8r",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "Yam"
+        },
+        "CLUE-C13": {
+            "clue": "a little dance",
+            "depends_on": [],
+            "answer": "jig"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C13saw ___",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "puzzle"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C16 solver's cry",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "aha"
+        },
+        "CLUE-C9": {
+            "clue": "Like Honda and CLUE-C12CLUE-C10",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C12"
+            ],
+            "answer": "Japanese"
+        },
+        "CLUE-C1": {
+            "clue": "something a cruel much-superior opponent might do with you",
+            "depends_on": [],
+            "answer": "toy"
+        },
+        "CLUE-C2": {
+            "clue": "the original one was committed in the Garden of Eden",
+            "depends_on": [],
+            "answer": "sin"
+        },
+        "CLUE-C11": {
+            "clue": "Santa receives many",
+            "depends_on": [],
+            "answer": "letters"
+        },
+        "CLUE-C6": {
+            "clue": "deadly CLUE-C2 that sounds like two CLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C2"
+            ],
+            "answer": "envy"
+        },
+        "CLUE-C14": {
+            "clue": "color of CLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "green"
+        },
+        "CLUE-C3": {
+            "clue": "the CLUE-C1 version of one is often plastic and CLUE-C14",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C14"
+            ],
+            "answer": "soldier"
+        },
+        "CLUE-C15": {
+            "clue": "lost and ___",
+            "depends_on": [],
+            "answer": "found"
+        },
+        "CLUE-C5": {
+            "clue": "anthropomorphic pitcher: the Kool-___ Man",
+            "depends_on": [],
+            "answer": "aid"
+        },
+        "CLUE-C7": {
+            "clue": "offer lodging or CLUE-C5 to a fugitive",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Harbor"
+        },
+        "CLUE-C4": {
+            "clue": "America entered it after Pearl CLUE-C7, for short",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "WWII"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C9 CLUE-C3 CLUE-C15 on Guam 26 years after CLUE-C4",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C3",
+                "CLUE-C4",
+                "CLUE-C9"
+            ],
+            "answer": "Japanese soldier found on Guam 26 years after WWII"
+        }
+    }
+}

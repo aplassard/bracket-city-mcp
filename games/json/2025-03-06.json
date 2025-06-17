@@ -1,0 +1,143 @@
+{
+    "clues": {
+        "CLUE-C2": {
+            "clue": "if you are kept at this, you won't get close",
+            "depends_on": [],
+            "answer": "Bay"
+        },
+        "CLUE-C11": {
+            "clue": "side of the tracks to avoid",
+            "depends_on": [],
+            "answer": "wrong"
+        },
+        "CLUE-C14": {
+            "clue": "\"don't ___ me CLUE-C11...\"",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "get"
+        },
+        "CLUE-C5": {
+            "clue": "\"I CLUE-C14 the ___\" (maybe not all the details)",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "gist"
+        },
+        "CLUE-C9": {
+            "clue": "pregnancy indicator with \"baby\"",
+            "depends_on": [],
+            "answer": "bump"
+        },
+        "CLUE-C8": {
+            "clue": "things that go CLUE-C9 __ the night",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "in"
+        },
+        "CLUE-C4": {
+            "clue": "long tract that starts your mouth, for short",
+            "depends_on": [],
+            "answer": "GI"
+        },
+        "CLUE-C20": {
+            "clue": "not nice",
+            "depends_on": [],
+            "answer": "mean"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C20, median, or mode",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "average"
+        },
+        "CLUE-C18": {
+            "clue": "grand theft ___",
+            "depends_on": [],
+            "answer": "auto"
+        },
+        "CLUE-C19": {
+            "clue": "an CLUE-C18graph",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "signature"
+        },
+        "CLUE-C3": {
+            "clue": "kind of expert who might examine a CLUE-C19",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "handwriting"
+        },
+        "CLUE-C15": {
+            "clue": "messy, as CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "sloppy"
+        },
+        "CLUE-C10": {
+            "clue": "one might be CLUE-C16 or CLUE-C15",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C16"
+            ],
+            "answer": "Joe"
+        },
+        "CLUE-C13": {
+            "clue": "___ figure (like CLUE-C4 CLUE-C10)",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C4"
+            ],
+            "answer": "action"
+        },
+        "CLUE-C17": {
+            "clue": "demoted former planet",
+            "depends_on": [],
+            "answer": "Pluto"
+        },
+        "CLUE-C6": {
+            "clue": "like CLUE-C17 and Beethoven in their youth \ud83d\udc3e",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "puppies"
+        },
+        "CLUE-C1": {
+            "clue": "word to describe CLUE-C6 that is derived from a word to describe angles",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "cute"
+        },
+        "CLUE-C7": {
+            "clue": "___-CLUE-C1 (charming first encounter)",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "meet"
+        },
+        "CLUE-C12": {
+            "clue": "transCLUE-C13 at a swap CLUE-C7",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C7"
+            ],
+            "answer": "trade"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C2er reCLUE-C5ers \"AspirCLUE-C8\" as a CLUE-C12mark",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C2",
+                "CLUE-C5",
+                "CLUE-C8"
+            ],
+            "answer": "Bayer registers \"Aspirin\" as a trademark"
+        }
+    }
+}

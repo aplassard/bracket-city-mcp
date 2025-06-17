@@ -1,0 +1,117 @@
+{
+    "clues": {
+        "CLUE-C11": {
+            "clue": "something to separate from fiction",
+            "depends_on": [],
+            "answer": "fact"
+        },
+        "CLUE-C6": {
+            "clue": "\"the rumor ___\" (metaphorical gossip CLUE-C11ory \ud83c\udfed)",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "Mill"
+        },
+        "CLUE-C9": {
+            "clue": "Guevara pictured on many dorm room walls",
+            "depends_on": [],
+            "answer": "Che"
+        },
+        "CLUE-C16": {
+            "clue": "sleep___ camp",
+            "depends_on": [],
+            "answer": "away"
+        },
+        "CLUE-C12": {
+            "clue": "spoiled the ending, with \"CLUE-C16\"",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "gave"
+        },
+        "CLUE-C7": {
+            "clue": "fast-talker with a CLUE-C12l that's not a judge",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "auctioneer"
+        },
+        "CLUE-C8": {
+            "clue": "word gleefully hollered by an CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "sold"
+        },
+        "CLUE-C15": {
+            "clue": "\"__ ease, CLUE-C8ier\"",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "at"
+        },
+        "CLUE-C4": {
+            "clue": "some believe a groundhog can predict the arrival of this season",
+            "depends_on": [],
+            "answer": "Spring"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C4steen or Lee",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Bruce"
+        },
+        "CLUE-C3": {
+            "clue": "magnifying ___ (detective's tool not used by too many detectives)",
+            "depends_on": [],
+            "answer": "glass"
+        },
+        "CLUE-C10": {
+            "clue": "a CLUE-C3 one is a liability for a boxer",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Jaw"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C14 in \"Finding Nemo\" was named after the mechanical ___ used in \"CLUE-C10s\"",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C14"
+            ],
+            "answer": "Shark"
+        },
+        "CLUE-C2": {
+            "clue": "\"enough small ___!\" you bellow as you watch \"CLUE-C1 Tank\" on your Tivo",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "talk"
+        },
+        "CLUE-C5": {
+            "clue": "kind of CLUE-C2 you might give yourself before the big meeting",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "pep"
+        },
+        "CLUE-C13": {
+            "clue": "leader at a CLUE-C5 rally \ud83d\udce3",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "Cheer"
+        },
+        "CLUE-ROOT": {
+            "clue": "General CLUE-C6s renames \"CLUE-C9erioCLUE-C15s\" to \"CLUE-C13ios.\"",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C15",
+                "CLUE-C6",
+                "CLUE-C9"
+            ],
+            "answer": "General Mills renames \"Cheerioats\" to \"Cheerios.\""
+        }
+    }
+}

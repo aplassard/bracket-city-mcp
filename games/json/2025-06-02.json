@@ -1,0 +1,119 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "something negotiated with a landlord",
+            "depends_on": [],
+            "answer": "rent"
+        },
+        "CLUE-C5": {
+            "clue": "age unit used by paCLUE-C9s until kid is about 2",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "month"
+        },
+        "CLUE-C16": {
+            "clue": "last CLUE-C5",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "December"
+        },
+        "CLUE-C8": {
+            "clue": "one of many hung on a tree in CLUE-C16",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "ornament"
+        },
+        "CLUE-C10": {
+            "clue": "delicate net-like CLUE-C8al fabric",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "lace"
+        },
+        "CLUE-C2": {
+            "clue": "word that meant \"burial pCLUE-C10\" before it meant \"serious\"",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "grave"
+        },
+        "CLUE-C12": {
+            "clue": "___ to CLUE-C2 (full lifecycle)",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "cradle"
+        },
+        "CLUE-C14": {
+            "clue": "classic CLUE-C12 verb",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Rock"
+        },
+        "CLUE-C6": {
+            "clue": "Ohio home to the CLUE-C14 & Roll Hall of Fame",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "Cleveland"
+        },
+        "CLUE-C15": {
+            "clue": "eBay action",
+            "depends_on": [],
+            "answer": "bid"
+        },
+        "CLUE-C11": {
+            "clue": "morCLUE-C15 outline at a crime scene",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "chalk"
+        },
+        "CLUE-C7": {
+            "clue": "size of stuff we are told not to sweat",
+            "depends_on": [],
+            "answer": "small"
+        },
+        "CLUE-C4": {
+            "clue": "\"what's your favorite ___?\" (CLUE-C7 talk for a kid)",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "color"
+        },
+        "CLUE-C3": {
+            "clue": "bulb CLUE-C4 that probably burns out last in a stoplight",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "yellow"
+        },
+        "CLUE-C13": {
+            "clue": "bus that is often CLUE-C3",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "school"
+        },
+        "CLUE-C1": {
+            "clue": "board that reduces CLUE-C11-dust inhalation rates at CLUE-C13s",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C13"
+            ],
+            "answer": "White"
+        },
+        "CLUE-ROOT": {
+            "clue": "Grover CLUE-C6 gets married in the CLUE-C1 House",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C6"
+            ],
+            "answer": "Grover Cleveland gets married in the White House"
+        }
+    }
+}

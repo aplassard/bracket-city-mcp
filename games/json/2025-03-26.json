@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C2": {
+            "clue": "subject of great interest to a leprechaun",
+            "depends_on": [],
+            "answer": "Gold"
+        },
+        "CLUE-C15": {
+            "clue": "CLUE-C2blum or Bezos",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "Jeff"
+        },
+        "CLUE-C8": {
+            "clue": "mom's partner in a cute store",
+            "depends_on": [],
+            "answer": "pop"
+        },
+        "CLUE-C7": {
+            "clue": "a CLUE-C8 one goes in the toaster",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "tart"
+        },
+        "CLUE-C16": {
+            "clue": "like beef CLUE-C7are",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "raw"
+        },
+        "CLUE-C12": {
+            "clue": "one dCLUE-C16n toward a flame",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "moth"
+        },
+        "CLUE-C4": {
+            "clue": "something to sweep problems under",
+            "depends_on": [],
+            "answer": "rug"
+        },
+        "CLUE-C6": {
+            "clue": "crystal ___ (dangerous dCLUE-C4!)",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "meth"
+        },
+        "CLUE-C3": {
+            "clue": "it's the word when soCLUE-C6ing is a secret",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "Mum"
+        },
+        "CLUE-C18": {
+            "clue": "home of CLUE-C3bai",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "India"
+        },
+        "CLUE-C13": {
+            "clue": "weapon for CLUE-C18na Jones",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "whip"
+        },
+        "CLUE-C10": {
+            "clue": "it might be CLUE-C13ped or sour",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "cream"
+        },
+        "CLUE-C9": {
+            "clue": "Jerry's partner in ice CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Ben"
+        },
+        "CLUE-C17": {
+            "clue": "\"get ___ soon!\"",
+            "depends_on": [],
+            "answer": "well"
+        },
+        "CLUE-C11": {
+            "clue": "kind of CLUE-C17 for a quill",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "ink"
+        },
+        "CLUE-C14": {
+            "clue": "tCLUE-C11er___ or Taco ___",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "bell"
+        },
+        "CLUE-C1": {
+            "clue": "CLUE-C9 that is actually the CLUE-C14 (not the clock)",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C9"
+            ],
+            "answer": "big"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C1, dumb, and clumsy one, maybe",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "oaf"
+        },
+        "CLUE-ROOT": {
+            "clue": "President CLUE-C15erson presented with a \u201cMamCLUE-C12 LCLUE-C5\u201d of bread",
+            "depends_on": [
+                "CLUE-C12",
+                "CLUE-C15",
+                "CLUE-C5"
+            ],
+            "answer": "President Jefferson presented with a \"Mammoth Loaf\" of bread"
+        }
+    }
+}

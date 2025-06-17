@@ -1,0 +1,177 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "one of many on a comb or gear",
+            "depends_on": [],
+            "answer": "tooth"
+        },
+        "CLUE-C11": {
+            "clue": "got extracted, as a CLUE-C8",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "pulled"
+        },
+        "CLUE-C4": {
+            "clue": "thing with an aglet on both ends, briefly",
+            "depends_on": [],
+            "answer": "lace"
+        },
+        "CLUE-C12": {
+            "clue": "sometimes they're CLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "curtains"
+        },
+        "CLUE-C10": {
+            "clue": "CLUE-C11 closed, as CLUE-C12",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C12"
+            ],
+            "answer": "Drew"
+        },
+        "CLUE-C14": {
+            "clue": "teen detective CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Nancy"
+        },
+        "CLUE-C25": {
+            "clue": "liquid ice",
+            "depends_on": [],
+            "answer": "water"
+        },
+        "CLUE-C16": {
+            "clue": "five sided figure",
+            "depends_on": [],
+            "answer": "pentagon"
+        },
+        "CLUE-C1": {
+            "clue": "the CLUE-C16 is sometimes a metonym for it, with \"the\"",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "military"
+        },
+        "CLUE-C5": {
+            "clue": "CLUE-C25 closet in a CLUE-C1 vessel",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C25"
+            ],
+            "answer": "head"
+        },
+        "CLUE-C23": {
+            "clue": "go in CLUE-C5 ___",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "first"
+        },
+        "CLUE-C19": {
+            "clue": "not CLUE-C23 class",
+            "depends_on": [
+                "CLUE-C23"
+            ],
+            "answer": "coach"
+        },
+        "CLUE-C18": {
+            "clue": "Urkel or McQueen",
+            "depends_on": [],
+            "answer": "Steve"
+        },
+        "CLUE-C13": {
+            "clue": "Warriors CLUE-C19 CLUE-C18",
+            "depends_on": [
+                "CLUE-C18",
+                "CLUE-C19"
+            ],
+            "answer": "Kerr"
+        },
+        "CLUE-C21": {
+            "clue": "entree preceder",
+            "depends_on": [],
+            "answer": "app"
+        },
+        "CLUE-C6": {
+            "clue": "photo-sharing CLUE-C21, very briefly",
+            "depends_on": [
+                "CLUE-C21"
+            ],
+            "answer": "ig"
+        },
+        "CLUE-C20": {
+            "clue": "newspaper piece",
+            "depends_on": [],
+            "answer": "article"
+        },
+        "CLUE-C2": {
+            "clue": "CLUE-C20 that goes before a vowel but not a consonant",
+            "depends_on": [
+                "CLUE-C20"
+            ],
+            "answer": "an"
+        },
+        "CLUE-C22": {
+            "clue": "scary or sporty",
+            "depends_on": [],
+            "answer": "spice"
+        },
+        "CLUE-C17": {
+            "clue": "add some CLUE-C22 to",
+            "depends_on": [
+                "CLUE-C22"
+            ],
+            "answer": "season"
+        },
+        "CLUE-C15": {
+            "clue": "leaf-peeping CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "fall"
+        },
+        "CLUE-C7": {
+            "clue": "theatrically CLUE-C15 on the pitch",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "flop"
+        },
+        "CLUE-C24": {
+            "clue": "CLUE-C7 on stage",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "bomb"
+        },
+        "CLUE-C3": {
+            "clue": "something that comes before CLUE-C24 or after bumper",
+            "depends_on": [
+                "CLUE-C24"
+            ],
+            "answer": "car"
+        },
+        "CLUE-C9": {
+            "clue": "metonym for the CLUE-C3 industry",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Detroit"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C14 CLUE-C13CLUE-C6CLUE-C2 attacked in CLUE-C9",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C14",
+                "CLUE-C2",
+                "CLUE-C6",
+                "CLUE-C9"
+            ],
+            "answer": "Nancy Kerrigan attacked in Detroit"
+        }
+    }
+}

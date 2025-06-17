@@ -1,0 +1,121 @@
+{
+    "clues": {
+        "CLUE-C3": {
+            "clue": "the record for memorizing them is 70,030 (of \u03c0)",
+            "depends_on": [],
+            "answer": "digits"
+        },
+        "CLUE-C2": {
+            "clue": "flag color that might warn you off a relationship",
+            "depends_on": [],
+            "answer": "red"
+        },
+        "CLUE-C15": {
+            "clue": "pillow structure, maybe",
+            "depends_on": [],
+            "answer": "fort"
+        },
+        "CLUE-C17": {
+            "clue": "___ vision goggles",
+            "depends_on": [],
+            "answer": "night"
+        },
+        "CLUE-C12": {
+            "clue": "one of two in a CLUE-C15CLUE-C17",
+            "depends_on": [
+                "CLUE-C15",
+                "CLUE-C17"
+            ],
+            "answer": "Week"
+        },
+        "CLUE-C6": {
+            "clue": "\"___ CLUE-C12\" on the Discovery Channel",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "Shark"
+        },
+        "CLUE-C7": {
+            "clue": "standard Oreo maneuver (into milk)",
+            "depends_on": [],
+            "answer": "dunk"
+        },
+        "CLUE-C13": {
+            "clue": "word with septic or CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Tank"
+        },
+        "CLUE-C8": {
+            "clue": "something heard on \"CLUE-C6 CLUE-C13\"",
+            "depends_on": [
+                "CLUE-C13",
+                "CLUE-C6"
+            ],
+            "answer": "pitch"
+        },
+        "CLUE-C14": {
+            "clue": "CLUE-C2 guy with a CLUE-C8fork",
+            "depends_on": [
+                "CLUE-C2",
+                "CLUE-C8"
+            ],
+            "answer": "devil"
+        },
+        "CLUE-C5": {
+            "clue": "\"speak of the CLUE-C14 and he shall ___\"",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "appear"
+        },
+        "CLUE-C10": {
+            "clue": "insect with a dung variety",
+            "depends_on": [],
+            "answer": "Beetle"
+        },
+        "CLUE-C4": {
+            "clue": "drawing the short one is usually not good",
+            "depends_on": [],
+            "answer": "straw"
+        },
+        "CLUE-C9": {
+            "clue": "box with a tiny CLUE-C4 attached",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "juice"
+        },
+        "CLUE-C1": {
+            "clue": "call for someone to CLUE-C5, e.g. saying CLUE-C10CLUE-C9 three times",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C5",
+                "CLUE-C9"
+            ],
+            "answer": "summon"
+        },
+        "CLUE-C16": {
+            "clue": "CLUE-C3 to CLUE-C1 \ud83d\ude93 \ud83d\ude92 \ud83d\ude91",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C3"
+            ],
+            "answer": "911"
+        },
+        "CLUE-C11": {
+            "clue": "Park ___ (near Boardwalk)",
+            "depends_on": [],
+            "answer": "place"
+        },
+        "CLUE-ROOT": {
+            "clue": "first CLUE-C16 call is CLUE-C11d in Alabama",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C16"
+            ],
+            "answer": "first 911 call is placed in Alabama"
+        }
+    }
+}

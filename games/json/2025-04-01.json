@@ -1,0 +1,140 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "\"a man of his ___\" (honest fellow)",
+            "depends_on": [],
+            "answer": "word"
+        },
+        "CLUE-C7": {
+            "clue": "it's mightier than the sCLUE-C9, apparently",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "pen"
+        },
+        "CLUE-C12": {
+            "clue": "it's smaller than a CLUE-C7ny",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "dime"
+        },
+        "CLUE-C15": {
+            "clue": "ruCLUE-C12ntary dog trick",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "sit"
+        },
+        "CLUE-C8": {
+            "clue": "*really* get mileage out of a CLUE-C15uation",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "Milk"
+        },
+        "CLUE-C14": {
+            "clue": "you are in the CLUE-C8y one",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "way"
+        },
+        "CLUE-C10": {
+            "clue": "dense, in more than one CLUE-C14 maybe",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "thick"
+        },
+        "CLUE-C13": {
+            "clue": "a uni one might be CLUE-C10",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "brow"
+        },
+        "CLUE-C11": {
+            "clue": "one of MANY open in your CLUE-C13ser",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "tab"
+        },
+        "CLUE-C4": {
+            "clue": "particularly demoralizing place to get sCLUE-C11bed",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "back"
+        },
+        "CLUE-C16": {
+            "clue": "youth detention site?",
+            "depends_on": [],
+            "answer": "school"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C4 __ CLUE-C16",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C4"
+            ],
+            "answer": "to"
+        },
+        "CLUE-C5": {
+            "clue": "medieval CLUE-C18rture device or spot for your coat",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "rack"
+        },
+        "CLUE-C19": {
+            "clue": "\"___ duper!\"",
+            "depends_on": [],
+            "answer": "super"
+        },
+        "CLUE-C3": {
+            "clue": "\"___ and no\" (not CLUE-C19 informative answer to a question)",
+            "depends_on": [
+                "CLUE-C19"
+            ],
+            "answer": "yes"
+        },
+        "CLUE-C2": {
+            "clue": "\"I wasn't ___ CLUE-C3terday!\" you yell at the startled magician",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "Born"
+        },
+        "CLUE-C17": {
+            "clue": "\"CLUE-C2 in the ___\" \ud83c\uddfa\ud83c\uddf8",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "usa"
+        },
+        "CLUE-C1": {
+            "clue": "cleaning tool that might work for a last-minute MedCLUE-C17 costume",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "mop"
+        },
+        "CLUE-C6": {
+            "clue": "insectoid hoCLUE-C1hone for your mom's sister",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "ant"
+        },
+        "CLUE-ROOT": {
+            "clue": "BCLUE-C5et City CLUE-C6hem released",
+            "depends_on": [
+                "CLUE-C5",
+                "CLUE-C6"
+            ],
+            "answer": "Bracket City anthem released"
+        }
+    }
+}

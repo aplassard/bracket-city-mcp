@@ -1,0 +1,105 @@
+{
+    "clues": {
+        "CLUE-C8": {
+            "clue": "__tied (dangerous state for shoelaces I'm told)",
+            "depends_on": [],
+            "answer": "un"
+        },
+        "CLUE-C9": {
+            "clue": "back___ (accumulation of CLUE-C8done work)",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "log"
+        },
+        "CLUE-C12": {
+            "clue": "like coCLUE-C9ne but a lot stronger",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "Perfume"
+        },
+        "CLUE-C14": {
+            "clue": "\ud83d\udca9 sample",
+            "depends_on": [],
+            "answer": "stool"
+        },
+        "CLUE-C13": {
+            "clue": "place to sit with CLUE-C14s",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "counter"
+        },
+        "CLUE-C4": {
+            "clue": "service concerned with protecting politicians (and CLUE-C13feiting!)",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "secret"
+        },
+        "CLUE-C2": {
+            "clue": "something often kept CLUE-C4 by expecting parents, lest they get pressured out of \"Bort\"",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "name"
+        },
+        "CLUE-C7": {
+            "clue": "Blanchett whose first CLUE-C2 has an uncommon start",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "cate"
+        },
+        "CLUE-C5": {
+            "clue": "\"a__!\" you say gleefully having loCLUE-C7d the missing Mint Milano",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "ha"
+        },
+        "CLUE-C10": {
+            "clue": "sillier-sounding word for a recluse",
+            "depends_on": [],
+            "answer": "hermit"
+        },
+        "CLUE-C11": {
+            "clue": "word after CLUE-C10 or before cake \ud83e\udd80",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "crab"
+        },
+        "CLUE-C6": {
+            "clue": "\"___ the sea!\" sings the delightful cartoon CLUE-C11",
+            "depends_on": [
+                "CLUE-C11"
+            ],
+            "answer": "under"
+        },
+        "CLUE-C3": {
+            "clue": "body part you are often urged to use after having made a mental blCLUE-C6",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "head"
+        },
+        "CLUE-C1": {
+            "clue": "response indicated when you keep your shoulders still and rotate your CLUE-C3 smoothly side to side, turning your chin about 15 to 30 degrees in each direction",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "No"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C12 CCLUE-C5nel CLUE-C1. 5 is released",
+            "depends_on": [
+                "CLUE-C1",
+                "CLUE-C12",
+                "CLUE-C5"
+            ],
+            "answer": "Perfume Chanel No. 5 is released"
+        }
+    }
+}

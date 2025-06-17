@@ -1,0 +1,118 @@
+{
+    "clues": {
+        "CLUE-C16": {
+            "clue": "some are gummy",
+            "depends_on": [],
+            "answer": "Bears"
+        },
+        "CLUE-C12": {
+            "clue": "home of the CLUE-C16 and Bulls",
+            "depends_on": [
+                "CLUE-C16"
+            ],
+            "answer": "Chicago"
+        },
+        "CLUE-C7": {
+            "clue": "dish dimension associated with CLUE-C12",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "deep"
+        },
+        "CLUE-C1": {
+            "clue": "the CLUE-C7 one can be a intimidating place to be thrown into",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "end"
+        },
+        "CLUE-C6": {
+            "clue": "letters after the CLUE-C1 of letters sometimes",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "ps"
+        },
+        "CLUE-C9": {
+            "clue": "___CLUE-C9aCLUE-C11",
+            "depends_on": [
+                "CLUE-C11",
+                "CLUE-C9"
+            ],
+            "answer": "cad"
+        },
+        "CLUE-C4": {
+            "clue": "sturdiest building material for a little pig",
+            "depends_on": [],
+            "answer": "brick"
+        },
+        "CLUE-C15": {
+            "clue": "iconic director KuCLUE-C4",
+            "depends_on": [
+                "CLUE-C4"
+            ],
+            "answer": "Stanley"
+        },
+        "CLUE-C8": {
+            "clue": "there is a World one and a CLUE-C15 one",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "cup"
+        },
+        "CLUE-C11": {
+            "clue": "undergarment with a CLUE-C8 size",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "bra"
+        },
+        "CLUE-C14": {
+            "clue": "companion of green eggs",
+            "depends_on": [],
+            "answer": "ham"
+        },
+        "CLUE-C2": {
+            "clue": "kind of lap that might be seen as showboating",
+            "depends_on": [],
+            "answer": "victory"
+        },
+        "CLUE-C3": {
+            "clue": "kind of CLUE-C2 that usually involves losing",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "moral"
+        },
+        "CLUE-C10": {
+            "clue": "your CLUE-C3 one should guide you",
+            "depends_on": [
+                "CLUE-C3"
+            ],
+            "answer": "compass"
+        },
+        "CLUE-C13": {
+            "clue": "one with a CLUE-C10, maybe",
+            "depends_on": [
+                "CLUE-C10"
+            ],
+            "answer": "Navigator"
+        },
+        "CLUE-C5": {
+            "clue": "car maker with the Continental and CLUE-C13",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "Lincoln"
+        },
+        "CLUE-ROOT": {
+            "clue": "CLUE-C9CLUE-C14 CLUE-C5 is born",
+            "depends_on": [
+                "CLUE-C14",
+                "CLUE-C5",
+                "CLUE-C9"
+            ],
+            "answer": "Abraham Lincoln is born"
+        }
+    }
+}
