@@ -1,0 +1,136 @@
+{
+  "CLUE-1": {
+    "text": "\"believe it or ___\"",
+    "answer": "not",
+    "depends_on": []
+  },
+  "CLUE-2": {
+    "text": "one [CLUE-1]ch above \"walk\", for a horse",
+    "answer": "trot",
+    "depends_on": ["CLUE-1"]
+  },
+  "CLUE-3": {
+    "text": "Tango or Fox[CLUE-2], e.g.",
+    "answer": "trot",
+    "depends_on": ["CLUE-2"]
+  },
+  "CLUE-4": {
+    "text": "that explodes (metaphorically or otherwise)",
+    "answer": "bomb",
+    "depends_on": []
+  },
+  "CLUE-5": {
+    "text": "[CLUE-4]line (ancient word for \"port\")",
+    "answer": "bombay",
+    "depends_on": ["CLUE-4"]
+  },
+  "CLUE-6": {
+    "text": "where you plug in a [CLUE-5]",
+    "answer": "port",
+    "depends_on": ["CLUE-5"]
+  },
+  "CLUE-7": {
+    "text": "co-___ (hi[CLUE-6], in sense)",
+    "answer": "pilot",
+    "depends_on": ["CLUE-6"]
+  },
+  "CLUE-8": {
+    "text": "helic[CLUE-7]er",
+    "answer": "helicopter",
+    "depends_on": ["CLUE-7"]
+  },
+  "CLUE-9": {
+    "text": "more square version of a [CLUE-8]",
+    "answer": "thesis",
+    "depends_on": ["CLUE-8"]
+  },
+  "CLUE-10": {
+    "text": "prefix whose opposite is \"no\" when attached to the suffix beyond this [CLUE-9]",
+    "answer": "hypo",
+    "depends_on": ["CLUE-9"]
+  },
+  "CLUE-11": {
+    "text": "___ into (gently introduce to [CLUE-10]thing new)",
+    "answer": "ease",
+    "depends_on": ["CLUE-10"]
+  },
+  "CLUE-12": {
+    "text": "so goes the w[CLUE-11], it is said",
+    "answer": "heel",
+    "depends_on": ["CLUE-11"]
+  },
+  "CLUE-13": {
+    "text": "when it's under the [CLUE-12]",
+    "answer": "heel",
+    "depends_on": ["CLUE-12"]
+  },
+  "CLUE-14": {
+    "text": "opposite of [CLUE-13] when it comes to",
+    "answer": "kind",
+    "depends_on": ["CLUE-13"]
+  },
+  "CLUE-15": {
+    "text": "Will Smith played a [CLUE-14] one from Bel Air",
+    "answer": "fresh prince",
+    "depends_on": ["CLUE-14"]
+  },
+  "CLUE-16": {
+    "text": "the royal formerly known as [CLUE-15]",
+    "answer": "prince",
+    "depends_on": ["CLUE-15"]
+  },
+  "CLUE-17": {
+    "text": "\"___!\" cries the toddler as he snatches back his special rock",
+    "answer": "mine",
+    "depends_on": []
+  },
+  "CLUE-18": {
+    "text": "the length at which a tape ___ starts to buckle and flop down is called its \"[CLUE-17]ade ___\"",
+    "answer": "measure",
+    "depends_on": ["CLUE-17"]
+  },
+  "CLUE-19": {
+    "text": "Person of the ___ (accolade awarded to \"You\" by [CLUE-18] in 2006)",
+    "answer": "year",
+    "depends_on": ["CLUE-18"]
+  },
+  "CLUE-20": {
+    "text": "[CLUE-16] Good[CLUE-19]",
+    "answer": "charles goodyear",
+    "depends_on": ["CLUE-16", "CLUE-19"]
+  },
+  "CLUE-21": {
+    "text": "one for sale on \"___ of Fortune\"",
+    "answer": "wheel",
+    "depends_on": []
+  },
+  "CLUE-22": {
+    "text": "article that might come out before a [CLUE-21]",
+    "answer": "a",
+    "depends_on": ["CLUE-21"]
+  },
+  "CLUE-23": {
+    "text": "___ S[CLUE-22]s (much-mocked font)",
+    "answer": "comic sans",
+    "depends_on": ["CLUE-22"]
+  },
+  "CLUE-24": {
+    "text": "word after Vegas, [CLUE-23], or Möbius",
+    "answer": "strip",
+    "depends_on": ["CLUE-23"]
+  },
+  "CLUE-25": {
+    "text": "they get [CLUE-3]d with on a [CLUE-12]ular TV show",
+    "answer": "starred",
+    "depends_on": ["CLUE-3", "CLUE-12"]
+  },
+  "CLUE-26": {
+    "text": "[CLUE-25] and [CLUE-24]es",
+    "answer": "stars and stripes",
+    "depends_on": ["CLUE-25", "CLUE-24"]
+  },
+  "CLUE-TOP": {
+    "text": "Congress approves the \"[CLUE-26]\" flag design",
+    "depends_on": ["CLUE-26"]
+  }
+}

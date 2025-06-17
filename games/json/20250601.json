@@ -1,0 +1,132 @@
+{
+    "clues": {
+        "CLUE-C9": {
+            "clue": "the third piece in a 3-piece suit",
+            "depends_on": [],
+            "answer": "vest"
+        },
+        "CLUE-C5": {
+            "clue": "spill that might lead to an inCLUE-C9igation",
+            "depends_on": [
+                "CLUE-C9"
+            ],
+            "answer": "oil"
+        },
+        "CLUE-C6": {
+            "clue": "Rover \ud83d\ude98 demanded by a spCLUE-C5ed teen, maybe",
+            "depends_on": [
+                "CLUE-C5"
+            ],
+            "answer": "range"
+        },
+        "CLUE-C8": {
+            "clue": "iconic oCLUE-C6 traffic-control object",
+            "depends_on": [
+                "CLUE-C6"
+            ],
+            "answer": "cone"
+        },
+        "CLUE-C14": {
+            "clue": "giant CLUE-C8 for a dunce",
+            "depends_on": [
+                "CLUE-C8"
+            ],
+            "answer": "cap"
+        },
+        "CLUE-C2": {
+            "clue": "\"CLUE-C14s ___\" (special key with its own little light often)",
+            "depends_on": [
+                "CLUE-C14"
+            ],
+            "answer": "lock"
+        },
+        "CLUE-C12": {
+            "clue": "sound associated with a cCLUE-C2",
+            "depends_on": [
+                "CLUE-C2"
+            ],
+            "answer": "tick"
+        },
+        "CLUE-C17": {
+            "clue": "CLUE-C12er tape event",
+            "depends_on": [
+                "CLUE-C12"
+            ],
+            "answer": "parade"
+        },
+        "CLUE-C13": {
+            "clue": "festive platform at a CLUE-C17",
+            "depends_on": [
+                "CLUE-C17"
+            ],
+            "answer": "float"
+        },
+        "CLUE-C1": {
+            "clue": "you might tie one to a child's wrist, lest it CLUE-C13 away",
+            "depends_on": [
+                "CLUE-C13"
+            ],
+            "answer": "balloon"
+        },
+        "CLUE-C3": {
+            "clue": "CLUE-C1-filling element (on the periodic table) \ud83c\udf88",
+            "depends_on": [
+                "CLUE-C1"
+            ],
+            "answer": "He"
+        },
+        "CLUE-C16": {
+            "clue": "51, as a Super Bowl",
+            "depends_on": [],
+            "answer": "li"
+        },
+        "CLUE-C15": {
+            "clue": "two worse than bronze",
+            "depends_on": [],
+            "answer": "fifth"
+        },
+        "CLUE-C7": {
+            "clue": "a CLUE-C15 of a myriad (or pounds in a ton)",
+            "depends_on": [
+                "CLUE-C15"
+            ],
+            "answer": "2000"
+        },
+        "CLUE-C10": {
+            "clue": "word before card \ud83d\udcf2 or City CLUE-C7",
+            "depends_on": [
+                "CLUE-C7"
+            ],
+            "answer": "Sim"
+        },
+        "CLUE-C11": {
+            "clue": "pool that involves saving gas",
+            "depends_on": [],
+            "answer": "car"
+        },
+        "CLUE-C18": {
+            "clue": "CLUE-C10ba or SCLUE-C11",
+            "depends_on": [
+                "CLUE-C10",
+                "CLUE-C11"
+            ],
+            "answer": "lion"
+        },
+        "CLUE-C4": {
+            "clue": "signature hair piece for a horse or a CLUE-C18",
+            "depends_on": [
+                "CLUE-C18"
+            ],
+            "answer": "mane"
+        },
+        "CLUE-ROOT": {
+            "clue": "the CLUE-C3imCLUE-C16ch CLUE-C4uver is published in the journal Emergency Medicine",
+            "depends_on": [
+                "CLUE-C16",
+                "CLUE-C3",
+                "CLUE-C4"
+            ],
+            "answer": "the Heimlich maneuver is published in the journal Emergency\n\t\t\t\t\t\t\t\tMedicine"
+        }
+    }
+}
