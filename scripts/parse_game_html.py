@@ -46,8 +46,7 @@ def generate_puzzle_structure(html_content):
     # Find the H1 header for the final solution section
     solution_h1 = soup.find('h1', string=re.compile(r"Today's \[BRACKET CITY\] Final Solution"))
     
-    # --- FIX: Search within the H1's parent container for the answer ---
-    # This is more robust than assuming the answer is in the very next tag.
+    # Search within the H1's parent container for the answer
     if solution_h1 and solution_h1.parent:
         # Search within this container for a 'strong' tag, which holds the answer text.
         solution_strong_tag = solution_h1.parent.find('strong')
@@ -96,7 +95,7 @@ def generate_puzzle_structure(html_content):
             found_ids = re.findall(r'CLUE-C\d+', inner_content)
             
             final_clues[clue_id] = {
-                "text": inner_content,
+                "clue": inner_content,
                 "depends_on": sorted(list(set(found_ids))),
                 "answer": clue_text_to_answer[found_clue_text]
             }
@@ -110,7 +109,7 @@ def generate_puzzle_structure(html_content):
     root_dependencies = re.findall(r'CLUE-C\d+', root_clue_text)
     
     final_clues["CLUE-ROOT"] = {
-        "text": root_clue_text,
+        "clue": root_clue_text,
         "depends_on": sorted(list(set(root_dependencies))),
         "answer": final_solution_text
     }
