@@ -1,0 +1,19 @@
+{
+  "clues": {
+    "CLUE-A1": {
+      "clue": "A test clue for 20240101",
+      "depends_on": [],
+      "answer": "testanswer"
+    },
+    "CLUE-A2": {
+      "clue": "Another test clue, depends on A1",
+      "depends_on": ["CLUE-A1"],
+      "answer": "another"
+    },
+    "CLUE-END": {
+        "clue": "The end of the 20240101 test puzzle. Depends on CLUE-A2",
+        "depends_on": ["CLUE-A2"],
+        "answer": ""
+    }
+  }
+}

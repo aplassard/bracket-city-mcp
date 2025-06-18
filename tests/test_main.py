@@ -10,6 +10,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from src.bracket_city_mcp import main as bracket_city_main
 from src.bracket_city_mcp.game.game import Game
 # Clue import for type hinting or direct use if needed for setup:
+import json # For creating temporary json files
 # Imports from src/bracket_city_mcp/tests/test_main_tools.py
 from bracket_city_mcp.main import get_clue_context # answer_clue is already imported via bracket_city_main
 from bracket_city_mcp.game.clue import Clue # For type hinting or direct use if needed for setup
@@ -201,7 +202,7 @@ class TestMainApi(unittest.TestCase): # Renamed class for broader scope
         # Any answer string for end clue, it's ignored by the new logic in main.py
         final_response = bracket_city_main.answer_clue("#END_CLUE#", "any_answer")
 
-        expected_score = len(self.game_instance.clues) - self.game_instance.incorrect_guesses
+        expected_score = self.game_instance.incorrect_guesses
 
         self.assertTrue(final_response["correct"]) # Correct in the sense of reaching the end
         self.assertEqual(final_response["message"], "You've reached the final clue! Congratulations, the game is complete!")
@@ -217,6 +218,95 @@ class TestMainApi(unittest.TestCase): # Renamed class for broader scope
         # This is acceptable.
         self.assertIn("#END_CLUE#", final_response["available_clues"])
         self.assertEqual(len(final_response["available_clues"]), 1) # Only end clue should be "active"
+
+    def test_load_puzzle_by_date(self):
+        """Tests the load_puzzle_by_date tool for various scenarios."""
+        # Ensure the games/json directory exists for temporary test files
+        os.makedirs("games/json", exist_ok=True)
+
+        # --- 1. Successful Loading ---
+        # The 20240101.json file should have been created in a previous step
+        # If not, this part of the test will fail, which is acceptable.
+        original_game_id = id(self.mock_main_game_instance)
+
+        response_success = bracket_city_main.load_puzzle_by_date("20240101")
+
+        # This is the text of the CLUE-END in 20240101.json, as per subtask requirement.
+        expected_rendered_text = "The end of the 20240101 test puzzle. Depends on [Another test clue, depends on A1]"
+
+        expected_success_response = {
+            "status": "success",
+            "message": "Successfully loaded puzzle for date 20240101 from games/json/20240101.json.",
+            "rendered_game_text": expected_rendered_text
+        }
+        # Main assertion for the response of load_puzzle_by_date
+        self.assertEqual(response_success, expected_success_response)
+
+        # Verify that the game object used by the main module has been updated
+        # by checking the output of get_full_game_text tool, which should also match the new expected_rendered_text.
+        # This assumes load_puzzle_by_date correctly sets the game such that get_full_game_text returns this.
+        self.assertEqual(bracket_city_main.get_full_game_text(), expected_rendered_text)
+
+        # Also check available clues from the newly loaded game (should be CLUE-A1)
+        # Note: get_available_clues() returns a list, sort for consistent comparison if order isn't guaranteed.
+        # For a single item list, sorting isn't strictly necessary but good practice.
+        self.assertEqual(sorted(bracket_city_main.get_available_clues()), ["CLUE-A1"])
+        self.assertEqual(bracket_city_main.get_clue_text("CLUE-A1"), "A test clue for 20240101")
+
+        # --- Restore original game for subsequent test cases in this method ---
+        # Re-patch bracket_city_main.game to a known state (self.game_instance, which is a copy of test_game.json)
+        # This is important because load_puzzle_by_date MODIFIES the global 'game' in bracket_city_main
+        self.patcher.stop()
+        self.game_instance = copy.deepcopy(self.game_template) # Get a fresh copy from template
+         # Reset completion status for all clues
+        for clue_obj in self.game_instance.clues.values():
+            clue_obj.completed = False
+        self.game_instance.active_clues = set(self.game_instance.start_clues)
+        self.game_instance.incorrect_guesses = 0
+        self.patcher = patch('src.bracket_city_mcp.main.game', self.game_instance)
+        self.mock_main_game_instance = self.patcher.start()
+        # Ensure the game instance used by tools is now our reset self.game_instance
+        self.assertIs(bracket_city_main.game, self.game_instance)
+
+
+        # --- 2. File Not Found ---
+        stored_game_id_before_not_found = id(self.mock_main_game_instance)
+        response_not_found = bracket_city_main.load_puzzle_by_date("19990101")
+        self.assertEqual(response_not_found["status"], "error")
+        self.assertEqual(response_not_found["message"], "Puzzle file not found: games/json/19990101.json")
+        self.assertIs(self.mock_main_game_instance, self.game_instance, "Game object should not change on FileNotFoundError.")
+        self.assertEqual(id(self.mock_main_game_instance), stored_game_id_before_not_found, "Game object id should be identical after FileNotFoundError.")
+
+        # --- 3. Invalid Date Format (Too Short) ---
+        stored_game_id_before_invalid_short = id(self.mock_main_game_instance)
+        response_invalid_format_short = bracket_city_main.load_puzzle_by_date("2024")
+        self.assertEqual(response_invalid_format_short["status"], "error")
+        self.assertEqual(response_invalid_format_short["message"], "Invalid date_str format. Expected YYYYMMDD (e.g., '20240715').")
+        self.assertIs(self.mock_main_game_instance, self.game_instance, "Game object should not change on short invalid date.")
+        self.assertEqual(id(self.mock_main_game_instance), stored_game_id_before_invalid_short, "Game object id should be identical after short invalid date.")
+
+
+        # --- 4. Invalid Date Format (Non-Numeric) ---
+        stored_game_id_before_invalid_non_numeric = id(self.mock_main_game_instance)
+        response_invalid_format_non_numeric = bracket_city_main.load_puzzle_by_date("abcdefgh")
+        self.assertEqual(response_invalid_format_non_numeric["status"], "error")
+        self.assertEqual(response_invalid_format_non_numeric["message"], "Invalid date_str format. Expected YYYYMMDD (e.g., '20240715').")
+        self.assertIs(self.mock_main_game_instance, self.game_instance, "Game object should not change on non-numeric invalid date.")
+        self.assertEqual(id(self.mock_main_game_instance), stored_game_id_before_invalid_non_numeric, "Game object id should be identical after non-numeric invalid date.")
+
+        # --- 5. Invalid Game File (JSON Decode Error) ---
+        bad_json_date_str = "19990715"
+        bad_json_path = os.path.join("games/json", f"{bad_json_date_str}.json")
+        with open(bad_json_path, "w") as f:
+            f.write('{"clues": { "CLUE-X1": { "clue": "bad, "answer": "bad"}}}') # Malformed JSON
+        self.addCleanup(os.remove, bad_json_path)
+
+        stored_game_id_before_bad_json = id(self.mock_main_game_instance)
+        response_bad_json = bracket_city_main.load_puzzle_by_date(bad_json_date_str)
+        self.assertEqual(response_bad_json["status"], "error")
+        self.assertTrue(response_bad_json["message"].startswith(f"Error decoding JSON from {bad_json_path}:"))
+        self.assertIs(self.mock_main_game_instance, self.game_instance, "Game object should not change on JSONDecodeError.")
+        self.assertEqual(id(self.mock_main_game_instance), stored_game_id_before_bad_json, "Game object id should be identical after JSONDecodeError.")
 
 if __name__ == '__main__':
     # This allows running the tests directly from this file: python tests/test_main.py
