@@ -189,6 +189,66 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
 
     return response
 
+@mcp.tool(name="load_puzzle_by_date")
+def load_puzzle_by_date(date_str: str) -> Dict[str, str]:
+    """
+    Loads a puzzle by its date string (YYYYMMDD).
+
+    Validates the date string format, constructs the file path,
+    and attempts to load the game from the corresponding JSON file.
+    If successful, the global 'game' variable is updated with the new game.
+
+    Args:
+        date_str: The date of the puzzle in YYYYMMDD format.
+
+    Returns:
+        A dictionary with "status" ("success" or "error") and "message".
+        On success, the message confirms loading.
+        On error, the message provides details about the failure
+        (e.g., invalid date format, file not found, JSON decoding error,
+        or internal game validation error).
+    """
+    global game  # Declare intention to modify the global game variable
+    import json # For json.JSONDecodeError
+
+    if not (isinstance(date_str, str) and len(date_str) == 8 and date_str.isdigit()):
+        return {
+            "status": "error",
+            "message": "Invalid date_str format. Expected YYYYMMDD (e.g., '20240715')."
+        }
+
+    filepath = f"games/json/{date_str}.json"
+
+    try:
+        new_game = Game.from_json_file(filepath)
+        game = new_game  # Reassign the global game variable
+        rendered_text = game.get_rendered_game_text() # Get the rendered text
+        return {
+            "status": "success",
+            "message": f"Successfully loaded puzzle for date {date_str} from {filepath}.",
+            "rendered_game_text": rendered_text # Add it to the response
+        }
+    except FileNotFoundError:
+        return {
+            "status": "error",
+            "message": f"Puzzle file not found: {filepath}"
+        }
+    except json.JSONDecodeError as e:
+        return {
+            "status": "error",
+            "message": f"Error decoding JSON from {filepath}: {e}"
+        }
+    except ValueError as e: # Catching Game's internal validation errors
+        return {
+            "status": "error",
+            "message": f"Error loading game from {filepath} (e.g., wrong number of end clues, data integrity): {e}"
+        }
+    except Exception as e: # Catch-all for any other unexpected errors
+        return {
+            "status": "error",
+            "message": f"An unexpected error occurred while loading {filepath}: {e}"
+        }
+
 def main():
     
     mcp.run()
