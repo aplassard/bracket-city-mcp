@@ -29,7 +29,9 @@ bracket-city-mcp = "bracket_city_mcp.main:main"
 asyncio_mode = "auto"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src"]  # Look for packages in the 'src' directory
+include = ["bracket_city_mcp*"] 
+namespaces = false 
 
 [tool.uv.sources]
 bracket-city-mcp = { workspace = true }
