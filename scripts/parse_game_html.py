@@ -2,6 +2,15 @@ import sys
 import json
 import re
 from bs4 import BeautifulSoup
+try:
+    import requests
+except ModuleNotFoundError:
+    print("The 'requests' library is not installed. Please install it by running 'pip install requests'", file=sys.stderr)
+    # As per instructions, attempting to install if missing.
+    # This is generally not recommended for library code but following instructions.
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    import requests
 
 def generate_puzzle_structure(html_content):
     """
@@ -115,6 +124,28 @@ def generate_puzzle_structure(html_content):
     }
 
     return {"clues": final_clues}
+
+
+def parse_game_from_url(url: str) -> dict:
+    """
+    Fetches HTML content from a URL and parses it to extract puzzle structure.
+
+    Args:
+        url (str): The URL of the puzzle page.
+
+    Returns:
+        dict: A dictionary containing the fully structured puzzle data,
+              or an error dictionary if fetching/parsing fails.
+    """
+    try:
+        response = requests.get(url, timeout=10)  # Added timeout for robustness
+        response.raise_for_status()  # Raises an HTTPError for bad responses (4XX or 5XX)
+        html_content = response.text
+        return generate_puzzle_structure(html_content)
+    except requests.exceptions.RequestException as e:
+        return {"error": f"Failed to fetch HTML from URL: {url}. Error: {e}"}
+    except Exception as e: # Catch any other unexpected errors during parsing
+        return {"error": f"An unexpected error occurred while processing URL {url}: {e}"}
 
 
 def main():

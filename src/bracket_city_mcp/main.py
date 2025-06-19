@@ -2,6 +2,7 @@ import uvicorn
 from mcp.server.fastmcp import FastMCP
 from bracket_city_mcp.game.game import Game
 from typing import List, Dict, Any
+from scripts.parse_game_html import parse_game_from_url # Added import
 
 """
 Main module for the BracketCity MCP server.
@@ -247,6 +248,65 @@ def load_puzzle_by_date(date_str: str) -> Dict[str, str]:
         return {
             "status": "error",
             "message": f"An unexpected error occurred while loading {filepath}: {e}"
+        }
+
+@mcp.tool(name="load_puzzle_from_url")
+def load_puzzle_from_url(date_str: str) -> Dict[str, str]:
+    """
+    Loads a puzzle by its date string (YYYY-MM-DD) from a URL.
+
+    Constructs the URL, fetches the puzzle data using parse_game_from_url,
+    and attempts to load the game. If successful, the global 'game'
+    variable is updated.
+
+    Args:
+        date_str: The date of the puzzle in YYYY-MM-DD format.
+
+    Returns:
+        A dictionary with "status" ("success" or "error") and "message".
+        On success, the message confirms loading and includes rendered game text.
+        On error, the message provides details about the failure.
+    """
+    global game # Declare intention to modify the global game variable
+    import re # For date validation
+
+    # Validate date_str format (YYYY-MM-DD)
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", date_str):
+        return {
+            "status": "error",
+            "message": "Invalid date_str format. Expected YYYY-MM-DD (e.g., '2024-03-07')."
+        }
+
+    url = f"https://ladypuzzle.pro/bracket-city-hints-answers-solution/{date_str}"
+
+    try:
+        puzzle_data = parse_game_from_url(url)
+
+        if "error" in puzzle_data:
+            return {
+                "status": "error",
+                "message": f"Failed to fetch or parse puzzle from URL {url}: {puzzle_data['error']}"
+            }
+
+        # The Game constructor (__init__) takes the dictionary directly.
+        # It can raise ValueError if game data is malformed (e.g., wrong number of end clues)
+        new_game = Game(puzzle_data)
+        game = new_game  # Reassign the global game variable
+        rendered_text = game.get_rendered_game_text()
+        return {
+            "status": "success",
+            "message": f"Successfully loaded puzzle for date {date_str} from URL.",
+            "rendered_game_text": rendered_text
+        }
+    except ValueError as e: # Catching Game's internal validation errors
+        return {
+            "status": "error",
+            "message": f"Error creating game from data fetched from {url}: {e}"
+        }
+    except Exception as e: # Catch-all for any other unexpected errors
+        return {
+            "status": "error",
+            "message": f"An unexpected error occurred while processing URL {url}: {e}"
         }
 
 def main():

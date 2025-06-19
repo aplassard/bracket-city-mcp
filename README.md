@@ -62,6 +62,40 @@ The server exposes the following MCP tools and resources for interacting with th
         *   `answer` (string): The proposed answer.
     *   Returns: A JSON object indicating if the answer was correct, a message, currently available clues, and game completion status.
 
+*   **`load_puzzle_by_date` (POST)**
+    *   Purpose: Loads a puzzle from a pre-existing local JSON file, by date. This updates the currently active game on the server. Assumes JSON files are located in a path like `games/json/{YYYYMMDD}.json`.
+    *   Parameters:
+        *   `date_str` (string): The date of the puzzle in "YYYYMMDD" format (e.g., "20240101").
+    *   Returns: A JSON object indicating success or failure.
+        *   Example Success: `{"status": "success", "message": "Successfully loaded puzzle for date 20240101 from games/json/20240101.json.", "rendered_game_text": "..."}`
+        *   Example Error: `{"status": "error", "message": "Puzzle file not found: games/json/19990101.json"}`
+    *   Example MCP Call (JSON body for POST):
+        ```json
+        {
+          "tool": "load_puzzle_by_date",
+          "args": {
+            "date_str": "20240101"
+          }
+        }
+        ```
+
+*   **`load_puzzle_from_url` (POST)**
+    *   Purpose: Loads a puzzle directly from its URL on `ladypuzzle.pro` for a given date. This fetches the HTML, parses it, and updates the currently active game on the server.
+    *   Parameters:
+        *   `date_str` (string): The date of the puzzle in "YYYY-MM-DD" format (e.g., "2024-03-08"). The tool constructs the URL from this date.
+    *   Returns: A JSON object indicating success or failure.
+        *   Example Success: `{"status": "success", "message": "Successfully loaded puzzle for date 2024-03-08 from URL.", "rendered_game_text": "[Clue 1 Answer] then [Clue 2 Answer]..."}`
+        *   Example Error: `{"status": "error", "message": "Failed to fetch HTML from URL: https://ladypuzzle.pro/bracket-city-hints-answers-solution/2024-03-09. Error: 404 Client Error..."}`
+    *   Example MCP Call (JSON body for POST):
+        ```json
+        {
+          "tool": "load_puzzle_from_url",
+          "args": {
+            "date_str": "2024-03-08"
+          }
+        }
+        ```
+
 ### Resources
 
 *   **`bracketcity://game` (GET)**
@@ -89,3 +123,18 @@ Tests are written using [pytest](https://docs.pytest.org/). To run the test suit
     pytest
     ```
     This command will automatically discover and run all tests in the `tests` directory.
+
+## Loading Puzzle Data
+
+The server can load puzzle data in a couple of ways:
+
+1.  **Default Puzzle on Start**:
+    When the server starts, it loads a default puzzle. Currently, this is configured in `src/bracket_city_mcp/main.py` to load from a specific JSON file (e.g., `games/json/2025-03-07.json`).
+
+2.  **Loading from Local JSON Files (via MCP)**:
+    Puzzles can be pre-processed into JSON data files (typically stored in the `games/json/` directory, named by date like `YYYYMMDD.json`). The `load_puzzle_by_date` MCP tool can then be used to load these puzzles into the server, making them the active game. This was the primary way to switch puzzles after the server starts.
+
+3.  **Loading Directly from URL (via MCP - New Workflow)**:
+    The `load_puzzle_from_url` MCP tool provides a more direct, Python-driven workflow. Instead of manually downloading HTML files and converting them to JSON, this tool accepts a date (in "YYYY-MM-DD" format), constructs the appropriate URL for `ladypuzzle.pro`, fetches the HTML content, parses it, and loads it as the active game. This entire process happens within the Python application, leveraging the `scripts.parse_game_html.parse_game_from_url` function. This method bypasses the need for intermediate shell scripts or manual file handling for fetching new daily puzzles.
+
+Both `load_puzzle_by_date` and `load_puzzle_from_url` allow changing the active game dynamically while the server is running.
