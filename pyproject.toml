@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "beautifulsoup4>=4.13.4",
+    "ipython>=8.37.0",
     "lxml>=5.4.0",
     "mcp[cli]>=1.9.4",
     "pip>=25.1.1",
@@ -29,3 +30,11 @@ asyncio_mode = "auto"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.uv.sources]
+bracket-city-mcp = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "bracket-city-mcp",
+]
