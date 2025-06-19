@@ -6,11 +6,13 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "beautifulsoup4>=4.13.4",
+    "ipython>=8.37.0",
     "lxml>=5.4.0",
     "mcp[cli]>=1.9.4",
     "pip>=25.1.1",
     "pytest>=8.4.0",
     "pytest-asyncio>=1.0.0",
+    "requests", # Added requests
     "uvicorn>=0.34.3", # Added for direct use in main.py
 ]
 
@@ -27,4 +29,14 @@ bracket-city-mcp = "bracket_city_mcp.main:main"
 asyncio_mode = "auto"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["src"]  # Look for packages in the 'src' directory
+include = ["bracket_city_mcp*"] 
+namespaces = false 
+
+[tool.uv.sources]
+bracket-city-mcp = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "bracket-city-mcp",
+]

@@ -12,12 +12,27 @@ from src.bracket_city_mcp.game.game import Game
 # Clue import for type hinting or direct use if needed for setup:
 import json # For creating temporary json files
 # Imports from src/bracket_city_mcp/tests/test_main_tools.py
-from bracket_city_mcp.main import get_clue_context # answer_clue is already imported via bracket_city_main
-from bracket_city_mcp.game.clue import Clue # For type hinting or direct use if needed for setup
+from bracket_city_mcp.main import get_clue_context, load_puzzle # Updated import
+from src.bracket_city_mcp.game.clue import Clue # For type hinting or direct use if needed for setup
+# import requests # No longer needed directly here as we mock load_game_data_by_date
 
 
 class TestMainApi(unittest.TestCase): # Renamed class for broader scope
     game_template: Game
+
+    # Minimal valid game data for mocking load_game_data_by_date
+    MOCK_GAME_DATA_SUCCESS = {
+        "clues": {
+            "CLUE-M1": {"clue": "Mock Clue 1", "answer": "Mock Answer 1", "depends_on": []},
+            "CLUE-ROOT": {"clue": "[CLUE-M1]", "answer": "Mock Root Answer", "depends_on": ["CLUE-M1"]}
+        }
+    }
+    EXPECTED_RENDERED_TEXT_MOCK_SUCCESS = "[Mock Answer 1]"
+
+    MOCK_GAME_DATA_FOR_VALUE_ERROR = { # This data would cause Game.__init__ to raise ValueError
+        "clues": { "CLUE_CYCLE": {"clue": "Cycle", "answer": "CycleAns", "depends_on": ["CLUE_CYCLE"]} }
+    }
+
 
     @classmethod
     def setUpClass(cls):
@@ -518,3 +533,77 @@ if __name__ == '__main__':
             get_clue_context(end_clue_id) # Call it again with the spy in place
 
         prod_game.get_first_dependent_clue_id.assert_called_once_with(end_clue_id)
+
+
+    # --- Tests for the new load_puzzle MCP tool ---
+
+    @patch('bracket_city_mcp.main.load_game_data_by_date')
+    def test_load_puzzle_success(self, mock_load_game_data_by_date):
+        """Tests successful puzzle loading via the new load_puzzle tool."""
+        mock_load_game_data_by_date.return_value = self.MOCK_GAME_DATA_SUCCESS
+
+        date_to_load = "2024-01-01"
+        initial_game_id = id(self.mock_main_game_instance)
+
+        response = bracket_city_main.load_puzzle(date_to_load)
+
+        self.assertEqual(response["status"], "success")
+        self.assertEqual(response["message"], f"Successfully loaded puzzle for date {date_to_load}.")
+        self.assertEqual(response["rendered_game_text"], self.EXPECTED_RENDERED_TEXT_MOCK_SUCCESS)
+
+        mock_load_game_data_by_date.assert_called_once_with(date_to_load)
+        self.assertNotEqual(id(bracket_city_main.game), initial_game_id, "Game object should have been updated.")
+        self.assertIsInstance(bracket_city_main.game, Game)
+        self.assertEqual(bracket_city_main.game.get_rendered_game_text(), self.EXPECTED_RENDERED_TEXT_MOCK_SUCCESS)
+
+    @patch('bracket_city_mcp.main.load_game_data_by_date')
+    def test_load_puzzle_loader_returns_error(self, mock_load_game_data_by_date):
+        """Tests when load_game_data_by_date returns an error."""
+        mock_load_game_data_by_date.return_value = {"error": "mocked loader process error"}
+
+        date_to_load = "2024-01-02"
+        initial_game_instance = self.mock_main_game_instance
+        initial_game_id = id(initial_game_instance)
+
+        response = bracket_city_main.load_puzzle(date_to_load)
+
+        self.assertEqual(response["status"], "error")
+        self.assertEqual(response["message"], "mocked loader process error")
+
+        mock_load_game_data_by_date.assert_called_once_with(date_to_load)
+        self.assertIs(bracket_city_main.game, initial_game_instance, "Game object should not change on loader error.")
+        self.assertEqual(id(bracket_city_main.game), initial_game_id, "Game object id should be identical after loader error.")
+
+    @patch('bracket_city_mcp.main.load_game_data_by_date')
+    def test_load_puzzle_game_instantiation_error(self, mock_load_game_data_by_date):
+        """Tests when game data is valid but Game instantiation fails."""
+        mock_load_game_data_by_date.return_value = self.MOCK_GAME_DATA_FOR_VALUE_ERROR
+
+        date_to_load = "2024-01-03"
+        initial_game_instance = self.mock_main_game_instance
+        initial_game_id = id(initial_game_instance)
+
+        response = bracket_city_main.load_puzzle(date_to_load)
+
+        self.assertEqual(response["status"], "error")
+        self.assertTrue(response["message"].startswith(f"Error creating game instance for date {date_to_load}:"))
+        self.assertIn("Game must have exactly one end clue.", response["message"]) # Specific error from Game constructor
+
+        mock_load_game_data_by_date.assert_called_once_with(date_to_load)
+        self.assertIs(bracket_city_main.game, initial_game_instance, "Game object should not change on instantiation error.")
+        self.assertEqual(id(bracket_city_main.game), initial_game_id, "Game object id should be identical after instantiation error.")
+
+    def test_load_puzzle_invalid_date_format(self):
+        """Tests load_puzzle with various invalid date string formats."""
+        invalid_dates = ["2023/01/01", "01-01-2023", "2023-13-01", "2023-01-32", "bad-date", "20240101"]
+
+        initial_game_instance = self.mock_main_game_instance
+        initial_game_id = id(initial_game_instance)
+
+        for invalid_date in invalid_dates:
+            with self.subTest(invalid_date=invalid_date):
+                response = bracket_city_main.load_puzzle(invalid_date)
+                self.assertEqual(response["status"], "error")
+                self.assertEqual(response["message"], "Invalid date_str format. Expected YYYY-MM-DD (e.g., '2024-07-15').")
+                self.assertIs(bracket_city_main.game, initial_game_instance, f"Game object should not change for invalid date {invalid_date}.")
+                self.assertEqual(id(bracket_city_main.game), initial_game_id, f"Game object id should be identical for invalid date {invalid_date}.")

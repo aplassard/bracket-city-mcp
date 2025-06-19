@@ -1,7 +1,10 @@
 import uvicorn
+import re # For date validation in the new load_puzzle tool
 from mcp.server.fastmcp import FastMCP
 from bracket_city_mcp.game.game import Game
 from typing import List, Dict, Any
+# parse_game_from_url is no longer directly used by main.py
+from bracket_city_mcp.puzzle_loader import load_game_data_by_date # New import
 
 """
 Main module for the BracketCity MCP server.
@@ -17,7 +20,7 @@ not provide a direct test_client() method. This is a known limitation.
 
 # Initialize the game
 # TODO: Make the game file path configurable (future enhancement)
-game = Game.from_json_file("games/json/2025-03-07.json")
+game = Game.from_json_file("games/json/20250614.json")
 
 # Create the MCP server
 # TODO: Make host and port configurable (future enhancement for server execution)
@@ -189,64 +192,48 @@ def answer_clue(clue_id: str, answer: str) -> Dict[str, Any]:
 
     return response
 
-@mcp.tool(name="load_puzzle_by_date")
-def load_puzzle_by_date(date_str: str) -> Dict[str, str]:
+
+@mcp.tool(name="load_puzzle")
+def load_puzzle(date_str: str) -> Dict[str, Any]:
     """
-    Loads a puzzle by its date string (YYYYMMDD).
-
-    Validates the date string format, constructs the file path,
-    and attempts to load the game from the corresponding JSON file.
-    If successful, the global 'game' variable is updated with the new game.
-
-    Args:
-        date_str: The date of the puzzle in YYYYMMDD format.
-
-    Returns:
-        A dictionary with "status" ("success" or "error") and "message".
-        On success, the message confirms loading.
-        On error, the message provides details about the failure
-        (e.g., invalid date format, file not found, JSON decoding error,
-        or internal game validation error).
+    Loads a puzzle for the given date.
+    It first tries to load from a local JSON file. If not found,
+    it falls back to fetching from a URL.
+    The date_str must be in "YYYY-MM-DD" format.
     """
-    global game  # Declare intention to modify the global game variable
-    import json # For json.JSONDecodeError
+    global game # Declare intention to modify the global game variable
 
-    if not (isinstance(date_str, str) and len(date_str) == 8 and date_str.isdigit()):
+    # Validate date_str format (YYYY-MM-DD)
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", date_str):
         return {
             "status": "error",
-            "message": "Invalid date_str format. Expected YYYYMMDD (e.g., '20240715')."
+            "message": "Invalid date_str format. Expected YYYY-MM-DD (e.g., '2024-07-15')."
         }
 
-    filepath = f"games/json/{date_str}.json"
+    game_data = load_game_data_by_date(date_str)
+
+    if "error" in game_data:
+        # Pass through errors from load_game_data_by_date (e.g., file decode, URL fetch/parse)
+        return {"status": "error", "message": game_data["error"]}
 
     try:
-        new_game = Game.from_json_file(filepath)
+        new_game = Game(game_data)  # Game constructor takes the dict directly
         game = new_game  # Reassign the global game variable
-        rendered_text = game.get_rendered_game_text() # Get the rendered text
+        rendered_text = game.get_rendered_game_text()
         return {
             "status": "success",
-            "message": f"Successfully loaded puzzle for date {date_str} from {filepath}.",
-            "rendered_game_text": rendered_text # Add it to the response
+            "message": f"Successfully loaded puzzle for date {date_str}.",
+            "rendered_game_text": rendered_text
         }
-    except FileNotFoundError:
+    except ValueError as e:  # Catching Game's internal validation errors
         return {
             "status": "error",
-            "message": f"Puzzle file not found: {filepath}"
+            "message": f"Error creating game instance for date {date_str}: {e}"
         }
-    except json.JSONDecodeError as e:
+    except Exception as e:  # Catch-all for other unexpected errors during game creation
         return {
             "status": "error",
-            "message": f"Error decoding JSON from {filepath}: {e}"
-        }
-    except ValueError as e: # Catching Game's internal validation errors
-        return {
-            "status": "error",
-            "message": f"Error loading game from {filepath} (e.g., wrong number of end clues, data integrity): {e}"
-        }
-    except Exception as e: # Catch-all for any other unexpected errors
-        return {
-            "status": "error",
-            "message": f"An unexpected error occurred while loading {filepath}: {e}"
+            "message": f"An unexpected error occurred while creating game for {date_str}: {e}"
         }
 
 def main():
