@@ -20,7 +20,7 @@ not provide a direct test_client() method. This is a known limitation.
 
 # Initialize the game
 # TODO: Make the game file path configurable (future enhancement)
-game = Game.from_json_file("games/json/20250614.json")
+game = load_game_data_by_date("2025-06-17")
 
 # Create the MCP server
 # TODO: Make host and port configurable (future enhancement for server execution)
