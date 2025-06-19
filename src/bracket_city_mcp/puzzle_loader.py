@@ -1,18 +1,10 @@
 import sys
 import json
 import re
+import requests
 from bs4 import BeautifulSoup
-try:
-    import requests
-except ModuleNotFoundError:
-    print("The 'requests' library is not installed. Please install it by running 'pip install requests'", file=sys.stderr)
-    # As per instructions, attempting to install if missing.
-    # This is generally not recommended for library code but following instructions.
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
-    import requests
 
-def generate_puzzle_structure(html_content):
+def generate_puzzle_structure(html_content: str) -> dict:
     """
     Parses the HTML of a Bracket City puzzle page to extract the full nested
     clue structure by recursively parsing the raw puzzle string.
@@ -65,12 +57,13 @@ def generate_puzzle_structure(html_content):
              final_solution_text = re.sub(r'^(\w+\s\d+,\s\d{4}:\s)', '', final_solution_text).strip()
 
     if not final_solution_text:
+         # Use sys.stderr for warnings if this function is ever used in a context where stdout is for data
          print("Warning: Could not find the final solution text.", file=sys.stderr)
 
 
     # --- Step 3: Recursively parse the string to build the structure ---
     final_clues = {}
-    clue_id_counter = 1
+    # clue_id_counter = 1 # This was unused, can be removed
 
     sorted_clues = sorted(clue_text_to_answer.keys(), key=len, reverse=True)
     clue_text_to_id = {text: f"CLUE-C{i+1}" for i, text in enumerate(sorted_clues)}
@@ -81,6 +74,7 @@ def generate_puzzle_structure(html_content):
     while '[' in processing_string:
         match = innermost_bracket_regex.search(processing_string)
         if not match:
+            # Use sys.stderr for warnings
             print("Warning: Could not find innermost bracket. The puzzle string may be malformed or fully processed.", file=sys.stderr)
             break
 
@@ -110,6 +104,7 @@ def generate_puzzle_structure(html_content):
             }
             processing_string = processing_string.replace(f'[{match.group(1)}]', clue_id, 1)
         else:
+            # Use sys.stderr for warnings
             print(f"Warning: Could not find a matching clue for content: '{inner_content}'", file=sys.stderr)
             processing_string = processing_string.replace(f'[{match.group(1)}]', inner_content, 1)
 
@@ -143,35 +138,53 @@ def parse_game_from_url(url: str) -> dict:
         html_content = response.text
         return generate_puzzle_structure(html_content)
     except requests.exceptions.RequestException as e:
+        # Log to stderr or use proper logging if available
+        print(f"Error fetching URL {url}: {e}", file=sys.stderr)
         return {"error": f"Failed to fetch HTML from URL: {url}. Error: {e}"}
     except Exception as e: # Catch any other unexpected errors during parsing
+        print(f"Unexpected error processing URL {url}: {e}", file=sys.stderr)
         return {"error": f"An unexpected error occurred while processing URL {url}: {e}"}
 
+# Note: The main() function and if __name__ == '__main__' block from
+# scripts/parse_game_html.py are intentionally omitted as this is now a module.
 
-def main():
-    """
-    Main function to handle file input from the command line,
-    parse the file, and print the output.
-    """
-    if len(sys.argv) != 2:
-        print("Usage: python parse_bracket_city.py <path_to_html_file>")
-        sys.exit(1)
 
-    file_path = sys.argv[1]
+def load_game_data_by_date(date_str: str) -> dict:
+    """
+    Loads game data for a given date, trying a local JSON file first,
+    then falling back to fetching from a URL.
+
+    Args:
+        date_str (str): The date of the puzzle in "YYYY-MM-DD" format.
+
+    Returns:
+        dict: A dictionary containing the puzzle data, or an error dictionary
+              if loading/fetching/parsing fails.
+    """
+    file_date_str = date_str.replace("-", "")
+    filepath = f"games/json/{file_date_str}.json"
 
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            html_content = f.read()
+        # Attempt to load from local JSON file first
+        with open(filepath, 'r', encoding='utf-8') as f:
+            game_data = json.load(f)
+        # Optional: print a message if loaded from file
+        # print(f"Loaded game data for {date_str} from local file: {filepath}", file=sys.stderr)
+        return game_data
     except FileNotFoundError:
-        print(f"Error: File not found at {file_path}")
-        sys.exit(1)
-    except Exception as e:
-        print(f"An error occurred while reading the file: {e}")
-        sys.exit(1)
-
-    puzzle_data = generate_puzzle_structure(html_content)
-
-    print(json.dumps(puzzle_data, indent=4))
-
-if __name__ == '__main__':
-    main()
+        # File not found, fall back to fetching from URL
+        # print(f"Local file {filepath} not found for date {date_str}. Attempting to fetch from URL.", file=sys.stderr)
+        # The date_str for parse_game_from_url needs to be in YYYY-MM-DD,
+        # which is the format of our input date_str.
+        # It internally constructs the full URL.
+        url = f"https://ladypuzzle.pro/bracket-city-hints-answers-solution/{date_str}"
+        return parse_game_from_url(url)
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON from {filepath} for date {date_str}: {e}", file=sys.stderr)
+        return {"error": f"Error decoding JSON from {filepath}: {e}"}
+    except IOError as e:
+        print(f"IOError reading file {filepath} for date {date_str}: {e}", file=sys.stderr)
+        return {"error": f"IOError reading file {filepath}: {e}"}
+    except Exception as e: # Catch any other unexpected errors during file operations
+        print(f"An unexpected error occurred with file {filepath} for date {date_str}: {e}", file=sys.stderr)
+        return {"error": f"An unexpected error occurred while trying to load from file {filepath}: {e}"}
