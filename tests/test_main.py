@@ -607,3 +607,76 @@ if __name__ == '__main__':
                 self.assertEqual(response["message"], "Invalid date_str format. Expected YYYY-MM-DD (e.g., '2024-07-15').")
                 self.assertIs(bracket_city_main.game, initial_game_instance, f"Game object should not change for invalid date {invalid_date}.")
                 self.assertEqual(id(bracket_city_main.game), initial_game_id, f"Game object id should be identical for invalid date {invalid_date}.")
+
+    def test_get_game_status_initial_state(self):
+        # self.game_instance is already set up and patched into main.game
+        # It's a deepcopy of Game.from_json_file('tests/data/test_game.json')
+        # Initial state:
+        # - game not complete
+        # - active_clues are the start_clues from test_game.json.
+        #   The setUp method resets active_clues to self.game_instance.start_clues.
+        #   Start clues for 'tests/data/test_game.json' are ['clue_1', 'clue_a'].
+        # - incorrect_guesses (score) is 0
+
+        status = bracket_city_main.get_game_status() # Tool from main module
+
+        self.assertFalse(status["is_complete"])
+        # Verify against actual start clues of 'tests/data/test_game.json'
+        # Start clues for test_game.json: clue_1, clue_a. So, count = 2.
+        self.assertEqual(status["unanswered_clues"], 2, "Incorrect number of initial active/unanswered clues.")
+        self.assertEqual(status["score"], 0)
+
+    def test_get_game_status_with_incorrect_guesses(self):
+        # self.game_instance is active. Initial active clues are {"clue_1", "clue_a"}
+        # Make two incorrect guesses on "clue_1"
+        # answer_clue is already wrapped by MagicMock in setUp, but here we call the real method.
+        # We need to access the original answer_clue from the game_instance, not the mocked one.
+        # The mock_main_game_instance is the one patched into main, which is self.game_instance.
+        # So, self.mock_main_game_instance.answer_clue is the MagicMock.
+        # We need to call the *actual* game logic on self.game_instance.
+        # The setUp method wraps self.game_instance.answer_clue itself:
+        # self.game_instance.answer_clue = MagicMock(wraps=self.game_instance.answer_clue)
+        # So calling self.game_instance.answer_clue() *will* execute the real method *and* record the call.
+
+        self.game_instance.answer_clue("clue_1", "wrong_answer_1")
+        self.game_instance.answer_clue("clue_1", "wrong_answer_2")
+
+        status = bracket_city_main.get_game_status()
+
+        self.assertFalse(status["is_complete"])
+        # "clue_1" is still active (not correctly answered), "clue_a" is also active.
+        self.assertEqual(status["unanswered_clues"], 2, "Unanswered clues count should remain 2 after incorrect answers to one.")
+        # Accessing self.game_instance directly for the internal count.
+        self.assertEqual(self.game_instance.incorrect_guesses, 2, "Internal incorrect_guesses count is wrong.")
+        self.assertEqual(status["score"], 2, "Score (incorrect guesses) is wrong.")
+
+    def test_get_game_status_completed_state(self):
+        # Simulate game completion using self.game_instance
+        # End clue for 'tests/data/test_game.json' is "clue_3".
+        end_clue_id = self.game_instance.end_clues[0] # This gets the end_clue_id (e.g. "clue_3")
+
+        # Mark all non-end clues as completed
+        for clue_id, clue_obj in self.game_instance.clues.items():
+            if clue_id != end_clue_id: # Make sure not to mark the end_clue itself as "completed" via this loop
+                clue_obj.completed = True
+
+        # Manually set active_clues for the test's sake:
+        # After all non-end clues are complete, the end clue ("clue_3") should become active.
+        # And no other clues should be active.
+        self.game_instance.active_clues = {end_clue_id} if end_clue_id else set()
+
+        # Sanity check: game.is_complete should now be True
+        # This relies on self.game_instance.is_complete correctly evaluating this state.
+        self.assertTrue(self.game_instance.is_complete, "Game did not register as complete after manual setup.")
+
+        status = bracket_city_main.get_game_status()
+
+        self.assertTrue(status["is_complete"])
+        # 'unanswered_clues' from get_game_status is len(active_clues).
+        # If end_clue is the only one active, this is 1.
+        expected_unanswered = 0
+        if end_clue_id and end_clue_id in self.game_instance.active_clues:
+             # If the end clue is active, it's considered "unanswered" by the get_game_status logic
+            expected_unanswered = 1
+        self.assertEqual(status["unanswered_clues"], expected_unanswered)
+        self.assertEqual(status["score"], 0) # No incorrect answers in this specific completion path

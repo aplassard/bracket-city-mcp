@@ -236,6 +236,25 @@ def load_puzzle(date_str: str) -> Dict[str, Any]:
             "message": f"An unexpected error occurred while creating game for {date_str}: {e}"
         }
 
+@mcp.tool()
+def get_game_status() -> Dict[str, Any]:
+    """
+    Retrieves the current status of the game.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the game status:
+            - "is_complete" (bool): True if all non-end clues in the game have been successfully answered, False otherwise.
+            - "unanswered_clues" (int): The number of clues currently active and awaiting an answer. This count includes any active end clues if the game is complete.
+            - "score" (int): The total number of incorrect guesses made by the player so far in the current game.
+    """
+    # Ensure the global game object is accessible
+    global game
+    return {
+        "is_complete": game.is_complete,
+        "unanswered_clues": len(game.active_clues),
+        "score": game.incorrect_guesses
+    }
+
 def main():
     
     mcp.run()
